@@ -1,0 +1,10 @@
+UnityEngine.Application.runInBackground=true;
+var service=CampusRift.Localization.LocalizationService.Instance;
+var settings=CampusRift.UI.SettingsManager.Instance;
+var ui=UnityEngine.Object.FindAnyObjectByType<CampusRift.UI.UIManager>();
+service.Discover();
+var play=System.Linq.Enumerable.First(ui.MainMenu.GetComponentsInChildren<CampusRift.UI.RiftButton>(true),b=>b.name=="PLAY");
+var result=new {language=service.Language.ToString(),saved=settings.ReadSaved().Language.ToString(),play=play.Label.text,quality=UnityEngine.QualitySettings.names,breakthroughs=CampusRift.Learning.LearningService.Instance.Engine.Progress.breakthroughs};
+System.IO.File.WriteAllText("Artifacts/Localization/Restart-"+service.Language+".json",UnityEngine.JsonUtility.ToJson(settings.Current,true)+"\nPLAY="+play.Label.text);
+ui.OpenSettings();
+return result;
