@@ -1,0 +1,4 @@
+Flashlight model: "Torch" by Quaternius
+Source: https://poly.pizza/m/WGsvr4KOZd
+License: CC0 1.0 Universal (public domain) - no attribution required.
+Normalized (centred, 0.24 m long) and converted GLB -> FBX with Blender 5.2.
