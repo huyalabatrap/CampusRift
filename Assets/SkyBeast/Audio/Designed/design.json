@@ -1,0 +1,94 @@
+{
+  "sampleRate": 44100,
+  "sources": [
+    "Joseph SARDIN actual cat recordings",
+    "Ogrebane monster pack"
+  ],
+  "processing": "pitch by resampling, layered recordings, EQ, soft saturation, four delay taps, peak -1.5 dBFS",
+  "clips": [
+    {
+      "file": "020-roar-1.wav",
+      "seconds": 3.209,
+      "peak": 0.84,
+      "rms": 0.1338
+    },
+    {
+      "file": "020-roar-2.wav",
+      "seconds": 2.729,
+      "peak": 0.84,
+      "rms": 0.1223
+    },
+    {
+      "file": "020-roar-3.wav",
+      "seconds": 3.108,
+      "peak": 0.84,
+      "rms": 0.1234
+    },
+    {
+      "file": "020-roar-4.wav",
+      "seconds": 2.657,
+      "peak": 0.84,
+      "rms": 0.1517
+    },
+    {
+      "file": "023-roar-1.wav",
+      "seconds": 3.962,
+      "peak": 0.84,
+      "rms": 0.1832
+    },
+    {
+      "file": "023-roar-2.wav",
+      "seconds": 3.26,
+      "peak": 0.84,
+      "rms": 0.1718
+    },
+    {
+      "file": "023-roar-3.wav",
+      "seconds": 3.9,
+      "peak": 0.84,
+      "rms": 0.2158
+    },
+    {
+      "file": "023-roar-4.wav",
+      "seconds": 3.123,
+      "peak": 0.84,
+      "rms": 0.1968
+    },
+    {
+      "file": "026-roar-1.wav",
+      "seconds": 4.724,
+      "peak": 0.84,
+      "rms": 0.2623
+    },
+    {
+      "file": "026-roar-2.wav",
+      "seconds": 4.424,
+      "peak": 0.84,
+      "rms": 0.2957
+    },
+    {
+      "file": "026-roar-3.wav",
+      "seconds": 4.4,
+      "peak": 0.84,
+      "rms": 0.2763
+    },
+    {
+      "file": "026-roar-4.wav",
+      "seconds": 3.563,
+      "peak": 0.84,
+      "rms": 0.3112
+    },
+    {
+      "file": "dragon-rumble.wav",
+      "seconds": 6.0,
+      "peak": 0.84,
+      "rms": 0.2212
+    },
+    {
+      "file": "dragon-wind.wav",
+      "seconds": 6.0,
+      "peak": 0.84,
+      "rms": 0.2375
+    }
+  ]
+}

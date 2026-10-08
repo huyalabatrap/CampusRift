@@ -1,0 +1,42 @@
+[
+  {
+    "author": "Joseph SARDIN",
+    "page": "https://bigsoundbank.com/cat-roar-1-s1881.html",
+    "url": "https://bigsoundbank.com/UPLOAD/mp3/1881.mp3?v=d",
+    "file": "Assets\\SkyBeast\\Audio\\Source\\cat1-1881.mp3",
+    "license": "CC0-1.0",
+    "sha256": "5ff2ae04b5c8fd9fb8358324c2c0970f1d1fade0bb9add011bd99e0d55a79edd"
+  },
+  {
+    "author": "Joseph SARDIN",
+    "page": "https://bigsoundbank.com/cat-roar-2-s1882.html",
+    "url": "https://bigsoundbank.com/UPLOAD/mp3/1882.mp3?v=d",
+    "file": "Assets\\SkyBeast\\Audio\\Source\\cat2-1882.mp3",
+    "license": "CC0-1.0",
+    "sha256": "d2b11613d52f6ee1ea2a20c6c2e03da8617c74341e6b4a486d081bc60743ed50"
+  },
+  {
+    "author": "Ogrebane",
+    "page": "https://opengameart.org/content/monster-sound-effects-pack",
+    "url": "https://opengameart.org/sites/default/files/monster_sfx_pack.zip",
+    "file": "Assets\\SkyBeast\\Audio\\Source\\monster-monster_sfx_pack.zip",
+    "license": "CC0-1.0",
+    "sha256": "f39c5ae356b1fc01284057ee48e35ec1a52fcc84bfa959b77d0a696adc8459e4"
+  },
+  {
+    "author": "Centurion_of_war",
+    "page": "https://opengameart.org/content/final-stand-0",
+    "url": "https://opengameart.org/sites/default/files/final_stand_phase_1.3_0.ogg",
+    "file": "Assets\\SkyBeast\\Audio\\Source\\boss-final_stand_phase_1.3_0.ogg",
+    "license": "CC0-1.0",
+    "sha256": "c387bbb45cc2551a900b0ed3c851fd48130e209929aed76c5d8b0f5b00ddab70"
+  },
+  {
+    "author": "Centurion_of_war",
+    "page": "https://opengameart.org/content/final-stand-0",
+    "url": "https://opengameart.org/sites/default/files/final_stand_phase_2.2.heavy_drums_0.ogg",
+    "file": "Assets\\SkyBeast\\Audio\\Source\\boss-final_stand_phase_2.2.heavy_drums_0.ogg",
+    "license": "CC0-1.0",
+    "sha256": "27d800abc02d233f4683c403a22765060ddf6d2d33130ff6644f4cfe2247b12e"
+  }
+]
