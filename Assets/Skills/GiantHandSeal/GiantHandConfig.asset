@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b583171af2ab20a49ac81e90e04eef20, type: 3}
+  m_Name: GiantHandConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.GiantHandConfig
+  range: 16
+  radius: 2.8
+  cooldown: 18
+  damagePercent: 3
+  element: 5
+  damage: 60
+  edgeDamage: 60
+  stagger: 3
+  verticalTolerance: 1.35
+  summonTime: 0.58
+  descentTime: 0.18
+  aftermathTime: 1.5
+  maximumHeight: 5.5
+  handMesh: {fileID: 4300000, guid: 93e9120179498a94c813299e7d317428, type: 2}
+  inlayMesh: {fileID: 4300000, guid: 10a5f3089b725f648af7b31859438cab, type: 2}
+  planeMesh: {fileID: 4300000, guid: 46ab3adff98351d4a89b1ba34e40a83e, type: 2}
+  shardMesh: {fileID: 4300000, guid: bce9d790608be7b4fb3aa0e1b6522ddd, type: 2}
+  handMaterial: {fileID: 2100000, guid: 6a1062e75b1c1264a9b57f349988fdae, type: 2}
+  sigilMaterial: {fileID: 2100000, guid: 3f3f41a9cdfc46e4087d7923d4296033, type: 2}
+  particleMaterial: {fileID: 2100000, guid: eaa169c7a5961bc44ab07c280cbca07e, type: 2}
+  output: {fileID: 3680441330483450487, guid: 629893d50d3aa0443922c1f74980a82e, type: 2}
+  cast: {fileID: 8300000, guid: 2c5e8e26dcd48b64d925767c859003f7, type: 3}
+  charge: {fileID: 8300000, guid: e3574b90d5495e74c8d14bb4dfc8d393, type: 3}
+  rift: {fileID: 8300000, guid: f841c3d315ff27f43b2fd5a8c14c728f, type: 3}
+  descent: {fileID: 8300000, guid: adb10ea86469c5b41a8044ac6fa63863, type: 3}
+  impact: {fileID: 8300000, guid: 2562acbb2e558b84b98406de32ae0a43, type: 3}
+  aftershock: {fileID: 8300000, guid: e637dda2ed19bc747bacef65a0f2663c, type: 3}
+  dissipate: {fileID: 8300000, guid: 80137652e389cde499a9ddf5ad6f7839, type: 3}
+  unavailable: {fileID: 8300000, guid: 00fb5013ab4e96b4ea3aaf5017aa585f, type: 3}
