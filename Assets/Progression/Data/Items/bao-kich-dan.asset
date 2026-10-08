@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5636b2aa610c9b4eba2340e5d200ae3, type: 3}
+  m_Name: bao-kich-dan
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Progression.ItemDefinition
+  id: bao-kich-dan
+  chosenElement: 0
+  nameEN: Critical Pill
+  nameVN: "B\u1EA1o K\xEDch \u0110an"
+  descriptionEN: +25% critical chance for 45 seconds.
+  descriptionVN: "+25% t\u1EC9 l\u1EC7 ch\xED m\u1EA1ng trong 45 gi\xE2y."
+  kind: 1
+  price: 70
+  maxPerLevel: 2
+  availableFrom: 2
+  effects:
+  - type: 4
+    value: 0.25
+    duration: 45
+    stat: 4
+    flag: 0
+    element: 0
+  shape: 0
+  tint: {r: 1, g: 0.4, b: 0.35, a: 1}

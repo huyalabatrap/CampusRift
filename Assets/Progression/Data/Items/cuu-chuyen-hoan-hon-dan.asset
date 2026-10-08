@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5636b2aa610c9b4eba2340e5d200ae3, type: 3}
+  m_Name: cuu-chuyen-hoan-hon-dan
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Progression.ItemDefinition
+  id: cuu-chuyen-hoan-hon-dan
+  chosenElement: 0
+  nameEN: Ninefold Renewal Pill
+  nameVN: "C\u1EEDu Chuy\u1EC3n Ho\xE0n H\u1ED3n \u0110an"
+  descriptionEN: Full health; cleanse negative effects. Once per level.
+  descriptionVN: "H\u1ED3i \u0111\u1EA7y m\xE1u, x\xF3a hi\u1EC7u \u1EE9ng x\u1EA5u. T\u1ED1i \u0111a 1/m\xE0n."
+  kind: 0
+  price: 250
+  maxPerLevel: 1
+  availableFrom: 3
+  effects:
+  - type: 0
+    value: 1
+    duration: 0
+    stat: 0
+    flag: 0
+    element: 0
+  - type: 7
+    value: 0
+    duration: 0
+    stat: 0
+    flag: 0
+    element: 0
+  shape: 0
+  tint: {r: 1, g: 0.4, b: 0.35, a: 1}

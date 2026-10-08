@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5636b2aa610c9b4eba2340e5d200ae3, type: 3}
+  m_Name: hoi-khi-dan
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Progression.ItemDefinition
+  id: hoi-khi-dan
+  chosenElement: 0
+  nameEN: Qi Recovery Pill
+  nameVN: "H\u1ED3i Kh\xED \u0110an"
+  descriptionEN: Restores 20% of your health at once.
+  descriptionVN: "H\u1ED3i ngay 20% m\xE1u."
+  kind: 0
+  price: 25
+  maxPerLevel: 5
+  availableFrom: 0
+  effects:
+  - type: 0
+    value: 0.2
+    duration: 0
+    stat: 0
+    flag: 0
+    element: 0
+  shape: 0
+  tint: {r: 0.35, g: 0.9, b: 0.5, a: 1}

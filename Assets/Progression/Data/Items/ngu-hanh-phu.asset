@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5636b2aa610c9b4eba2340e5d200ae3, type: 3}
+  m_Name: ngu-hanh-phu
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Progression.ItemDefinition
+  id: ngu-hanh-phu
+  chosenElement: 0
+  nameEN: Five Element Talisman
+  nameVN: "Ng\u0169 H\xE0nh Ph\xF9"
+  descriptionEN: Choose an element when buying; +40% damage with it for 60 seconds.
+  descriptionVN: "Ch\u1ECDn h\u1EC7 khi mua; h\u1EC7 \u0111\xF3 +40% s\xE1t th\u01B0\u01A1ng trong 60 gi\xE2y."
+  kind: 1
+  price: 100
+  maxPerLevel: 1
+  availableFrom: 3
+  effects:
+  - type: 8
+    value: 0.4
+    duration: 60
+    stat: 0
+    flag: 0
+    element: 0
+  shape: 1
+  tint: {r: 1, g: 0.8, b: 0.3, a: 1}
