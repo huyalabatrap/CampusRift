@@ -1,0 +1,4 @@
+var p=UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.RiftPlacementService>();float best=.21f;Vector3 point=Vector3.zero;bool found=false;
+foreach(var plane in p.planes.trackables){if(plane.alignment!=UnityEngine.XR.ARSubsystems.PlaneAlignment.HorizontalUp||plane.trackingState!=UnityEngine.XR.ARSubsystems.TrackingState.Tracking||plane.subsumedBy!=null)continue;var polygon=plane.boundary.ToArray();if(CampusRift.AR.ARPlaneScoring.Area(polygon)<p.settings.MinimumArea)continue;float radius;var q=CampusRift.AR.ARPlaneScoring.Incenter(polygon,out radius);if(radius>best){best=radius;point=plane.transform.TransformPoint(new Vector3(q.x,0,q.y));found=true;}}
+if(!found)return false;
+var c=UnityEngine.Object.FindAnyObjectByType<UnityEngine.XR.Simulation.SimulationCameraPoseProvider>();c.transform.position=point+new Vector3(0,.72f,.86f);c.transform.LookAt(point);return true;
