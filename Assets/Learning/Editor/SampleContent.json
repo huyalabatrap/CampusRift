@@ -1,0 +1,974 @@
+{
+  "lessons": [
+    {
+      "id": "bfs",
+      "title": "BFS Basics",
+      "pages": [
+        {
+          "title": "FIELD NOTES",
+          "content": "Breadth-first search explores a graph one layer at a time. Start at a source, mark it visited, then put it in a queue. Repeatedly remove the oldest vertex and add each unvisited neighbor. Mark a vertex when enqueuing it so cycles cannot enqueue it repeatedly.",
+          "example": "A connects to B and C; B connects to D. Starting at A, a possible visit order is A, B, C, D. B and C are distance 1; D is distance 2.",
+          "takeaway": "BFS uses a FIFO queue. It finds minimum edge counts in unweighted graphs, not minimum costs for arbitrary weighted edges."
+        }
+      ],
+      "questions": [
+        {
+          "id": "bfs-1",
+          "lessonId": "bfs",
+          "topic": "BFS Basics",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Which structure normally drives BFS?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Queue"
+            },
+            {
+              "id": "1",
+              "text": "Stack"
+            },
+            {
+              "id": "2",
+              "text": "Heap"
+            },
+            {
+              "id": "3",
+              "text": "Sorted array"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "A queue processes vertices in first-in, first-out order, preserving layers."
+        },
+        {
+          "id": "bfs-2",
+          "lessonId": "bfs",
+          "topic": "BFS Basics",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "When should BFS mark a neighbor visited?",
+          "options": [
+            {
+              "id": "0",
+              "text": "When it is enqueued"
+            },
+            {
+              "id": "1",
+              "text": "Only at the end"
+            },
+            {
+              "id": "2",
+              "text": "Never"
+            },
+            {
+              "id": "3",
+              "text": "After all its neighbors"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Marking on enqueue prevents duplicate entries and repeated work on cycles."
+        },
+        {
+          "id": "bfs-3",
+          "lessonId": "bfs",
+          "topic": "BFS Basics",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What does BFS minimize in an unweighted graph?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Number of edges from the source"
+            },
+            {
+              "id": "1",
+              "text": "Total arbitrary edge weight"
+            },
+            {
+              "id": "2",
+              "text": "Memory in every graph"
+            },
+            {
+              "id": "3",
+              "text": "Number of vertices in the graph"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Each BFS layer adds one edge, so the first discovery has the minimum edge count."
+        },
+        {
+          "id": "bfs-4",
+          "lessonId": "bfs",
+          "topic": "BFS Basics",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "A connects to B and C; B connects to D. Which layer contains D?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Layer 2"
+            },
+            {
+              "id": "1",
+              "text": "Layer 0"
+            },
+            {
+              "id": "2",
+              "text": "Layer 1"
+            },
+            {
+              "id": "3",
+              "text": "Always layer 3"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "A is layer 0. B and C are layer 1, so D reached through B is layer 2."
+        },
+        {
+          "id": "bfs-5",
+          "lessonId": "bfs",
+          "topic": "BFS Basics",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Why keep a visited set?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Avoid repeatedly exploring cycles"
+            },
+            {
+              "id": "1",
+              "text": "Sort all vertices"
+            },
+            {
+              "id": "2",
+              "text": "Make every edge weighted"
+            },
+            {
+              "id": "3",
+              "text": "Reverse all edges"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "The visited set prevents revisiting vertices, including in cyclic graphs."
+        },
+        {
+          "id": "bfs-6",
+          "lessonId": "bfs",
+          "topic": "BFS Basics",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What happens if the queue becomes empty?",
+          "options": [
+            {
+              "id": "0",
+              "text": "All reachable vertices have been processed"
+            },
+            {
+              "id": "1",
+              "text": "Every vertex everywhere is connected"
+            },
+            {
+              "id": "2",
+              "text": "The algorithm must restart"
+            },
+            {
+              "id": "3",
+              "text": "The graph has no edges"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "BFS covers the reachable component; disconnected vertices may remain unvisited."
+        }
+      ]
+    },
+    {
+      "id": "dfs",
+      "title": "DFS and Backtracking",
+      "pages": [
+        {
+          "title": "FIELD NOTES",
+          "content": "Depth-first search follows a branch as far as possible, then backtracks to explore alternatives. An explicit stack or the call stack can track the active path. Keep a visited set in graphs with cycles.",
+          "example": "For A -> B -> D and A -> C, DFS may visit A, B, D, C. The order depends on neighbor ordering; it does not prove D is nearer than C.",
+          "takeaway": "DFS is useful for reachability and structural traversal. Basic DFS does not guarantee shortest paths."
+        }
+      ],
+      "questions": [
+        {
+          "id": "dfs-1",
+          "lessonId": "dfs",
+          "topic": "DFS and Backtracking",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Which structure can implement DFS?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Stack"
+            },
+            {
+              "id": "1",
+              "text": "FIFO queue only"
+            },
+            {
+              "id": "2",
+              "text": "A single boolean"
+            },
+            {
+              "id": "3",
+              "text": "Sorted set only"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "DFS uses last-in, first-out behavior, often via recursive calls."
+        },
+        {
+          "id": "dfs-2",
+          "lessonId": "dfs",
+          "topic": "DFS and Backtracking",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What happens at a dead end?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Backtrack to an earlier branching point"
+            },
+            {
+              "id": "1",
+              "text": "Delete the graph"
+            },
+            {
+              "id": "2",
+              "text": "Repeat forever"
+            },
+            {
+              "id": "3",
+              "text": "Jump to the closest vertex"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Backtracking returns to the last point with an unexplored alternative."
+        },
+        {
+          "id": "dfs-3",
+          "lessonId": "dfs",
+          "topic": "DFS and Backtracking",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Does basic DFS guarantee shortest paths?",
+          "options": [
+            {
+              "id": "0",
+              "text": "No"
+            },
+            {
+              "id": "1",
+              "text": "Always"
+            },
+            {
+              "id": "2",
+              "text": "Only if implemented recursively"
+            },
+            {
+              "id": "3",
+              "text": "Only with a stack"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "DFS explores depth first, so it can find a longer route before a shorter one."
+        },
+        {
+          "id": "dfs-4",
+          "lessonId": "dfs",
+          "topic": "DFS and Backtracking",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Why can recursive DFS overflow?",
+          "options": [
+            {
+              "id": "0",
+              "text": "The active path may be too deep"
+            },
+            {
+              "id": "1",
+              "text": "The graph has a name"
+            },
+            {
+              "id": "2",
+              "text": "All edges weigh one"
+            },
+            {
+              "id": "3",
+              "text": "The queue is empty"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Deep recursion can exceed the call stack; an explicit stack avoids that call-stack limit."
+        },
+        {
+          "id": "dfs-5",
+          "lessonId": "dfs",
+          "topic": "DFS and Backtracking",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "A->B->D and A->C: which order can be DFS?",
+          "options": [
+            {
+              "id": "0",
+              "text": "A B D C"
+            },
+            {
+              "id": "1",
+              "text": "D B A C"
+            },
+            {
+              "id": "2",
+              "text": "C A D B"
+            },
+            {
+              "id": "3",
+              "text": "B C A D"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Following B first explores D before backtracking to A and exploring C."
+        },
+        {
+          "id": "dfs-6",
+          "lessonId": "dfs",
+          "topic": "DFS and Backtracking",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What prevents cycling forever in graph DFS?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Visited tracking"
+            },
+            {
+              "id": "1",
+              "text": "Alphabetical vertex names"
+            },
+            {
+              "id": "2",
+              "text": "Using only recursion"
+            },
+            {
+              "id": "3",
+              "text": "Counting edges once"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Visited tracking ensures already explored vertices are not expanded repeatedly."
+        }
+      ]
+    },
+    {
+      "id": "complexity",
+      "title": "Reasoning about Complexity",
+      "pages": [
+        {
+          "title": "FIELD NOTES",
+          "content": "Complexity describes how resource use grows as input size increases. O(n) work grows linearly; O(n squared) grows quadratically. Ignore constant factors for asymptotic growth, but remember real runtime also depends on implementation.",
+          "example": "Scanning n elements once is O(n). Two independent scans remain O(n). Comparing every element to every other element is O(n squared).",
+          "takeaway": "Big O is a growth bound, not a stopwatch. Count work and state the representation and assumptions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "complexity-1",
+          "lessonId": "complexity",
+          "topic": "Reasoning about Complexity",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "One full scan of n items costs what?",
+          "options": [
+            {
+              "id": "0",
+              "text": "O(n)"
+            },
+            {
+              "id": "1",
+              "text": "O(1)"
+            },
+            {
+              "id": "2",
+              "text": "O(log n)"
+            },
+            {
+              "id": "3",
+              "text": "O(n squared)"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "A full scan performs work proportional to the number of items."
+        },
+        {
+          "id": "complexity-2",
+          "lessonId": "complexity",
+          "topic": "Reasoning about Complexity",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Two sequential full scans cost what?",
+          "options": [
+            {
+              "id": "0",
+              "text": "O(n)"
+            },
+            {
+              "id": "1",
+              "text": "O(n squared)"
+            },
+            {
+              "id": "2",
+              "text": "O(1)"
+            },
+            {
+              "id": "3",
+              "text": "O(log n)"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "2n grows linearly; Big O ignores the constant factor 2."
+        },
+        {
+          "id": "complexity-3",
+          "lessonId": "complexity",
+          "topic": "Reasoning about Complexity",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Two nested n-iteration loops usually cost what?",
+          "options": [
+            {
+              "id": "0",
+              "text": "O(n squared)"
+            },
+            {
+              "id": "1",
+              "text": "O(n)"
+            },
+            {
+              "id": "2",
+              "text": "O(1)"
+            },
+            {
+              "id": "3",
+              "text": "O(log n)"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Each of n outer iterations performs n inner iterations: n times n."
+        },
+        {
+          "id": "complexity-4",
+          "lessonId": "complexity",
+          "topic": "Reasoning about Complexity",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What does O(n) describe?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Growth with input size"
+            },
+            {
+              "id": "1",
+              "text": "Exactly n milliseconds"
+            },
+            {
+              "id": "2",
+              "text": "Constant memory always"
+            },
+            {
+              "id": "3",
+              "text": "The programming language"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Complexity describes how work scales, not a fixed elapsed time."
+        },
+        {
+          "id": "complexity-5",
+          "lessonId": "complexity",
+          "topic": "Reasoning about Complexity",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "BFS with adjacency lists costs what?",
+          "options": [
+            {
+              "id": "0",
+              "text": "O(V + E)"
+            },
+            {
+              "id": "1",
+              "text": "O(1)"
+            },
+            {
+              "id": "2",
+              "text": "O(log V)"
+            },
+            {
+              "id": "3",
+              "text": "O(V) for every graph"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Each reachable vertex and its outgoing edges are processed a bounded number of times."
+        },
+        {
+          "id": "complexity-6",
+          "lessonId": "complexity",
+          "topic": "Reasoning about Complexity",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Which grows faster asymptotically?",
+          "options": [
+            {
+              "id": "0",
+              "text": "n squared"
+            },
+            {
+              "id": "1",
+              "text": "n"
+            },
+            {
+              "id": "2",
+              "text": "log n"
+            },
+            {
+              "id": "3",
+              "text": "1"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "For sufficiently large n, quadratic growth exceeds linear, logarithmic and constant growth."
+        }
+      ]
+    },
+    {
+      "id": "binary",
+      "title": "Binary Search",
+      "pages": [
+        {
+          "title": "FIELD NOTES",
+          "content": "Binary search finds a target in sorted data by repeatedly comparing it with the middle element. If the target is smaller, retain the left half; if larger, retain the right half. Stop when found or when the candidate interval is empty.",
+          "example": "In [2, 4, 7, 9, 12], searching for 9 first compares with 7, then searches to its right. With inclusive bounds, use high = mid - 1 or low = mid + 1 after an unequal comparison.",
+          "takeaway": "The data must be sorted under the same comparison. Ensure every iteration shrinks the search interval."
+        }
+      ],
+      "questions": [
+        {
+          "id": "binary-1",
+          "lessonId": "binary",
+          "topic": "Binary Search",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What property does standard binary search require?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Sorted data"
+            },
+            {
+              "id": "1",
+              "text": "Random data"
+            },
+            {
+              "id": "2",
+              "text": "All equal elements"
+            },
+            {
+              "id": "3",
+              "text": "A graph"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Sorting makes it possible to discard a half based on the middle comparison."
+        },
+        {
+          "id": "binary-2",
+          "lessonId": "binary",
+          "topic": "Binary Search",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Target is greater than the middle value. Search where?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Right half"
+            },
+            {
+              "id": "1",
+              "text": "Left half"
+            },
+            {
+              "id": "2",
+              "text": "Both halves always"
+            },
+            {
+              "id": "3",
+              "text": "Only the first item"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "All elements on the left are no greater than the middle in ascending sorted data."
+        },
+        {
+          "id": "binary-3",
+          "lessonId": "binary",
+          "topic": "Binary Search",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "How does the candidate interval change?",
+          "options": [
+            {
+              "id": "0",
+              "text": "It roughly halves"
+            },
+            {
+              "id": "1",
+              "text": "It doubles"
+            },
+            {
+              "id": "2",
+              "text": "It stays unchanged"
+            },
+            {
+              "id": "3",
+              "text": "It loses exactly one every time"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Each comparison discards roughly half of the remaining candidates."
+        },
+        {
+          "id": "binary-4",
+          "lessonId": "binary",
+          "topic": "Binary Search",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What is binary search time on a random-access sorted array?",
+          "options": [
+            {
+              "id": "0",
+              "text": "O(log n)"
+            },
+            {
+              "id": "1",
+              "text": "O(n squared)"
+            },
+            {
+              "id": "2",
+              "text": "O(n factorial)"
+            },
+            {
+              "id": "3",
+              "text": "O(n) always"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Repeated halving takes logarithmically many steps."
+        },
+        {
+          "id": "binary-5",
+          "lessonId": "binary",
+          "topic": "Binary Search",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "When can an unsuccessful search stop?",
+          "options": [
+            {
+              "id": "0",
+              "text": "When the candidate interval is empty"
+            },
+            {
+              "id": "1",
+              "text": "After the first comparison always"
+            },
+            {
+              "id": "2",
+              "text": "Only after sorting again"
+            },
+            {
+              "id": "3",
+              "text": "Never"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "An empty interval means no remaining position can hold the target."
+        },
+        {
+          "id": "binary-6",
+          "lessonId": "binary",
+          "topic": "Binary Search",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "With inclusive bounds and target > middle, which update shrinks the interval?",
+          "options": [
+            {
+              "id": "0",
+              "text": "low = mid + 1"
+            },
+            {
+              "id": "1",
+              "text": "low = mid"
+            },
+            {
+              "id": "2",
+              "text": "high = mid + 1"
+            },
+            {
+              "id": "3",
+              "text": "low = 0"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Excluding the already checked middle guarantees progress and avoids a stuck interval."
+        }
+      ]
+    },
+    {
+      "id": "graphs",
+      "title": "Choosing a Graph Strategy",
+      "pages": [
+        {
+          "title": "FIELD NOTES",
+          "content": "A graph models vertices and connections. A directed edge has an orientation; an undirected edge connects both ways. Representation matters: adjacency lists store neighbors; an adjacency matrix stores a cell for every vertex pair.",
+          "example": "Use BFS to find the fewest door crossings on a map with equal-cost connections. Use DFS to explore reachable rooms. Arbitrary travel costs require a suitable weighted-path algorithm.",
+          "takeaway": "Choose an algorithm from the problem assumptions. Do not use unweighted shortest-path claims for unequal costs."
+        }
+      ],
+      "questions": [
+        {
+          "id": "graphs-1",
+          "lessonId": "graphs",
+          "topic": "Choosing a Graph Strategy",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What does a directed edge mean?",
+          "options": [
+            {
+              "id": "0",
+              "text": "A connection with an orientation"
+            },
+            {
+              "id": "1",
+              "text": "A connection always usable both ways"
+            },
+            {
+              "id": "2",
+              "text": "No connection"
+            },
+            {
+              "id": "3",
+              "text": "A sorted vertex"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "A directed edge from A to B does not automatically provide an edge from B to A."
+        },
+        {
+          "id": "graphs-2",
+          "lessonId": "graphs",
+          "topic": "Choosing a Graph Strategy",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "For fewest equal-cost door crossings, choose what?",
+          "options": [
+            {
+              "id": "0",
+              "text": "BFS"
+            },
+            {
+              "id": "1",
+              "text": "Basic DFS shortest-path guarantee"
+            },
+            {
+              "id": "2",
+              "text": "Alphabetical sorting"
+            },
+            {
+              "id": "3",
+              "text": "Random walking"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "BFS discovers vertices by minimum number of edges, fitting equal-cost crossings."
+        },
+        {
+          "id": "graphs-3",
+          "lessonId": "graphs",
+          "topic": "Choosing a Graph Strategy",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "An adjacency list stores what?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Neighbors of each vertex"
+            },
+            {
+              "id": "1",
+              "text": "Only vertex colors"
+            },
+            {
+              "id": "2",
+              "text": "Every possible path"
+            },
+            {
+              "id": "3",
+              "text": "Only the source"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Each vertex has a list of adjacent vertices or outgoing edges."
+        },
+        {
+          "id": "graphs-4",
+          "lessonId": "graphs",
+          "topic": "Choosing a Graph Strategy",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "An adjacency matrix for V vertices has how many cells?",
+          "options": [
+            {
+              "id": "0",
+              "text": "V squared"
+            },
+            {
+              "id": "1",
+              "text": "V"
+            },
+            {
+              "id": "2",
+              "text": "log V"
+            },
+            {
+              "id": "3",
+              "text": "Always 5"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "There is a cell for each ordered vertex pair, giving V times V cells."
+        },
+        {
+          "id": "graphs-5",
+          "lessonId": "graphs",
+          "topic": "Choosing a Graph Strategy",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "Can BFS always find minimum travel cost with unequal weights?",
+          "options": [
+            {
+              "id": "0",
+              "text": "No"
+            },
+            {
+              "id": "1",
+              "text": "Yes"
+            },
+            {
+              "id": "2",
+              "text": "Only with a visited set"
+            },
+            {
+              "id": "3",
+              "text": "Only using a queue"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Fewest edges can be more expensive than a longer route when weights differ."
+        },
+        {
+          "id": "graphs-6",
+          "lessonId": "graphs",
+          "topic": "Choosing a Graph Strategy",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": "What should guide algorithm choice?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Problem assumptions and required result"
+            },
+            {
+              "id": "1",
+              "text": "The shortest function name"
+            },
+            {
+              "id": "2",
+              "text": "Always use recursion"
+            },
+            {
+              "id": "3",
+              "text": "Vertex labels only"
+            }
+          ],
+          "correctOptionIds": [
+            "0"
+          ],
+          "explanation": "Correctness depends on matching assumptions such as weights, direction and required output."
+        }
+      ]
+    }
+  ]
+}
