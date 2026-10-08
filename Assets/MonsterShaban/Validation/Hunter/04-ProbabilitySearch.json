@@ -1,0 +1,13 @@
+{
+    "phase": "04-ProbabilitySearch",
+    "passed": [
+        "Search first visits last known evidence",
+        "Heading weights the forward room above the room behind",
+        "Search includes connected upper-floor hypotheses",
+        "An inspected empty room receives negative evidence",
+        "An empty search result cannot create player evidence",
+        "Rebuilding a search retains recent visited penalties",
+        "Candidate count stays bounded"
+    ],
+    "failed": []
+}

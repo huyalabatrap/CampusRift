@@ -1,0 +1,14 @@
+{
+    "phase": "01-Memory",
+    "passed": [
+        "Bounded observation history retains recent evidence",
+        "Latest visual position survives history eviction",
+        "Prediction cannot refresh real evidence or move its position",
+        "Confidence decays exponentially",
+        "Old evidence expires",
+        "Sequential sound evidence estimates a direction",
+        "Older sounds cannot replace newer evidence",
+        "Forget clears encounter observations"
+    ],
+    "failed": []
+}

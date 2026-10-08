@@ -1,0 +1,2 @@
+X F1->F11, car seen parked at F13: stairs are faster PASS: 23.2s, arrived=True, liftRides=0, links=0, maxPlanar=6.2m/s, maxVertical=4.1m/s, closedDoorOverlaps=0, ready=True
+    decision: lift X F1->F11 42s vs stairs 25s: stairs

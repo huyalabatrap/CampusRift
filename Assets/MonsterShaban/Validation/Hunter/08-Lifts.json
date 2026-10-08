@@ -1,0 +1,17 @@
+{
+    "phase": "08-Lifts",
+    "passed": [
+        "Lift lobbies are part of the topology (102/102)",
+        "Seeing the player step into a car makes the belief ride it",
+        "A car seen moving up past F3 cannot have dropped its rider below",
+        "An observed stop tells where the rider gets off",
+        "Right after the stop the belief is at the F5 landing",
+        "Seconds later it spreads from there (F5 and the adjacent floors), not across the campus",
+        "An empty open car rules out riders",
+        "Shaft guards exist where a shaft has walkable polygons (22)",
+        "Closed landing doors keep the monster out of the shaft (12/12)",
+        "A monster in the doorway holds the lift doors open",
+        "From the doorway it reaches a player pressed to the back of an upper-floor car (2.36 m, reach 2.6)"
+    ],
+    "failed": []
+}

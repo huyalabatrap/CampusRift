@@ -1,0 +1,14 @@
+{
+    "phase": "09-Navigation",
+    "passed": [
+        "A point off the walkable surface is not reported reachable",
+        "The monster heads for the closest walkable spot instead of freezing",
+        "A long multi-floor route survives small goal changes (route 41, GraphRoute -> GraphRoute)",
+        "The floor display is readable from the lobby, right under it",
+        "Car waiting at F1: the 12-floor climb takes the lift (lift X F1->F13 24s vs stairs 33s: lift)",
+        "A goal back on the same floor cancels the lift plan",
+        "Car seen parked at the top: the stairs win (lift X F1->F11 40s vs stairs 28s: stairs)",
+        "One floor up: the stairs win even with the car at hand (lift C F1->F2 10s vs stairs 4s: stairs)"
+    ],
+    "failed": []
+}

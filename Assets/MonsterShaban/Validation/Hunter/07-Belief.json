@@ -1,0 +1,15 @@
+{
+    "phase": "07-Belief",
+    "passed": [
+        "Belief runs on the shared campus topology",
+        "A sighting collapses the belief onto the observed place",
+        "Unobserved hypotheses spread over reachable places (46 nodes)",
+        "Hypotheses keep moving along the observed heading",
+        "Belief ignores the hidden player's true position",
+        "Places in plain view without the player are ruled out",
+        "A heard footstep pulls the belief to the sound",
+        "A fully contradicted belief reseeds from the last evidence",
+        "Belief update cost 0.03 ms per tick"
+    ],
+    "failed": []
+}

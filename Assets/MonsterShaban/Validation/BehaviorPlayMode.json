@@ -1,0 +1,24 @@
+{
+    "passed": [
+        "Exactly one Monster_Shaban",
+        "Yard FOV enters Chase",
+        "Vision respects configured maximum range (95m)",
+        "Vision respects FOV",
+        "Wall blocks sight; Search retains last evidence",
+        "Search begins at last seen position",
+        "Memory confidence decays",
+        "Search expires and returns to Patrol",
+        "Unseen heavy landing enters Investigate",
+        "Stale sound events ignored",
+        "Attack starts in range",
+        "Attack applies configured damage",
+        "Attack cooldown prevents repeated damage",
+        "Wall introduced during windup prevents damage",
+        "Ballistic prediction follows observed direction",
+        "Uncertain landing prediction rejected",
+        "3D audio uses configured distance rolloff",
+        "Wall muffles spatial audio",
+        "Direct audio recovers smoothly"
+    ],
+    "failed": []
+}

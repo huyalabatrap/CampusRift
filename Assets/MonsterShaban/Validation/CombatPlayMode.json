@@ -1,0 +1,20 @@
+{
+    "passed": [
+        "Attack starts in range",
+        "Windup has no early damage or blood",
+        "Attack animation is playing",
+        "Impact applies damage exactly once",
+        "Impact emits visible blood particles",
+        "Invulnerability rejects damage and blood",
+        "Recovery prevents a second strike",
+        "Animation recovers to original locomotion",
+        "Blood particles expire",
+        "Dodging out of range prevents damage and blood",
+        "Wall introduced during windup prevents damage and blood",
+        "Changing windup slows the animation and delays impact together",
+        "Retimed attack still causes one impact",
+        "Lethal hit emits blood before Game Over pauses the game",
+        "Defeated player rejects additional hits and effects"
+    ],
+    "failed": []
+}

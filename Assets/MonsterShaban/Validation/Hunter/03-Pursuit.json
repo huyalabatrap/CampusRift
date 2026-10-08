@@ -1,0 +1,11 @@
+{
+    "phase": "03-Pursuit",
+    "passed": [
+        "Distant targets receive a longer prediction horizon",
+        "Rapid turns shorten prediction",
+        "Prediction horizon is bounded",
+        "A 90 degree turn holds the previous prediction until reaction delay expires",
+        "Unstable direction lowers prediction confidence"
+    ],
+    "failed": []
+}

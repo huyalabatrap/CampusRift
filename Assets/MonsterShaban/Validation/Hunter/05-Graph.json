@@ -1,0 +1,11 @@
+{
+    "phase": "05-Graph",
+    "passed": [
+        "A star prefers lower-cost connection sequence",
+        "ETA length uses metres rather than weighted navigation cost",
+        "A blocked connection can use an alternate route",
+        "Campus graph has stair and door connections",
+        "Campus connections have valid indices and admissible costs"
+    ],
+    "failed": []
+}

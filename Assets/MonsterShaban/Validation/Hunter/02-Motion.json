@@ -1,0 +1,13 @@
+{
+    "phase": "02-Motion",
+    "passed": [
+        "Position samples estimate speed without Rigidbody",
+        "Trail is bounded",
+        "Straight trajectory has high coherence",
+        "Sudden turn produces turn rate and acceleration",
+        "Reacquisition cannot infer unseen travel velocity",
+        "Respawn/teleport discontinuity is rejected",
+        "Observed vertical trajectory marks floor transition"
+    ],
+    "failed": []
+}

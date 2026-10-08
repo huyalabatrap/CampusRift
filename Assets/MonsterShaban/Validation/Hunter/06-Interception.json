@@ -1,0 +1,12 @@
+{
+    "phase": "06-Interception",
+    "passed": [
+        "A real shortcut can beat a faster player to the exit",
+        "Chasing behind the faster player is not a valid intercept",
+        "Safety margin rejects a near tie",
+        "Existing monster owns the planner",
+        "Player and monster ETA use an actual NavMesh route",
+        "Destination hypotheses are bounded and lie ahead of the observed heading"
+    ],
+    "failed": []
+}
