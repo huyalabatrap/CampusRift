@@ -1,0 +1,18 @@
+from pathlib import Path
+def replace(path,old,new):
+    p=Path(path);s=p.read_text(encoding='utf-8');assert old in s,(path,old);p.write_text(s.replace(old,new,1),encoding='utf-8')
+replace('Assets/ARRift/Runtime/ARMonsterDirector.cs','if(field.Root==null||field.Shrine==null||field.Paused||Finished)return;','if(field.Root==null||field.Shrine==null||field.Paused)return;')
+replace('Assets/ARRift/Runtime/ARMonsterDirector.cs','remaining=6;Finished=false;}','remaining=6;Finished=Won=false;}else if(Finished)return;')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','field.PracticeActive=true;}Refresh();','field.PracticeActive=true;field.CheckLoad=true;}Refresh();')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','field.CheckLoad=phase>=Phase.Transition&&phase<=Phase.Play;','field.CheckLoad=phase==Phase.Warmup||phase>=Phase.Transition&&phase<=Phase.Play;')
+replace('Assets/ARRift/Runtime/ARBattleHUD.cs','result.gameObject.SetActive(director.Finished);','result.gameObject.SetActive(director.Finished&&!field.CheckLoad);')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','Mở/đóng ☰ một lần','Mở/đóng menu một lần')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','Giơ 👍 rồi 🤟','Giơ ngón cái lên rồi dấu I love you')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','Metrics.unique++;if(f.convertReadyMs','Metrics.unique++;Metrics.Reason("frame-"+caster.gestures.Decision);if(f.convertReadyMs')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','if(first==cell.g&&trialIntents==1){cell.correctUnique++;','if(first==cell.g&&trialIntents==1){cell.correctUnique++;if(trialIntent.HasValue)Metrics.firstValidIntent.Add(trialIntent.Value);if(trialSpan.HasValue)Metrics.captureSpan.Add(trialSpan.Value);')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','double? trialCast,trialVfx;','double? trialCast,trialVfx,trialIntent,trialSpan;')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','trialCast=trialVfx=null;','trialCast=trialVfx=trialIntent=trialSpan=null;')
+replace('Assets/ARRift/Runtime/ARGestureCheck.cs','if(first<0&&releaseReady)first=g;','if(first<0&&releaseReady){first=g;trialIntent=intent.triggerConsumeMs-intent.firstValidMs;trialSpan=intent.captureSpanMs;}')
+replace('Assets/ARRift/Runtime/ARReviewMetrics.cs','public double? clockError;','public double? clockError;public readonly ARMetricHistogram firstValidIntent=new ARMetricHistogram(),captureSpan=new ARMetricHistogram();')
+replace('Assets/ARRift/Runtime/ARReviewMetrics.cs','["firstValidCast"]=firstValidCast.Summary(),','["firstValidCast"]=firstValidCast.Summary(),["firstValidIntent"]=firstValidIntent.Summary(),["captureSpan"]=captureSpan.Summary(),')
+print('Final source adjustments applied')

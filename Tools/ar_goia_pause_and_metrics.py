@@ -1,0 +1,8 @@
+from pathlib import Path
+p=Path('Assets/ARRift/Runtime/FrameSampler.cs');s=p.read_text(encoding='utf-8-sig').replace('b.metadata.convertReadyMs=GestureRecognizerBridge.Now;pending=writing;PreviewPixels(b);', 'b.metadata.convertReadyMs=GestureRecognizerBridge.Now;if(sampling&&b.metadata.epoch==bridge.Epoch){pending=writing;PreviewPixels(b);}else Drop("pause-discard");');p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/GestureRecognizerBridge.cs');s=p.read_text(encoding='utf-8-sig').replace('if(native==null||Busy||!SamplingActive)return false;', 'if(native==null||Busy||!SamplingActive||metadata.epoch!=Epoch)return false;');p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/ARReviewMetrics.cs');s=p.read_text(encoding='utf-8-sig').replace('public int placementTimeouts,expectedRejects,wrongConfirm;', 'public int placementTimeouts,expectedRejects,wrongConfirm,placementSkips;').replace('["cold_ms"]=cold', '["cold_ms"]=cold,["skip"]=placementSkips');p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/ARGestureCheck.cs');s=p.read_text(encoding='utf-8-sig').replace('slotDone=true;if(slot<8){Metrics.placementTimes.Add(null);Metrics.placementTimeouts++;}else Metrics.expectedRejects++;}}', 'slotDone=true;Metrics.placementSkips++;if(slot<8){Metrics.placementTimes.Add(null);Metrics.placementTimeouts++;}}}')
+s=s.replace('Metrics.placementTimes.Count==8&&Metrics.active>=600', 'Metrics.placementTimes.Count==8&&Metrics.expectedRejects+Metrics.wrongConfirm==2&&Metrics.placementSkips==0&&Metrics.active>=600')
+s=s.replace('"Chuẩn bị thước, bàn đủ rộng và cáp USB":Stage', '"Chuẩn bị thước, bàn đủ rộng và cáp USB · Bộ nhận: "+bridge.DevDelegate:Stage')
+p.write_text(s,encoding='utf-8')

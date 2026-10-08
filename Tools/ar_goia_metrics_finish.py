@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('Assets/ARRift/Runtime/ARGestureCheck.cs');s=p.read_text(encoding='utf-8-sig')
+s=s.replace('double trialUntil;', 'double trialUntil;double? trialCast,trialVfx;')
+s=s.replace('trialSkip=false;releaseReady=', 'trialSkip=false;trialCast=trialVfx=null;releaseReady=')
+s=s.replace('if(first==cell.g&&trialIntents==1)cell.correctUnique++;', 'if(first==cell.g&&trialIntents==1){cell.correctUnique++;if(trialCast.HasValue){cell.latency.Add(trialCast.Value);Metrics.firstValidCast.Add(trialCast.Value);Metrics.skillCast[cell.g].Add(trialCast.Value);}if(trialVfx.HasValue){Metrics.triggerVfx.Add(trialVfx.Value);Metrics.skillVfx[cell.g].Add(trialVfx.Value);}}')
+s=s.replace('if(outcome==CastOutcome.Success&&Stage==Phase.Trials){double delay=GestureRecognizerBridge.Now-intent.firstValidMs;Metrics.firstValidCast.Add(delay);Metrics.skillCast[g].Add(delay);if(trialOpen)cell.latency.Add(delay);}', 'if(outcome==CastOutcome.Success&&Stage==Phase.Trials&&trialOpen&&g==cell.g&&first==g&&trialIntents==1)trialCast=GestureRecognizerBridge.Now-intent.firstValidMs;')
+s=s.replace('Metrics.triggerVfx.Add(now-intent.triggerConsumeMs);if(g>=0)Metrics.skillVfx[g].Add(now-intent.triggerConsumeMs);', 'if(trialOpen&&g==cell.g&&trialIntents<=1)trialVfx=now-intent.triggerConsumeMs;')
+s=s.replace('illustration.gameObject.SetActive(Stage==Phase.Trials&&trialOpen);','illustration.gameObject.SetActive(Stage==Phase.Trials&&trialOpen&&releaseReady);')
+p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/GestureGeometry.cs');s=p.read_text(encoding='utf-8-sig').replace('n.x<.02f||n.x>.98f||n.y<.02f||n.y>.98f', 'n.x<.02f*Mathf.Min(f.width,f.height)/Mathf.Max(1,f.width)||n.x>1-.02f*Mathf.Min(f.width,f.height)/Mathf.Max(1,f.width)||n.y<.02f*Mathf.Min(f.width,f.height)/Mathf.Max(1,f.height)||n.y>1-.02f*Mathf.Min(f.width,f.height)/Mathf.Max(1,f.height)');p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/GestureRecognizerBridge.cs');s=p.read_text(encoding='utf-8-sig').replace('Latest=frame;double now=Now;', 'Latest=frame;retries=0;double now=Now;');p.write_text(s,encoding='utf-8')

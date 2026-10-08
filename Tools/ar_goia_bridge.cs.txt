@@ -1,0 +1,106 @@
+using System;
+using System.Collections.Concurrent;
+using UnityEngine;
+using UnityEngine.Scripting;
+using Unity.Collections;
+namespace CampusRift.AR
+{
+    [DefaultExecutionOrder(-100)]
+    public sealed class GestureRecognizerBridge : MonoBehaviour,IGestureSource
+    {
+        public event Action<GestureFrame> Result;
+        public event Action Invalidated;
+        public string Error {get;private set;}="";
+        public GestureFrame Latest {get;private set;}
+        public float RecognitionFps {get;private set;}public float LatencyMs {get;private set;}
+        public string DelegateName {get;private set;}="MOCK";
+        public string DevDelegate="AUTO";public int Epoch {get;private set;}
+        public bool SamplingActive {get;private set;}=true;
+        public bool Ready {get;private set;}=true;public bool Recovering {get;private set;}
+        public bool Busy=>!Ready||inFlight||Recovering;
+        readonly ConcurrentQueue<GestureFrame> results=new ConcurrentQueue<GestureFrame>();
+        struct State {public int epoch;public string name,error;public bool ready;}
+        readonly ConcurrentQueue<State> states=new ConcurrentQueue<State>();
+        GestureFrame submitted;double previous,flightAt,recoveryAt,retryAt;bool inFlight;int retries;
+        public static double Now=>Time.realtimeSinceStartupAsDouble*1000;
+#if UNITY_ANDROID && !UNITY_EDITOR
+        AndroidJavaObject native;Listener listener;IntPtr submitMethod;
+        [Preserve]sealed class Listener:AndroidJavaProxy
+        {
+            readonly ConcurrentQueue<GestureFrame> frames;readonly ConcurrentQueue<State> states;public volatile bool accepting=true;
+            public Listener(ConcurrentQueue<GestureFrame> f,ConcurrentQueue<State> s):base("com.campusrift.gesture.GestureBridge$GestureListener"){frames=f;states=s;}
+            [Preserve]public void onResult(int epoch,long frameId,string label,float score,string handed,float[] landmarks,float[] world,string[] labels,float[] scores,bool full,bool hand,long ts,int w,int h,long startNs,long resultNs)
+            {if(accepting)frames.Enqueue(new GestureFrame{epoch=epoch,frameId=frameId,label=label,score=score,handed=handed,landmarks=landmarks,worldLandmarks=world,categoryLabels=labels,categoryScores=scores,fullScores=full,handPresent=hand,timestampMs=ts,width=w,height=h,inferStartMs=startNs/1e6,resultMs=resultNs/1e6});}
+            [Preserve]public void onState(int epoch,string name,bool ready,string error){if(accepting)states.Enqueue(new State{epoch=epoch,name=name,ready=ready,error=error});}
+        }
+#else
+        MockGestureSource mock;
+#endif
+        void Start()
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            Ready=false;flightAt=Now;
+            try{using(var unity=new AndroidJavaClass("com.unity3d.player.UnityPlayer"))using(var activity=unity.GetStatic<AndroidJavaObject>("currentActivity")){listener=new Listener(results,states);native=new AndroidJavaObject("com.campusrift.gesture.GestureBridge",activity,listener,DevDelegate);submitMethod=AndroidJNI.GetMethodID(native.GetRawClass(),"submit","(Ljava/nio/ByteBuffer;IIIJIJ)Z");}}catch(Exception e){Error=e.Message;Ready=false;}
+#else
+            mock=GetComponent<MockGestureSource>()??gameObject.AddComponent<MockGestureSource>();mock.Result+=ReceiveMock;
+#endif
+        }
+        public void SetSamplingActive(bool active)
+        {
+            if(SamplingActive==active)return;SamplingActive=active;Epoch++;
+            while(results.TryDequeue(out _)){}Latest=default;Invalidated?.Invoke();
+            // Flight remains owned by Kotlin until callback or serialized recovery.
+        }
+        public bool Submit(NativeArray<byte> rgba,GestureFrame metadata)
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            if(native==null||Busy||!SamplingActive)return false;IntPtr buffer=IntPtr.Zero;
+            try{metadata.epoch=Epoch;metadata.submitMs=Now;buffer=AndroidJNI.NewDirectByteBuffer(rgba);bool ok=AndroidJNI.CallBooleanMethod(native.GetRawObject(),submitMethod,new[]{new jvalue{l=buffer},new jvalue{i=metadata.width},new jvalue{i=metadata.height},new jvalue{i=metadata.rotation},new jvalue{j=metadata.timestampMs},new jvalue{i=metadata.epoch},new jvalue{j=metadata.frameId}});if(ok){submitted=metadata;inFlight=true;flightAt=Now;}return ok;}catch(Exception e){Error=e.Message;Recover();return false;}finally{if(buffer!=IntPtr.Zero)AndroidJNI.DeleteLocalRef(buffer);}
+#else
+            return false;
+#endif
+        }
+        public void SetDelegateGpu(bool enabled){DevDelegate=enabled?"GPU":"CPU";retries=0;Recover(!enabled);}
+        public void Retry(){retries=0;Recover(true);}
+        void Recover(bool cpu=true)
+        {
+            if(Recovering)return;Recovering=true;Ready=false;Epoch++;Latest=default;Invalidated?.Invoke();recoveryAt=Now;Error="Đang khôi phục nhận dạng";
+#if UNITY_ANDROID && !UNITY_EDITOR
+            native?.Call("recover",Epoch,cpu);
+#endif
+        }
+        void Update()
+        {
+            while(states.TryDequeue(out var s))
+            {
+                DelegateName=s.name;
+                if(s.ready){Ready=true;Recovering=false;inFlight=false;Error="";retryAt=0;}
+                else {Ready=false;Error=s.error;if(Recovering){Recovering=false;retryAt=Now+(retries==0?500:1000);}else retryAt=Now;}
+            }
+            while(results.TryDequeue(out var f))
+            {
+                if(f.frameId==submitted.frameId&&f.epoch==submitted.epoch)inFlight=false;
+                if(f.epoch!=Epoch||f.frameId!=submitted.frameId||!SamplingActive)continue;
+                f.rotation=submitted.rotation;f.displayMatrix=submitted.displayMatrix;f.hasDisplayMatrix=submitted.hasDisplayMatrix;f.sensorTimestamp=submitted.sensorTimestamp;
+                f.acquireMs=submitted.acquireMs;f.convertReadyMs=submitted.convertReadyMs;f.submitMs=submitted.submitMs;f.consumeMs=Now;
+                Receive(f);
+            }
+#if UNITY_ANDROID && !UNITY_EDITOR
+            if(Recovering&&Now-recoveryAt>2000){Error="Nhận dạng chưa phục hồi · Thử lại";return;}
+            if(!Recovering&&retryAt>0&&Now>=retryAt){retryAt=0;if(retries<2){retries++;Recover(true);}else Error="Nhận dạng lỗi · Thử lại";}
+            else if(!Recovering&&retryAt==0&&retries<2&&((inFlight&&Now-flightAt>=1000)||(!Ready&&Now-flightAt>=1000))){retries++;Recover(true);}
+#endif
+        }
+        void ReceiveMock(GestureFrame f){if(!SamplingActive)return;f.epoch=Epoch;f.frameId=f.timestampMs;f.handPresent=f.landmarks!=null&&f.landmarks.Length==63;f.acquireMs=f.convertReadyMs=f.submitMs=f.consumeMs=Now;Receive(f);}
+        void Receive(GestureFrame frame){Latest=frame;double now=Now;if(previous>0){float hz=(float)(1000/Math.Max(1,now-previous));RecognitionFps=RecognitionFps==0?hz:Mathf.Lerp(RecognitionFps,hz,.2f);}previous=now;LatencyMs=frame.acquireMs>0?(float)(now-frame.acquireMs):0;Result?.Invoke(frame);}
+        void OnDestroy()
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            if(listener!=null)listener.accepting=false;if(native!=null){native.Call("close");native.Dispose();native=null;}
+#else
+            if(mock!=null)mock.Result-=ReceiveMock;
+#endif
+            while(results.TryDequeue(out _)){}while(states.TryDequeue(out _)){}
+        }
+    }
+}

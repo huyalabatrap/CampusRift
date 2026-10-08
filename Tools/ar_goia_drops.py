@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('Assets/ARRift/Runtime/FrameSampler.cs');s=p.read_text(encoding='utf-8-sig')
+s=s.replace('try{if(conversion.status==XRCpuImage.AsyncConversionStatus.Ready)', 'try{if(conversion.status!=XRCpuImage.AsyncConversionStatus.Ready)Drop("convert");if(conversion.status==XRCpuImage.AsyncConversionStatus.Ready)')
+s=s.replace('if(!cameraManager.TryAcquireLatestCpuImage(out var image))return;', 'if(!cameraManager.TryAcquireLatestCpuImage(out var image)){Drop("acquire");return;}')
+s=s.replace('if(!deadline.Unique(image.timestamp))return;', 'if(!deadline.Unique(image.timestamp)){Drop("duplicate");return;}if(pending>=0)Drop("pending-replaced");')
+p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/ARGestureCheck.cs');s=p.read_text(encoding='utf-8-sig')
+s=s.replace('ARUI.Button(canvas,"THỬ LẠI NHẬN DẠNG"', 'ARUI.Button(canvas,"ĐỔI BỘ NHẬN",720,-205,320,()=>bridge.SelectDelegate(bridge.DevDelegate=="AUTO"?"CPU":bridge.DevDelegate=="CPU"?"GPU":"AUTO"));\n            ARUI.Button(canvas,"THỬ LẠI NHẬN DẠNG"')
+s=s.replace('canvas.Find("THỬ LẠI NHẬN DẠNG").gameObject.SetActive', 'canvas.Find("ĐỔI BỘ NHẬN").gameObject.SetActive(prepare);canvas.Find("THỬ LẠI NHẬN DẠNG").gameObject.SetActive')
+s=s.replace('var sampler=GetComponent<FrameSampler>();LastJson=', 'var sampler=GetComponent<FrameSampler>();if(sampler!=null)foreach(var pair in sampler.Drops)Metrics.drops[pair.Key]=pair.Value;LastJson=')
+p.write_text(s,encoding='utf-8')

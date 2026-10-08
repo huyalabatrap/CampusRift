@@ -1,0 +1,56 @@
+using System;
+using UnityEngine;
+namespace CampusRift.AR
+{
+    public enum FingerState { Folded,Neutral,Extended }
+    public sealed class GeometryResult
+    {
+        public readonly FingerState[] fingers={FingerState.Neutral,FingerState.Neutral,FingerState.Neutral,FingerState.Neutral,FingerState.Neutral};
+        public string label="None",reason="no-hand";public bool clear,veryClear,inFrame,quality,clipping,oversize;public Vector2 palm;
+        public string Fingers=>string.Join(" / ",Array.ConvertAll(fingers,f=>f.ToString()));
+        public bool Contradicts(string model)=>clear&&label!="None"&&label!=model;
+    }
+    public static class GestureGeometry
+    {
+        static Vector3 W(GestureFrame f,int i)=>new Vector3(f.worldLandmarks[i*3],f.worldLandmarks[i*3+1],f.worldLandmarks[i*3+2]);
+        static Vector2 P(GestureFrame f,int i)=>GestureCoordinates.Viewport(f,new Vector2(f.landmarks[i*3],f.landmarks[i*3+1]))*new Vector2(Screen.width,Screen.height);
+        static bool Finite(Vector3 v)=>float.IsFinite(v.x)&&float.IsFinite(v.y)&&float.IsFinite(v.z);
+        public static float JointAngle(Vector3 a,Vector3 b,Vector3 c)=>Vector3.Angle(a-b,c-b);
+        public static GeometryResult Evaluate(GestureFrame f,ARModeSettings settings=null)
+        {
+            var r=new GeometryResult();if(f.landmarks==null||f.landmarks.Length!=63)return r;
+            float shortEdge=Mathf.Max(1,Mathf.Min(Screen.width,Screen.height)),inset=.02f*shortEdge;
+            var min=Vector2.positiveInfinity;var max=Vector2.negativeInfinity;
+            int[] required={0,5,9,13,17,4,8,12,16,20};
+            for(int i=0;i<21;i++)
+            {
+                var n=new Vector3(f.landmarks[i*3],f.landmarks[i*3+1],f.landmarks[i*3+2]);if(!Finite(n)){r.reason="invalid-pixels";return r;}
+                var p=P(f,i);min=Vector2.Min(min,p);max=Vector2.Max(max,p);
+                if(Array.IndexOf(required,i)>=0&&(n.x<.02f||n.x>.98f||n.y<.02f||n.y>.98f||p.x<inset||p.x>Screen.width-inset||p.y<inset||p.y>Screen.height-inset))r.clipping=true;
+            }
+            r.palm=GestureCoordinates.Palm(f);var size=max-min;r.oversize=size.x>Screen.width*.95f||size.y>Screen.height*.95f;
+            r.inFrame=!r.clipping&&!r.oversize&&Mathf.Max(size.x,size.y)>=.08f*shortEdge;
+            r.reason=r.clipping?"clipped":r.oversize?"oversize":!r.inFrame?"too-small":"world-missing";
+            if(f.worldLandmarks==null||f.worldLandmarks.Length!=63)return r;
+            for(int i=0;i<21;i++)if(!Finite(W(f,i))){r.reason="world-nonfinite";return r;}
+            float s=Vector3.Distance(W(f,5),W(f,17));if(s<=.001f){r.reason="world-degenerate";return r;}
+            Vector3 x=(W(f,5)-W(f,17))/s,y=W(f,9)-W(f,0);float yn=y.magnitude;y-=x*Vector3.Dot(x,y);
+            if(yn<=.001f||y.magnitude/yn<=.1f){r.reason="world-basis";return r;}y.Normalize();Vector3 z=Vector3.Cross(x,y);
+            var q=new Vector3[21];for(int i=0;i<21;i++){var d=W(f,i)-W(f,0);q[i]=new Vector3(Vector3.Dot(d,x),Vector3.Dot(d,y),Vector3.Dot(d,z))/s;}
+            int[] parent={0,0,1,2,3,0,5,6,7,0,9,10,11,0,13,14,15,0,17,18,19};
+            for(int i=1;i<21;i++)if(Vector3.Distance(q[i],q[parent[i]])<=.05f){r.reason="world-bone";return r;}
+            float ext=settings!=null?settings.fingerExtendedAngle:150,fold=settings!=null?settings.fingerFoldedAngle:120;
+            for(int finger=1;finger<5;finger++){int m=5+(finger-1)*4;float pip=JointAngle(q[m],q[m+1],q[m+2]),dip=JointAngle(q[m+1],q[m+2],q[m+3]);r.fingers[finger]=pip>=ext&&dip>=ext?FingerState.Extended:pip<=fold?FingerState.Folded:FingerState.Neutral;}
+            float ip=JointAngle(q[2],q[3],q[4]),mcp=JointAngle(q[1],q[2],q[3]);
+            r.fingers[0]=ip>=ext&&mcp>=140&&Vector3.Distance(q[4],q[5])>=.5f?FingerState.Extended:ip<=fold||Vector3.Distance(q[4],q[9])<=.5f&&mcp<=fold?FingerState.Folded:FingerState.Neutral;
+            bool allExtended=true,allFolded=true;for(int i=1;i<5;i++){allExtended&=r.fingers[i]==FingerState.Extended;allFolded&=r.fingers[i]==FingerState.Folded;}
+            float palmPixel=Vector2.Distance(P(f,5),P(f,17)),margin=(settings!=null?settings.directionMargin:.15f)*palmPixel;
+            if(allExtended&&r.fingers[0]!=FingerState.Folded)r.label="Open_Palm";
+            else if(r.fingers[1]==FingerState.Extended&&r.fingers[2]==FingerState.Extended&&r.fingers[3]==FingerState.Folded&&r.fingers[4]==FingerState.Folded&&Vector3.Distance(q[8],q[12])>(settings!=null?settings.victorySeparation:.35f))r.label="Victory";
+            else if(r.fingers[1]==FingerState.Extended&&r.fingers[2]==FingerState.Folded&&r.fingers[3]==FingerState.Folded&&r.fingers[4]==FingerState.Folded&&r.fingers[0]!=FingerState.Extended&&P(f,8).y-P(f,5).y>=margin)r.label="Pointing_Up";
+            else if(allFolded&&r.fingers[0]==FingerState.Extended&&P(f,0).y-P(f,4).y>=margin)r.label="Thumb_Down";
+            else if(allFolded&&r.fingers[0]!=FingerState.Extended)r.label="Closed_Fist";
+            r.quality=true;r.clear=r.label!="None";r.veryClear=r.clear&&r.inFrame;r.reason="world-ok";return r;
+        }
+    }
+}
