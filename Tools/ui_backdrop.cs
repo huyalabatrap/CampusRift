@@ -1,0 +1,14 @@
+var camera=UnityEngine.Camera.main;
+var pos=camera.transform.position;var rot=camera.transform.rotation;var old=camera.targetTexture;
+var rt=new UnityEngine.RenderTexture(1920,1080,24);
+camera.transform.position=new UnityEngine.Vector3(110,85,-120);
+camera.transform.LookAt(new UnityEngine.Vector3(0,22,0));
+camera.targetTexture=rt;camera.Render();
+var active=UnityEngine.RenderTexture.active;UnityEngine.RenderTexture.active=rt;
+var tex=new UnityEngine.Texture2D(1920,1080,UnityEngine.TextureFormat.RGB24,false);
+tex.ReadPixels(new UnityEngine.Rect(0,0,1920,1080),0,0);tex.Apply();
+System.IO.Directory.CreateDirectory("Assets/CampusRiftUI/Art");
+System.IO.File.WriteAllBytes("Assets/CampusRiftUI/Art/CampusBackdrop.png",tex.EncodeToPNG());
+camera.targetTexture=old;camera.transform.SetPositionAndRotation(pos,rot);UnityEngine.RenderTexture.active=active;
+UnityEngine.Object.DestroyImmediate(tex);UnityEngine.Object.DestroyImmediate(rt);
+UnityEditor.AssetDatabase.Refresh();return "Captured existing campus without changing scene";

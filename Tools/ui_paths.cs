@@ -1,0 +1,1 @@
+return new {cwd=System.IO.Directory.GetCurrentDirectory(),data=UnityEngine.Application.dataPath,reportExists=System.IO.File.Exists("Artifacts/UI/UI_TEST_REPORT.json"),allRunners=UnityEngine.Resources.FindObjectsOfTypeAll<UIPlayValidation>().Length};

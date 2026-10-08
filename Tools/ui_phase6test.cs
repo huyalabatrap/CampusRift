@@ -1,0 +1,12 @@
+UIValidation.SetResolution(1920,1080);
+var state=CampusRift.UI.UIStateManager.Instance;state.EnterScene(true);state.Pause();state.OpenSettings();
+var manager=CampusRift.UI.SettingsManager.Instance;var original=manager.Current.Copy();
+var ui=UnityEngine.Object.FindAnyObjectByType<CampusRift.UI.SettingsUI>();
+ui.Volumes[3].value=.42f;ui.MouseSensitivity.value=1.25f;ui.InvertY.isOn=true;ui.Apply();
+float db;if(!manager.Mixer.GetFloat("MonsterVolume",out db)||UnityEngine.Mathf.Abs(db-20*UnityEngine.Mathf.Log10(.42f))>.02f)throw new System.Exception("Monster mixer value failed");
+if(UnityEngine.Mathf.Abs(manager.ReadSaved().MonsterVolume-.42f)>.001f)throw new System.Exception("Settings persistence failed");
+var player=UnityEngine.Object.FindAnyObjectByType<CampusRift.CampusExplorer>();
+if(UnityEngine.Mathf.Abs(player.mouseSensitivity-.15f)>.001f||!player.invertY)throw new System.Exception("Settings adapter failed");
+ui.Volumes[3].value=.1f;ui.Cancel();state.OpenSettings();if(UnityEngine.Mathf.Abs(ui.Volumes[3].value-.42f)>.001f)throw new System.Exception("Cancel failed");
+manager.Apply(original);state.Back();state.OpenSettings();
+return new {phase="6 PASS: apply, persisted reload, cancel, adapter",monsterDb=db,resolutionOptions=ui.Resolution.options.Count,qualityOptions=ui.Quality.options.Count};

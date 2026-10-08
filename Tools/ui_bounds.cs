@@ -1,0 +1,2 @@
+var roots=UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();var result=new System.Collections.Generic.List<string>();
+foreach(var root in roots){var rs=root.GetComponentsInChildren<UnityEngine.Renderer>();var b=new UnityEngine.Bounds(root.transform.position,UnityEngine.Vector3.zero);foreach(var r in rs)b.Encapsulate(r.bounds);result.Add(root.name+" "+b.ToString());}return result;
