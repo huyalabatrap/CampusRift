@@ -1,0 +1,698 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36615c6b79f6bd944a52e4dd0338fa55, type: 3}
+  m_Name: LocalizationCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Localization.LocalizationCatalog
+  vietnameseFont: {fileID: 11400000, guid: 3ccd8cf17f595104fbc7cca057e34adb, type: 2}
+  entries:
+  - en: SETTINGS
+    vi: "C\xC0I \u0110\u1EB6T"
+  - en: LANGUAGE
+    vi: "NG\xD4N NG\u1EEE"
+  - en: PLAY
+    vi: "B\u1EAET \u0110\u1EA6U"
+  - en: CONTINUE
+    vi: "TI\u1EBEP T\u1EE4C"
+  - en: COURSES
+    vi: "KH\xD3A H\u1ECCC"
+  - en: CREDITS
+    vi: "\u0110\u1ED8I NG\u0168"
+  - en: QUIT
+    vi: "THO\xC1T"
+  - en: QUIT GAME
+    vi: "THO\xC1T GAME"
+  - en: BACK
+    vi: "QUAY L\u1EA0I"
+  - en: APPLY
+    vi: "\xC1P D\u1EE4NG"
+  - en: CANCEL / BACK
+    vi: "H\u1EE6Y / QUAY L\u1EA0I"
+  - en: CANCEL
+    vi: "H\u1EE6Y"
+  - en: RESUME
+    vi: "TI\u1EBEP T\u1EE4C"
+  - en: RESTART
+    vi: "CH\u01A0I L\u1EA0I"
+  - en: MAIN MENU
+    vi: "MENU CH\xCDNH"
+  - en: RETRY
+    vi: "TH\u1EEC L\u1EA0I"
+  - en: PLAY AGAIN
+    vi: "CH\u01A0I L\u1EA0I"
+  - en: RETURN TO MENU
+    vi: "V\u1EC0 MENU"
+  - en: RETURN TO GAME
+    vi: "V\u1EC0 TR\xD2 CH\u01A0I"
+  - en: RETURN TO PAUSE
+    vi: "V\u1EC0 T\u1EA0M D\u1EEANG"
+  - en: RETURN
+    vi: "QUAY L\u1EA0I"
+  - en: NO SAVE
+    vi: "CH\u01AFA C\xD3 TI\u1EBEN \u0110\u1ED8"
+  - en: VIDEO
+    vi: "H\xCCNH \u1EA2NH"
+  - en: AUDIO
+    vi: "\xC2M THANH"
+  - en: CONTROLS
+    vi: "\u0110I\u1EC0U KHI\u1EC2N"
+  - en: GAMEPLAY
+    vi: "L\u1ED0I CH\u01A0I"
+  - en: FULLSCREEN
+    vi: "TO\xC0N M\xC0N H\xCCNH"
+  - en: RESOLUTION
+    vi: "\u0110\u1ED8 PH\xC2N GI\u1EA2I"
+  - en: QUALITY
+    vi: "CH\u1EA4T L\u01AF\u1EE2NG"
+  - en: V-SYNC
+    vi: "\u0110\u1ED2NG B\u1ED8 KHUNG H\xCCNH"
+  - en: MASTER
+    vi: "T\u1ED4NG"
+  - en: MUSIC
+    vi: "NH\u1EA0C"
+  - en: SFX
+    vi: "HI\u1EC6U \u1EE8NG"
+  - en: MONSTER
+    vi: "QU\xC1I V\u1EACT"
+  - en: UI
+    vi: "GIAO DI\u1EC6N"
+  - en: SKY BRIGHTNESS
+    vi: "\u0110\u1ED8 S\xC1NG B\u1EA6U TR\u1EDCI"
+  - en: NIGHT
+    vi: "\u0110\xCAM"
+  - en: DAY
+    vi: "NG\xC0Y"
+  - en: NIGHT  /  DAY  -  Preview the sky, then Apply to save.
+    vi: "\u0110\xCAM / NG\xC0Y \u2014 Xem tr\u01B0\u1EDBc b\u1EA7u tr\u1EDDi, ch\u1ECDn \xC1P D\u1EE4NG \u0111\u1EC3 l\u01B0u."
+  - en: Choose your display mode and visual quality.
+    vi: "Ch\u1ECDn ch\u1EBF \u0111\u1ED9 hi\u1EC3n th\u1ECB v\xE0 ch\u1EA5t l\u01B0\u1EE3ng h\xECnh \u1EA3nh."
+  - en: CONTROL MODE
+    vi: "KI\u1EC2U \u0110I\u1EC0U KHI\u1EC2N"
+  - en: PC / SELECTED
+    vi: "PC / \u0110\xC3 CH\u1ECCN"
+  - en: MOBILE / SELECTED
+    vi: "C\u1EA2M \u1EE8NG / \u0110\xC3 CH\u1ECCN"
+  - en: MOBILE
+    vi: "C\u1EA2M \u1EE8NG"
+  - en: TOUCH SENSITIVITY
+    vi: "\u0110\u1ED8 NH\u1EA0Y C\u1EA2M \u1EE8NG"
+  - en: BUTTON SCALE
+    vi: "K\xCDCH TH\u01AF\u1EDAC N\xDAT"
+  - en: BUTTON OPACITY
+    vi: "\u0110\u1ED8 R\xD5 C\u1EE6A N\xDAT"
+  - en: JOYSTICK OUTER EDGE SPRINT
+    vi: "CH\u1EA0Y NHANH \u1EDE R\xCCA JOYSTICK"
+  - en: TOUCH HAPTICS (ANDROID)
+    vi: "RUNG C\u1EA2M \u1EE8NG (ANDROID)"
+  - en: MOUSE SENSITIVITY
+    vi: "\u0110\u1ED8 NH\u1EA0Y CHU\u1ED8T"
+  - en: CAMERA ZOOM SENSITIVITY
+    vi: "\u0110\u1ED8 NH\u1EA0Y THU PH\xD3NG"
+  - en: FIELD OF VIEW
+    vi: "G\xD3C NH\xCCN"
+  - en: INVERT Y
+    vi: "\u0110\u1EA2O TR\u1EE4C Y"
+  - en: Mouse controls orbit; camera sensitivity controls scroll zoom.
+    vi: "Chu\u1ED9t xoay g\xF3c nh\xECn; \u0111\u1ED9 nh\u1EA1y camera \u0111i\u1EC1u ch\u1EC9nh thu ph\xF3ng b\u1EB1ng con l\u0103n."
+  - en: SETTINGS SAVED
+    vi: "\u0110\xC3 L\u01AFU C\xC0I \u0110\u1EB6T"
+  - en: Very Low
+    vi: "R\u1EA5t th\u1EA5p"
+  - en: Mobile
+    vi: "Di \u0111\u1ED9ng"
+  - en: Low
+    vi: "Th\u1EA5p"
+  - en: Medium
+    vi: "Trung b\xECnh"
+  - en: High
+    vi: Cao
+  - en: Very High
+    vi: "R\u1EA5t cao"
+  - en: Ultra
+    vi: "T\u1ED1i \u0111a"
+  - en: Option
+    vi: "T\xF9y ch\u1ECDn"
+  - en: KNOWLEDGE IS POWER
+    vi: "TRI TH\u1EE8C = S\u1EE8C M\u1EA0NH"
+  - en: ANOMALY DIVISION
+    vi: "\u0110\u01A0N V\u1ECA D\u1ECA TH\u01AF\u1EDCNG"
+  - en: PREFERENCES
+    vi: "T\xD9Y CH\u1EC8NH"
+  - en: THE WORLD BEYOND THE CLASSROOM
+    vi: "TH\u1EBE GI\u1EDAI B\xCAN NGO\xC0I L\u1EDAP H\u1ECCC"
+  - en: RIFT ARTS
+    vi: "K\u1EF8 N\u0102NG KHE N\u1EE8T"
+  - en: LEARN
+    vi: "H\u1ECCC H\u1ECEI"
+  - en: BREAK THROUGH
+    vi: "\u0110\u1ED8T PH\xC1"
+  - en: SURVIVE
+    vi: "SINH T\u1ED2N"
+  - en: SCROLL TO VIEW ALL CREDITS
+    vi: "CU\u1ED8N \u0110\u1EC2 XEM TO\xC0N B\u1ED8 \u0110\u1ED8I NG\u0168"
+  - en: Attribution / license details to be added.
+    vi: "Th\xF4ng tin t\xE1c gi\u1EA3 v\xE0 gi\u1EA5y ph\xE9p s\u1EBD \u0111\u01B0\u1EE3c b\u1ED5 sung."
+  - en: GAME DEVELOPMENT
+    vi: "PH\xC1T TRI\u1EC2N GAME"
+  - en: 3D ASSETS
+    vi: "T\xC0I NGUY\xCAN 3D"
+  - en: TOOLS
+    vi: "C\xD4NG C\u1EE4"
+  - en: SPECIAL THANKS
+    vi: "L\u1EDCI C\u1EA2M \u01A0N"
+  - en: PAUSED
+    vi: "T\u1EA0M D\u1EEANG"
+  - en: Take a breath. The rift can wait.
+    vi: "H\xEDt th\u1EDF m\u1ED9t ch\xFAt. Khe n\u1EE9t c\xF3 th\u1EC3 ch\u1EDD."
+  - en: ESC  /  RESUME
+    vi: "ESC / TI\u1EBEP T\u1EE4C"
+  - en: VICTORY
+    vi: "CHI\u1EBEN TH\u1EAENG"
+  - en: DEFEATED
+    vi: "TH\u1EA4T B\u1EA0I"
+  - en: Stand up. Try again.
+    vi: "\u0110\u1EE9ng d\u1EADy. Th\u1EED th\xEAm l\u1EA7n n\u1EEFa."
+  - en: THE RIFT CLAIMED ANOTHER
+    vi: "TH\xCAM M\u1ED8T NG\u01AF\u1EDCI G\u1EE4C NG\xC3 TR\u01AF\u1EDAC KHE N\u1EE8T"
+  - en: THE MONSTER HAS FALLEN
+    vi: "QU\xC1I V\u1EACT \u0110\xC3 B\u1ECA H\u1EA0 G\u1EE4C"
+  - en: You defeated Shaban. Campus is safe.
+    vi: "B\u1EA1n \u0111\xE3 h\u1EA1 g\u1EE5c Shaban. Khu\xF4n vi\xEAn \u0111\xE3 an to\xE0n."
+  - en: OBJECTIVE
+    vi: "M\u1EE4C TI\xCAU"
+  - en: Defeat Shaban to escape.
+    vi: "H\u1EA1 g\u1EE5c Shaban \u0111\u1EC3 tho\xE1t kh\u1ECFi \u0111\xE2y."
+  - en: Escape from the monster.
+    vi: "Tho\xE1t kh\u1ECFi qu\xE1i v\u1EADt."
+  - en: EXPLORER  /  VITALS
+    vi: "NH\xC0 TH\xC1M HI\u1EC2M / TH\u1EC2 TR\u1EA0NG"
+  - en: MONSTER NEARBY
+    vi: "QU\xC1I V\u1EACT \u1EDE G\u1EA6N"
+  - en: ENERGY
+    vi: "N\u0102NG L\u01AF\u1EE2NG"
+  - en: RECOVERING
+    vi: "\u0110ANG H\u1ED2I PH\u1EE4C"
+  - en: RECOVER
+    vi: "H\u1ED2I PH\u1EE4C"
+  - en: BOOST
+    vi: "T\u0102NG T\u1ED0C"
+  - en: SPRINT
+    vi: "CH\u1EA0Y NHANH"
+  - en: JUMP
+    vi: "NH\u1EA2Y"
+  - en: LOOK
+    vi: "G\xD3C NH\xCCN"
+  - en: MOVE
+    vi: "DI CHUY\u1EC2N"
+  - en: Move
+    vi: "Di chuy\u1EC3n"
+  - en: Sprint
+    vi: "Ch\u1EA1y nhanh"
+  - en: Jump
+    vi: "Nh\u1EA3y"
+  - en: Elevator
+    vi: "Thang m\xE1y"
+  - en: Pause
+    vi: "T\u1EA1m d\u1EEBng"
+  - en: PAUSE
+    vi: "T\u1EA0M D\u1EEANG"
+  - en: READY
+    vi: "S\u1EB4N S\xC0NG"
+  - en: LOCKED
+    vi: "\u0110\xC3 KH\xD3A"
+  - en: EMPTY
+    vi: "\u0110\xC3 H\u1EBET"
+  - en: UNAVAILABLE
+    vi: "CH\u01AFA TH\u1EC2 D\xD9NG"
+  - en: INTERACT
+    vi: "T\u01AF\u01A0NG T\xC1C"
+  - en: OPEN DOOR
+    vi: "M\u1EDE C\u1EECA"
+  - en: SELECT FLOOR
+    vi: "CH\u1ECCN T\u1EA6NG"
+  - en: CALL LIFT
+    vi: "G\u1ECCI THANG M\xC1Y"
+  - en: LIFT
+    vi: "THANG M\xC1Y"
+  - en: Floor
+    vi: "T\u1EA7ng"
+  - en: FLOOR
+    vi: "T\u1EA6NG"
+  - en: MOVING
+    vi: "\u0110ANG DI CHUY\u1EC2N"
+  - en: WAIT
+    vi: "CH\u1EDC"
+  - en: CLOSE
+    vi: "\u0110\xD3NG"
+  - en: BREAKTHROUGH AVAILABLE
+    vi: "\u0110\xC3 \u0110\u1EA0T \u0110\u1ED8T PH\xC1 L\u1EDAN"
+  - en: BREAKTHROUGHS
+    vi: "S\u1ED0 L\u1EA6N \u0110\u1ED8T PH\xC1"
+  - en: MAJOR BREAKTHROUGH
+    vi: "\u0110\u1EA0I \u0110\u1ED8T PH\xC1"
+  - en: BREAKTHROUGH
+    vi: "\u0110\u1ED8T PH\xC1"
+  - en: NEW SKILL UNLOCKED
+    vi: "\u0110\xC3 M\u1EDE K\u1EF8 N\u0102NG M\u1EDAI"
+  - en: NEXT SKILL IN
+    vi: "K\u1EF8 N\u0102NG TI\u1EBEP SAU"
+  - en: MAX HP
+    vi: "M\xC1U T\u1ED0I \u0110A"
+  - en: MOVEMENT
+    vi: "T\u1ED0C \u0110\u1ED8 DI CHUY\u1EC2N"
+  - en: ENERGY CAPACITY
+    vi: "N\u0102NG L\u01AF\u1EE2NG T\u1ED0I \u0110A"
+  - en: STAT LIMIT REACHED / MASTERY ADVANCED
+    vi: "\u0110\xC3 \u0110\u1EA0T TR\u1EA6N CH\u1EC8 S\u1ED0 / TRI TH\u1EE8C V\u1EAAN TI\u1EBEN B\u1ED8"
+  - en: A new cycle begins. Your unlocked power stays with you.
+    vi: "Chu k\u1EF3 m\u1EDBi b\u1EAFt \u0111\u1EA7u. S\u1EE9c m\u1EA1nh \u0111\xE3 m\u1EDF v\u1EABn \u0111\u1ED3ng h\xE0nh c\xF9ng b\u1EA1n."
+  - en: more breakthroughs to your next skill.
+    vi: "l\u1EA7n \u0111\u1ED9t ph\xE1 n\u1EEFa \u0111\u1EC3 m\u1EDF k\u1EF9 n\u0103ng ti\u1EBFp theo."
+  - en: CONTINUE LEARNING
+    vi: "TI\u1EBEP T\u1EE4C H\u1ECCC"
+  - en: Learn. Prove your knowledge. Return stronger.
+    vi: "H\u1ECDc h\u1ECFi. Ch\u1EE9ng minh tri th\u1EE9c. Tr\u1EDF l\u1EA1i m\u1EA1nh m\u1EBD h\u01A1n."
+  - en: SURVIVAL FIELDWORK
+    vi: "TH\u1EF0C \u0110\u1ECAA SINH T\u1ED2N"
+  - en: Studying pauses the hunt.
+    vi: "Th\u1EDDi gian s\u0103n \u0111u\u1ED5i t\u1EA1m d\u1EEBng khi b\u1EA1n h\u1ECDc."
+  - en: Each first mastery grants one breakthrough. Retakes improve knowledge without farming power.
+    vi: "M\u1ED7i b\xE0i v\u01B0\u1EE3t qua l\u1EA7n \u0111\u1EA7u cho m\u1ED9t \u0111\u1ED9t ph\xE1. Thi l\u1EA1i gi\xFAp c\u1EE7ng c\u1ED1 ki\u1EBFn th\u1EE9c, kh\xF4ng c\u1EA5p th\xEAm s\u1EE9c m\u1EA1nh."
+  - en: mastered
+    vi: "\u0111\xE3 l\u0129nh h\u1ED9i"
+  - en: MASTERED
+    vi: "\u0110\xC3 L\u0128NH H\u1ED8I"
+  - en: QUIZ READY
+    vi: "S\u1EB4N S\xC0NG KI\u1EC2M TRA"
+  - en: READ
+    vi: "\u0110\xC3 \u0110\u1ECCC"
+  - en: pass prerequisites
+    vi: "v\u01B0\u1EE3t qua b\xE0i tr\u01B0\u1EDBc"
+  - en: survive
+    vi: "sinh t\u1ED3n"
+  - en: PAGE
+    vi: TRANG
+  - en: EXAMPLE
+    vi: "V\xCD D\u1EE4"
+  - en: REMEMBER
+    vi: "GHI NH\u1EDA"
+  - en: PREVIOUS PAGE
+    vi: "TRANG TR\u01AF\u1EDAC"
+  - en: READ & NEXT PAGE
+    vi: "\u0110\xC3 \u0110\u1ECCC / TRANG TI\u1EBEP"
+  - en: COMPLETE READING
+    vi: "HO\xC0N TH\xC0NH B\xC0I H\u1ECCC"
+  - en: START QUIZ
+    vi: "B\u1EAET \u0110\u1EA6U KI\u1EC2M TRA"
+  - en: LESSON COMPLETE
+    vi: "\u0110\xC3 HO\xC0N TH\xC0NH B\xC0I H\u1ECCC"
+  - en: REVIEW LAST ATTEMPT
+    vi: "XEM L\u1EA6N THI G\u1EA6N NH\u1EA4T"
+  - en: Draw
+    vi: "L\u1EA5y ng\u1EABu nhi\xEAn"
+  - en: random questions. Pass at
+    vi: "c\xE2u h\u1ECFi. \u0110\u1EA1t t\u1EEB"
+  - en: Mistakes have explanations. Failing never costs health, items or levels.
+    vi: "M\u1ED7i l\u1ED7i sai \u0111\u1EC1u c\xF3 gi\u1EA3i th\xEDch. Thi tr\u01B0\u1EE3t kh\xF4ng l\xE0m m\u1EA5t m\xE1u, v\u1EADt ph\u1EA9m hay c\u1EA5p \u0111\u1ED9."
+  - en: KNOWLEDGE TRIAL
+    vi: "TH\u1EEC TH\xC1CH TRI TH\u1EE8C"
+  - en: PASS AT
+    vi: "\u0110\u1EA0T T\u1EEA"
+  - en: QUIZ PASSED
+    vi: "V\u01AF\u1EE2T QUA KI\u1EC2M TRA"
+  - en: KEEP LEARNING
+    vi: "TI\u1EBEP T\u1EE4C R\xC8N LUY\u1EC6N"
+  - en: LET'S REVIEW
+    vi: "C\xD9NG XEM L\u1EA0I"
+  - en: CORRECT ANSWER
+    vi: "\u0110\xC1P \xC1N \u0110\xDANG"
+  - en: YOUR ANSWER
+    vi: "\u0110\xC1P \xC1N C\u1EE6A B\u1EA0N"
+  - en: INCORRECT
+    vi: SAI
+  - en: CORRECT
+    vi: "\u0110\xDANG"
+  - en: QUESTION
+    vi: "C\xC2U H\u1ECEI"
+  - en: NEXT QUESTION
+    vi: "C\xC2U TI\u1EBEP THEO"
+  - en: VIEW RESULT
+    vi: "XEM K\u1EBET QU\u1EA2"
+  - en: PASS
+    vi: "\u0110\u1EA0T"
+  - en: FAIL
+    vi: "CH\u01AFA \u0110\u1EA0T"
+  - en: REQUIRED
+    vi: "Y\xCAU C\u1EA6U"
+  - en: Knowledge mastered. Your power has grown.
+    vi: "B\u1EA1n \u0111\xE3 l\xE0m ch\u1EE7 ki\u1EBFn th\u1EE9c. S\u1EE9c m\u1EA1nh \u0111\xE3 t\u0103ng l\xEAn."
+  - en: Already mastered. Your best score is saved; no duplicate reward.
+    vi: "B\u1EA1n \u0111\xE3 l\u0129nh h\u1ED9i b\xE0i n\xE0y. \u0110i\u1EC3m cao nh\u1EA5t \u0111\u01B0\u1EE3c l\u01B0u; kh\xF4ng c\u1EA5p th\u01B0\u1EDFng tr\xF9ng."
+  - en: No power lost. Review, retry, or return to the hunt whenever you wish.
+    vi: "Kh\xF4ng m\u1EA5t s\u1EE9c m\u1EA1nh. B\u1EA1n c\xF3 th\u1EC3 \xF4n b\xE0i, thi l\u1EA1i ho\u1EB7c tr\u1EDF l\u1EA1i cu\u1ED9c s\u0103n b\u1EA5t c\u1EE9 l\xFAc n\xE0o."
+  - en: REVIEW ANSWERS
+    vi: "XEM L\u1EA0I \u0110\xC1P \xC1N"
+  - en: RETRY QUIZ
+    vi: "THI L\u1EA0I"
+  - en: REVIEW LESSON
+    vi: "\xD4N L\u1EA0I B\xC0I"
+  - en: TRIAL REVIEW
+    vi: "XEM L\u1EA0I B\xC0I KI\u1EC2M TRA"
+  - en: 'You:'
+    vi: "B\u1EA1n ch\u1ECDn:"
+  - en: 'Answer:'
+    vi: "\u0110\xE1p \xE1n:"
+  - en: SCROLL / SWIPE TO EXPLORE  /  PROGRESS SAVED
+    vi: "CU\u1ED8N / VU\u1ED0T \u0110\u1EC2 XEM TH\xCAM / \u0110\xC3 L\u01AFU TI\u1EBEN \u0110\u1ED8"
+  - en: 'SAVE PENDING:'
+    vi: "CH\u01AFA L\u01AFU \u0110\u01AF\u1EE2C:"
+  - en: OF
+    vi: "TR\xCAN"
+  - en: GIANT HAND SEAL
+    vi: "THI\xCAN TH\u1EE6 TR\u1EA4N \xC1P"
+  - en: DAI THU AN
+    vi: "\u0110\u1EA0I TH\u1EE6 \u1EA4N"
+  - en: VOID WALL
+    vi: "H\u01AF KH\xD4NG B\xCDCH"
+  - en: HU KHONG BICH
+    vi: "H\u01AF KH\xD4NG B\xCDCH"
+  - en: PHANTOM DECOY
+    vi: "HUY\u1EC4N \u1EA2NH D\u1EAAN D\u1EE4"
+  - en: HUYEN ANH DAN DU
+    vi: "HUY\u1EC4N \u1EA2NH D\u1EAAN D\u1EE4"
+  - en: PHASE THROUGH YOUR WALL
+    vi: "\u0110I XUY\xCAN T\u01AF\u1EDCNG C\u1EE6A B\u1EA0N"
+  - en: LEARN / 5 BREAKTHROUGHS TO UNLOCK SEAL
+    vi: "H\u1ECCC / \u0110\u1ED8T PH\xC1 5 L\u1EA6N \u0110\u1EC2 M\u1EDE THI\xCAN TH\u1EE6"
+  - en: LEARNING REWARD / LOCKED
+    vi: "PH\u1EA6N TH\u01AF\u1EDENG TRI TH\u1EE8C / \u0110\xC3 KH\xD3A"
+  - en: TARGET LOCKED
+    vi: "\u0110\xC3 KH\xD3A M\u1EE4C TI\xCAU"
+  - en: RELEASE TO SEAL
+    vi: "TH\u1EA2 \u0110\u1EC2 TR\u1EA4N \xC1P"
+  - en: DESCENDING
+    vi: "GI\xC1NG XU\u1ED0NG"
+  - en: AUTO LOCK NEAREST MONSTER
+    vi: "T\u1EF0 KH\xD3A QU\xC1I V\u1EACT G\u1EA6N NH\u1EA4T"
+  - en: SEAL RECHARGING
+    vi: "THI\xCAN TH\u1EE6 \u0110ANG H\u1ED2I"
+  - en: NO MONSTER IN RANGE
+    vi: "KH\xD4NG C\xD3 QU\xC1I V\u1EACT TRONG T\u1EA6M"
+  - en: SEAL INVOKED
+    vi: "\u0110\xC3 TRI\u1EC6U H\u1ED2I THI\xCAN TH\u1EE6"
+  - en: SEAL DISPERSED
+    vi: "THI\xCAN TH\u1EE6 TAN BI\u1EBEN"
+  - en: SEAL IMPACT
+    vi: "THI\xCAN TH\u1EE6 GI\xC1NG \u0110\xD2N"
+  - en: SEAL BREAK
+    vi: "\u1EA4N PH\xC1"
+  - en: TARGET DEFEATED
+    vi: "\u0110\xC3 H\u1EA0 M\u1EE4C TI\xCAU"
+  - en: DIRECT IMPACT
+    vi: "TR\xDANG \u0110\xCDCH"
+  - en: TARGET SUPPRESSED
+    vi: "M\u1EE4C TI\xCAU B\u1ECA TR\u1EA4N \xC1P"
+  - en: RELEASE PHANTOM
+    vi: "TH\u1EA2 HUY\u1EC4N \u1EA2NH"
+  - en: RELEASE Q
+    vi: "TH\u1EA2 Q"
+  - en: DEPLOY
+    vi: "D\u1EF0NG T\u01AF\u1EDCNG"
+  - en: WHEEL NEAR/FAR
+    vi: "L\u0102N CHU\u1ED8T XA/G\u1EA6N"
+  - en: RMB CANCEL
+    vi: "CHU\u1ED8T PH\u1EA2I \u0110\u1EC2 H\u1EE6Y"
+  - en: LOCKED ON THREAT
+    vi: "\u0110\xC3 KH\xD3A M\u1ED0I \u0110E D\u1ECCA"
+  - en: 'CANNOT PLACE:'
+    vi: "KH\xD4NG TH\u1EC2 \u0110\u1EB6T:"
+  - en: 'TAP: INSTANT WALL'
+    vi: "NH\u1EA4N: D\u1EF0NG NGAY"
+  - en: 'HOLD: AIM'
+    vi: "GI\u1EEE: NG\u1EAEM"
+  - en: NO CHARGES
+    vi: "H\u1EBET L\u01AF\u1EE2T D\xD9NG"
+  - en: WALL RECHARGING
+    vi: "T\u01AF\u1EDCNG \u0110ANG H\u1ED2I"
+  - en: WALL DEPLOYED
+    vi: "\u0110\xC3 D\u1EF0NG T\u01AF\u1EDCNG"
+  - en: LINE OF SIGHT BLOCKED
+    vi: "T\u1EA6M NH\xCCN B\u1ECA CHE"
+  - en: OUT OF RANGE
+    vi: "NGO\xC0I T\u1EA6M"
+  - en: MOVE AWAY FROM WALL
+    vi: "R\u1EDCI XA B\u1EE8C T\u01AF\u1EDCNG"
+  - en: MOVING LIFT
+    vi: "THANG M\xC1Y \u0110ANG CH\u1EA0Y"
+  - en: NO GROUND
+    vi: "KH\xD4NG C\xD3 M\u1EB6T \u0110\u1EA4T"
+  - en: TOO CLOSE
+    vi: "QU\xC1 G\u1EA6N"
+  - en: NOT ENOUGH SPACE
+    vi: "KH\xD4NG \u0110\u1EE6 CH\u1ED6"
+  - en: CEILING TOO LOW
+    vi: "TR\u1EA6N QU\xC1 TH\u1EA4P"
+  - en: INVALID TARGET
+    vi: "M\u1EE4C TI\xCAU KH\xD4NG H\u1EE2P L\u1EC6"
+  - en: THROW
+    vi: "N\xC9M"
+  - en: HAND
+    vi: "THI\xCAN TH\u1EE6"
+  - en: WALL
+    vi: "K\u1EBET GI\u1EDAI"
+  - en: PHANTOM
+    vi: "HUY\u1EC4N \u1EA2NH"
+  - en: AIMING
+    vi: "\u0110ANG NG\u1EAEM"
+  - en: CASTING
+    vi: "\u0110ANG THI TRI\u1EC2N"
+  - en: COOLDOWN
+    vi: "H\u1ED2I CHI\xCAU"
+  - en: NO CHARGE
+    vi: "H\u1EBET L\u01AF\u1EE2T"
+  - en: SPRINT ON
+    vi: "B\u1EACT CH\u1EA0Y NHANH"
+  - en: SPRINT OFF
+    vi: "T\u1EAET CH\u1EA0Y NHANH"
+  - en: RECHARGING
+    vi: "\u0110ANG H\u1ED2I"
+  - en: BOOST EMPTY
+    vi: "H\u1EBET N\u0102NG L\u01AF\u1EE2NG"
+  - en: ELEVATOR
+    vi: "THANG M\xC1Y"
+  - en: Select floor with arrows; Enter to confirm
+    vi: "Ch\u1ECDn t\u1EA7ng b\u1EB1ng ph\xEDm m\u0169i t\xEAn; Enter \u0111\u1EC3 x\xE1c nh\u1EADn"
+  - en: 'Close panel [Esc]'
+    vi: "\u0110\xF3ng b\u1EA3ng [Esc]"
+  - en: Moving to floor
+    vi: "\u0110ang \u0111\u1EBFn t\u1EA7ng"
+  - en: Please wait
+    vi: "Vui l\xF2ng ch\u1EDD"
+  - en: Doors opening
+    vi: "C\u1EEDa \u0111ang m\u1EDF"
+  - en: Doors closing / Stand inside the cabin
+    vi: "C\u1EEDa \u0111ang \u0111\xF3ng / \u0110\u1EE9ng g\u1ECDn trong cabin"
+  - en: Cabin at floor
+    vi: "Cabin \u1EDF t\u1EA7ng"
+  - en: aim / cast
+    vi: "ng\u1EAFm / thi tri\u1EC3n"
+  - en: aim / deploy
+    vi: "ng\u1EAFm / d\u1EF1ng t\u01B0\u1EDDng"
+  - en: 'aim, G or LMB: cast, RMB: cancel'
+    vi: "ng\u1EAFm, G ho\u1EB7c chu\u1ED9t tr\xE1i: thi tri\u1EC3n, chu\u1ED9t ph\u1EA3i: h\u1EE7y"
+  - en: 'F: auto lock and cast on nearest monster'
+    vi: "F: t\u1EF1 kh\xF3a v\xE0 tr\u1EA5n \xE1p qu\xE1i v\u1EADt g\u1EA7n nh\u1EA5t"
+  - en: 'Tap Q: instant wall'
+    vi: "Nh\u1EA5n Q: d\u1EF1ng t\u01B0\u1EDDng ngay"
+  - en: 'Hold Q: aim, release to deploy'
+    vi: "Gi\u1EEF Q: ng\u1EAFm, th\u1EA3 \u0111\u1EC3 d\u1EF1ng"
+  - en: 'Wheel: near/far'
+    vi: "L\u0103n chu\u1ED9t: xa/g\u1EA7n"
+  - en: 'RMB: cancel'
+    vi: "Chu\u1ED9t ph\u1EA3i: h\u1EE7y"
+  - en: Fits doorways, stops at walls, turns to face a monster ahead.
+    vi: "V\u1EEBa khung c\u1EEDa, d\u1EEBng tr\u01B0\u1EDBc t\u01B0\u1EDDng, xoay v\u1EC1 qu\xE1i v\u1EADt ph\xEDa tr\u01B0\u1EDBc."
+  - en: charges
+    vi: "l\u01B0\u1EE3t d\xF9ng"
+  - en: Walk through your wall. Monsters must detour or break it.
+    vi: "B\u1EA1n \u0111i xuy\xEAn \u0111\u01B0\u1EE3c t\u01B0\u1EDDng c\u1EE7a m\xECnh. Qu\xE1i v\u1EADt ph\u1EA3i \u0111i v\xF2ng ho\u1EB7c ph\xE1 t\u01B0\u1EDDng."
+  - en: Walls and floors block the seal.
+    vi: "T\u01B0\u1EDDng v\xE0 s\xE0n ch\u1EB7n Thi\xEAn Th\u1EE7."
+  - en: A golden palm suppresses enemies. Walls and floors block impact.
+    vi: "B\xE0n tay v\xE0ng tr\u1EA5n \xE1p k\u1EBB \u0111\u1ECBch. T\u01B0\u1EDDng v\xE0 s\xE0n ch\u1EB7n \u0111\xF2n \u0111\xE1nh."
+  - en: 16m range
+    vi: "t\u1EA7m 16m"
+  - en: 2.8m radius
+    vi: "b\xE1n k\xEDnh 2,8m"
+  - en: 24s cooldown
+    vi: "h\u1ED3i chi\xEAu 24 gi\xE2y"
+  - en: Run for 5.5s
+    vi: "Ch\u1EA1y trong 5,5 gi\xE2y"
+  - en: 18s cooldown
+    vi: "h\u1ED3i chi\xEAu 18 gi\xE2y"
+  - en: one phantom at a time.
+    vi: "ch\u1EC9 m\u1ED9t huy\u1EC5n \u1EA3nh m\u1ED7i l\u1EA7n."
+  - en: Keyboard & mouse
+    vi: "B\xE0n ph\xEDm v\xE0 chu\u1ED9t"
+  - en: Touch controls
+    vi: "\u0110i\u1EC1u khi\u1EC3n c\u1EA3m \u1EE9ng"
+  - en: Hold to aim
+    vi: "Gi\u1EEF \u0111\u1EC3 ng\u1EAFm"
+  - en: Release to cast
+    vi: "Th\u1EA3 \u0111\u1EC3 thi tri\u1EC3n"
+  - en: AIM AT GROUND
+    vi: "NG\u1EAEM V\xC0O M\u1EB6T \u0110\u1EA4T"
+  - en: NEEDS A SURFACE
+    vi: "C\u1EA6N B\u1EC0 M\u1EB6T \u0110\u1EC2 \u0110\u1EB6T"
+  - en: NOT ENOUGH HEADROOM
+    vi: "KH\xD4NG \u0110\u1EE6 KHO\u1EA2NG TR\u1ED0NG PH\xCDA TR\xCAN"
+  - en: NO CLEAR ROUTE FOR PHANTOM
+    vi: "HUY\u1EC4N \u1EA2NH KH\xD4NG C\xD3 \u0110\u01AF\u1EDCNG \u0110I TH\xD4NG THO\xC1NG"
+  - en: PHANTOM RECHARGING
+    vi: "HUY\u1EC4N \u1EA2NH \u0110ANG H\u1ED2I"
+  - en: PHANTOM RELEASED
+    vi: "\u0110\xC3 TH\u1EA2 HUY\u1EC4N \u1EA2NH"
+  - en: HAND SEAL
+    vi: "THI\xCAN TH\u1EE6"
+  - en: HOLD A SKILL TO AIM
+    vi: "GI\u1EEE N\xDAT K\u1EF8 N\u0102NG \u0110\u1EC2 NG\u1EAEM"
+  - en: HAND AUTO LOCKS
+    vi: "THI\xCAN TH\u1EE6 T\u1EF0 KH\xD3A M\u1EE4C TI\xCAU"
+  - en: DRAG TO AIM / RELEASE TO CAST / SLIDE TO CANCEL
+    vi: "K\xC9O \u0110\u1EC2 NG\u1EAEM / TH\u1EA2 \u0110\u1EC2 D\xD9NG / TR\u01AF\u1EE2T \u0110\u1EC2 H\u1EE6Y"
+  - en: NEAREST MONSTER LOCKED / RELEASE TO CAST / SLIDE TO CANCEL
+    vi: "\u0110\xC3 KH\xD3A QU\xC1I V\u1EACT G\u1EA6N NH\u1EA4T / TH\u1EA2 \u0110\u1EC2 D\xD9NG / TR\u01AF\u1EE2T \u0110\u1EC2 H\u1EE6Y"
+  - en: 'DRAG DOWN: NEAR / UP: FAR / SIDE: TURN'
+    vi: "K\xC9O XU\u1ED0NG: G\u1EA6N / L\xCAN: XA / NGANG: XOAY"
+  - en: Close
+    vi: "\u0110\xF3ng"
+  - en: EMPTY SLOT
+    vi: "\xD4 TR\u1ED0NG"
+  - en: 3 charges, one returns every 12 s
+    vi: "3 l\u01B0\u1EE3t, h\u1ED3i 1 l\u01B0\u1EE3t m\u1ED7i 12 gi\xE2y"
+  - en: Auto lock and cast on nearest monster
+    vi: "T\u1EF1 kh\xF3a v\xE0 thi tri\u1EC3n l\xEAn qu\xE1i g\u1EA7n nh\u1EA5t"
+  - en: SPIRIT
+    vi: "LINH L\u1EF0C"
+  - en: ATTACK
+    vi: "T\u1EA4N C\xD4NG"
+  - en: DASH
+    vi: "N\xC9"
+  - en: LOCK
+    vi: "KH\xD3A"
+  - en: NOT ENOUGH SPIRIT
+    vi: "KH\xD4NG \u0110\u1EE6 LINH L\u1EF0C"
+  - en: NOT ENOUGH STAMINA
+    vi: "KH\xD4NG \u0110\u1EE6 TH\u1EC2 L\u1EF0C"
+  - en: REPLAY
+    vi: "CH\u01A0I L\u1EA0I"
+  - en: NEXT LEVEL
+    vi: "M\xC0N TI\u1EBEP"
+  - en: Ice Lightning Rupture
+    vi: "B\u0103ng L\xF4i Li\u1EC7t"
+  - en: ICE LIGHTNING RUPTURE
+    vi: "B\u0102NG L\xD4I LI\u1EC6T"
+  - en: Freeze + Lightning = Ice Lightning Rupture
+    vi: "\u0110\xF3ng b\u0103ng + L\xF4i = B\u0103ng L\xF4i Li\u1EC7t"
+  - en: Electric Flow
+    vi: "\u0110i\u1EC7n L\u01B0u"
+  - en: ELECTRIC FLOW
+    vi: "\u0110I\u1EC6N L\u01AFU"
+  - en: Chill or Wet + Lightning = Electric Flow
+    vi: "Ch\u1EADm ho\u1EB7c \u01AF\u1EDBt + L\xF4i = \u0110i\u1EC7n L\u01B0u"
+  - en: Fire Detonation
+    vi: "B\u1EA1o Vi\xEAm"
+  - en: FIRE DETONATION
+    vi: "B\u1EA0O VI\xCAM"
+  - en: Burn + Fire = Fire Detonation
+    vi: "B\u1ECFng + H\u1ECFa = B\u1EA1o Vi\xEAm"
+  - en: Convergence
+    vi: "T\u1EE5 S\xE1t"
+  - en: CONVERGENCE
+    vi: "T\u1EE4 S\xC1T"
+  - en: Black Hole Pull + Area Hit = Convergence
+    vi: "H\u1EAFc \u0110\u1ED9ng h\xFAt + \u0110\xF2n v\xF9ng = T\u1EE5 S\xE1t"
+  - en: Armor Shatter
+    vi: "Ph\xE1 Gi\xE1p"
+  - en: ARMOR SHATTER
+    vi: "PH\xC1 GI\xC1P"
+  - en: Stun + Metal = Armor Shatter
+    vi: "Cho\xE1ng + Kim = Ph\xE1 Gi\xE1p"
+  - en: GENERATION
+    vi: "T\u01AF\u01A0NG SINH"
+  - en: GENERATION!
+    vi: "T\u01AF\u01A0NG SINH!"
+  - en: 3 LINKED ELEMENTS
+    vi: "3 H\u1EC6 LI\xCAN TI\u1EBEP"
+  - en: +20 SPIRIT
+    vi: "+20 LINH L\u1EF0C"
+  - en: WATER
+    vi: "TH\u1EE6Y"
+  - en: BOLT
+    vi: "L\xD4I"
+  - en: FIRE
+    vi: "H\u1ECEA"
+  - en: METAL
+    vi: KIM
+  - en: EARTH
+    vi: "TH\u1ED4"
+  - en: VOID
+    vi: "KH\xD4NG"
+  - en: SWORD INTENT
+    vi: "KI\u1EBEM \xDD"
+  - en: HEAVEN SWORD
+    vi: "THI\xCAN KI\u1EBEM"
+  - en: GO OUTDOORS
+    vi: "RA NGO\xC0I TR\u1EDCI"
+  - en: "FURY \xB7 BLOCKED"
+    vi: "LONG N\u1ED8 \xB7 KH\xD3A"
+  - en: CHANNELING
+    vi: "\u0110ANG NI\u1EC6M"
+  - en: CHARGING
+    vi: "T\xCDCH KI\u1EBEM \xDD"
+  - en: Go outdoors to summon the Heaven Sword
+    vi: "Ra ngo\xE0i tr\u1EDDi \u0111\u1EC3 tri\u1EC7u h\u1ED3i Thi\xEAn Ki\u1EBFm"
+  - en: "Dragon Fury \u2014 take shelter until it ends"
+    vi: "Long N\u1ED9 \u2014 tr\xFA \u1EA9n cho t\u1EDBi khi k\u1EBFt th\xFAc"
+  - en: Fire will interrupt you without protection
+    vi: "S\u1EBD b\u1ECB ng\u1EAFt n\u1EBFu kh\xF4ng c\xF3 h\u1ED9 th\u1EC3"
+  - en: TEN THOUSAND SWORDS RETURN
+    vi: "V\u1EA0N KI\u1EBEM QUY T\xD4NG"
+  - en: "TEN THOUSAND SWORDS \xB7 Hold your focus"
+    vi: "V\u1EA0N KI\u1EBEM QUY T\xD4NG \xB7 Gi\u1EEF v\u1EEFng ki\u1EBFm t\xE2m"
+  - en: 'SKIP [SPACE]'
+    vi: "B\u1ECE QUA [SPACE]"
+  - en: "Wave cleared \xB7 Sword Intent full\nGo outdoors and summon the Heaven Sword"
+    vi: "\u0110\u1EE3t \u0111\xE3 s\u1EA1ch \xB7 Ki\u1EBFm \xDD \u0111\u1EA7y\nRa ngo\xE0i tr\u1EDDi v\xE0 tri\u1EC7u h\u1ED3i Thi\xEAn Ki\u1EBFm"
+  - en: Wildfire Wind
+    vi: "Phong H\u1ECFa Li\u1EC7u Nguy\xEAn"
+  - en: WILDFIRE WIND
+    vi: "PHONG H\u1ECEA LI\u1EC6U NGUY\xCAN"
+  - en: Burn + Kunpeng ghost spreads fire nearby
+    vi: "B\u1ECFng + b\xF3ng C\xF4n B\u1EB1ng: lan l\u1EEDa ra qu\xE1i g\u1EA7n"
+  - en: Sword Soul
+    vi: "Ki\u1EBFm H\u1ED3n"
+  - en: SWORD SOUL
+    vi: "KI\u1EBEM H\u1ED2N"
+  - en: 'Soul ally inside Sword Array: +50% damage'
+    vi: "\xC2m Binh trong Tru Ti\xEAn: +50% s\xE1t th\u01B0\u01A1ng"
+  - en: Guarded Absorption
+    vi: "H\u1ED9 Th\u1EC3 H\u1EA5p Nguy\xEAn"
+  - en: GUARDED ABSORPTION
+    vi: "H\u1ED8 TH\u1EC2 H\u1EA4P NGUY\xCAN"
+  - en: 'Golden Bell + Northern Drain: healing x2'
+    vi: "Kim Chung + B\u1EAFc Minh: m\xE1u h\xFAt v\u1EC1 \xD72"
+  - en: Domain Resonance
+    vi: "L\xE3nh \u0110\u1ECBa C\u1ED9ng H\u01B0\u1EDFng"
+  - en: DOMAIN RESONANCE
+    vi: "L\xC3NH \u0110\u1ECAA C\u1ED8NG H\u01AF\u1EDENG"
+  - en: 'Cast a skill inside Domain: +20% damage'
+    vi: "D\xF9ng k\u1EF9 n\u0103ng trong L\xE3nh \u0110\u1ECBa: +20% s\xE1t th\u01B0\u01A1ng"
