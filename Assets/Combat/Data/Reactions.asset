@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704f20fc84674474aaa5f9aa2a4e482c, type: 3}
+  m_Name: Reactions
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Combat.ReactionConfig
+  internalCooldown: 1
+  chainWindow: 6
+  chainDamageBonus: 0.3
+  chainSpirit: 20
+  rules:
+  - type: 0
+    id: bang-loi-liet
+    nameEN: Ice Lightning Rupture
+    nameVI: "B\u0103ng L\xF4i Li\u1EC7t"
+    hintEN: Freeze + Lightning = Ice Lightning Rupture
+    hintVI: "\u0110\xF3ng b\u0103ng + L\xF4i = B\u0103ng L\xF4i Li\u1EC7t"
+    first: 3
+    second: 6
+    radius: 3
+    bonus: 1.5
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.08
+    impulse: 0.7
+    transient: {fileID: 8300000, guid: a109fccb5ae0cab408fd90b34df4e957, type: 3}
+    body: {fileID: 8300000, guid: 0c88595d85524c84dbe2a46faf0e7e1f, type: 3}
+    tail: {fileID: 8300000, guid: c06e147d6c943a940af0f86fd278eb4f, type: 3}
+  - type: 1
+    id: dien-luu
+    nameEN: Electric Flow
+    nameVI: "\u0110i\u1EC7n L\u01B0u"
+    hintEN: Chill or Wet + Lightning = Electric Flow
+    hintVI: "Ch\u1EADm ho\u1EB7c \u01AF\u1EDBt + L\xF4i = \u0110i\u1EC7n L\u01B0u"
+    first: 3
+    second: 6
+    radius: 5
+    bonus: 0
+    statusDuration: 0.5
+    statusMagnitude: 0
+    hitStop: 0.075
+    impulse: 0.45
+    transient: {fileID: 8300000, guid: 112658c0f54227b419b8ead2d149b6aa, type: 3}
+    body: {fileID: 8300000, guid: 0c88595d85524c84dbe2a46faf0e7e1f, type: 3}
+    tail: {fileID: 8300000, guid: c06e147d6c943a940af0f86fd278eb4f, type: 3}
+  - type: 2
+    id: bao-viem
+    nameEN: Fire Detonation
+    nameVI: "B\u1EA1o Vi\xEAm"
+    hintEN: Burn + Fire = Fire Detonation
+    hintVI: "B\u1ECFng + H\u1ECFa = B\u1EA1o Vi\xEAm"
+    first: 4
+    second: 4
+    radius: 4
+    bonus: 0.8
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.08
+    impulse: 0.75
+    transient: {fileID: 8300000, guid: 4a691733b272e3b4885ef2d1e6f5eb0f, type: 3}
+    body: {fileID: 8300000, guid: d3f9ad0343c5a1943b6a725ed45f9d2a, type: 3}
+    tail: {fileID: 8300000, guid: 7a8c78ce0034c75439f10e6d39ce9a8d, type: 3}
+  - type: 3
+    id: tu-sat
+    nameEN: Convergence
+    nameVI: "T\u1EE5 S\xE1t"
+    hintEN: Black Hole Pull + Area Hit = Convergence
+    hintVI: "H\u1EAFc \u0110\u1ED9ng h\xFAt + \u0110\xF2n v\xF9ng = T\u1EE5 S\xE1t"
+    first: 8
+    second: 4
+    radius: 0
+    bonus: 0.4
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.08
+    impulse: 0.65
+    transient: {fileID: 8300000, guid: b3db0f2405813c843b596ab710b97215, type: 3}
+    body: {fileID: 8300000, guid: 739e9ddf6d685ed4c93fde33464044f4, type: 3}
+    tail: {fileID: 8300000, guid: c06e147d6c943a940af0f86fd278eb4f, type: 3}
+  - type: 4
+    id: pha-giap
+    nameEN: Armor Shatter
+    nameVI: "Ph\xE1 Gi\xE1p"
+    hintEN: Stun + Metal = Armor Shatter
+    hintVI: "Cho\xE1ng + Kim = Ph\xE1 Gi\xE1p"
+    first: 5
+    second: 1
+    radius: 0
+    bonus: 0
+    statusDuration: 8
+    statusMagnitude: 0.3
+    hitStop: 0.08
+    impulse: 0.6
+    transient: {fileID: 8300000, guid: f260b0d13c2916c4399217ff91f7920f, type: 3}
+    body: {fileID: 8300000, guid: 4a691733b272e3b4885ef2d1e6f5eb0f, type: 3}
+    tail: {fileID: 8300000, guid: 821bacd8ee894324bb2cb65039b81a6d, type: 3}
+  - type: 5
+    id: phong-hoa-lieu-nguyen
+    nameEN: Wildfire Wind
+    nameVI: "Phong H\u1ECFa Li\u1EC7u Nguy\xEAn"
+    hintEN: Burn + Kunpeng ghost spreads fire nearby
+    hintVI: "B\u1ECFng + b\xF3ng C\xF4n B\u1EB1ng: lan l\u1EEDa ra qu\xE1i g\u1EA7n"
+    first: 4
+    second: 2
+    radius: 4
+    bonus: 0
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.065
+    impulse: 0.35
+    transient: {fileID: 8300000, guid: b3db0f2405813c843b596ab710b97215, type: 3}
+    body: {fileID: 8300000, guid: 7a8c78ce0034c75439f10e6d39ce9a8d, type: 3}
+    tail: {fileID: 8300000, guid: c06e147d6c943a940af0f86fd278eb4f, type: 3}
+  - type: 6
+    id: kiem-hon
+    nameEN: Sword Soul
+    nameVI: "Ki\u1EBFm H\u1ED3n"
+    hintEN: 'Soul ally inside Sword Array: +50% damage'
+    hintVI: "\xC2m Binh trong Tru Ti\xEAn: +50% s\xE1t th\u01B0\u01A1ng"
+    first: 7
+    second: 1
+    radius: 0
+    bonus: 0.5
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.065
+    impulse: 0.35
+    transient: {fileID: 8300000, guid: f260b0d13c2916c4399217ff91f7920f, type: 3}
+    body: {fileID: 8300000, guid: 112658c0f54227b419b8ead2d149b6aa, type: 3}
+    tail: {fileID: 8300000, guid: 821bacd8ee894324bb2cb65039b81a6d, type: 3}
+  - type: 7
+    id: ho-the-hap-nguyen
+    nameEN: Guarded Absorption
+    nameVI: "H\u1ED9 Th\u1EC3 H\u1EA5p Nguy\xEAn"
+    hintEN: 'Golden Bell + Northern Drain: healing x2'
+    hintVI: "Kim Chung + B\u1EAFc Minh: m\xE1u h\xFAt v\u1EC1 \xD72"
+    first: 1
+    second: 3
+    radius: 0
+    bonus: 0
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.065
+    impulse: 0.35
+    transient: {fileID: 8300000, guid: 821bacd8ee894324bb2cb65039b81a6d, type: 3}
+    body: {fileID: 8300000, guid: c06e147d6c943a940af0f86fd278eb4f, type: 3}
+    tail: {fileID: 8300000, guid: 112658c0f54227b419b8ead2d149b6aa, type: 3}
+  - type: 8
+    id: lanh-dia-cong-huong
+    nameEN: Domain Resonance
+    nameVI: "L\xE3nh \u0110\u1ECBa C\u1ED9ng H\u01B0\u1EDFng"
+    hintEN: 'Cast a skill inside Domain: +20% damage'
+    hintVI: "D\xF9ng k\u1EF9 n\u0103ng trong L\xE3nh \u0110\u1ECBa: +20% s\xE1t th\u01B0\u01A1ng"
+    first: 8
+    second: 0
+    radius: 0
+    bonus: 0.2
+    statusDuration: 0
+    statusMagnitude: 0
+    hitStop: 0.065
+    impulse: 0.35
+    transient: {fileID: 8300000, guid: b3db0f2405813c843b596ab710b97215, type: 3}
+    body: {fileID: 8300000, guid: 739e9ddf6d685ed4c93fde33464044f4, type: 3}
+    tail: {fileID: 8300000, guid: c06e147d6c943a940af0f86fd278eb4f, type: 3}
