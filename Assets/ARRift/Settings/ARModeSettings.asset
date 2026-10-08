@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219c70134f4d40945abbde6151fd5af3, type: 3}
+  m_Name: ARModeSettings
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.AR.ARModeSettings
+  allUnlocked: 1
+  tableScale: 0.15
+  floorScale: 0.6
+  spirit: 200
+  spiritRegen: 30
+  maxMonsters: 6
+  tableMinimumArea: 0.15
+  floorMinimumArea: 0.8
+  modelThreshold: 0.6
+  rescueThreshold: 0.45
+  fingerExtendedAngle: 150
+  fingerFoldedAngle: 120
+  fingerDistanceRatio: 1.25
+  victorySeparation: 0.35
+  directionMargin: 0.15
+  evidenceThreshold: 1.5
+  evidenceLead: 0.6
+  evidenceDecay: 0.25
+  gestureLockout: 0.35
+  handRelease: 0.2
+  maxPalmSpeed: 1.5
+  enableRescue: 0
+  gestureDwell: 0.1
+  stableSwitch: 0.2
