@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 922e50afb5bf1154c93f112f64fe64ee, type: 3}
+  m_Name: GestureSkillMap
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.AR.GestureSkillMapper
+  entries:
+  - label: Open_Palm
+    skill: {fileID: 11400000, guid: 717871bc2dc97064e9dc45842de6fbcd, type: 2}
+  - label: Closed_Fist
+    skill: {fileID: 11400000, guid: 2c747bd6005234b4f9d5950a71d83226, type: 2}
+  - label: Pointing_Up
+    skill: {fileID: 11400000, guid: d78a99632a0f3d04296ff2faf648127c, type: 2}
+  - label: Victory
+    skill: {fileID: 11400000, guid: 8f1ad1a1757b73d479f4354debe03eed, type: 2}
+  - label: Thumb_Down
+    skill: {fileID: 11400000, guid: 349ff16006d188545a95ba55f92c7575, type: 2}
+  - label: Thumb_Up
+    skill: {fileID: 11400000, guid: 92aff710310723945be0507b43ab9c94, type: 2}
