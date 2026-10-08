@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a60e355a425cd4099d01fff0f6b80f, type: 3}
+  m_Name: VoidWallConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.VoidWallConfig
+  charges: 3
+  rechargeSeconds: 12
+  width: 2.8
+  height: 2.35
+  thickness: 0.24
+  placementDistance: 2.7
+  minimumPlacementDistance: 0.8
+  maximumPlacementDistance: 6
+  lifetime: 12
+  health: 75
+  healthShare: 0.4
+  deployCooldown: 0.35
+  wallMaterial: {fileID: 2100000, guid: 3866c395532547a4a888fd6270af6896, type: 2}
+  particleMaterial: {fileID: 2100000, guid: eaa169c7a5961bc44ab07c280cbca07e, type: 2}
+  output: {fileID: 3680441330483450487, guid: 629893d50d3aa0443922c1f74980a82e, type: 2}
+  preview: {fileID: 8300000, guid: 79201545a43a7d146bb89f63f88a3b6e, type: 3}
+  deploy: {fileID: 8300000, guid: f841c3d315ff27f43b2fd5a8c14c728f, type: 3}
+  hum: {fileID: 8300000, guid: e3574b90d5495e74c8d14bb4dfc8d393, type: 3}
+  impact: {fileID: 8300000, guid: 9481fff367b39d94ea3a070d45d4c817, type: 3}
+  unstable: {fileID: 8300000, guid: b7010ec497a95944ca4b2799422a47c2, type: 3}
+  broken: {fileID: 8300000, guid: b76d20635cf490b43b9cb8aadb8a5dc6, type: 3}
+  expire: {fileID: 8300000, guid: 80137652e389cde499a9ddf5ad6f7839, type: 3}
+  empty: {fileID: 8300000, guid: 00fb5013ab4e96b4ea3aaf5017aa585f, type: 3}
