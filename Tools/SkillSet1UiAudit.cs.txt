@@ -1,0 +1,64 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using CampusRift.Controls;
+using CampusRift.Progression;
+using CampusRift.Levels;
+using CampusRift.Localization;
+using CampusRift.UI;
+namespace CampusRift.Skills
+{
+    public sealed class SkillSet1UiAudit:MonoBehaviour
+    {
+        [Serializable] public sealed class Report {public int issues;public string error;public List<ComicTextAudit.ScreenReport> screens=new List<ComicTextAudit.ScreenReport>();}
+        readonly Report report=new Report();GameSettings original;
+        IEnumerator Start()
+        {
+            DontDestroyOnLoad(gameObject);Application.runInBackground=true;original=SettingsManager.Instance.Current.Copy();
+            var stack=new Stack<IEnumerator>();stack.Push(Run());while(stack.Count>0){var run=stack.Peek();bool more=false;object next=null;try{more=run.MoveNext();if(more)next=run.Current;}catch(Exception e){report.error=e.ToString();break;}if(!more){stack.Pop();continue;}var nested=next as IEnumerator;if(nested!=null){stack.Push(nested);continue;}yield return next;}
+            Directory.CreateDirectory("Artifacts/Skills");File.WriteAllText("Artifacts/Skills/P10-ComicTextAudit.json",JsonUtility.ToJson(report,true));File.WriteAllText("Artifacts/Skills/P10-ComicTextAudit-DONE.txt",report.issues+" issues; "+report.screens.Count+" screens; "+report.error);
+            ProfileService.Instance.EndTransient();SettingsManager.Instance.Apply(original,false);UIValidation.SetResolution(1920,1080);Destroy(gameObject);
+        }
+        IEnumerator Capture(string id)
+        {
+            yield return new WaitForSecondsRealtime(.25f);for(int i=0;i<5;i++)yield return null;
+            var scan=ComicTextAudit.Scan(id);report.issues+=scan.issues.Count;report.screens.Add(scan);
+            ScreenCapture.CaptureScreenshot("task/p10/screens/"+id+".png");for(int i=0;i<3;i++)yield return null;
+        }
+        IEnumerator Run()
+        {
+            var world=new SkillSet1TestWorld{GameplayCamera=true};world.Begin();yield return null;
+            var settings=SettingsManager.Instance.Current.Copy();var loadout=world.player.GetComponent<SkillLoadout>();
+            foreach(var lang in new[]{GameLanguage.Vietnamese,GameLanguage.English})
+            {
+                settings.Language=lang;settings.ControlMode=ControlMode.PC;SettingsManager.Instance.Apply(settings,false);UIStateManager.Instance.EnterScene(true);
+                foreach(int width in new[]{1280,1920})
+                {
+                    UIValidation.SetResolution(width,width==1280?720:1080);loadout.Equip(0,"hu-khong-ket-gioi");loadout.Equip(1,"anh-phan-than");loadout.Equip(2,"");loadout.Equip(3,"dai-thu-an");yield return Capture("hud-empty-"+lang+"-"+width);
+                    for(int i=0;i<4;i++)loadout.Equip(i,new[]{"tich-lich-nhat-thiem","phat-no-hoa-lien","han-bang-phong-an","than-kiem-ngu-loi"}[i]);
+                    foreach(var s in world.player.GetComponents<SkillRuntime>())s.ApplyRank(5);yield return Capture("hud-rank5-"+lang+"-"+width);
+                }
+                UIStateManager.Instance.Pause();UIStateManager.Instance.OpenSettings();var ui=UnityEngine.Object.FindAnyObjectByType<SettingsUI>();ui.SelectGameplay();yield return Capture("settings-flashes-"+lang);ui.Cancel();UIStateManager.Instance.EnterScene(true);
+                settings.ControlMode=ControlMode.Mobile;SettingsManager.Instance.Apply(settings,false);yield return Capture("hud-mobile-ranks-"+lang);
+            }
+            world.End();
+            ProfileService.Instance.UseTransient(new ProfileData{wallet=new WalletData{linhThach=9999},cultivation=new CultivationData{realm=6,tier=5}});
+            GameSceneManager.Instance.LoadMainMenu();float deadline=Time.realtimeSinceStartup+30;while(GameSceneManager.Instance.IsLoading||HubUI.Instance==null){if(Time.realtimeSinceStartup>deadline)throw new TimeoutException("Hub audit loading");yield return null;}
+            for(int i=0;i<8;i++)yield return null;
+            foreach(var lang in new[]{GameLanguage.Vietnamese,GameLanguage.English})
+            {
+                settings.Language=lang;settings.ControlMode=ControlMode.PC;SettingsManager.Instance.Apply(settings,false);UIStateManager.Instance.OpenHub();
+                foreach(int width in new[]{1280,1920})
+                {
+                    UIValidation.SetResolution(width,width==1280?720:1080);var hub=HubUI.Instance;
+                    typeof(HubUI).GetField("selectedSkill",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).SetValue(hub,SkillCatalog.Instance.Find("than-kiem-ngu-loi"));hub.Select(HubUI.Tab.Skills);yield return Capture("skill-book-"+lang+"-"+width);
+                    LoadoutUI.Level=LevelCatalog.Instance.Get(1);UIStateManager.Instance.OpenLoadout();yield return Capture("preparation-ten-"+lang+"-"+width);UIStateManager.Instance.Back();
+                }
+            }
+        }
+    }
+}
+#endif
