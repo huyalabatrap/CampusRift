@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28dd3581102f012419133bd17185b66c, type: 3}
+  m_Name: EconomyConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Progression.EconomyConfig
+  firstCorrect: 5
+  retryCorrect: 2
+  lessonPassed: 30
+  lessonPerfect: 50
+  reviewOnTime: 40
+  examPassed: 300
+  levelClearPerIndex: 40
+  perStar: 20
+  retryLockHours: 24
+  retryDailyCap: 300
+  fastStreak: 5
+  fastSeconds: 1.5
+  fastPauseMinutes: 2

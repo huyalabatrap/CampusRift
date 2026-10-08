@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf53a55d22639a94da3bc9ceb9c61353, type: 3}
+  m_Name: CultivationTable
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Progression.CultivationTable
+  rows:
+  - realm: 0
+    nameEN: Qi Refining
+    nameVN: "Luy\u1EC7n Kh\xED"
+    tuViPerTier: 100
+    health1: 100
+    health5: 140
+    attack1: 20
+    attack5: 28
+    spirit1: 100
+    spirit5: 120
+    defense: 0
+    skillsEN: Giant Hand, Void Barrier, Phantom Clone; Lightning Flash (tier 3)
+    skillsVN: "\u0110\u1EA1i Th\u1EE7 \u1EA4n, H\u01B0 Kh\xF4ng K\u1EBFt Gi\u1EDBi, \u1EA2nh Ph\xE2n Th\xE2n; T\xEDch L\u1ECBch Nh\u1EA5t Thi\u1EC3m (t\u1EA7ng 3)"
+  - realm: 1
+    nameEN: Foundation
+    nameVN: "Tr\xFAc C\u01A1"
+    tuViPerTier: 150
+    health1: 170
+    health5: 220
+    attack1: 34
+    attack5: 44
+    spirit1: 130
+    spirit5: 150
+    defense: 0.03
+    skillsEN: Buddha's Wrath Fire Lotus, Frost Seal, Thunder Sword
+    skillsVN: "Ph\u1EADt N\u1ED9 H\u1ECFa Li\xEAn, H\xE0n B\u0103ng Phong \u1EA4n, Th\u1EA7n Ki\u1EBFm Ng\u1EF1 L\xF4i"
+  - realm: 2
+    nameEN: Golden Core
+    nameVN: "K\u1EBFt \u0110an"
+    tuViPerTier: 225
+    health1: 260
+    health5: 320
+    attack1: 52
+    attack5: 64
+    spirit1: 160
+    spirit5: 180
+    defense: 0.06
+    skillsEN: Golden Bell, Dragon-Subduing Palms, Samadhi True Fire
+    skillsVN: "Kim Chung Tr\xE1o, H\xE0ng Long Th\u1EADp B\xE1t Ch\u01B0\u1EDFng, Tam Mu\u1ED9i Ch\xE2n H\u1ECFa"
+  - realm: 3
+    nameEN: Nascent Soul
+    nameVN: "Nguy\xEAn Anh"
+    tuViPerTier: 340
+    health1: 370
+    health5: 440
+    attack1: 74
+    attack5: 88
+    spirit1: 190
+    spirit5: 210
+    defense: 0.09
+    skillsEN: Black Hole Net, Northern Sea Art, Peng Speed
+    skillsVN: "H\u1EAFc \u0110\u1ED9ng Th\u1EA7n La, B\u1EAFc Minh Th\u1EA7n C\xF4ng, C\xF4n B\u1EB1ng C\u1EF1c T\u1ED1c"
+  - realm: 4
+    nameEN: Spirit Transformation
+    nameVN: "H\xF3a Th\u1EA7n"
+    tuViPerTier: 510
+    health1: 500
+    health5: 580
+    attack1: 100
+    attack5: 116
+    spirit1: 220
+    spirit5: 240
+    defense: 0.12
+    skillsEN: Ten Thousand Swords, Sky Thunder, Wood Spirit Renewal, Divine Sight, Heaven Sword
+    skillsVN: "V\u1EA1n Ki\u1EBFm Quy\u1EBFt, Thi\xEAn L\xF4i D\u1EABn, M\u1ED9c Linh H\u1ED3i Xu\xE2n, Th\u1EA7n Th\u1EE9c Linh Nh\xE3n, Thi\xEAn Ki\u1EBFm"
+  - realm: 5
+    nameEN: Void Refining
+    nameVN: "Luy\u1EC7n H\u01B0"
+    tuViPerTier: 760
+    health1: 650
+    health5: 740
+    attack1: 130
+    attack5: 148
+    spirit1: 250
+    spirit5: 270
+    defense: 0.15
+    skillsEN: Immortal-Slaying Sword Array, Yin Soldiers
+    skillsVN: "Tru Ti\xEAn Ki\u1EBFm Tr\u1EADn, \xC2m Binh Quy H\u1ED3n"
+  - realm: 6
+    nameEN: Tribulation
+    nameVN: "\u0110\u1ED9 Ki\u1EBFp"
+    tuViPerTier: 1140
+    health1: 820
+    health5: 920
+    attack1: 164
+    attack5: 184
+    spirit1: 280
+    spirit5: 300
+    defense: 0.18
+    skillsEN: Expanding Domain, Martial Soul True Form
+    skillsVN: "B\xE0nh Tr\u01B0\u1EDBng L\xE3nh \u0110\u1ECBa, V\xF5 H\u1ED3n Ch\xE2n Th\xE2n"
+  runBonusPerRealm: 0.015
+  runBonusCap: 0.1
