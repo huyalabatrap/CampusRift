@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f41e02426d91442804f2bad6bcb9c4, type: 3}
+  m_Name: tieu-yeu
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyArchetype
+  id: tieu-yeu
+  displayName: TieuYeu
+  displayNameVN: "Ti\u1EC3u Y\xEAu"
+  element: 2
+  prefab: {fileID: 6743654445086377736, guid: 4c6257dd06fbe9841be3e0104a131d15, type: 3}
+  prefabPending: 0
+  baseHealth: 60
+  baseDamage: 8
+  baseSpeed: 5.5
+  defense: 0
+  lateHealthMultiplier: 0.92
+  attackRange: 1.6
+  attackCooldown: 1.4
+  ranged: 0
+  preferredMin: 8
+  preferredMax: 12
+  projectileSpeed: 14
+  attackClipSeconds: 1.1666667
+  impactFraction: 0.5
+  swordIntentWeight: 1
+  isFlying: 0
+  isBoss: 0
+  resistHardControl: 0
+  abilities:
+  - minLevel: 4
+    ability: {fileID: 11400000, guid: 80ce7643520e55e45baf25d86cdf75c5, type: 2}

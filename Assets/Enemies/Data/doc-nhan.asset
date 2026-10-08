@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f41e02426d91442804f2bad6bcb9c4, type: 3}
+  m_Name: doc-nhan
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyArchetype
+  id: doc-nhan
+  displayName: DocNhan
+  displayNameVN: "\u0110\u1ED9c Nh\xE3n X\u1EA1 Th\u1EE7"
+  element: 2
+  prefab: {fileID: 333013660523925926, guid: 8a83b603a8c8abe4981908b70e7f262a, type: 3}
+  prefabPending: 0
+  baseHealth: 45
+  baseDamage: 8.5
+  baseSpeed: 4
+  defense: 0
+  lateHealthMultiplier: 0.92
+  attackRange: 12
+  attackCooldown: 2.2
+  ranged: 1
+  preferredMin: 8
+  preferredMax: 12
+  projectileSpeed: 14
+  attackClipSeconds: 2.4666667
+  impactFraction: 0.5
+  swordIntentWeight: 1
+  isFlying: 0
+  isBoss: 0
+  resistHardControl: 0
+  abilities:
+  - minLevel: 5
+    ability: {fileID: 11400000, guid: 0b1ffb3603dba804daa9cf7b6cdfc090, type: 2}

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f41e02426d91442804f2bad6bcb9c4, type: 3}
+  m_Name: liem-hon
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyArchetype
+  id: liem-hon
+  displayName: LiemHon
+  displayNameVN: "Li\xEAm H\u1ED3n"
+  element: 7
+  prefab: {fileID: 5935142293471836117, guid: 86248ac46dff64c4caced1a2013468d8, type: 3}
+  prefabPending: 0
+  baseHealth: 60
+  baseDamage: 8
+  baseSpeed: 4.5
+  defense: 0
+  lateHealthMultiplier: 0.92
+  attackRange: 4
+  attackCooldown: 1.4
+  ranged: 0
+  preferredMin: 8
+  preferredMax: 12
+  projectileSpeed: 14
+  attackClipSeconds: 1.9666668
+  impactFraction: 0.5
+  swordIntentWeight: 1
+  isFlying: 1
+  isBoss: 0
+  resistHardControl: 0
+  abilities: []

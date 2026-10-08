@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f41e02426d91442804f2bad6bcb9c4, type: 3}
+  m_Name: duc-yeu
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyArchetype
+  id: duc-yeu
+  displayName: DucYeu
+  displayNameVN: "D\u1EF1c Y\xEAu"
+  element: 2
+  prefab: {fileID: 1066426309532035967, guid: 75dba9694e363164db8b076e1c79d259, type: 3}
+  prefabPending: 0
+  baseHealth: 40
+  baseDamage: 8
+  baseSpeed: 7
+  defense: 0
+  lateHealthMultiplier: 1
+  attackRange: 1.8
+  attackCooldown: 1.6
+  ranged: 0
+  preferredMin: 9
+  preferredMax: 13
+  projectileSpeed: 14
+  attackClipSeconds: 0.5
+  impactFraction: 0.5
+  swordIntentWeight: 1
+  isFlying: 1
+  isBoss: 0
+  resistHardControl: 0
+  abilities: []
