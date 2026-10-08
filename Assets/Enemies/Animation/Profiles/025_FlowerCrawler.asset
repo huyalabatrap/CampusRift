@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a638be3c6af6744ba83bd5d4f68aed8, type: 3}
+  m_Name: 025_FlowerCrawler
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyAnimationProfile
+  modelId: 025
+  idle: Idle_Breathe
+  attack: Ground_Slam
+  special: Spore_Roar
+  walkMetersPerSecond: 0.11034084
+  runMetersPerSecond: 0.22982468
+  attackImpactSeconds: 0.9833334
+  spawnSeconds: 2.47
+  deathSeconds: 2.47
+  blendSeconds: 0.12
+  headBones:
+  - Head
+  footBones:
+  - L_Foot
+  - R_Foot
+  clips:
+  - {fileID: 6336854785454177573, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 3749046085168095184, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -3904899245860948136, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -4657096122184946191, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -7179353643561944407, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -1920842738903003217, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -7520656958581653683, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -2419483221461293691, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -5007962126882570521, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -1098273604904449840, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -1961479267212926361, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -4172824678539575289, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -6064102329105343357, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -9056579518128108019, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 1081765526733513265, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 7243519525766618868, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -6802713520503527913, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 5947177444805960856, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 7991450452152400023, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 219132999704378739, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 5021162824863111739, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 6076200566624574083, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -5793949245023333848, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: 6064859249792813047, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -8608475699570287328, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -3425654637750974424, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -6990925813603938448, guid: 6630592377a19f445bc368bda347f58d, type: 3}
+  - {fileID: -8724228568804560074, guid: 6630592377a19f445bc368bda347f58d, type: 3}

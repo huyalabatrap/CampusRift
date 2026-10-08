@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a638be3c6af6744ba83bd5d4f68aed8, type: 3}
+  m_Name: LavaGolem
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyAnimationProfile
+  modelId: LavaGolem
+  idle: Idle_Breathe
+  attack: Attack_Light
+  special: Fire_Cast
+  walkMetersPerSecond: 1.8
+  runMetersPerSecond: 4
+  attackImpactSeconds: 0.7875001
+  spawnSeconds: 0.8
+  deathSeconds: 0.8
+  blendSeconds: 0.12
+  headBones:
+  - Head
+  footBones:
+  - Foot.L
+  - Foot.R
+  clips:
+  - {fileID: 7400000, guid: 087baf9600f02194fa09bc6d48016469, type: 2}
+  - {fileID: 7400000, guid: 607cb99fd740dc542a0ab46228ad44c7, type: 2}
+  - {fileID: 7400000, guid: d0d3bbed48ce51c4d82aec5c26f7cf56, type: 2}
+  - {fileID: 7400000, guid: 4fb3399dca65034428ae99fbde9e2aeb, type: 2}
+  - {fileID: 7400000, guid: 8c0e48f3a0d36034183ad769c8939061, type: 2}
+  - {fileID: 7400000, guid: 7f7b9c5ef3bb3fa40967414f4853bfb5, type: 2}
+  - {fileID: 7400000, guid: 3878a73ce2677b14890227b0ca69b859, type: 2}
+  - {fileID: 7400000, guid: 6ab8ef8674c4e3a40b377b76c65b98ce, type: 2}
+  - {fileID: 7400000, guid: 57707505728dc1746a380ebd9355c880, type: 2}
+  - {fileID: 7400000, guid: c7c7734cc77e17d449aa2f0f4b77660e, type: 2}
+  - {fileID: 7400000, guid: 236b04e8f4153f346b1eee5a4b5c79d6, type: 2}
+  - {fileID: 7400000, guid: 945473f43cedbef488b7a0cba420afde, type: 2}
+  - {fileID: 7400000, guid: 2effdccce6b811649aacf2a4b7979566, type: 2}
+  - {fileID: 7400000, guid: 0ccf07d3607759d46ae46ca4be9cd469, type: 2}
+  - {fileID: 7400000, guid: 5e8dacdf2ea98d844a30fbc0b62dcb3a, type: 2}
+  - {fileID: 7400000, guid: 55363317cff97aa419813575f7638c9d, type: 2}
+  - {fileID: 7400000, guid: 60e60054ab9a7e447aedacd621719e05, type: 2}
+  - {fileID: 7400000, guid: 234e9db242f7cfd418c4aee3fd3b315d, type: 2}
+  - {fileID: 7400000, guid: f10ce97d80589d94db260553007d7f61, type: 2}
+  - {fileID: 7400000, guid: 0a64a4818312dd6439600e637d0f2363, type: 2}
+  - {fileID: 7400000, guid: 692635af0b349e7478b2f39dae4b2b42, type: 2}
+  - {fileID: 7400000, guid: e12642e2ac049a1469f23e24b2d79db8, type: 2}
+  - {fileID: 7400000, guid: e637bbb90942f31479379f53bf50fafa, type: 2}
+  - {fileID: 7400000, guid: 12e01c398ea2c0849837f9b7f87e2d7e, type: 2}
+  - {fileID: 7400000, guid: 3d261227c84bede428993ac4729ba2ed, type: 2}
+  - {fileID: 7400000, guid: 4b51de70302baa94d82d79e7f545079e, type: 2}
+  - {fileID: 7400000, guid: 92a81d7f94258f14b83758b8814c9b56, type: 2}
+  - {fileID: 7400000, guid: 685a4ded439f9094ca39820020f19526, type: 2}

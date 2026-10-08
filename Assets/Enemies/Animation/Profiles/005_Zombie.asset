@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a638be3c6af6744ba83bd5d4f68aed8, type: 3}
+  m_Name: 005_Zombie
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyAnimationProfile
+  modelId: 005
+  idle: Idle_Breathe
+  attack: Claw_Swipe_Left
+  special: Sniff
+  walkMetersPerSecond: 0.16707265
+  runMetersPerSecond: 0.22983815
+  attackImpactSeconds: 0.6833334
+  spawnSeconds: 2.47
+  deathSeconds: 2.47
+  blendSeconds: 0.12
+  headBones:
+  - Head
+  footBones:
+  - Foot.L
+  - Foot.R
+  clips:
+  - {fileID: -440620896636138596, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -987576606860299829, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -6757587608909117016, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 673716066474257297, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 6130121189698416084, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 3326914592455260038, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 2043728832476420746, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -8650060843474857973, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -7253299623892479786, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 2409765425858327542, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 8329922702152408110, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -7813554556509185095, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -6103303841058470873, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 3880541352733065859, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 1786079768025851619, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -670670217836346930, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 7947260252864487751, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 2934444785867005488, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 3987913198891792713, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -8955743889991438872, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 4437430673024041017, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 7792605975044008672, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 5026331912927717172, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -4036724041442887340, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 3035596636894212368, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 990604304722401832, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: -6992833181961540917, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}
+  - {fileID: 3475648150029902599, guid: 495226e1d35c8464fb2ea36379293ca1, type: 3}

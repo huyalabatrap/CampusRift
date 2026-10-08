@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a638be3c6af6744ba83bd5d4f68aed8, type: 3}
+  m_Name: 012_HaloDemon
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyAnimationProfile
+  modelId: 012
+  idle: Idle_Breathe
+  attack: Curse_Cast
+  special: Halo_Channel
+  walkMetersPerSecond: 0.113172606
+  runMetersPerSecond: 0.1554476
+  attackImpactSeconds: 1.2333333
+  spawnSeconds: 2.47
+  deathSeconds: 2.47
+  blendSeconds: 0.12
+  headBones:
+  - Head
+  footBones:
+  - Foot.L
+  - Foot.R
+  clips:
+  - {fileID: 8173589417785444538, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 3031665390062643845, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -7452961090548692414, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -8530662345097638732, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 5784766375109935280, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 8433142721512649167, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 7234807739968255060, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -5010060909067098217, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -1635820613425502706, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -7934933237147397207, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 8804774215179328115, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -2739471475846697443, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -1722148385842443247, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 1554641479788260866, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -5757791361726012990, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 864868413432779403, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -6572981639670898466, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -1573562903981100086, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 3020221898412280482, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -7605712666154459068, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 2643837197369408317, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -9167252555990944064, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 7293857428163362758, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 740127133240624045, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -5396606559962647155, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -8103369173414268472, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: 7194324350756336110, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}
+  - {fileID: -6826932646652891271, guid: 0baabd6db2446e84b81c23eafd014ec7, type: 3}

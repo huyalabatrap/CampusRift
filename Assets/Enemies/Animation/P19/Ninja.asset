@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a638be3c6af6744ba83bd5d4f68aed8, type: 3}
+  m_Name: Ninja
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyAnimationProfile
+  modelId: Ninja
+  idle: Idle_Breathe
+  attack: Attack_Light
+  special: Attack_Heavy
+  walkMetersPerSecond: 1.8
+  runMetersPerSecond: 4
+  attackImpactSeconds: 0.45
+  spawnSeconds: 0.8
+  deathSeconds: 0.8
+  blendSeconds: 0.12
+  headBones:
+  - Head
+  footBones:
+  - Foot.L
+  - Foot.R
+  clips:
+  - {fileID: 7400000, guid: b9cfd33927160cf4c9a0307198352452, type: 2}
+  - {fileID: 7400000, guid: 2ad941eb56fb7d74c81aead9fce4185f, type: 2}
+  - {fileID: 7400000, guid: d4d4a1ca8ac637d4582346dc7ed3ba14, type: 2}
+  - {fileID: 7400000, guid: 0b34c4bc704892e4f9c02854e8ffb8ba, type: 2}
+  - {fileID: 7400000, guid: 00985f446322c784688462039f6e781a, type: 2}
+  - {fileID: 7400000, guid: bd412ff07cfb6304ca1b795130b8d4d5, type: 2}
+  - {fileID: 7400000, guid: 0d01917e72bb3bb448a350526c726c46, type: 2}
+  - {fileID: 7400000, guid: 6a7a7f50e85eed24f8c8c01ac9589fc4, type: 2}
+  - {fileID: 7400000, guid: d9a7adec961ac544fbde2aca797cbf88, type: 2}
+  - {fileID: 7400000, guid: 8c4fbf9763ef250438cffc10ae0c0313, type: 2}
+  - {fileID: 7400000, guid: 69f48dfeb402c134db7352e73ed7a27a, type: 2}
+  - {fileID: 7400000, guid: f28dbeb896066494b9e3bd77d7dbc64d, type: 2}
+  - {fileID: 7400000, guid: 6b7c6586f5a0ab041ac2f980a70b18b1, type: 2}
+  - {fileID: 7400000, guid: b1212194d59d8ac4fa79f95bf192ea12, type: 2}
+  - {fileID: 7400000, guid: 0ec61560de4b3c34ab6251353dc5a8ce, type: 2}
+  - {fileID: 7400000, guid: ba9038efb231d824b8a61829e90f88fe, type: 2}
+  - {fileID: 7400000, guid: 4e6e731d8b57b33469872769d4230a2b, type: 2}
+  - {fileID: 7400000, guid: ce95ce6f006887d4e9ad533a8ea3eeb7, type: 2}
+  - {fileID: 7400000, guid: 51aa33586dfd1144da6042a3bd861397, type: 2}
+  - {fileID: 7400000, guid: 8792bc35006c27642ab7871a9882569b, type: 2}
+  - {fileID: 7400000, guid: 9d38f6c147fccba46a5f93a9216c1f31, type: 2}
+  - {fileID: 7400000, guid: 1129346faa820e64cb121dceab62c46e, type: 2}

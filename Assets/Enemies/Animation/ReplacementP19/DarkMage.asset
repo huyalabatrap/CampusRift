@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a638be3c6af6744ba83bd5d4f68aed8, type: 3}
+  m_Name: DarkMage
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyAnimationProfile
+  modelId: DarkMage
+  idle: Idle_Breathe
+  attack: Attack_Light
+  special: Summon_Cast
+  walkMetersPerSecond: 1.8
+  runMetersPerSecond: 4
+  attackImpactSeconds: 0.7875001
+  spawnSeconds: 0.8
+  deathSeconds: 0.8
+  blendSeconds: 0.12
+  headBones:
+  - Head
+  footBones:
+  - Foot.L
+  - Foot.R
+  clips:
+  - {fileID: 7400000, guid: 5964588f0da77f544b5810fd9ffe47fa, type: 2}
+  - {fileID: 7400000, guid: ed3affc2f316a1f47812c4daf6f750e8, type: 2}
+  - {fileID: 7400000, guid: 6beb9c9765cd08e4b80c4ef9cba6f39f, type: 2}
+  - {fileID: 7400000, guid: 4d0ab8d13da16964ead7a9d370a89401, type: 2}
+  - {fileID: 7400000, guid: 26f5c42df76bd9347b23d0151f7ba018, type: 2}
+  - {fileID: 7400000, guid: 072fdd56876ac4545a3c489ca5d7b453, type: 2}
+  - {fileID: 7400000, guid: 41ab58c6e1f905b49bd1a767df0568b0, type: 2}
+  - {fileID: 7400000, guid: f44eabb7db64f2747af5d01bfd319b79, type: 2}
+  - {fileID: 7400000, guid: 4e03220b777d45f40ad58ca8612a4b29, type: 2}
+  - {fileID: 7400000, guid: be33de81bbed1624790685e2716a14c7, type: 2}
+  - {fileID: 7400000, guid: 6145feafc39c26549a6313ec6ee80ddc, type: 2}
+  - {fileID: 7400000, guid: 754d899c59e78d44f9d58b3de27d7139, type: 2}
+  - {fileID: 7400000, guid: 5e036d890122d74429a5abb2e84b79ae, type: 2}
+  - {fileID: 7400000, guid: dd2041177ac55fb4dad7be88aa3852b6, type: 2}
+  - {fileID: 7400000, guid: 5268d41f84eb23744a3639c49778f7c9, type: 2}
+  - {fileID: 7400000, guid: 115d34d883943294daf06b9304e11b00, type: 2}
+  - {fileID: 7400000, guid: 50f91879a67460d40bd8744a9870ac5f, type: 2}
+  - {fileID: 7400000, guid: c7d0e6fbd9d0beb448878fa98c1d4816, type: 2}
+  - {fileID: 7400000, guid: 7006df940fe9c43448796abb6d1a06bb, type: 2}
+  - {fileID: 7400000, guid: a899cc21482b28f44b5f1323cd18de1a, type: 2}
+  - {fileID: 7400000, guid: 9bf3c8d6a2c8a0b47ab7ec297a739443, type: 2}
+  - {fileID: 7400000, guid: 309fe97b0bc311e42ac872904414cfb5, type: 2}
+  - {fileID: 7400000, guid: e15ced4d98b0db444989d8076635064f, type: 2}
+  - {fileID: 7400000, guid: 827206e79051a2948b529dc45f35cad9, type: 2}
+  - {fileID: 7400000, guid: 9287c0d0b95e37b4cac2e6baad531a4a, type: 2}
+  - {fileID: 7400000, guid: e6ecc1786a8ecb54492ba4bb667e82bb, type: 2}
+  - {fileID: 7400000, guid: c59bc8f5120c65f459b2906baba476b1, type: 2}
+  - {fileID: 7400000, guid: 88341af0b3a206041bc746b6657d6c21, type: 2}
