@@ -1,0 +1,2 @@
+from ar_ui import *
+milestone('Mốc compact HUD: thêm ARHUDRegion/ARHUDBudget giới hạn tổng bounding rectangles gameplay ≤12% Screen, ưu tiên cảnh báo né/status/rail, sau đó objective/feedback/chuỗi rồi các hint tùy chọn; chỉ một tên chiêu bung trái. Không đổi D1/native/motion/gameplay. Lần chụp sơ bộ phát hiện CanvasGroup mất tham chiếu qua domain reload khi sửa trong Play; đã sửa SerializeField + tự phục hồi tham chiếu, lưu lỗi cũ, stop/refresh và compile sạch Console0. Tiếp chụp nguồn cuối training/defense và toàn bộ panels, không gọi hồi quy.')

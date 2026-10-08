@@ -1,0 +1,2 @@
+from ar_ui import *
+milestone('Tiếp quản sau lượt build hoàn tất: verify APK621556848byte SHA4e985493...5084, modelSTORED/manifest/signature/Physics đạt; điện thoại hiện không có trong adb devices, đã ghi skip. Unity/MCP đã bị đóng trong thời gian gián đoạn nên restoration chưa chạy; đã mở lại Editor Android và server MCP10.2.0 từ cache offline. Đang nối bridge bằng Editor helper tạm, sau đó xóa helper và phục hồi snapshot/save/settings. Không rebuild, không chạy hồi quy; REPORT chưa viết vì còn restoration/Console0.')
