@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f41e02426d91442804f2bad6bcb9c4, type: 3}
+  m_Name: ShabanBoss7
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EnemyArchetype
+  id: shaban-boss7
+  displayName: ShabanBoss7
+  displayNameVN: "S\u0103n H\u1ED3n Th\u1EE9c T\u1EC9nh"
+  element: 7
+  prefab: {fileID: 8244075459992570162, guid: 537f7a8b7f5e6484ebea4ee6ac204442, type: 3}
+  prefabPending: 0
+  baseHealth: 750
+  baseDamage: 25
+  baseSpeed: 7.5
+  defense: 0.25
+  lateHealthMultiplier: 1
+  attackRange: 1.6
+  attackCooldown: 1.4
+  ranged: 0
+  preferredMin: 8
+  preferredMax: 12
+  projectileSpeed: 14
+  attackClipSeconds: 0.5
+  impactFraction: 0.5
+  swordIntentWeight: 4
+  isFlying: 0
+  isBoss: 1
+  resistHardControl: 1
+  abilities: []

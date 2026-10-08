@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f04afd11ba4df468364f8659fde99f, type: 3}
+  m_Name: AITierProfiles
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.AITierProfile
+  tiers:
+  - name: T0
+    windup: 0.8
+    meleeTokens: 2
+    rangedTokens: 2
+    surround: 0
+    dodgeChance: 0
+    ambush: 0
+    adapt: 0
+    squad: 0
+    squadRefresh: 0.5
+    chasers: 1
+    predictionSeconds: 2
+    flankRadius: 0
+    escapeDegrees: 90
+    routePenalty: 0
+    pathsPerFrame: 3
+    interception: 0
+    herding: 0
+    stationarySeconds: 14
+  - name: T1
+    windup: 0.6
+    meleeTokens: 3
+    rangedTokens: 2
+    surround: 1
+    dodgeChance: 0
+    ambush: 0
+    adapt: 0
+    squad: 1
+    squadRefresh: 0.5
+    chasers: 1
+    predictionSeconds: 2
+    flankRadius: 4.5
+    escapeDegrees: 90
+    routePenalty: 2
+    pathsPerFrame: 3
+    interception: 0
+    herding: 0
+    stationarySeconds: 14
+  - name: T2
+    windup: 0.5
+    meleeTokens: 3
+    rangedTokens: 3
+    surround: 1
+    dodgeChance: 0.4
+    ambush: 0
+    adapt: 0
+    squad: 1
+    squadRefresh: 0.5
+    chasers: 2
+    predictionSeconds: 2
+    flankRadius: 7
+    escapeDegrees: 70
+    routePenalty: 5
+    pathsPerFrame: 3
+    interception: 1
+    herding: 0
+    stationarySeconds: 14
+  - name: T3
+    windup: 0.5
+    meleeTokens: 4
+    rangedTokens: 3
+    surround: 1
+    dodgeChance: 0.4
+    ambush: 1
+    adapt: 0
+    squad: 1
+    squadRefresh: 0.5
+    chasers: 2
+    predictionSeconds: 4
+    flankRadius: 8
+    escapeDegrees: 35
+    routePenalty: 6
+    pathsPerFrame: 3
+    interception: 1
+    herding: 0
+    stationarySeconds: 14
+    phasedEncirclement: 1
+    closeCoverage: 250
+    formationSpeed: 2
+  - name: T4
+    windup: 0.5
+    meleeTokens: 4
+    rangedTokens: 4
+    surround: 1
+    dodgeChance: 0.6
+    ambush: 1
+    adapt: 1
+    squad: 1
+    squadRefresh: 0.5
+    chasers: 2
+    predictionSeconds: 3.5
+    flankRadius: 9
+    escapeDegrees: 35
+    routePenalty: 7
+    pathsPerFrame: 3
+    interception: 1
+    herding: 1
+    stationarySeconds: 14
+    phasedEncirclement: 1
+    closeCoverage: 250
+    formationSpeed: 2

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e88441314efc36479df32b3349fc4bf, type: 3}
+  m_Name: Explosion
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Enemies.EliteAffixDefinition
+  kind: 4
+  nameVN: "T\u1EF1 B\u1EA1o"
+  nameEN: Explosion
+  color: {r: 1, g: 0.5411765, b: 0, a: 1}
+  icon: {fileID: 5986030973748356752, guid: 2e3192697fc29334d9b943e9f83a7cad, type: 3}
+  minLevel: 6
