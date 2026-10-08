@@ -1,0 +1,103 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections;
+using System.IO;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.UI;
+using CampusRift.Combat;
+using CampusRift.Controls;
+using CampusRift.Enemies;
+using CampusRift.Levels;
+using CampusRift.Monsters;
+using CampusRift.Skills;
+using CampusRift.SkyBeast;
+using CampusRift.UI;
+namespace CampusRift.Validation
+{
+    public sealed class StabilizePolishCapture : P12PlayTest
+    {
+        string stage;LevelDirector director;HeavenSwordCinematic cinematic;
+        readonly Vector3 outdoor=new Vector3(-5,.13f,2);
+        IEnumerator Shot(string name)
+        {
+            yield return new WaitForSecondsRealtime(.15f);yield return new WaitForEndOfFrame();
+            string stem="task/stabilize/screens/"+name+"-"+stage;
+            var frame=ScreenCapture.CaptureScreenshotAsTexture();File.WriteAllBytes(stem+".png",frame.EncodeToPNG());Destroy(frame);
+            var audit=ComicTextAudit.Scan(name+" "+stage);ComicTextAudit.Save(audit,stem+"-text-audit.json");
+            if(stage=="after")Check(audit.issues.Count==0,name+" ComicTextAudit0");
+            Measure(stem+"; camera="+world.camera.transform.position+"; fov="+world.camera.fieldOfView);
+        }
+        void CameraAt(Vector3 from,Vector3 at)
+        {world.camera.transform.position=outdoor+from;world.camera.transform.LookAt(outdoor+at);world.camera.fieldOfView=55;}
+        EnemyInstance Spawn(string id,Vector3 offset)
+        {
+            var a=UnityEditor.AssetDatabase.LoadAssetAtPath<EnemyArchetype>("Assets/Enemies/Data/"+id+".asset");
+            var e=EnemyPool.Ensure().Spawn(a,outdoor+offset,EnemyScaling.Default);
+            e.Brain.enabled=false;e.Motor.Stop();e.GetComponent<EnemyConcealment>()?.RevealFor(60);
+            var fly=e.GetComponent<FlyingMotor>();if(fly!=null)fly.Manual=true;
+            e.transform.rotation=Quaternion.LookRotation(Vector3.ProjectOnPlane(world.camera.transform.position-e.transform.position,Vector3.up));
+            return e;
+        }
+        void Clean()
+        {EnemyPool.Instance.ReleaseAll();EnemyTelegraph.Clear();world.player.GetComponent<SkillVfxPool>().Clear();}
+        void Level(int n)
+        {
+            UIStateManager.Instance.EnterScene(true);LevelSession.Select(n);director=LevelDirector.Ensure();director.Begin(LevelCatalog.Instance.Get(n));director.enabled=false;
+            world.PlacePlayer(outdoor);world.player.enabled=false;world.player.followCamera=null;
+            var health=world.player.GetComponent<PlayerMonsterHealth>();health.SetProgressionMaxHealth(10000);health.Revive(1,0);health.respawnOnDefeat=false;
+            var fire=FireBreathCycle.Instance;fire.AutoAdvance=false;fire.Ground.Clear();fire.GetComponent<FireBreathVisuals>().enabled=false;
+        }
+        IEnumerator ClearWave()
+        {
+            director.introSeconds=.01f;director.spawnInterval=.005f;director.portalLead=0;director.enabled=true;
+            float until=Time.realtimeSinceStartup+30;
+            while(!director.AwaitingSkySword&&Time.realtimeSinceStartup<until)
+            {
+                foreach(var e in director.Alive.ToArray()){e.Brain.enabled=false;e.Motor.Stop();HeavenSwordPlayTest.Kill(e);}yield return null;
+            }
+            director.enabled=false;Check(director.AwaitingSkySword&&SwordIntent.Instance.Full,"Real wave cleared/full intent");
+        }
+        protected override IEnumerator Run()
+        {
+            stage=UnityEditor.SessionState.GetString("CampusRift.Stabilize.polishStage","before");
+            Directory.CreateDirectory("task/stabilize/screens");Begin();UIValidation.SetResolution(1920,1080);world.Lighting(false);
+            world.player.enabled=false;world.player.followCamera=null;yield return new WaitForSecondsRealtime(.3f);
+            Level(9);world.Mode(true);CameraAt(new Vector3(-3,2,-4),Vector3.up);
+            SwordIntent.Instance.BeginWave(0,0);yield return Shot("intent-waiting");
+            if(stage=="after")Check(!FindObjectsByType<TMPro.TMP_Text>().Any(t=>t.isActiveAndEnabled&&t.text.Contains("0/0")),"Waiting intent has no0/0 label");
+            yield return ClearWave();ProfileService.Instance.Data.heavenSwordSeen=true;
+            var ultimate=HeavenSwordUltimate.Instance;Check(ultimate.TryChannel(),"Real Heaven Sword channel accepted");
+            float until=Time.realtimeSinceStartup+8;while(HeavenSwordCinematic.Active==null&&Time.realtimeSinceStartup<until)yield return null;
+            cinematic=HeavenSwordCinematic.Active;if(cinematic==null)throw new Exception("No cinematic");
+            cinematic.HoldForCapture=true;cinematic.SeekForCapture(.736f);yield return Shot("heaven-sword-campus-impact");cinematic.Skip();
+            until=Time.realtimeSinceStartup+5;while(ultimate.Busy&&Time.realtimeSinceStartup<until)yield return null;
+            director.enabled=true;yield return null;director.enabled=false;
+            Check(director.CanChangeSkills,"Real level9 Rest reached");
+            var loadout=world.player.GetComponent<SkillLoadout>();loadout.EquipDuringRest(0,"than-kiem-ngu-loi");
+            var panel=RestLoadoutUI.Instance;panel.Open();yield return Shot("rest-loadout-scroll");
+            if(stage=="after")
+            {
+                var scroll=panel.GetComponentsInChildren<ScrollRect>().Single();scroll.verticalNormalizedPosition=0;yield return null;
+                Check(scroll.content.rect.height>scroll.viewport.rect.height&&scroll.verticalNormalizedPosition<.01f,"Mobile skill list scroll reaches final row");
+            }
+            panel.Close();yield return null;yield return Shot("long-skill-name");director.End();Clean();
+            UIStateManager.Instance.EnterScene(true);world.Mode(false);LevelSession.Clear();world.Lighting(false);
+            CameraAt(new Vector3(6,2.6f,-8),new Vector3(6,1,0));
+            var bat=Spawn("duc-yeu",new Vector3(6,0,0));Spawn("liem-hon",new Vector3(3.7f,0,0));Spawn("bao-thi",new Vector3(8.3f,0,0));
+            yield return new WaitForSeconds(.9f);bat.Animation.Play(bat.Animation.profile.idle,1,5);yield return new WaitForSeconds(.25f);yield return Shot("bat-human-scale");
+            var skin=bat.GetComponentsInChildren<SkinnedMeshRenderer>().First(r=>r.name!="Elite outline");Measure("bat active bounds="+skin.bounds.size+" capsule="+bat.GetComponent<CapsuleCollider>().radius);Clean();
+            CameraAt(new Vector3(6,2.6f,-7),new Vector3(6,1,0));
+            var shadow=Spawn("anh-yeu",new Vector3(6,0,0));Spawn("liem-hon",new Vector3(3.7f,0,0));Spawn("bao-thi",new Vector3(8.3f,0,0));
+            yield return new WaitForSeconds(.9f);shadow.Animation.Play(shadow.Animation.profile.idle,1,5);yield return new WaitForSeconds(.3f);yield return Shot("shadow-assassin-detail");Clean();
+            CameraAt(new Vector3(6,2.7f,-8),new Vector3(6,1,0));
+            var elite=Spawn("anh-yeu",new Vector3(6,0,0));elite.Elite.Configure(10,21,EliteAffixKind.Berserk,EliteAffixKind.FireHeart);elite.GetComponent<EnemyConcealment>().RevealFor(60);
+            Spawn("thiet-giap-nguu",new Vector3(9,0,1.5f));Spawn("hoa-linh",new Vector3(3,0,1.5f));
+            yield return new WaitForSeconds(.9f);elite.Animation.Play(elite.Animation.profile.idle,1,5);yield return new WaitForSeconds(.3f);yield return Shot("elite-fire-aura");
+            EnemyHealthBars.Instance.SetLocked(elite.Vitality);yield return Shot("elite-nameplate");Clean();
+            world.player.enabled=true;director?.End();File.WriteAllText("task/stabilize/polish-"+stage+".json",JsonUtility.ToJson(report,true));
+        }
+        protected override void Cleanup(){cinematic?.Cancel();RestLoadoutUI.Instance?.Close();director?.End();world.player.enabled=true;base.Cleanup();}
+    }
+}
+#endif
