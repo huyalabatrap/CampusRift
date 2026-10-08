@@ -1,0 +1,1 @@
+return UnityEditor.EditorApplication.delayCall==null ? new string[0] : System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Select(UnityEditor.EditorApplication.delayCall.GetInvocationList(),d=>d.Method.DeclaringType.FullName+"."+d.Method.Name));

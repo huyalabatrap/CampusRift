@@ -1,0 +1,1 @@
+return new {log=UnityEngine.Application.consoleLogPath,building=UnityEditor.BuildPipeline.isBuildingPlayer,compiling=UnityEditor.EditorApplication.isCompiling,updating=UnityEditor.EditorApplication.isUpdating};
