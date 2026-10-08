@@ -1,0 +1,200 @@
+CAMPUS RIFT
+
+AR RIFT · NHẬN CỬ CHỈ / GESTURE RECOGNITION
+Google MediaPipe Tasks Vision và Gesture Recognizer model · Apache 2.0
+https://github.com/google-ai-edge/mediapipe
+https://www.apache.org/licenses/LICENSE-2.0
+Hình ảnh được xử lý trên máy / Images processed on device.
+
+---PAGE---
+
+THỰC HIỆN / PRODUCTION
+Nhóm phát triển Campus Rift
+
+MODEL NGƯỜI DÙNG CUNG CẤP / USER PROVIDED MODELS
+Campus · SchoolGirl · Shaban · bảy model yêu thú
+Rồng020 Silver Cloud ·023 Azure Serpent ·026 Lava Wing
+Model, texture và hoạt ảnh: quyền thuộc người dùng / rights retained by their owner.
+
+MỸ THUẬT / ART
+Giao diện comic, icon, mesh và hiệu ứng: Campus Rift
+Minh họa vật phẩm: tạo với OpenAI imagegen
+
+DANH HIỆU / TITLE
+PHÁ RIFT · RIFT BREAKER
+
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Night Demon · Ảnh Yêu
+Morgan Strauss (nubux) · CC-BY3.0
+https://opengameart.org/content/night-demon
+Modified for Campus Rift: clothing, idle animation, materials and LOD.
+https://creativecommons.org/licenses/by/3.0/
+
+Rigged, textured mage · Triệu Hồn Sư
+thecubber · source rig: Julius · CC-BY-SA3.0
+https://opengameart.org/content/rigged-textured-mage
+Modified for Campus Rift: rig, animations, materials and LOD.
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Vampire Bat · Dực Yêu
+rubberduck · source textures: Yughues · CC0 1.0
+https://opengameart.org/content/vampire-bat-animated
+Modified for Campus Rift: animation, scale and LOD.
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Lava Golem · Hỏa Linh
+gavlig · concept: Boris · CC0 1.0
+https://opengameart.org/content/lava-golem
+Clean model and glow; modified for Campus Rift.
+
+Ultimate Monsters
+Quaternius · CC0 1.0
+https://quaternius.com/packs/ultimatemonsters.html
+
+Particle Pack · Impact Sounds · Sci-fi Sounds
+Kenney Vleugels · CC0 1.0
+https://kenney.nl/assets/particle-pack
+https://kenney.nl/assets/impact-sounds
+https://kenney.nl/assets/sci-fi-sounds
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Monster Sound Effects Pack
+Ogrebane · CC0 1.0
+https://opengameart.org/content/monster-sound-effects-pack
+Layered/processed into dragon roars for Campus Rift.
+
+Cat Roar1 /2
+Joseph SARDIN · BigSoundBank · CC0 1.0
+https://bigsoundbank.com/cat-roar-1-s1881.html
+https://bigsoundbank.com/cat-roar-2-s1882.html
+Layered/processed into dragon roars for Campus Rift.
+
+Large Wings Flap
+AntumDeluge · original chop: dave.des · CC0 1.0
+https://opengameart.org/content/large-wings-flap
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Alarm
+EZduzziteh · CC0 1.0
+https://opengameart.org/content/alarm-1
+
+Fireplace Sound loop
+PagDev · CC0 1.0
+https://opengameart.org/content/fireplace-sound-loop
+
+Final Stand
+Centurion_of_war · CC0 1.0
+https://opengameart.org/content/final-stand-0
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Calm Loop
+wipics · CC0 1.0
+https://opengameart.org/content/calm-loop
+
+Dark Place (loop)
+SkyleTheFrench · CC0 1.0
+https://opengameart.org/content/dark-place-loop
+
+Victory
+celestialghost8 · CC0 1.0
+https://opengameart.org/content/victory
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+The Final Battle
+skrjablin · CC0 1.0
+https://opengameart.org/content/the-final-battle
+
+Boss Battle #2 [Symphonic Metal]
+nene · CC0 1.0
+https://opengameart.org/content/boss-battle-2-symphonic-metal
+Opening/loop filenames reversed by source author; using looping part.
+
+Hope (Orchestral battle music)
+MintoDog · CC0 1.0
+https://opengameart.org/content/hopeorchestral-battle-music
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Transformansion ending
+Emma_MA · CC0 1.0
+https://opengameart.org/content/transformansion-ending
+
+Morning Birds in a Quiet Urban Garden
+WhisperingEarth · Freesound · CC0 1.0
+https://freesound.org/people/WhisperingEarth/sounds/798842/
+Public HQ MP3 preview of the field recording.
+
+Be Vietnam Pro
+The Be Vietnam Pro Project Authors (2021) · SIL Open Font License1.1
+https://github.com/bettergui/BeVietnamPro
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Campus surfaces and sky
+Poly Haven · CC0 1.0
+https://polyhaven.com/license
+Textures adjusted for Campus Rift; original HDRI tone mapped.
+
+plastered_wall_04
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/plastered_wall_04
+
+concrete_floor_worn_001
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/concrete_floor_worn_001
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+brick_pavement
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/brick_pavement
+
+rusty_painted_metal
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/rusty_painted_metal
+
+rusty_corrugated_iron
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/rusty_corrugated_iron
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+wood_planks_grey
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/wood_planks_grey
+
+sparse_grass
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/sparse_grass
+
+brown_mud_03
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/brown_mud_03
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+kloppenheim_06_puresky
+Poly Haven · CC0 1.0
+https://polyhaven.com/a/kloppenheim_06_puresky
+
+Dark Priest · source archive
+Danimal · Dread Knight · Katarzyna Zalecka · Ancient Beast · Alejandro CG · Yughues · CC-BY-SA3.0
+https://opengameart.org/content/dark-priest
+https://AncientBeast.com
+
+Executioner · source archive
+thecubber · commissioned by OpenGameArt.org community · CC-BY3.0
+https://opengameart.org/content/rigged-textured-executioner
+---PAGE---
+TÀI NGUYÊN / ASSET CREDITS
+
+Gargoyle · source archive
+yd · CC0 1.0
+https://opengameart.org/content/gargoyle

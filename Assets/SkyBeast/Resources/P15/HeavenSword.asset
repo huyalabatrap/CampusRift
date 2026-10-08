@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf276ae180ee65741af7ca0000202d99, type: 3}
+  m_Name: HeavenSword
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.SkyBeast.HeavenSwordConfig
+  hoaThanChannel: 2.5
+  luyenHuChannel: 2
+  doKiepChannel: 1.5
+  firstSeconds: 6
+  repeatSeconds: 3
+  restSeconds: 15
+  swordLength: 150
+  protectionSeconds: 10
+  protectionFireResistance: 0.5
+  highSwords: 2400
+  lowSwords: 1600
+  mobileSwords: 960
+  blade: {fileID: 11400000, guid: fff74c4ecddb8b746a2717ed25511f4c, type: 2}
+  sounds: {fileID: 11400000, guid: 52807c8f791792a488525fe08e33789f, type: 2}
+  gold: {fileID: 2100000, guid: bf1a2bd5995ffcb4195729de5d4537d9, type: 2}
+  ready: {fileID: 8300000, guid: 2c5e8e26dcd48b64d925767c859003f7, type: 3}
+  victory: {fileID: 8300000, guid: 41d502575f3d17944a9e3ca128053a64, type: 3}
