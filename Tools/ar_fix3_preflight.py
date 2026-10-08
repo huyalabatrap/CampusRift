@@ -1,0 +1,5 @@
+from ar_fix3_local import *
+save(out/'settings-before.json',code('return new { settings=UnityEngine.PlayerPrefs.GetString("CampusRift.Settings.v1"), floor=UnityEngine.PlayerPrefs.GetInt("CampusRift.AR.Floor",0), safety=UnityEngine.PlayerPrefs.GetInt("CampusRift.AR.Safety",0), tutorial=UnityEngine.PlayerPrefs.GetInt("CampusRift.AR.HelpSeen",0), enterPlay=(int)UnityEditor.EditorSettings.enterPlayModeOptions, enterEnabled=UnityEditor.EditorSettings.enterPlayModeOptionsEnabled, dev=UnityEditor.EditorUserBuildSettings.development,inputBackground=(int)UnityEngine.InputSystem.InputSystem.settings.backgroundBehavior,inputEditor=(int)UnityEngine.InputSystem.InputSystem.settings.editorInputBehaviorInPlayMode };'))
+progress('phần A triển khai\n- Reticle tâm, raycast ưu tiên, ngưỡng mới, world anchor rồi fallback attachment; root làm mượt độc lập, dừng dò plane, ground/NavMesh disc cố định. Chỉnh1/2ngón trước BẮT ĐẦU/tự3s; autofocus/config30FPS/depth đặt/feature thưa. Chưa kiểm simulation. Chưa harness/build.')
+code('UnityEditor.AssetDatabase.Refresh();UnityEditor.Compilation.CompilationPipeline.RequestScriptCompilation();return true;')
+print('Refresh requested')

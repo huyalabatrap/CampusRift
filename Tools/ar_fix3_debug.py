@@ -1,0 +1,12 @@
+from ar_fix3_local import *
+code('CampusRift.AR.ARSceneNavigation.Enter("ARGestureDebug");return true;');time.sleep(1)
+code('var c=UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.ARSessionBootstrap>();c.Continue();c.Continue();return true;');time.sleep(1)
+code('var mock=UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.MockGestureSource>();mock.enabled=false;mock.Emit("Victory",new UnityEngine.Vector2(.5f,.5f),.62f,.3f);return true;');time.sleep(.05)
+code('var mock=UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.MockGestureSource>();mock.Emit("Victory",new UnityEngine.Vector2(.5f,.5f),.62f,.3f);return true;');time.sleep(.05)
+code('UnityEngine.ScreenCapture.CaptureScreenshot("task/ar/screens/fix3/gesture-debug-1600x720.png");return true;');time.sleep(.4)
+save(out/'gesture-debug.json',code('var d=UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.ARGestureDebug>();var labels=new System.Collections.Generic.List<string>();foreach(var t in d.GetComponentsInChildren<TMPro.TMP_Text>())labels.Add(t.text);return new {scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,settings=d.settings!=null,bars=d.GetComponentsInChildren<CampusRift.AR.ARArcGraphic>().Length,labels};'))
+console(out/'gesture-debug-console.json')
+code('UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.ARXRLoaderControl>().Shutdown();UnityEditor.EditorApplication.isPlaying=false;return true;');time.sleep(1)
+code('UnityEditor.SceneManagement.EditorSceneManager.OpenScene("Assets/Scenes/SampleScene.unity");return true;')
+progress('Hub + debug đạt / chuẩn bị APK\n- HubFlow1lượt42/0, Console0. Debug scene có5evidence bars,5fingerstates/geometry vàsettingsSO; screenshot gesture-debug. Còn build/verify/restore/finalstate; không chạy lại AR/Hub/fulltextaudit.')
+print((out/'gesture-debug.json').read_text(encoding='utf-8'))
