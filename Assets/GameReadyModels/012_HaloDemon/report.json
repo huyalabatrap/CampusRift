@@ -1,0 +1,850 @@
+{
+  "id": "012",
+  "name": "HaloDemon",
+  "height_m": 2.1,
+  "triangles_before": 1929113,
+  "rig_before": 0,
+  "triangles_after": 58000,
+  "surface_error": {
+    "samples": 20192,
+    "mean_m": 0.000248041786847802,
+    "p95_m": 0.0006895759142935276,
+    "max_m": 0.002108767395839095,
+    "max_height_percent": 0.1004174950399569,
+    "method": "20k source vertices to decimated triangle surface; one-way sampled distance"
+  },
+  "weights": {
+    "repaired_vertices": 46597,
+    "rigid_or_petal_vertices": 1243,
+    "max_influences": 4,
+    "refinement": {
+      "diffusion_iterations": 14,
+      "proximity_links": 36912,
+      "matched_uv_duplicate_vertices": 5381
+    }
+  },
+  "bones_after": 66,
+  "seconds_geometry_rig": 27.4,
+  "clips": [
+    {
+      "name": "012_Idle_Breathe",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1118273005154846,
+          "edge_max_stretch": 2.502010327676365,
+          "edge_over_2x_percent": 0.023395917412411534,
+          "minimum_z": -0.00040163283119909465
+        },
+        {
+          "edge_p99_stretch": 1.0568769909762654,
+          "edge_max_stretch": 2.1755482097081438,
+          "edge_over_2x_percent": 0.011697958706205767,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.09432928252143,
+          "edge_max_stretch": 1.909633766177447,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": 0.003790114540606737
+        }
+      ]
+    },
+    {
+      "name": "012_Idle_Look",
+      "frames": 120,
+      "fps": 30,
+      "seconds": 3.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.273944163503599,
+          "edge_max_stretch": 2.592145566107557,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": -0.00040163283119909465
+        },
+        {
+          "edge_p99_stretch": 1.0568769909762654,
+          "edge_max_stretch": 2.1755482097081438,
+          "edge_over_2x_percent": 0.011697958706205767,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1886979265725914,
+          "edge_max_stretch": 3.189573616124271,
+          "edge_over_2x_percent": 0.011697958706205767,
+          "minimum_z": 0.003790114540606737
+        }
+      ]
+    },
+    {
+      "name": "012_Idle_Alert",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1614883530740268,
+          "edge_max_stretch": 2.502010327676365,
+          "edge_over_2x_percent": 0.035093876118617306,
+          "minimum_z": -0.00040163283119909465
+        },
+        {
+          "edge_p99_stretch": 1.1796264511076868,
+          "edge_max_stretch": 3.020276738930159,
+          "edge_over_2x_percent": 0.052640814177925946,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.2443866278358326,
+          "edge_max_stretch": 3.984529205049682,
+          "edge_over_2x_percent": 0.06433877288413171,
+          "minimum_z": 0.003790114540606737
+        }
+      ]
+    },
+    {
+      "name": "012_Walk_Forward",
+      "frames": 48,
+      "fps": 30,
+      "seconds": 1.5666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.3565340343440513,
+          "edge_max_stretch": 6.638682940259584,
+          "edge_over_2x_percent": 0.2164122360648067,
+          "minimum_z": 0.00830804742872715
+        },
+        {
+          "edge_p99_stretch": 1.1963341479001317,
+          "edge_max_stretch": 3.859567166609427,
+          "edge_over_2x_percent": 0.035093876118617306,
+          "minimum_z": 0.010368570685386658
+        },
+        {
+          "edge_p99_stretch": 1.2541331318486768,
+          "edge_max_stretch": 5.577367796553506,
+          "edge_over_2x_percent": 0.18716733929929227,
+          "minimum_z": 0.012336942367255688
+        }
+      ]
+    },
+    {
+      "name": "012_Walk_Backward",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.33207950250362,
+          "edge_max_stretch": 6.638682940259584,
+          "edge_over_2x_percent": 0.2047142773586009,
+          "minimum_z": 0.009478434920310974
+        },
+        {
+          "edge_p99_stretch": 1.1963341479001317,
+          "edge_max_stretch": 3.859567166609427,
+          "edge_over_2x_percent": 0.035093876118617306,
+          "minimum_z": 0.010368570685386658
+        },
+        {
+          "edge_p99_stretch": 1.3018073953439122,
+          "edge_max_stretch": 5.577367796553506,
+          "edge_over_2x_percent": 0.18716733929929227,
+          "minimum_z": 0.0109929908066988
+        }
+      ]
+    },
+    {
+      "name": "012_Run_Forward",
+      "frames": 30,
+      "fps": 30,
+      "seconds": 0.9666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.3266027949329326,
+          "edge_max_stretch": 5.544672992232178,
+          "edge_over_2x_percent": 0.1754693805930865,
+          "minimum_z": 0.01114358939230442
+        },
+        {
+          "edge_p99_stretch": 1.2019986274280803,
+          "edge_max_stretch": 3.769041246666027,
+          "edge_over_2x_percent": 0.040942855471720184,
+          "minimum_z": 0.009843514300882816
+        },
+        {
+          "edge_p99_stretch": 1.2212145567711201,
+          "edge_max_stretch": 4.668203421474717,
+          "edge_over_2x_percent": 0.14622448382757208,
+          "minimum_z": 0.013410171493887901
+        }
+      ]
+    },
+    {
+      "name": "012_Strafe_Left",
+      "frames": 48,
+      "fps": 30,
+      "seconds": 1.5666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.355085477521249,
+          "edge_max_stretch": 6.638682940259584,
+          "edge_over_2x_percent": 0.21056325671170378,
+          "minimum_z": 0.008334233425557613
+        },
+        {
+          "edge_p99_stretch": 1.1963341479001317,
+          "edge_max_stretch": 3.859567166609427,
+          "edge_over_2x_percent": 0.035093876118617306,
+          "minimum_z": 0.010368570685386658
+        },
+        {
+          "edge_p99_stretch": 1.2751250492240522,
+          "edge_max_stretch": 5.577367796553506,
+          "edge_over_2x_percent": 0.19301631865239516,
+          "minimum_z": 0.012208671309053898
+        }
+      ]
+    },
+    {
+      "name": "012_Strafe_Right",
+      "frames": 48,
+      "fps": 30,
+      "seconds": 1.5666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.3329900986845977,
+          "edge_max_stretch": 6.638682940259584,
+          "edge_over_2x_percent": 0.21056325671170378,
+          "minimum_z": 0.00944523885846138
+        },
+        {
+          "edge_p99_stretch": 1.1963341479001317,
+          "edge_max_stretch": 3.859567166609427,
+          "edge_over_2x_percent": 0.035093876118617306,
+          "minimum_z": 0.010368570685386658
+        },
+        {
+          "edge_p99_stretch": 1.3151101494330248,
+          "edge_max_stretch": 5.577367796553506,
+          "edge_over_2x_percent": 0.1813183599461894,
+          "minimum_z": 0.011114737018942833
+        }
+      ]
+    },
+    {
+      "name": "012_Turn_Left",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": false,
+      "procedural_amplitude": 0.04902227890625002,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.081483902720344,
+          "edge_max_stretch": 2.5094219918599086,
+          "edge_over_2x_percent": 0.017546938059308653,
+          "minimum_z": 0.0011229084338992834
+        },
+        {
+          "edge_p99_stretch": 1.2470234141196592,
+          "edge_max_stretch": 6.030650263868339,
+          "edge_over_2x_percent": 0.09943264900274902,
+          "minimum_z": 0.001456802012398839
+        },
+        {
+          "edge_p99_stretch": 1.4480680522679878,
+          "edge_max_stretch": 9.861947557341722,
+          "edge_over_2x_percent": 0.23395917412411532,
+          "minimum_z": 0.002554070670157671
+        }
+      ]
+    },
+    {
+      "name": "012_Turn_Right",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": false,
+      "procedural_amplitude": 0.04902227890625002,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.108140002725822,
+          "edge_max_stretch": 2.8563718967504133,
+          "edge_over_2x_percent": 0.029244896765514415,
+          "minimum_z": 0.0016391974641010165
+        },
+        {
+          "edge_p99_stretch": 1.3036069568583852,
+          "edge_max_stretch": 6.330034233187102,
+          "edge_over_2x_percent": 0.12867754576826343,
+          "minimum_z": 0.0030665358062833548
+        },
+        {
+          "edge_p99_stretch": 1.5310550709380506,
+          "edge_max_stretch": 10.201029218921308,
+          "edge_over_2x_percent": 0.36848569924548163,
+          "minimum_z": 0.00512875197455287
+        }
+      ]
+    },
+    {
+      "name": "012_Attack_Light",
+      "frames": 36,
+      "fps": 30,
+      "seconds": 1.1666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.17850625000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1184524234200186,
+          "edge_max_stretch": 3.6843090748408307,
+          "edge_over_2x_percent": 0.07018775223723461,
+          "minimum_z": 0.0010915698949247599
+        },
+        {
+          "edge_p99_stretch": 1.271024225644884,
+          "edge_max_stretch": 4.862940963531772,
+          "edge_over_2x_percent": 0.18716733929929227,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.2718414682321246,
+          "edge_max_stretch": 4.88390692949106,
+          "edge_over_2x_percent": 0.19301631865239516,
+          "minimum_z": 0.0018400611588731408
+        }
+      ]
+    },
+    {
+      "name": "012_Attack_Heavy",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.11602906250000004,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1138384544405755,
+          "edge_max_stretch": 2.2856898954607363,
+          "edge_over_2x_percent": 0.04679183482482307,
+          "minimum_z": 0.0012181889032945037
+        },
+        {
+          "edge_p99_stretch": 1.289041703817925,
+          "edge_max_stretch": 4.260739269306452,
+          "edge_over_2x_percent": 0.14037550447446923,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.312293790196273,
+          "edge_max_stretch": 4.38229897430719,
+          "edge_over_2x_percent": 0.16962040123998362,
+          "minimum_z": 0.001704676542431116
+        }
+      ]
+    },
+    {
+      "name": "012_Attack_Combo",
+      "frames": 72,
+      "fps": 30,
+      "seconds": 2.3666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.42250000000000004,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1651821305853087,
+          "edge_max_stretch": 3.0901238740173063,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": 0.0006146758096292615
+        },
+        {
+          "edge_p99_stretch": 1.3476612632742517,
+          "edge_max_stretch": 5.824689495418558,
+          "edge_over_2x_percent": 0.2398081534772182,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1932334822788977,
+          "edge_max_stretch": 3.6159309482434905,
+          "edge_over_2x_percent": 0.07018775223723461,
+          "minimum_z": 0.0023860749788582325
+        }
+      ]
+    },
+    {
+      "name": "012_Hit_Front",
+      "frames": 24,
+      "fps": 30,
+      "seconds": 0.7666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.42250000000000004,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.139102143828585,
+          "edge_max_stretch": 2.3178528439642774,
+          "edge_over_2x_percent": 0.029244896765514415,
+          "minimum_z": 0.0006146758096292615
+        },
+        {
+          "edge_p99_stretch": 1.30477621391172,
+          "edge_max_stretch": 4.58674613680263,
+          "edge_over_2x_percent": 0.10528162835585189,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1791277233787598,
+          "edge_max_stretch": 3.0628017053175327,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": 0.0023860749788582325
+        }
+      ]
+    },
+    {
+      "name": "012_Hit_Back",
+      "frames": 24,
+      "fps": 30,
+      "seconds": 0.7666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.152382944551038,
+          "edge_max_stretch": 3.2679365677800325,
+          "edge_over_2x_percent": 0.07018775223723461,
+          "minimum_z": 0.0001954525214387104
+        },
+        {
+          "edge_p99_stretch": 1.2501445046452344,
+          "edge_max_stretch": 5.531907229253907,
+          "edge_over_2x_percent": 0.18716733929929227,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.0947017756296913,
+          "edge_max_stretch": 2.122494771034506,
+          "edge_over_2x_percent": 0.011697958706205767,
+          "minimum_z": 0.0029204939492046833
+        }
+      ]
+    },
+    {
+      "name": "012_Hit_Left",
+      "frames": 24,
+      "fps": 30,
+      "seconds": 0.7666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1765415389866072,
+          "edge_max_stretch": 2.5569623361225315,
+          "edge_over_2x_percent": 0.052640814177925946,
+          "minimum_z": 0.0001954525214387104
+        },
+        {
+          "edge_p99_stretch": 1.342553984896891,
+          "edge_max_stretch": 5.091141477082965,
+          "edge_over_2x_percent": 0.21056325671170378,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1774854457268458,
+          "edge_max_stretch": 3.011275480246296,
+          "edge_over_2x_percent": 0.04679183482482307,
+          "minimum_z": 0.0029204939492046833
+        }
+      ]
+    },
+    {
+      "name": "012_Hit_Right",
+      "frames": 24,
+      "fps": 30,
+      "seconds": 0.7666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.180516058602564,
+          "edge_max_stretch": 3.547338931159209,
+          "edge_over_2x_percent": 0.06433877288413171,
+          "minimum_z": 0.0001954525214387104
+        },
+        {
+          "edge_p99_stretch": 1.3482970538597483,
+          "edge_max_stretch": 6.341020806246721,
+          "edge_over_2x_percent": 0.2398081534772182,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1709602765134048,
+          "edge_max_stretch": 3.6952385352901476,
+          "edge_over_2x_percent": 0.04679183482482307,
+          "minimum_z": 0.0029204939492046833
+        }
+      ]
+    },
+    {
+      "name": "012_Stagger",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.2988927541610173,
+          "edge_max_stretch": 4.314258768076214,
+          "edge_over_2x_percent": 0.11113060770895479,
+          "minimum_z": 0.0001954525214387104
+        },
+        {
+          "edge_p99_stretch": 1.0568769909762654,
+          "edge_max_stretch": 2.1755482097081438,
+          "edge_over_2x_percent": 0.011697958706205767,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1461513056496404,
+          "edge_max_stretch": 3.1058902511348996,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": 0.0029204939492046833
+        }
+      ]
+    },
+    {
+      "name": "012_Stun",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.242540308339408,
+          "edge_max_stretch": 3.475172112280435,
+          "edge_over_2x_percent": 0.08188571094344037,
+          "minimum_z": -0.00040163283119909465
+        },
+        {
+          "edge_p99_stretch": 1.0568769909762654,
+          "edge_max_stretch": 2.1755482097081438,
+          "edge_over_2x_percent": 0.011697958706205767,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.118086947356029,
+          "edge_max_stretch": 2.3216910623021034,
+          "edge_over_2x_percent": 0.029244896765514415,
+          "minimum_z": 0.003790114540606737
+        }
+      ]
+    },
+    {
+      "name": "012_Death_Forward",
+      "frames": 75,
+      "fps": 30,
+      "seconds": 2.466666666666667,
+      "loop": false,
+      "in_place": false,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.0605445271170375,
+          "edge_max_stretch": 1.633759245132253,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": 0.09237831830978394
+        },
+        {
+          "edge_p99_stretch": 1.2053820533577786,
+          "edge_max_stretch": 3.3790587218133847,
+          "edge_over_2x_percent": 0.08188571094344037,
+          "minimum_z": 0.12002748250961304
+        },
+        {
+          "edge_p99_stretch": 1.2756579183350283,
+          "edge_max_stretch": 4.129127397398124,
+          "edge_over_2x_percent": 0.12282856641516056,
+          "minimum_z": 0.06406819820404053
+        }
+      ]
+    },
+    {
+      "name": "012_Death_Backward",
+      "frames": 75,
+      "fps": 30,
+      "seconds": 2.466666666666667,
+      "loop": false,
+      "in_place": false,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.0605437550616283,
+          "edge_max_stretch": 1.6337671087404542,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": 0.016703085973858833
+        },
+        {
+          "edge_p99_stretch": 1.2053815452423027,
+          "edge_max_stretch": 3.379058771190362,
+          "edge_over_2x_percent": 0.08188571094344037,
+          "minimum_z": 0.07198506593704224
+        },
+        {
+          "edge_p99_stretch": 1.2756600521674644,
+          "edge_max_stretch": 4.129136619276868,
+          "edge_over_2x_percent": 0.12282856641516056,
+          "minimum_z": 0.015671074390411377
+        }
+      ]
+    },
+    {
+      "name": "012_Spawn",
+      "frames": 75,
+      "fps": 30,
+      "seconds": 2.466666666666667,
+      "loop": false,
+      "in_place": false,
+      "procedural_amplitude": 0.65,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.360452664725545,
+          "edge_max_stretch": 5.119060904922727,
+          "edge_over_2x_percent": 0.15207346318067497,
+          "minimum_z": -1.5075656175613403
+        },
+        {
+          "edge_p99_stretch": 1.2233969053662646,
+          "edge_max_stretch": 3.697402821305782,
+          "edge_over_2x_percent": 0.06433877288413171,
+          "minimum_z": -0.8927088379859924
+        },
+        {
+          "edge_p99_stretch": 1.1042184848306327,
+          "edge_max_stretch": 2.286010078742261,
+          "edge_over_2x_percent": 0.0058489793531028835,
+          "minimum_z": -0.2778528928756714
+        }
+      ]
+    },
+    {
+      "name": "012_Despawn",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": false,
+      "procedural_amplitude": 0.42250000000000004,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.034775694235536,
+          "edge_max_stretch": 1.3418051693309525,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": -0.27995842695236206
+        },
+        {
+          "edge_p99_stretch": 1.1371279463212165,
+          "edge_max_stretch": 2.6745885678026253,
+          "edge_over_2x_percent": 0.035093876118617306,
+          "minimum_z": -0.8927088379859924
+        },
+        {
+          "edge_p99_stretch": 1.277769302028072,
+          "edge_max_stretch": 4.3917963351478075,
+          "edge_over_2x_percent": 0.08773469029654325,
+          "minimum_z": -1.5053749084472656
+        }
+      ]
+    },
+    {
+      "name": "012_Taunt",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1332286197650643,
+          "edge_max_stretch": 2.9323318704686465,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": 0.0009003575542010367
+        },
+        {
+          "edge_p99_stretch": 1.2495526432294655,
+          "edge_max_stretch": 5.346735430948191,
+          "edge_over_2x_percent": 0.21056325671170378,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1267129216811502,
+          "edge_max_stretch": 2.9914393334694394,
+          "edge_over_2x_percent": 0.052640814177925946,
+          "minimum_z": 0.0020518172532320023
+        }
+      ]
+    },
+    {
+      "name": "012_Halo_Channel",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1884366641219262,
+          "edge_max_stretch": 6.152321485132786,
+          "edge_over_2x_percent": 0.07018775223723461,
+          "minimum_z": 0.0009003575542010367
+        },
+        {
+          "edge_p99_stretch": 1.4086493561713338,
+          "edge_max_stretch": 5.6058925422182,
+          "edge_over_2x_percent": 0.2690530502427326,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.2307402484204857,
+          "edge_max_stretch": 7.65614136331717,
+          "edge_over_2x_percent": 0.10528162835585189,
+          "minimum_z": 0.0020518172532320023
+        }
+      ]
+    },
+    {
+      "name": "012_Curse_Cast",
+      "frames": 75,
+      "fps": 30,
+      "seconds": 2.466666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1309648334807434,
+          "edge_max_stretch": 3.098002499840086,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": 0.0009003575542010367
+        },
+        {
+          "edge_p99_stretch": 1.2546289538684037,
+          "edge_max_stretch": 5.6058925422182,
+          "edge_over_2x_percent": 0.23395917412411532,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.1405557255466605,
+          "edge_max_stretch": 3.3891346562933222,
+          "edge_over_2x_percent": 0.05848979353102883,
+          "minimum_z": 0.0020518172532320023
+        }
+      ]
+    },
+    {
+      "name": "012_Levitate",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.0748466209315604,
+          "edge_max_stretch": 1.9156041573352072,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": 0.08823153376579285
+        },
+        {
+          "edge_p99_stretch": 1.000008856205688,
+          "edge_max_stretch": 1.0000540225667578,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": 0.052291423082351685
+        },
+        {
+          "edge_p99_stretch": 1.0830979275970412,
+          "edge_max_stretch": 1.7054731954303337,
+          "edge_over_2x_percent": 0.0,
+          "minimum_z": 0.016159584745764732
+        }
+      ]
+    },
+    {
+      "name": "012_Ritual_Bow",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.27462500000000006,
+      "quality": [
+        {
+          "edge_p99_stretch": 1.1729459734425722,
+          "edge_max_stretch": 2.892826509561857,
+          "edge_over_2x_percent": 0.04679183482482307,
+          "minimum_z": 0.0009003575542010367
+        },
+        {
+          "edge_p99_stretch": 1.3878480713918095,
+          "edge_max_stretch": 5.540073187704969,
+          "edge_over_2x_percent": 0.21056325671170378,
+          "minimum_z": 0.001458213897421956
+        },
+        {
+          "edge_p99_stretch": 1.206850030779866,
+          "edge_max_stretch": 3.3946207845652983,
+          "edge_over_2x_percent": 0.06433877288413171,
+          "minimum_z": 0.0020518172532320023
+        }
+      ]
+    }
+  ],
+  "textures": {
+    "BaseColor": "012_BaseColor.png",
+    "Normal": "012_Normal.png",
+    "MetallicRoughness": "012_MetallicRoughness.png"
+  },
+  "animation_seconds": 15.8,
+  "animation_method": "Procedural bespoke keyframes with two-bone leg IK; conservative amplitudes, not motion capture.",
+  "unity_rig": "Generic"
+}
