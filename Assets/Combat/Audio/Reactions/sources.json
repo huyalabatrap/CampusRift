@@ -1,0 +1,79 @@
+[
+  {
+    "file": "impactGlass_heavy_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactGlass_heavy_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "impactMetal_heavy_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactMetal_heavy_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "impactPlate_heavy_000.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactPlate_heavy_000.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "impactBell_heavy_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactBell_heavy_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "impactSoft_heavy_000.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactSoft_heavy_000.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "laserSmall_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "member": "Audio/laserSmall_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "laserLarge_000.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "member": "Audio/laserLarge_000.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "explosionCrunch_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "member": "Audio/explosionCrunch_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "lowFrequency_explosion_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "member": "Audio/lowFrequency_explosion_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "forceField_003.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "member": "Audio/forceField_003.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  },
+  {
+    "file": "thrusterFire_001.ogg",
+    "archive": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "member": "Audio/thrusterFire_001.ogg",
+    "license": "CC0",
+    "author": "Kenney Vleugels"
+  }
+]
