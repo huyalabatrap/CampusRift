@@ -1,0 +1,3 @@
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+var xr=UnityEngine.XR.Management.XRGeneralSettings.Instance;
+return new{utc=System.DateTime.UtcNow.ToString("o"),scene=scene.path,dirty=scene.isDirty,playing=EditorApplication.isPlaying,compiling=EditorApplication.isCompiling,updating=EditorApplication.isUpdating,platform=EditorUserBuildSettings.activeBuildTarget.ToString(),xrLoader=xr!=null&&xr.Manager!=null&&xr.Manager.activeLoader!=null?xr.Manager.activeLoader.name:null,enterPlayEnabled=EditorSettings.enterPlayModeOptionsEnabled,enterPlayOptions=(int)EditorSettings.enterPlayModeOptions};

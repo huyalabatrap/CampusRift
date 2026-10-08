@@ -1,0 +1,13 @@
+PlayerPrefs.SetString("CampusRift.Settings.v1","{\"MasterVolume\":0.800000011920929,\"MusicVolume\":0.699999988079071,\"SFXVolume\":0.800000011920929,\"MonsterVolume\":1.0,\"UIVolume\":0.800000011920929,\"MouseSensitivity\":1.0,\"CameraSensitivity\":1.0,\"FieldOfView\":60.0,\"SkyBrightness\":0.0,\"ComicEffects\":true,\"ReduceSkillFlashes\":false,\"ReduceCameraShake\":false,\"Subtitles\":true,\"SlowReading\":false,\"TextSize\":0,\"AccessibleColors\":0,\"LocalTelemetryEnabled\":false,\"TelemetryConsentAsked\":false,\"InvertY\":false,\"Fullscreen\":false,\"VSync\":false,\"ResolutionWidth\":640,\"ResolutionHeight\":480,\"Quality\":0,\"ControlMode\":0,\"Language\":0,\"TouchSensitivity\":1.0,\"MobileControlScale\":1.0,\"MobileOpacity\":0.8500000238418579,\"MobileHaptics\":true,\"JoystickAutoSprint\":false,\"BoostToggle\":false,\"MobileBoostSeparated\":true}");
+PlayerPrefs.DeleteKey("CampusRift.AR.HelpSeen");
+PlayerPrefs.DeleteKey("CampusRift.DevMode");
+PlayerPrefs.DeleteKey("CampusRift.DevMode.Invincible");
+PlayerPrefs.DeleteKey("CampusRift.DevMode.NoCooldown");
+PlayerPrefs.SetInt("CampusRift.AR.Floor",0);
+PlayerPrefs.SetInt("CampusRift.AR.Occlusion",0);
+PlayerPrefs.Save();
+EditorSettings.enterPlayModeOptionsEnabled=true;
+EditorSettings.enterPlayModeOptions=(EnterPlayModeOptions)3;
+UnityEditor.SceneManagement.EditorSceneManager.OpenScene("Assets/Scenes/SampleScene.unity");
+var gv=System.Type.GetType("UnityEditor.GameView,UnityEditor");var win=UnityEditor.EditorWindow.GetWindow(gv);gv.GetProperty("selectedSizeIndex",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic).SetValue(win,17);
+return "Save/settings restored; SampleScene reopened from disk";

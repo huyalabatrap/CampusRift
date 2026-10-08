@@ -1,0 +1,12 @@
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic;
+var field=UnityEngine.Object.FindAnyObjectByType<CampusRift.AR.ARBattlefield>();var hud=field.GetComponent<CampusRift.AR.ARBattleHUD>();
+var content=(RectTransform)hud.GetType().GetField("canvas",flags).GetValue(hud);content.GetComponentInParent<Canvas>(true).gameObject.SetActive(true);
+((TMPro.TMP_Text)hud.GetType().GetField("status",flags).GetValue(hud)).text="LÀM QUEN · LINH TRẬN 300 / 300";
+var tech=field.GetComponent<CampusRift.AR.ARTechHUD>();tech.enabled=false;
+((TMPro.TMP_Text)tech.GetType().GetField("dualState",flags).GetValue(tech)).text="Tay A #1 · Tay B #2\nNgắm tâm · hạ hai tay để nhả";
+var warning=(RectTransform)tech.GetType().GetField("warning",flags).GetValue(tech);
+foreach(var button in warning.GetComponentsInChildren<UnityEngine.UI.Button>(true))if(button.name=="Confirm recording")button.GetComponentInChildren<TMPro.TMP_Text>().text="QUAY\nCLIP";
+warning.gameObject.SetActive(false);tech.Open(false);((RectTransform)tech.GetType().GetField("dual",flags).GetValue(tech)).gameObject.SetActive(true);
+field.Shrine.transform.localScale=Vector3.one*.4f;field.Shrine.gameObject.AddComponent<CampusRift.AR.ARShrineVisual>().Initialize(field.Shrine,field);
+var annotation=CampusRift.AR.ARUI.Text(content,"ẢNH BỐ CỤC EDITOR · TAY A/B ĐƯỢC ĐẶT TRỰC TIẾP",0,-474,1350,55,23);annotation.color=CampusRift.UI.ComicTheme.Muted;annotation.margin=Vector4.zero;
+Canvas.ForceUpdateCanvases();return "Final photo text and shrine visuals posed. Gameplay remains disabled.";
