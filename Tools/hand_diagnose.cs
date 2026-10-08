@@ -1,0 +1,5 @@
+CampusRift.UI.UIStateManager.Instance.EnterScene(true);
+var p=UnityEngine.Object.FindAnyObjectByType<CampusRift.CampusExplorer>();var m=UnityEngine.Object.FindAnyObjectByType<CampusRift.Monsters.MonsterBrain>();
+var n=m.GetComponent<CampusRift.Monsters.MonsterNavigation>();var v=m.GetComponent<CampusRift.Monsters.MonsterVitality>();var c=m.GetComponent<CampusRift.Monsters.MonsterCombat>();
+var flags=System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance;
+return new{navVitality=n.GetType().GetField("vitality",flags).GetValue(n)==v,brainVitality=m.GetType().GetField("vitality",flags).GetValue(m)==v,combatVitality=c.GetType().GetField("vitality",flags).GetValue(c)==v,ready=n.Ready,riding=n.Riding,link=n.Agent.isOnOffMeshLink,health=v.Health,suppressed=v.Suppressed,stopped=n.Agent.isStopped,velocity=n.Agent.velocity.ToString(),playerPosition=p.transform.position.ToString(),p.CurrentSpeed,p.IsSprinting,p.enabled,cursor=UnityEngine.Cursor.lockState.ToString(),ui=CampusRift.UI.UIStateManager.Instance.State.ToString()};

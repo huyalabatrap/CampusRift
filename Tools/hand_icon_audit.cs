@@ -1,0 +1,2 @@
+var glyph=UnityEngine.Object.FindAnyObjectByType<CampusRift.Skills.GiantHandGlyph>();var wall=UnityEngine.Object.FindAnyObjectByType<CampusRift.Skills.VoidWallGlyph>();
+return new {glyphActive=glyph.gameObject.activeInHierarchy,glyph.enabled,color=glyph.color.ToString(),rect=glyph.rectTransform.rect.ToString(),canvasRenderer=glyph.GetComponent<UnityEngine.CanvasRenderer>()!=null,canvas=glyph.canvas?.name,wallRenderer=wall.GetComponent<UnityEngine.CanvasRenderer>()!=null,vertices=glyph.canvasRenderer==null?-1:glyph.canvasRenderer.materialCount};

@@ -1,0 +1,2 @@
+var p=UnityEngine.Object.FindAnyObjectByType<CampusRift.CampusExplorer>();var m=UnityEngine.Object.FindAnyObjectByType<CampusRift.Monsters.MonsterBrain>();
+return new {player=p.GetComponents<UnityEngine.Component>().Select(c=>c.GetType().Name).ToArray(),monster=m.GetComponents<UnityEngine.Component>().Select(c=>c.GetType().Name).ToArray(),pCount=UnityEngine.Object.FindObjectsByType<CampusRift.CampusExplorer>().Length,mCount=UnityEngine.Object.FindObjectsByType<CampusRift.Monsters.MonsterBrain>().Length};
