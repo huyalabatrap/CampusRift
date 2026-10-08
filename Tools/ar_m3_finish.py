@@ -1,0 +1,15 @@
+"""Apply final M3 UI/lifecycle fixes only after the running normal smoke has stopped."""
+from ar_session import *
+assert not code('return UnityEditor.EditorApplication.isPlaying;')
+p=Path('Assets/ARRift/Runtime/ARBattleStatus.cs');s=p.read_text(encoding='utf-8')
+s=s.replace('TMP_Text status,title;','TMP_Text status,title;UnityEngine.UI.Image hpbar;')
+s=s.replace('result=ARUI.Panel(canvas,', 'hpbar=ARUI.Rect(status.transform.parent,"Shrine HP",0,-36,650,12).gameObject.AddComponent<UnityEngine.UI.Image>();hpbar.sprite=ComicTheme.Sprite("round-mask");hpbar.type=UnityEngine.UI.Image.Type.Filled;hpbar.fillMethod=UnityEngine.UI.Image.FillMethod.Horizontal;hpbar.color=ComicTheme.Gold;hpbar.raycastTarget=false;result=ARUI.Panel(canvas,')
+s=s.replace('bool vn=LevelHUD.Vietnamese;status.text=', 'bool vn=LevelHUD.Vietnamese;hpbar.fillAmount=field.Shrine!=null?field.Shrine.CurrentHealth/field.Shrine.maxHealth:0;status.text=')
+p.write_text(s,encoding='utf-8')
+p=Path('Assets/ARRift/Runtime/ARMonsterDirector.cs');s=p.read_text().replace('void Clear(){foreach','void Clear(){Finished=false;Won=false;foreach');p.write_text(s)
+p=Path('Assets/ARRift/Runtime/RiftPlacementService.cs');s=p.read_text(encoding='utf-8');s=s.replace('bool attaching;','bool attaching;int generation;')
+s=s.replace('attaching=true;var selected=candidate;','attaching=true;int token=generation;var selected=candidate;')
+s=s.replace('if(this==null){if(anchor!=null)', 'if(this==null||token!=generation){if(anchor!=null)')
+s=s.replace('public void Reposition(){Removing', 'public void Reposition(){generation++;Removing')
+p.write_text(s,encoding='utf-8')
+print('M3 finishing fixes applied; refresh required',flush=True)
