@@ -1,0 +1,2176 @@
+{
+  "id": "020",
+  "name": "SilverCloudDragon",
+  "height_m": 3.0,
+  "triangles_before": 1916776,
+  "bones_before": 49,
+  "source": "D:\\model-3d\\020- Fantasy Dragon 3d Model Silver-white Dragon With Detailed Scales Long Sinewy Body And Flowing Fur-tippe  Tripo AI\\model.glb",
+  "triangles_after": 58000,
+  "surface_error": {
+    "samples": 25288,
+    "mean_m": 0.0008647069967953648,
+    "p95_m": 0.0022613266482949257,
+    "max_m": 0.007523743435740471,
+    "max_height_percent": 0.25079144785801566,
+    "method": "one-way source vertex sampling against decimated triangle surface"
+  },
+  "weights": {
+    "unweighted_before_repair": 0,
+    "max_influences": 4,
+    "tail_vertices_reassigned": 11628,
+    "wing_vertices_reassigned": 0,
+    "jaw_vertices_reassigned": 0,
+    "seam_vertices_matched": 1416,
+    "diffusion_iterations": 7
+  },
+  "geometry_seconds": 49.5,
+  "bones_after": 71,
+  "rig_changes": [
+    "Distal tail/fur vertices had stray jaw and front claw weights; reassigned spatially.",
+    "Detached Chest_Aux chain was excluded from propagating the main spine wave."
+  ],
+  "bone_mapping": {
+    "tripo::Root": "BodyRoot",
+    "tripo::Tail_0": "Chest_Base",
+    "tripo::Tail_1": "Chest_Aux",
+    "tripo::Head_0": "Neck_01",
+    "tripo::Head_1": "Neck_02",
+    "tripo::Head_2": "Neck_03",
+    "tripo::Head_3": "Neck_04",
+    "tripo::Head_4": "Neck_05",
+    "tripo::Head_5": "Skull",
+    "tripo::Head_6": "Jaw_01",
+    "tripo::Head_7": "Jaw_02",
+    "tripo::Head_8": "Jaw_03",
+    "bone_11": "Whisker_01",
+    "bone_12": "Whisker_02",
+    "bone_13": "Whisker_03",
+    "bone_14": "Whisker_04",
+    "tripo::Tail_2": "Spine_01",
+    "tripo::Tail_3": "Spine_02",
+    "tripo::Tail_4": "Spine_03",
+    "tripo::Tail_5": "Spine_04",
+    "tripo::Tail_6": "Spine_05",
+    "tripo::Tail_7": "Spine_06",
+    "tripo::Tail_8": "Spine_07",
+    "bone_36": "Spine_08",
+    "bone_37": "Spine_09",
+    "bone_38": "Spine_10",
+    "bone_39": "Spine_11",
+    "bone_40": "Spine_12",
+    "bone_41": "Spine_13",
+    "bone_42": "Spine_14",
+    "bone_43": "Spine_15",
+    "bone_44": "Spine_16",
+    "bone_45": "Spine_17",
+    "bone_46": "Spine_18",
+    "bone_47": "Spine_19",
+    "bone_48": "Spine_20",
+    "bone_18": "ForeLeg_01.L",
+    "bone_19": "ForeLeg_02.L",
+    "bone_20": "ForeLeg_03.L",
+    "bone_21": "ForeLeg_04.L",
+    "bone_22": "ForeLeg_05.L",
+    "bone_23": "ForeLeg_06.L",
+    "bone_24": "ForeLeg_01.R",
+    "bone_25": "ForeLeg_02.R",
+    "bone_26": "ForeLeg_03.R",
+    "bone_27": "ForeLeg_04.R",
+    "bone_28": "ForeLeg_05.R",
+    "bone_29": "ForeLeg_06.R",
+    "bone_30": "ForeLeg_07.R"
+  },
+  "tail_chain": [
+    "Tail_01",
+    "Tail_02",
+    "Tail_03",
+    "Tail_04",
+    "Tail_05",
+    "Tail_06"
+  ],
+  "bone_weight_usage": {
+    "BodyRoot": 757,
+    "Chest_Base": 2500,
+    "Neck_01": 2102,
+    "Neck_02": 2074,
+    "Neck_03": 4243,
+    "Neck_04": 4117,
+    "Neck_05": 3522,
+    "Skull": 10788,
+    "Jaw_01": 513,
+    "Jaw_02": 518,
+    "Jaw_03": 430,
+    "Whisker_01": 307,
+    "Whisker_02": 308,
+    "Whisker_03": 770,
+    "Whisker_04": 1045,
+    "Chest_Aux": 2356,
+    "Spine_01": 2859,
+    "Spine_02": 3858,
+    "ForeLeg_01.L": 906,
+    "ForeLeg_02.L": 636,
+    "ForeLeg_03.L": 1875,
+    "ForeLeg_04.L": 1794,
+    "ForeLeg_05.L": 821,
+    "ForeLeg_06.L": 2070,
+    "ForeLegClaw1_1.L": 19,
+    "ForeLegClaw1_2.L": 0,
+    "ForeLegClaw2_1.L": 40,
+    "ForeLegClaw2_2.L": 0,
+    "ForeLegClaw3_1.L": 43,
+    "ForeLegClaw3_2.L": 2,
+    "ForeLeg_01.R": 979,
+    "ForeLeg_02.R": 680,
+    "ForeLeg_03.R": 581,
+    "ForeLeg_04.R": 375,
+    "ForeLeg_05.R": 438,
+    "ForeLeg_06.R": 591,
+    "ForeLeg_07.R": 225,
+    "ForeLegClaw1_1.R": 50,
+    "ForeLegClaw1_2.R": 19,
+    "ForeLegClaw2_1.R": 32,
+    "ForeLegClaw2_2.R": 48,
+    "ForeLegClaw3_1.R": 63,
+    "ForeLegClaw3_2.R": 41,
+    "Spine_03": 3283,
+    "Spine_04": 3966,
+    "Spine_05": 4108,
+    "Spine_06": 3313,
+    "Spine_07": 3396,
+    "Spine_08": 3682,
+    "Spine_09": 4108,
+    "Spine_10": 3376,
+    "Spine_11": 3280,
+    "Spine_12": 3334,
+    "Spine_13": 2930,
+    "Spine_14": 2698,
+    "Spine_15": 2824,
+    "Spine_16": 3170,
+    "Spine_17": 3246,
+    "Spine_18": 2344,
+    "Spine_19": 2565,
+    "Spine_20": 4504,
+    "Tail_01": 5627,
+    "Tail_02": 6888,
+    "Tail_03": 10041,
+    "Tail_04": 9000,
+    "Tail_05": 5547,
+    "Tail_06": 3924
+  },
+  "textures": {
+    "BaseColor": "020_BaseColor.png",
+    "Normal": "020_Normal.png",
+    "MetallicRoughness": "020_MetallicRoughness.png"
+  },
+  "clips": [
+    {
+      "name": "020_Hover_Idle",
+      "frames": 96,
+      "fps": 30,
+      "seconds": 3.1666666666666665,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879034967275602,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.4067174057045873,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.2825823123364382,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.224787229888751,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Hover_Alert",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.3177072406307397,
+          "edge_over_2x_percent": 0.3934208655259041,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.4239500262126534,
+          "edge_over_2x_percent": 0.45504100109020235,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.2835748035480539,
+          "edge_over_2x_percent": 0.28914063610939944,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.2524170328979038,
+          "edge_over_2x_percent": 0.34602076124567477,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Fly_Cruise",
+      "frames": 72,
+      "fps": 30,
+      "seconds": 2.3666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879034967275602,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.4067174057045873,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.2825823123364382,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.224787229888751,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Fly_Fast",
+      "frames": 48,
+      "fps": 30,
+      "seconds": 1.5666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.2291186109088552,
+          "edge_over_2x_percent": 0.27966061525335356,
+          "max_edge_expansion_height_percent": 4.15150803349938,
+          "minimum_z": 1.1952106952667236
+        },
+        {
+          "edge_p99_stretch": 1.3825872356242352,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 6.51712784534941,
+          "minimum_z": 1.088599443435669
+        },
+        {
+          "edge_p99_stretch": 1.5440822580081188,
+          "edge_over_2x_percent": 0.5498412096506612,
+          "max_edge_expansion_height_percent": 6.805878279343353,
+          "minimum_z": 0.7879758477210999
+        },
+        {
+          "edge_p99_stretch": 1.33819423844857,
+          "edge_over_2x_percent": 0.35550078210172065,
+          "max_edge_expansion_height_percent": 5.207175132970753,
+          "minimum_z": 0.8288127183914185
+        },
+        {
+          "edge_p99_stretch": 1.3179568796551049,
+          "edge_over_2x_percent": 0.43134094895008773,
+          "max_edge_expansion_height_percent": 7.304841951911775,
+          "minimum_z": 1.0778084993362427
+        },
+        {
+          "edge_p99_stretch": 1.2291186109088552,
+          "edge_over_2x_percent": 0.27966061525335356,
+          "max_edge_expansion_height_percent": 4.15150803349938,
+          "minimum_z": 1.1952106952667236
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Glide",
+      "frames": 120,
+      "fps": 30,
+      "seconds": 3.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.09830454216843,
+          "edge_over_2x_percent": 0.24648054225719299,
+          "max_edge_expansion_height_percent": 4.753790218124838,
+          "minimum_z": 1.0950647592544556
+        },
+        {
+          "edge_p99_stretch": 1.1084107687091778,
+          "edge_over_2x_percent": 0.2180404796890553,
+          "max_edge_expansion_height_percent": 4.615081144197692,
+          "minimum_z": 1.0613534450531006
+        },
+        {
+          "edge_p99_stretch": 1.148752771113264,
+          "edge_over_2x_percent": 0.15642034412475708,
+          "max_edge_expansion_height_percent": 3.239793627556775,
+          "minimum_z": 1.016825556755066
+        },
+        {
+          "edge_p99_stretch": 1.1069948440297133,
+          "edge_over_2x_percent": 0.10902023984452765,
+          "max_edge_expansion_height_percent": 2.853265841936105,
+          "minimum_z": 1.0085240602493286
+        },
+        {
+          "edge_p99_stretch": 1.070048066267035,
+          "edge_over_2x_percent": 0.18486040669289472,
+          "max_edge_expansion_height_percent": 4.033249916366882,
+          "minimum_z": 1.0666288137435913
+        },
+        {
+          "edge_p99_stretch": 1.09830454216843,
+          "edge_over_2x_percent": 0.24648054225719299,
+          "max_edge_expansion_height_percent": 4.753790218124838,
+          "minimum_z": 1.0950647592544556
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Bank_Left",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.195220752947513,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356758309865685,
+          "minimum_z": 0.4709952473640442
+        },
+        {
+          "edge_p99_stretch": 1.287935178367919,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860567828583748,
+          "minimum_z": 0.45419400930404663
+        },
+        {
+          "edge_p99_stretch": 1.4067210093880165,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297838724110507,
+          "minimum_z": 0.2241848111152649
+        },
+        {
+          "edge_p99_stretch": 1.2825812589076393,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364393274774983,
+          "minimum_z": 0.1512630730867386
+        },
+        {
+          "edge_p99_stretch": 1.2247977910430383,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191313591297415,
+          "minimum_z": 0.3280521631240845
+        },
+        {
+          "edge_p99_stretch": 1.195220752947513,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356758309865685,
+          "minimum_z": 0.4709952473640442
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Bank_Right",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952229629337279,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.35675574542612,
+          "minimum_z": 1.1397117376327515
+        },
+        {
+          "edge_p99_stretch": 1.2879109669126476,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860571576846912,
+          "minimum_z": 1.1812958717346191
+        },
+        {
+          "edge_p99_stretch": 1.4067204243124765,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.29783989505472,
+          "minimum_z": 1.176277756690979
+        },
+        {
+          "edge_p99_stretch": 1.2825773296105867,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364390896286135,
+          "minimum_z": 1.1292355060577393
+        },
+        {
+          "edge_p99_stretch": 1.2247966043238636,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191314212845889,
+          "minimum_z": 1.107468605041504
+        },
+        {
+          "edge_p99_stretch": 1.1952229629337279,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.35675574542612,
+          "minimum_z": 1.1397117376327515
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Climb",
+      "frames": 72,
+      "fps": 30,
+      "seconds": 2.3666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.195224788659743,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.35675461197171,
+          "minimum_z": 1.0708770751953125
+        },
+        {
+          "edge_p99_stretch": 1.2879075342004778,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860572566166261,
+          "minimum_z": 0.8607962131500244
+        },
+        {
+          "edge_p99_stretch": 1.4067191030695647,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297834400622117,
+          "minimum_z": 0.6778078079223633
+        },
+        {
+          "edge_p99_stretch": 1.282579820223482,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364386652928124,
+          "minimum_z": 0.8728928565979004
+        },
+        {
+          "edge_p99_stretch": 1.2247925423300694,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191313077801372,
+          "minimum_z": 1.0991560220718384
+        },
+        {
+          "edge_p99_stretch": 1.195224788659743,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.35675461197171,
+          "minimum_z": 1.0708770751953125
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Descend",
+      "frames": 72,
+      "fps": 30,
+      "seconds": 2.3666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.195227661806742,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356754665102391,
+          "minimum_z": 1.1669323444366455
+        },
+        {
+          "edge_p99_stretch": 1.287912406995764,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860565080374078,
+          "minimum_z": 1.2101545333862305
+        },
+        {
+          "edge_p99_stretch": 1.4067177882548274,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.29781673508496,
+          "minimum_z": 1.0269510746002197
+        },
+        {
+          "edge_p99_stretch": 1.2825835162540062,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364385323341803,
+          "minimum_z": 0.9377774000167847
+        },
+        {
+          "edge_p99_stretch": 1.2247915988239861,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191310904907685,
+          "minimum_z": 1.0294286012649536
+        },
+        {
+          "edge_p99_stretch": 1.195227661806742,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356754665102391,
+          "minimum_z": 1.1669323444366455
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Turn_Left",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.287928365271268,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860579149554235,
+          "minimum_z": 0.8320719599723816
+        },
+        {
+          "edge_p99_stretch": 1.4067182212356721,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297830212239636,
+          "minimum_z": 0.28232496976852417
+        },
+        {
+          "edge_p99_stretch": 1.2825806388891416,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364377649923832,
+          "minimum_z": 0.13685059547424316
+        },
+        {
+          "edge_p99_stretch": 1.2247882870739881,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.1913109819301475,
+          "minimum_z": 0.7803663611412048
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Turn_Right",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879194551134694,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860577924142197,
+          "minimum_z": 1.3434970378875732
+        },
+        {
+          "edge_p99_stretch": 1.4067196053670468,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.29784268730534,
+          "minimum_z": 1.047595739364624
+        },
+        {
+          "edge_p99_stretch": 1.2825878142305054,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364390245638163,
+          "minimum_z": 1.006421685218811
+        },
+        {
+          "edge_p99_stretch": 1.224792231617303,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191312812071989,
+          "minimum_z": 1.3087589740753174
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Dodge_Left",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879114324381815,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860562660307856,
+          "minimum_z": 0.7680642008781433
+        },
+        {
+          "edge_p99_stretch": 1.4067202863942436,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.2978334098222355,
+          "minimum_z": 0.0959099605679512
+        },
+        {
+          "edge_p99_stretch": 1.2825791761258674,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.36439729579299,
+          "minimum_z": -0.06411521136760712
+        },
+        {
+          "edge_p99_stretch": 1.224791744707504,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191310989352097,
+          "minimum_z": 0.7080675363540649
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Dodge_Right",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879270426736158,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860577570362108,
+          "minimum_z": 1.33479642868042
+        },
+        {
+          "edge_p99_stretch": 1.406717606623844,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297824357506318,
+          "minimum_z": 0.9840982556343079
+        },
+        {
+          "edge_p99_stretch": 1.2825774214096977,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364393046252692,
+          "minimum_z": 0.9382856488227844
+        },
+        {
+          "edge_p99_stretch": 1.224790064204105,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191308451518751,
+          "minimum_z": 1.2826956510543823
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Dive_Start",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879128942742784,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.8605748426656845,
+          "minimum_z": 1.1229681968688965
+        },
+        {
+          "edge_p99_stretch": 1.406718431196173,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.29782826441556,
+          "minimum_z": 1.019216775894165
+        },
+        {
+          "edge_p99_stretch": 1.2825762325354568,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364392225870836,
+          "minimum_z": 0.9386385679244995
+        },
+        {
+          "edge_p99_stretch": 1.2247913421068435,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191321415642389,
+          "minimum_z": 0.7404166460037231
+        },
+        {
+          "edge_p99_stretch": 1.195219596296876,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356768326751178,
+          "minimum_z": 0.6007334589958191
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Dive_Loop",
+      "frames": 48,
+      "fps": 30,
+      "seconds": 1.5666666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.195219596296876,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356768326751178,
+          "minimum_z": 0.6007334589958191
+        },
+        {
+          "edge_p99_stretch": 1.2879399118391375,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860574063323631,
+          "minimum_z": 0.6667812466621399
+        },
+        {
+          "edge_p99_stretch": 1.4067216844748756,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297841595175218,
+          "minimum_z": 0.7053448557853699
+        },
+        {
+          "edge_p99_stretch": 1.2825815448383988,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364385252619115,
+          "minimum_z": 0.664446234703064
+        },
+        {
+          "edge_p99_stretch": 1.2247901344224796,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191308641054874,
+          "minimum_z": 0.6018017530441284
+        },
+        {
+          "edge_p99_stretch": 1.195219596296876,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356768326751178,
+          "minimum_z": 0.6007334589958191
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Dive_Recover",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.195219596296876,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356768326751178,
+          "minimum_z": 0.6007334589958191
+        },
+        {
+          "edge_p99_stretch": 1.2879341951263108,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.86057562200764,
+          "minimum_z": 0.8212125897407532
+        },
+        {
+          "edge_p99_stretch": 1.4067212196494792,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297839973868263,
+          "minimum_z": 0.9971961379051208
+        },
+        {
+          "edge_p99_stretch": 1.2825819993176857,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364386964107844,
+          "minimum_z": 0.9377061724662781
+        },
+        {
+          "edge_p99_stretch": 1.2247878854194896,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191306377201262,
+          "minimum_z": 1.0745474100112915
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Takeoff_Start",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.0661846597266722,
+          "edge_over_2x_percent": 0.11376025027255059,
+          "max_edge_expansion_height_percent": 2.358109817572955,
+          "minimum_z": 0.04639524966478348
+        },
+        {
+          "edge_p99_stretch": 1.0864299155290271,
+          "edge_over_2x_percent": 0.13272029198464236,
+          "max_edge_expansion_height_percent": 2.445481526275848,
+          "minimum_z": -0.011287540197372437
+        },
+        {
+          "edge_p99_stretch": 1.2926376590414295,
+          "edge_over_2x_percent": 0.24648054225719299,
+          "max_edge_expansion_height_percent": 2.8550024650502706,
+          "minimum_z": 0.024000056087970734
+        },
+        {
+          "edge_p99_stretch": 1.2416131987342682,
+          "edge_over_2x_percent": 0.19908043797696356,
+          "max_edge_expansion_height_percent": 3.0445495212144986,
+          "minimum_z": 0.023999996483325958
+        },
+        {
+          "edge_p99_stretch": 1.0454081918412226,
+          "edge_over_2x_percent": 0.05688012513627529,
+          "max_edge_expansion_height_percent": 1.9051970378943999,
+          "minimum_z": -0.005899136420339346
+        },
+        {
+          "edge_p99_stretch": 1.0661846597266722,
+          "edge_over_2x_percent": 0.11376025027255059,
+          "max_edge_expansion_height_percent": 2.358109817572955,
+          "minimum_z": 0.04639524966478348
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Takeoff_Lift",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1123398221957217,
+          "edge_over_2x_percent": 0.061620135564298247,
+          "max_edge_expansion_height_percent": 1.4219449573658192,
+          "minimum_z": 0.11346817016601562
+        },
+        {
+          "edge_p99_stretch": 1.2533964749565933,
+          "edge_over_2x_percent": 0.2938806465374224,
+          "max_edge_expansion_height_percent": 4.432052621554545,
+          "minimum_z": 0.13087309896945953
+        },
+        {
+          "edge_p99_stretch": 1.4075639655472043,
+          "edge_over_2x_percent": 0.4266009385220647,
+          "max_edge_expansion_height_percent": 4.094398595795791,
+          "minimum_z": 0.2274479866027832
+        },
+        {
+          "edge_p99_stretch": 1.2427951378808446,
+          "edge_over_2x_percent": 0.2180404796890553,
+          "max_edge_expansion_height_percent": 3.1578571824457535,
+          "minimum_z": 0.583092212677002
+        },
+        {
+          "edge_p99_stretch": 1.2126328672855597,
+          "edge_over_2x_percent": 0.2938806465374224,
+          "max_edge_expansion_height_percent": 5.911616989182089,
+          "minimum_z": 0.9801588654518127
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Takeoff_ToCruise",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879034967275602,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.86057057679222,
+          "minimum_z": 1.129232406616211
+        },
+        {
+          "edge_p99_stretch": 1.4067186015755802,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.9371903538703918
+        },
+        {
+          "edge_p99_stretch": 1.2825777615178222,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364383852309678,
+          "minimum_z": 0.9491913914680481
+        },
+        {
+          "edge_p99_stretch": 1.2247899012690417,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0989841222763062
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Land_Approach",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1707915247640108,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.2851056281503626,
+          "minimum_z": 1.1829192638397217
+        },
+        {
+          "edge_p99_stretch": 1.2365337272580748,
+          "edge_over_2x_percent": 0.2701805943973077,
+          "max_edge_expansion_height_percent": 4.76350639164883,
+          "minimum_z": 1.0917710065841675
+        },
+        {
+          "edge_p99_stretch": 1.318485103106757,
+          "edge_over_2x_percent": 0.3649808029577665,
+          "max_edge_expansion_height_percent": 5.124269737871897,
+          "minimum_z": 0.8747146129608154
+        },
+        {
+          "edge_p99_stretch": 1.2018487976481418,
+          "edge_over_2x_percent": 0.2701805943973077,
+          "max_edge_expansion_height_percent": 4.44121156919853,
+          "minimum_z": 0.8842095136642456
+        },
+        {
+          "edge_p99_stretch": 1.224787229888751,
+          "edge_over_2x_percent": 0.32706071953358296,
+          "max_edge_expansion_height_percent": 6.0074254070090864,
+          "minimum_z": 1.0803428888320923
+        },
+        {
+          "edge_p99_stretch": 1.1707915247640108,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.2851056281503626,
+          "minimum_z": 1.1829192638397217
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Land_Touchdown",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2795938040691888,
+          "edge_over_2x_percent": 0.35550078210172065,
+          "max_edge_expansion_height_percent": 5.567505370565043,
+          "minimum_z": 0.9708609580993652
+        },
+        {
+          "edge_p99_stretch": 1.3917562280890479,
+          "edge_over_2x_percent": 0.4171209176660189,
+          "max_edge_expansion_height_percent": 4.456775023562354,
+          "minimum_z": 0.5304064154624939
+        },
+        {
+          "edge_p99_stretch": 1.2420382998799435,
+          "edge_over_2x_percent": 0.15642034412475708,
+          "max_edge_expansion_height_percent": 2.274673821572659,
+          "minimum_z": 0.28823429346084595
+        },
+        {
+          "edge_p99_stretch": 1.1593567928458686,
+          "edge_over_2x_percent": 0.2370005214011471,
+          "max_edge_expansion_height_percent": 4.168151643641198,
+          "minimum_z": 0.13284778594970703
+        },
+        {
+          "edge_p99_stretch": 1.1123398221957217,
+          "edge_over_2x_percent": 0.061620135564298247,
+          "max_edge_expansion_height_percent": 1.4219449573658192,
+          "minimum_z": 0.11346817016601562
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Land_Settle",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.0661846597266722,
+          "edge_over_2x_percent": 0.11376025027255059,
+          "max_edge_expansion_height_percent": 2.358109817572955,
+          "minimum_z": 0.04639524966478348
+        },
+        {
+          "edge_p99_stretch": 1.0864299155290271,
+          "edge_over_2x_percent": 0.13272029198464236,
+          "max_edge_expansion_height_percent": 2.44547991764949,
+          "minimum_z": 0.011804211884737015
+        },
+        {
+          "edge_p99_stretch": 1.2926376590414295,
+          "edge_over_2x_percent": 0.24648054225719299,
+          "max_edge_expansion_height_percent": 2.8550024650502706,
+          "minimum_z": 0.024000056087970734
+        },
+        {
+          "edge_p99_stretch": 1.2416131987342682,
+          "edge_over_2x_percent": 0.19908043797696356,
+          "max_edge_expansion_height_percent": 3.0445495212144986,
+          "minimum_z": 0.023999996483325958
+        },
+        {
+          "edge_p99_stretch": 1.0454081918412226,
+          "edge_over_2x_percent": 0.05688012513627529,
+          "max_edge_expansion_height_percent": 1.9051970378943999,
+          "minimum_z": -0.0047494820319116116
+        },
+        {
+          "edge_p99_stretch": 1.0661846597266722,
+          "edge_over_2x_percent": 0.11376025027255059,
+          "max_edge_expansion_height_percent": 2.358109817572955,
+          "minimum_z": 0.04639524966478348
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_Roar",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.293399615954047,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.458567381873497,
+          "edge_over_2x_percent": 0.45504100109020235,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.327775119009989,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.2400081797438718,
+          "edge_over_2x_percent": 0.32706071953358296,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_HitFront",
+      "frames": 30,
+      "fps": 30,
+      "seconds": 0.9666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2886356733398179,
+          "edge_over_2x_percent": 0.3744608238138124,
+          "max_edge_expansion_height_percent": 5.860571069008536,
+          "minimum_z": 1.107144832611084
+        },
+        {
+          "edge_p99_stretch": 1.409540201473922,
+          "edge_over_2x_percent": 0.44556098023415647,
+          "max_edge_expansion_height_percent": 5.297815243250941,
+          "minimum_z": 0.9538208842277527
+        },
+        {
+          "edge_p99_stretch": 1.2834373033019888,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364386412471052,
+          "minimum_z": 0.9312237501144409
+        },
+        {
+          "edge_p99_stretch": 1.222837988425177,
+          "edge_over_2x_percent": 0.3081006778214912,
+          "max_edge_expansion_height_percent": 6.191307197524566,
+          "minimum_z": 1.0788239240646362
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_HitLeft",
+      "frames": 30,
+      "fps": 30,
+      "seconds": 0.9666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2908344142441461,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860572668711298,
+          "minimum_z": 1.0067380666732788
+        },
+        {
+          "edge_p99_stretch": 1.4280822668907556,
+          "edge_over_2x_percent": 0.45504100109020235,
+          "max_edge_expansion_height_percent": 5.297839759945783,
+          "minimum_z": 0.6883872747421265
+        },
+        {
+          "edge_p99_stretch": 1.2979403675915613,
+          "edge_over_2x_percent": 0.3033606673934683,
+          "max_edge_expansion_height_percent": 4.364393654466733,
+          "minimum_z": 0.7029345631599426
+        },
+        {
+          "edge_p99_stretch": 1.2295019516939594,
+          "edge_over_2x_percent": 0.32706071953358296,
+          "max_edge_expansion_height_percent": 6.191318682987253,
+          "minimum_z": 1.0033619403839111
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_HitRight",
+      "frames": 30,
+      "fps": 30,
+      "seconds": 0.9666666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2816554767212989,
+          "edge_over_2x_percent": 0.3744608238138124,
+          "max_edge_expansion_height_percent": 5.86056996152177,
+          "minimum_z": 1.146388292312622
+        },
+        {
+          "edge_p99_stretch": 1.411020032730456,
+          "edge_over_2x_percent": 0.44556098023415647,
+          "max_edge_expansion_height_percent": 5.297834306327249,
+          "minimum_z": 1.0615192651748657
+        },
+        {
+          "edge_p99_stretch": 1.2875687054607527,
+          "edge_over_2x_percent": 0.28914063610939944,
+          "max_edge_expansion_height_percent": 4.364392904807555,
+          "minimum_z": 1.1262468099594116
+        },
+        {
+          "edge_p99_stretch": 1.2228391633237918,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191311276913138,
+          "minimum_z": 1.1634103059768677
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_DeathStart",
+      "frames": 75,
+      "fps": 30,
+      "seconds": 2.466666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2614625304507956,
+          "edge_over_2x_percent": 0.3649808029577665,
+          "max_edge_expansion_height_percent": 5.71547314265653,
+          "minimum_z": 0.829068660736084
+        },
+        {
+          "edge_p99_stretch": 1.324600345063159,
+          "edge_over_2x_percent": 0.3033606673934683,
+          "max_edge_expansion_height_percent": 4.218975288044152,
+          "minimum_z": 0.05973007529973984
+        },
+        {
+          "edge_p99_stretch": 1.1936300206715063,
+          "edge_over_2x_percent": 0.1706403754088259,
+          "max_edge_expansion_height_percent": 3.2381920572863288,
+          "minimum_z": 0.024000629782676697
+        },
+        {
+          "edge_p99_stretch": 1.06205797843871,
+          "edge_over_2x_percent": 0.16590036498080296,
+          "max_edge_expansion_height_percent": 3.8246685044854214,
+          "minimum_z": 0.02400028705596924
+        },
+        {
+          "edge_p99_stretch": 1.1171471474836092,
+          "edge_over_2x_percent": 0.3033606673934683,
+          "max_edge_expansion_height_percent": 5.893059538879033,
+          "minimum_z": 0.024000227451324463
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_DeathFall",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1237485943118226,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 5.467968736213813,
+          "minimum_z": 0.02400040626525879
+        },
+        {
+          "edge_p99_stretch": 1.1366827988706616,
+          "edge_over_2x_percent": 0.31284068824951416,
+          "max_edge_expansion_height_percent": 5.42907456958705,
+          "minimum_z": 0.024001002311706543
+        },
+        {
+          "edge_p99_stretch": 1.2629748121612596,
+          "edge_over_2x_percent": 0.24174053182917005,
+          "max_edge_expansion_height_percent": 3.7149968076133475,
+          "minimum_z": 0.024000227451324463
+        },
+        {
+          "edge_p99_stretch": 1.1751666549059243,
+          "edge_over_2x_percent": 0.15168033369673414,
+          "max_edge_expansion_height_percent": 3.052437684420599,
+          "minimum_z": 0.024001121520996094
+        },
+        {
+          "edge_p99_stretch": 1.0655874860931205,
+          "edge_over_2x_percent": 0.18012039626487178,
+          "max_edge_expansion_height_percent": 4.0100453628673725,
+          "minimum_z": 0.024000167846679688
+        },
+        {
+          "edge_p99_stretch": 1.1237485943118226,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 5.467968736213813,
+          "minimum_z": 0.02400040626525879
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Air_DeathImpact",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.195212948488417,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356760102138891,
+          "minimum_z": 0.02400040626525879
+        },
+        {
+          "edge_p99_stretch": 1.2547445399425554,
+          "edge_over_2x_percent": 0.3365407403896289,
+          "max_edge_expansion_height_percent": 5.4060035289143435,
+          "minimum_z": 0.02400052547454834
+        },
+        {
+          "edge_p99_stretch": 1.3126170288051908,
+          "edge_over_2x_percent": 0.2701805943973077,
+          "max_edge_expansion_height_percent": 3.2719909705350796,
+          "minimum_z": 0.02400040626525879
+        },
+        {
+          "edge_p99_stretch": 1.204431328959504,
+          "edge_over_2x_percent": 0.10902023984452765,
+          "max_edge_expansion_height_percent": 2.2443493313924017,
+          "minimum_z": 0.024000227451324463
+        },
+        {
+          "edge_p99_stretch": 1.0386566588398258,
+          "edge_over_2x_percent": 0.047400104280229415,
+          "max_edge_expansion_height_percent": 1.7553908243913303,
+          "minimum_z": 0.024000704288482666
+        },
+        {
+          "edge_p99_stretch": 1.0618262092329587,
+          "edge_over_2x_percent": 0.11850026070057355,
+          "max_edge_expansion_height_percent": 2.8464001712860263,
+          "minimum_z": 0.02400118112564087
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Air_Bite",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.293399615954047,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.458567381873497,
+          "edge_over_2x_percent": 0.45504100109020235,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.327775119009989,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.2400081797438718,
+          "edge_over_2x_percent": 0.32706071953358296,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Spell_Start",
+      "frames": 60,
+      "fps": 30,
+      "seconds": 1.9666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879034967275602,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0475101470947266
+        },
+        {
+          "edge_p99_stretch": 1.4067180100696248,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.29782578741289,
+          "minimum_z": 0.8618661761283875
+        },
+        {
+          "edge_p99_stretch": 1.2977122624049524,
+          "edge_over_2x_percent": 0.28914063610939944,
+          "max_edge_expansion_height_percent": 4.364383852309678,
+          "minimum_z": 0.9281538724899292
+        },
+        {
+          "edge_p99_stretch": 1.2636267651880664,
+          "edge_over_2x_percent": 0.3412807508176518,
+          "max_edge_expansion_height_percent": 6.19131118788923,
+          "minimum_z": 1.1114951372146606
+        },
+        {
+          "edge_p99_stretch": 1.2427683520794115,
+          "edge_over_2x_percent": 0.2938806465374224,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Spell_Loop",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.2291720163738933,
+          "edge_over_2x_percent": 0.28914063610939944,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.332166655804195,
+          "edge_over_2x_percent": 0.38868085509788125,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0475101470947266
+        },
+        {
+          "edge_p99_stretch": 1.436782248807675,
+          "edge_over_2x_percent": 0.4503009906621795,
+          "max_edge_expansion_height_percent": 5.29782578741289,
+          "minimum_z": 0.8618661761283875
+        },
+        {
+          "edge_p99_stretch": 1.305587728520379,
+          "edge_over_2x_percent": 0.2938806465374224,
+          "max_edge_expansion_height_percent": 4.364383852309678,
+          "minimum_z": 0.9281538724899292
+        },
+        {
+          "edge_p99_stretch": 1.2537283490509958,
+          "edge_over_2x_percent": 0.3318007299616059,
+          "max_edge_expansion_height_percent": 6.19131118788923,
+          "minimum_z": 1.1114951372146606
+        },
+        {
+          "edge_p99_stretch": 1.2291720163738933,
+          "edge_over_2x_percent": 0.28914063610939944,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Spell_End",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.2427683520794115,
+          "edge_over_2x_percent": 0.2938806465374224,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.32733641573438,
+          "edge_over_2x_percent": 0.38394084466985823,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0475101470947266
+        },
+        {
+          "edge_p99_stretch": 1.4187825559870908,
+          "edge_over_2x_percent": 0.43134094895008773,
+          "max_edge_expansion_height_percent": 5.29782578741289,
+          "minimum_z": 0.8618661761283875
+        },
+        {
+          "edge_p99_stretch": 1.2870586589067436,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.364383852309678,
+          "minimum_z": 0.9281538724899292
+        },
+        {
+          "edge_p99_stretch": 1.225374501535141,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.19131118788923,
+          "minimum_z": 1.1114951372146606
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Tail_Sweep",
+      "frames": 75,
+      "fps": 30,
+      "seconds": 2.466666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 0.78,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.130353423994039,
+          "edge_over_2x_percent": 0.16116035455278002,
+          "max_edge_expansion_height_percent": 3.3198854908949955,
+          "minimum_z": 1.137798547744751
+        },
+        {
+          "edge_p99_stretch": 1.418321361358012,
+          "edge_over_2x_percent": 0.4171209176660189,
+          "max_edge_expansion_height_percent": 5.175082548106158,
+          "minimum_z": 1.096114158630371
+        },
+        {
+          "edge_p99_stretch": 1.6439004490995492,
+          "edge_over_2x_percent": 0.6162013556429824,
+          "max_edge_expansion_height_percent": 6.021835999247726,
+          "minimum_z": 0.9244373440742493
+        },
+        {
+          "edge_p99_stretch": 1.1277383985236475,
+          "edge_over_2x_percent": 0.18012039626487178,
+          "max_edge_expansion_height_percent": 4.294592531181348,
+          "minimum_z": 0.9538534879684448
+        },
+        {
+          "edge_p99_stretch": 1.1868139210195225,
+          "edge_over_2x_percent": 0.2986206569654453,
+          "max_edge_expansion_height_percent": 5.474265453992547,
+          "minimum_z": 1.0558972358703613
+        },
+        {
+          "edge_p99_stretch": 1.130353423994039,
+          "edge_over_2x_percent": 0.16116035455278002,
+          "max_edge_expansion_height_percent": 3.3198854908949955,
+          "minimum_z": 1.137798547744751
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Look_Around",
+      "frames": 120,
+      "fps": 30,
+      "seconds": 3.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.3177072406307397,
+          "edge_over_2x_percent": 0.3934208655259041,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.4239500262126534,
+          "edge_over_2x_percent": 0.45504100109020235,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.2835748035480539,
+          "edge_over_2x_percent": 0.28914063610939944,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.2524170328979038,
+          "edge_over_2x_percent": 0.34602076124567477,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Cloud_Coil",
+      "frames": 120,
+      "fps": 30,
+      "seconds": 3.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.47455200000000003,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.173281626120706,
+          "edge_over_2x_percent": 0.18486040669289472,
+          "max_edge_expansion_height_percent": 2.915499960484538,
+          "minimum_z": 1.1272825002670288
+        },
+        {
+          "edge_p99_stretch": 1.3781460320501053,
+          "edge_over_2x_percent": 0.407640896809973,
+          "max_edge_expansion_height_percent": 6.152630585700091,
+          "minimum_z": 1.115618109703064
+        },
+        {
+          "edge_p99_stretch": 1.4588971963164947,
+          "edge_over_2x_percent": 0.49296108451438597,
+          "max_edge_expansion_height_percent": 6.404771592860796,
+          "minimum_z": 0.943570077419281
+        },
+        {
+          "edge_p99_stretch": 1.251425499469416,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 3.4079239610639767,
+          "minimum_z": 0.8768805861473083
+        },
+        {
+          "edge_p99_stretch": 1.112711175028948,
+          "edge_over_2x_percent": 0.10428022941650472,
+          "max_edge_expansion_height_percent": 2.09612010004762,
+          "minimum_z": 0.9829308986663818
+        },
+        {
+          "edge_p99_stretch": 1.173281626120706,
+          "edge_over_2x_percent": 0.18486040669289472,
+          "max_edge_expansion_height_percent": 2.915499960484538,
+          "minimum_z": 1.1272825002670288
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Celestial_Spiral",
+      "frames": 120,
+      "fps": 30,
+      "seconds": 3.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 0.78,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1822371817346733,
+          "edge_over_2x_percent": 0.21330046926103235,
+          "max_edge_expansion_height_percent": 3.070406759985777,
+          "minimum_z": 1.1836007833480835
+        },
+        {
+          "edge_p99_stretch": 1.3028476211153879,
+          "edge_over_2x_percent": 0.34602076124567477,
+          "max_edge_expansion_height_percent": 5.211367064254731,
+          "minimum_z": 1.1017882823944092
+        },
+        {
+          "edge_p99_stretch": 1.4494176798911425,
+          "edge_over_2x_percent": 0.4692610323742712,
+          "max_edge_expansion_height_percent": 5.800019963451067,
+          "minimum_z": 0.8219807147979736
+        },
+        {
+          "edge_p99_stretch": 1.2720571980177362,
+          "edge_over_2x_percent": 0.2986206569654453,
+          "max_edge_expansion_height_percent": 4.449475506065928,
+          "minimum_z": 0.8358690142631531
+        },
+        {
+          "edge_p99_stretch": 1.2651711455899681,
+          "edge_over_2x_percent": 0.35550078210172065,
+          "max_edge_expansion_height_percent": 6.35838680134853,
+          "minimum_z": 1.055357813835144
+        },
+        {
+          "edge_p99_stretch": 1.1822371817346733,
+          "edge_over_2x_percent": 0.21330046926103235,
+          "max_edge_expansion_height_percent": 3.070406759985777,
+          "minimum_z": 1.1836007833480835
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Cloud_Dash",
+      "frames": 45,
+      "fps": 30,
+      "seconds": 1.4666666666666666,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.287925250203577,
+          "edge_over_2x_percent": 0.36972081338578944,
+          "max_edge_expansion_height_percent": 5.860583866619274,
+          "minimum_z": 1.1294589042663574
+        },
+        {
+          "edge_p99_stretch": 1.406719379534121,
+          "edge_over_2x_percent": 0.4360809593781106,
+          "max_edge_expansion_height_percent": 5.297839883795642,
+          "minimum_z": 1.0025310516357422
+        },
+        {
+          "edge_p99_stretch": 1.28258310692216,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.36438515360735,
+          "minimum_z": 0.9370131492614746
+        },
+        {
+          "edge_p99_stretch": 1.2247901399878478,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191317049646993,
+          "minimum_z": 1.0733236074447632
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    },
+    {
+      "name": "020_Fur_Ripple",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": true,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2886555715137338,
+          "edge_over_2x_percent": 0.3744608238138124,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.4110212901781725,
+          "edge_over_2x_percent": 0.4408209698061336,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.2870586589067436,
+          "edge_over_2x_percent": 0.2938806465374224,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.224787229888751,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.28440062568137653,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": 0.0,
+      "loop_rotation_error_rad": 0.0
+    },
+    {
+      "name": "020_Graceful_Bow",
+      "frames": 90,
+      "fps": 30,
+      "seconds": 2.966666666666667,
+      "loop": false,
+      "in_place": true,
+      "procedural_amplitude": 1.0,
+      "quality_samples": [
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        },
+        {
+          "edge_p99_stretch": 1.2879034967275602,
+          "edge_over_2x_percent": 0.3744608238138124,
+          "max_edge_expansion_height_percent": 5.860573694161573,
+          "minimum_z": 1.0760416984558105
+        },
+        {
+          "edge_p99_stretch": 1.436782248807675,
+          "edge_over_2x_percent": 0.47874105323031707,
+          "max_edge_expansion_height_percent": 5.2978223646438085,
+          "minimum_z": 0.8794998526573181
+        },
+        {
+          "edge_p99_stretch": 1.305122635341569,
+          "edge_over_2x_percent": 0.32232070910556004,
+          "max_edge_expansion_height_percent": 4.364386454904653,
+          "minimum_z": 0.9105199575424194
+        },
+        {
+          "edge_p99_stretch": 1.2144095041692464,
+          "edge_over_2x_percent": 0.3175806986775371,
+          "max_edge_expansion_height_percent": 6.191312966630085,
+          "minimum_z": 1.0829633474349976
+        },
+        {
+          "edge_p99_stretch": 1.1952218889162058,
+          "edge_over_2x_percent": 0.2654405839692847,
+          "max_edge_expansion_height_percent": 4.356746040213618,
+          "minimum_z": 1.1616392135620117
+        }
+      ],
+      "quality_flagged": false,
+      "loop_position_error_m": null,
+      "loop_rotation_error_rad": null
+    }
+  ],
+  "clip_count": 40,
+  "unity_rig": "Generic",
+  "animation_method": "Species-specific procedural keyframes at 30 Hz, traveling spine/tail waves, delayed wing wrist and membrane articulation; no mocap. Ground contact guarded by evaluated geometry.",
+  "animation_seconds": 70.9,
+  "rig_sockets": [
+    "Socket_Mouth",
+    "Socket_Rider",
+    "Socket_TailTip"
+  ]
+}
