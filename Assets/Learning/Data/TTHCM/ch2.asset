@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0587c40a9f5db44be11d75d6b7b4cc, type: 3}
+  m_Name: ch2
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.CourseData
+  id: tthcm-ch2
+  title: "C\u01A1 s\u1EDF, qu\xE1 tr\xECnh h\xECnh th\xE0nh v\xE0 ph\xE1t tri\u1EC3n t\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  subject: "T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  titleVN: "C\u01A1 s\u1EDF, qu\xE1 tr\xECnh h\xECnh th\xE0nh v\xE0 ph\xE1t tri\u1EC3n t\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  descriptionVN: 
+  description: 
+  requiredSurvivalSeconds: 0
+  chapterIndex: 2
+  examBank: {fileID: 11400000, guid: ee39fc840849e5c4d857b3c0f83df486, type: 2}
+  examSize: 20
+  examPassPercent: 80
+  examMinutes: 20
+  isPlaceholder: 0
+  lessons:
+  - {fileID: 11400000, guid: 8212690d33560ae41b976879315e1df9, type: 2}
+  - {fileID: 11400000, guid: a8b4ce46008588d49acce2996dd8f5fd, type: 2}
+  - {fileID: 11400000, guid: 7197ac95545dd414a9908c757d63921d, type: 2}
+  skillTiers: []

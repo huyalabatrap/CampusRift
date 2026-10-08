@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c44860054bc4e4181a9d76144a93fe, type: 3}
+  m_Name: ch1-exam-bank
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.QuestionBankData
+  questions:
+  - id: ch1-ex-01
+    type: single-choice
+    lessonId: 
+    topic: 
+    difficulty: 2
+    tags: []
+    source: GT 2021, tr. 11
+    chapterId: tthcm-ch1
+    prompt: "M\u1EE5c ti\xEAu \"v\u1EC1 k\u1EF9 n\u0103ng\" c\u1EE7a Ch\u01B0\u01A1ng 1 l\xE0 g\xEC?"
+    explanation: "M\u1EE5c ti\xEAu v\u1EC1 k\u1EF9 n\u0103ng: qua nghi\xEAn c\u1EE9u m\xF4n h\u1ECDc, sinh vi\xEAn b\u01B0\u1EDBc \u0111\u1EA7u c\xF3 t\u01B0 duy v\xE0 k\u1EF9 n\u0103ng \u0111\xFAng \u0111\u1EAFn, ph\xF9 h\u1EE3p khi ph\xE2n t\xEDch c\u1EA3 v\u1EC1 m\u1EB7t l\xFD lu\u1EADn v\xE0 th\u1EF1c ti\u1EC5n."
+    promptVN: "M\u1EE5c ti\xEAu \"v\u1EC1 k\u1EF9 n\u0103ng\" c\u1EE7a Ch\u01B0\u01A1ng 1 l\xE0 g\xEC?"
+    explanationVN: "M\u1EE5c ti\xEAu v\u1EC1 k\u1EF9 n\u0103ng: qua nghi\xEAn c\u1EE9u m\xF4n h\u1ECDc, sinh vi\xEAn b\u01B0\u1EDBc \u0111\u1EA7u c\xF3 t\u01B0 duy v\xE0 k\u1EF9 n\u0103ng \u0111\xFAng \u0111\u1EAFn, ph\xF9 h\u1EE3p khi ph\xE2n t\xEDch c\u1EA3 v\u1EC1 m\u1EB7t l\xFD lu\u1EADn v\xE0 th\u1EF1c ti\u1EC5n."
+    options:
+    - id: A
+      text: "B\u01B0\u1EDBc \u0111\u1EA7u c\xF3 t\u01B0 duy v\xE0 k\u1EF9 n\u0103ng \u0111\xFAng \u0111\u1EAFn, ph\xF9 h\u1EE3p khi ph\xE2n t\xEDch c\u1EA3 l\xFD lu\u1EADn v\xE0 th\u1EF1c ti\u1EC5n c\xE1c v\u1EA5n \u0111\u1EC1 trong cu\u1ED9c s\u1ED1ng"
+      textVN: "B\u01B0\u1EDBc \u0111\u1EA7u c\xF3 t\u01B0 duy v\xE0 k\u1EF9 n\u0103ng \u0111\xFAng \u0111\u1EAFn, ph\xF9 h\u1EE3p khi ph\xE2n t\xEDch c\u1EA3 l\xFD lu\u1EADn v\xE0 th\u1EF1c ti\u1EC5n c\xE1c v\u1EA5n \u0111\u1EC1 trong cu\u1ED9c s\u1ED1ng"
+      side: 
+    - id: B
+      text: "Th\xE0nh th\u1EA1o m\u1ED9t ngh\u1EC1 th\u1EE7 c\xF4ng"
+      textVN: "Th\xE0nh th\u1EA1o m\u1ED9t ngh\u1EC1 th\u1EE7 c\xF4ng"
+      side: 
+    - id: C
+      text: "Gi\u1ECFi t\xEDnh to\xE1n"
+      textVN: "Gi\u1ECFi t\xEDnh to\xE1n"
+      side: 
+    - id: D
+      text: "Th\xE0nh th\u1EA1o ngo\u1EA1i ng\u1EEF"
+      textVN: "Th\xE0nh th\u1EA1o ngo\u1EA1i ng\u1EEF"
+      side: 
+    correctOptionIds:
+    - A
+  - id: ch1-ex-02
+    type: single-choice
+    lessonId: 
+    topic: 
+    difficulty: 2
+    tags: []
+    source: GT 2021, tr. 11
+    chapterId: tthcm-ch1
+    prompt: "M\u1EE5c ti\xEAu \"v\u1EC1 ki\u1EBFn th\u1EE9c\" c\u1EE7a Ch\u01B0\u01A1ng 1 l\xE0 g\xEC?"
+    explanation: "Ch\u01B0\u01A1ng 1 g\xF3p ph\u1EA7n trang b\u1ECB cho sinh vi\xEAn nh\u1EEFng ki\u1EBFn th\u1EE9c c\u01A1 b\u1EA3n v\u1EC1 m\u1ED9t s\u1ED1 v\u1EA5n \u0111\u1EC1 chung (nh\u1EADp m\xF4n) c\u1EE7a m\xF4n h\u1ECDc."
+    promptVN: "M\u1EE5c ti\xEAu \"v\u1EC1 ki\u1EBFn th\u1EE9c\" c\u1EE7a Ch\u01B0\u01A1ng 1 l\xE0 g\xEC?"
+    explanationVN: "Ch\u01B0\u01A1ng 1 g\xF3p ph\u1EA7n trang b\u1ECB cho sinh vi\xEAn nh\u1EEFng ki\u1EBFn th\u1EE9c c\u01A1 b\u1EA3n v\u1EC1 m\u1ED9t s\u1ED1 v\u1EA5n \u0111\u1EC1 chung (nh\u1EADp m\xF4n) c\u1EE7a m\xF4n h\u1ECDc."
+    options:
+    - id: A
+      text: "Trang b\u1ECB ki\u1EBFn th\u1EE9c c\u01A1 b\u1EA3n v\u1EC1 m\u1ED9t s\u1ED1 v\u1EA5n \u0111\u1EC1 chung (nh\u1EADp m\xF4n) c\u1EE7a m\xF4n h\u1ECDc T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+      textVN: "Trang b\u1ECB ki\u1EBFn th\u1EE9c c\u01A1 b\u1EA3n v\u1EC1 m\u1ED9t s\u1ED1 v\u1EA5n \u0111\u1EC1 chung (nh\u1EADp m\xF4n) c\u1EE7a m\xF4n h\u1ECDc T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+      side: 
+    - id: B
+      text: "H\u1ECDc to\xE0n b\u1ED9 l\u1ECBch s\u1EED th\u1EBF gi\u1EDBi"
+      textVN: "H\u1ECDc to\xE0n b\u1ED9 l\u1ECBch s\u1EED th\u1EBF gi\u1EDBi"
+      side: 
+    - id: C
+      text: "H\u1ECDc c\xE1c ph\u01B0\u01A1ng ph\xE1p k\u1EBF to\xE1n"
+      textVN: "H\u1ECDc c\xE1c ph\u01B0\u01A1ng ph\xE1p k\u1EBF to\xE1n"
+      side: 
+    - id: D
+      text: "H\u1ECDc l\u1EADp tr\xECnh"
+      textVN: "H\u1ECDc l\u1EADp tr\xECnh"
+      side: 
+    correctOptionIds:
+    - A
+  - id: ch1-ex-03
+    type: true-false
+    lessonId: 
+    topic: 
+    difficulty: 2
+    tags: []
+    source: GT 2021, tr. 12
+    chapterId: tthcm-ch1
+    prompt: "Nh\u1EADn \u0111\u1ECBnh: T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh l\xE0 t\xE0i s\u1EA3n tinh th\u1EA7n v\xF4 c\xF9ng to l\u1EDBn v\xE0 qu\xFD gi\xE1 c\u1EE7a \u0110\u1EA3ng v\xE0 d\xE2n t\u1ED9c ta."
+    explanation: "\u0110\xE2y l\xE0 m\u1ED9t n\u1ED9i dung trong kh\xE1i ni\u1EC7m c\u1EE7a \u0110\u1EA1i h\u1ED9i XI, n\xEAu \xFD ngh\u0129a c\u1EE7a t\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh."
+    promptVN: "Nh\u1EADn \u0111\u1ECBnh: T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh l\xE0 t\xE0i s\u1EA3n tinh th\u1EA7n v\xF4 c\xF9ng to l\u1EDBn v\xE0 qu\xFD gi\xE1 c\u1EE7a \u0110\u1EA3ng v\xE0 d\xE2n t\u1ED9c ta."
+    explanationVN: "\u0110\xE2y l\xE0 m\u1ED9t n\u1ED9i dung trong kh\xE1i ni\u1EC7m c\u1EE7a \u0110\u1EA1i h\u1ED9i XI, n\xEAu \xFD ngh\u0129a c\u1EE7a t\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh."
+    options:
+    - id: true
+      text: "\u0110\xFAng"
+      textVN: "\u0110\xFAng"
+      side: 
+    - id: false
+      text: Sai
+      textVN: Sai
+      side: 
+    correctOptionIds:
+    - true

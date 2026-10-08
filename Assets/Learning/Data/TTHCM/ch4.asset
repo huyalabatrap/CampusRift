@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0587c40a9f5db44be11d75d6b7b4cc, type: 3}
+  m_Name: ch4
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.CourseData
+  id: tthcm-ch4
+  title: "T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh v\u1EC1 \u0110\u1EA3ng C\u1ED9ng s\u1EA3n Vi\u1EC7t Nam v\xE0 Nh\xE0 n\u01B0\u1EDBc c\u1EE7a nh\xE2n d\xE2n, do nh\xE2n d\xE2n, v\xEC nh\xE2n d\xE2n"
+  subject: "T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  titleVN: "T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh v\u1EC1 \u0110\u1EA3ng C\u1ED9ng s\u1EA3n Vi\u1EC7t Nam v\xE0 Nh\xE0 n\u01B0\u1EDBc c\u1EE7a nh\xE2n d\xE2n, do nh\xE2n d\xE2n, v\xEC nh\xE2n d\xE2n"
+  descriptionVN: 
+  description: 
+  requiredSurvivalSeconds: 0
+  chapterIndex: 4
+  examBank: {fileID: 11400000, guid: 36566e05cccfda3489473266ac598697, type: 2}
+  examSize: 20
+  examPassPercent: 80
+  examMinutes: 20
+  isPlaceholder: 0
+  lessons:
+  - {fileID: 11400000, guid: 756f7b348e2074f469ee2c0f870ecc20, type: 2}
+  - {fileID: 11400000, guid: 0bd6299a344e2574aa1f4b9d3bd4a527, type: 2}
+  - {fileID: 11400000, guid: c4c83d9c66173f646aadf0654562b559, type: 2}
+  skillTiers: []

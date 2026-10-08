@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ae1521c937b964cb27ef13d0b647aa, type: 3}
+  m_Name: GiantHandReward
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.SkillRewardData
+  id: giant-hand-seal
+  displayName: Thien Thu Tran Ap / Giant Hand Seal
+  displayNameVN: "Thi\xEAn Th\u1EE7 Tr\u1EA5n \xC1p"
+  descriptionVN: "Nh\u1EA5n F \u0111\u1EC3 tr\u1EA5n \xE1p qu\xE1i v\u1EADt g\u1EA7n nh\u1EA5t. Tr\xEAn thi\u1EBFt b\u1ECB c\u1EA3m \u1EE9ng, d\xF9ng n\xFAt Thi\xEAn Th\u1EE7."
+  description: Press F to seal the nearest monster. On mobile, use the Hand skill button.
+  icon: {fileID: 0}

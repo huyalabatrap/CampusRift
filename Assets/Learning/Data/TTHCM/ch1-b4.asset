@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426371913cb103240a9f482a56898d15, type: 3}
+  m_Name: ch1-b4
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.LessonData
+  id: ch1-b4
+  title: "\xDD ngh\u0129a c\u1EE7a vi\u1EC7c h\u1ECDc t\u1EADp m\xF4n h\u1ECDc"
+  topic: "\xDD ngh\u0129a c\u1EE7a vi\u1EC7c h\u1ECDc t\u1EADp m\xF4n h\u1ECDc"
+  titleVN: "\xDD ngh\u0129a c\u1EE7a vi\u1EC7c h\u1ECDc t\u1EADp m\xF4n h\u1ECDc"
+  pages:
+  - title: "N\xE2ng cao n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn"
+    titleVN: "N\xE2ng cao n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn"
+    contentVN: "\xDD ngh\u0129a th\u1EE9 nh\u1EA5t: g\xF3p ph\u1EA7n n\xE2ng cao n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn. M\xF4n h\u1ECDc trang b\u1ECB cho sinh vi\xEAn tri th\u1EE9c khoa h\u1ECDc v\u1EC1 h\u1EC7 th\u1ED1ng quan \u0111i\u1EC3m to\xE0n di\u1EC7n v\xE0 s\xE2u s\u1EAFc v\u1EC1 c\xE1ch m\u1EA1ng Vi\u1EC7t Nam; h\xECnh th\xE0nh n\u0103ng l\u1EF1c, ph\u01B0\u01A1ng ph\xE1p l\xE0m vi\u1EC7c, ni\u1EC1m tin, t\xECnh c\u1EA3m c\xE1ch m\u1EA1ng; c\u1EE7ng c\u1ED1 l\u1EADp tr\u01B0\u1EDDng, quan \u0111i\u1EC3m c\xE1ch m\u1EA1ng tr\xEAn n\u1EC1n t\u1EA3ng ch\u1EE7 ngh\u0129a M\xE1c - L\xEAnin, t\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh; ki\xEAn \u0111\u1ECBnh m\u1EE5c ti\xEAu \u0111\u1ED9c l\u1EADp d\xE2n t\u1ED9c v\xE0 ch\u1EE7 ngh\u0129a x\xE3 h\u1ED9i; t\xEDch c\u1EF1c, ch\u1EE7 \u0111\u1ED9ng \u0111\u1EA5u tranh ph\xEA ph\xE1n nh\u1EEFng quan \u0111i\u1EC3m sai tr\xE1i.\n\nGiai \u0111o\u1EA1n nghi\xEAn c\u1EE9u \u1EDF tr\u01B0\u1EDDng \u0111\u1EA1i h\u1ECDc r\u1EA5t quan tr\u1ECDng \u0111\u1ED1i v\u1EDBi n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn, v\xEC g\u1EAFn v\u1EDBi tu\u1ED5i tr\u1EBB c\u1EE7a con ng\u01B0\u1EDDi. Mong mu\u1ED1n cu\u1ED1i c\xF9ng c\u1EE7a H\u1ED3 Ch\xED Minh l\xE0 to\xE0n \u0110\u1EA3ng to\xE0n d\xE2n ta \u0111o\xE0n k\u1EBFt ph\u1EA5n \u0111\u1EA5u, x\xE2y d\u1EF1ng m\u1ED9t n\u01B0\u1EDBc Vi\u1EC7t Nam h\xF2a b\xECnh, th\u1ED1ng nh\u1EA5t, \u0111\u1ED9c l\u1EADp, d\xE2n ch\u1EE7 v\xE0 gi\xE0u m\u1EA1nh, v\xE0 g\xF3p ph\u1EA7n x\u1EE9ng \u0111\xE1ng v\xE0o s\u1EF1 nghi\u1EC7p c\xE1ch m\u1EA1ng th\u1EBF gi\u1EDBi. (Gi\xE1o tr\xECnh 2021, tr.28-29)"
+    exampleVN: 
+    takeawayVN: "\xDD ngh\u0129a th\u1EE9 nh\u1EA5t: n\xE2ng cao n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn."
+    content: "\xDD ngh\u0129a th\u1EE9 nh\u1EA5t: g\xF3p ph\u1EA7n n\xE2ng cao n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn. M\xF4n h\u1ECDc trang b\u1ECB cho sinh vi\xEAn tri th\u1EE9c khoa h\u1ECDc v\u1EC1 h\u1EC7 th\u1ED1ng quan \u0111i\u1EC3m to\xE0n di\u1EC7n v\xE0 s\xE2u s\u1EAFc v\u1EC1 c\xE1ch m\u1EA1ng Vi\u1EC7t Nam; h\xECnh th\xE0nh n\u0103ng l\u1EF1c, ph\u01B0\u01A1ng ph\xE1p l\xE0m vi\u1EC7c, ni\u1EC1m tin, t\xECnh c\u1EA3m c\xE1ch m\u1EA1ng; c\u1EE7ng c\u1ED1 l\u1EADp tr\u01B0\u1EDDng, quan \u0111i\u1EC3m c\xE1ch m\u1EA1ng tr\xEAn n\u1EC1n t\u1EA3ng ch\u1EE7 ngh\u0129a M\xE1c - L\xEAnin, t\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh; ki\xEAn \u0111\u1ECBnh m\u1EE5c ti\xEAu \u0111\u1ED9c l\u1EADp d\xE2n t\u1ED9c v\xE0 ch\u1EE7 ngh\u0129a x\xE3 h\u1ED9i; t\xEDch c\u1EF1c, ch\u1EE7 \u0111\u1ED9ng \u0111\u1EA5u tranh ph\xEA ph\xE1n nh\u1EEFng quan \u0111i\u1EC3m sai tr\xE1i.\n\nGiai \u0111o\u1EA1n nghi\xEAn c\u1EE9u \u1EDF tr\u01B0\u1EDDng \u0111\u1EA1i h\u1ECDc r\u1EA5t quan tr\u1ECDng \u0111\u1ED1i v\u1EDBi n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn, v\xEC g\u1EAFn v\u1EDBi tu\u1ED5i tr\u1EBB c\u1EE7a con ng\u01B0\u1EDDi. Mong mu\u1ED1n cu\u1ED1i c\xF9ng c\u1EE7a H\u1ED3 Ch\xED Minh l\xE0 to\xE0n \u0110\u1EA3ng to\xE0n d\xE2n ta \u0111o\xE0n k\u1EBFt ph\u1EA5n \u0111\u1EA5u, x\xE2y d\u1EF1ng m\u1ED9t n\u01B0\u1EDBc Vi\u1EC7t Nam h\xF2a b\xECnh, th\u1ED1ng nh\u1EA5t, \u0111\u1ED9c l\u1EADp, d\xE2n ch\u1EE7 v\xE0 gi\xE0u m\u1EA1nh, v\xE0 g\xF3p ph\u1EA7n x\u1EE9ng \u0111\xE1ng v\xE0o s\u1EF1 nghi\u1EC7p c\xE1ch m\u1EA1ng th\u1EBF gi\u1EDBi. (Gi\xE1o tr\xECnh 2021, tr.28-29)"
+    example: 
+    takeaway: "\xDD ngh\u0129a th\u1EE9 nh\u1EA5t: n\xE2ng cao n\u0103ng l\u1EF1c t\u01B0 duy l\xFD lu\u1EADn."
+    illustration: {fileID: 0}
+  - title: "\u0110\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng v\xE0 phong c\xE1ch c\xF4ng t\xE1c"
+    titleVN: "\u0110\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng v\xE0 phong c\xE1ch c\xF4ng t\xE1c"
+    contentVN: "\xDD ngh\u0129a th\u1EE9 hai: gi\xE1o d\u1EE5c v\xE0 \u0111\u1ECBnh h\u01B0\u1EDBng th\u1EF1c h\xE0nh \u0111\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng, c\u1EE7ng c\u1ED1 ni\u1EC1m tin khoa h\u1ECDc g\u1EAFn li\u1EC1n v\u1EDBi trau d\u1ED3i t\xECnh c\u1EA3m c\xE1ch m\u1EA1ng, b\u1ED3i d\u01B0\u1EE1ng l\xF2ng y\xEAu n\u01B0\u1EDBc. Ng\u01B0\u1EDDi h\u1ECDc hi\u1EC3u s\xE2u s\u1EAFc v\xE0 to\xE0n di\u1EC7n v\u1EC1 cu\u1ED9c \u0111\u1EDDi v\xE0 s\u1EF1 nghi\u1EC7p c\u1EE7a H\u1ED3 Ch\xED Minh, th\u1EF1c h\xE0nh \u0111\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng, ch\u1ED1ng ch\u1EE7 ngh\u0129a c\xE1 nh\xE2n, s\u1ED1ng c\xF3 \xEDch cho x\xE3 h\u1ED9i, n\xE2ng cao l\xF2ng t\u1EF1 h\xE0o v\u1EC1 \u0111\u1EA5t n\u01B0\u1EDBc Vi\u1EC7t Nam, v\u1EC1 ch\u1EBF \u0111\u1ED9 x\xE3 h\u1ED9i ch\u1EE7 ngh\u0129a, v\u1EC1 H\u1ED3 Ch\xED Minh, v\u1EC1 \u0110\u1EA3ng C\u1ED9ng s\u1EA3n Vi\u1EC7t Nam; n\xE2ng cao b\u1EA3n l\u0129nh ch\xEDnh tr\u1ECB, ki\xEAn \u0111\u1ECBnh \xFD th\u1EE9c v\xE0 tr\xE1ch nhi\u1EC7m c\xF4ng d\xE2n.\n\n\xDD ngh\u0129a th\u1EE9 ba: x\xE2y d\u1EF1ng, r\xE8n luy\u1EC7n ph\u01B0\u01A1ng ph\xE1p v\xE0 phong c\xE1ch c\xF4ng t\xE1c. Ng\u01B0\u1EDDi h\u1ECDc c\xF3 th\u1EC3 x\xE2y d\u1EF1ng phong c\xE1ch t\u01B0 duy, di\u1EC5n \u0111\u1EA1t, l\xE0m vi\u1EC7c, \u1EE9ng x\u1EED, sinh ho\u1EA1t ph\xF9 h\u1EE3p ho\xE0n c\u1EA3nh, nh\u01B0 ph\u01B0\u01A1ng ch\xE2m c\u1EE7a H\u1ED3 Ch\xED Minh: \"D\u0129 b\u1EA5t bi\u1EBFn, \u1EE9ng v\u1EA1n bi\u1EBFn\". T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh g\xF3p ph\u1EA7n gi\xE1o d\u1EE5c th\u1EBF h\u1EC7 tr\u1EBB h\xECnh th\xE0nh v\xE0 ho\xE0n thi\u1EC7n nh\xE2n c\xE1ch, tr\u1EDF th\xE0nh nh\u1EEFng chi\u1EBFn s\u0129 ti\xEAn phong trong s\u1EF1 nghi\u1EC7p x\xE2y d\u1EF1ng v\xE0 b\u1EA3o v\u1EC7 T\u1ED5 qu\u1ED1c Vi\u1EC7t Nam x\xE3 h\u1ED9i ch\u1EE7 ngh\u0129a. (Gi\xE1o tr\xECnh 2021, tr.28-31)"
+    exampleVN: 
+    takeawayVN: "Ba \xFD ngh\u0129a: t\u01B0 duy l\xFD lu\u1EADn; \u0111\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng v\xE0 ni\u1EC1m tin; ph\u01B0\u01A1ng ph\xE1p v\xE0 phong c\xE1ch c\xF4ng t\xE1c."
+    content: "\xDD ngh\u0129a th\u1EE9 hai: gi\xE1o d\u1EE5c v\xE0 \u0111\u1ECBnh h\u01B0\u1EDBng th\u1EF1c h\xE0nh \u0111\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng, c\u1EE7ng c\u1ED1 ni\u1EC1m tin khoa h\u1ECDc g\u1EAFn li\u1EC1n v\u1EDBi trau d\u1ED3i t\xECnh c\u1EA3m c\xE1ch m\u1EA1ng, b\u1ED3i d\u01B0\u1EE1ng l\xF2ng y\xEAu n\u01B0\u1EDBc. Ng\u01B0\u1EDDi h\u1ECDc hi\u1EC3u s\xE2u s\u1EAFc v\xE0 to\xE0n di\u1EC7n v\u1EC1 cu\u1ED9c \u0111\u1EDDi v\xE0 s\u1EF1 nghi\u1EC7p c\u1EE7a H\u1ED3 Ch\xED Minh, th\u1EF1c h\xE0nh \u0111\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng, ch\u1ED1ng ch\u1EE7 ngh\u0129a c\xE1 nh\xE2n, s\u1ED1ng c\xF3 \xEDch cho x\xE3 h\u1ED9i, n\xE2ng cao l\xF2ng t\u1EF1 h\xE0o v\u1EC1 \u0111\u1EA5t n\u01B0\u1EDBc Vi\u1EC7t Nam, v\u1EC1 ch\u1EBF \u0111\u1ED9 x\xE3 h\u1ED9i ch\u1EE7 ngh\u0129a, v\u1EC1 H\u1ED3 Ch\xED Minh, v\u1EC1 \u0110\u1EA3ng C\u1ED9ng s\u1EA3n Vi\u1EC7t Nam; n\xE2ng cao b\u1EA3n l\u0129nh ch\xEDnh tr\u1ECB, ki\xEAn \u0111\u1ECBnh \xFD th\u1EE9c v\xE0 tr\xE1ch nhi\u1EC7m c\xF4ng d\xE2n.\n\n\xDD ngh\u0129a th\u1EE9 ba: x\xE2y d\u1EF1ng, r\xE8n luy\u1EC7n ph\u01B0\u01A1ng ph\xE1p v\xE0 phong c\xE1ch c\xF4ng t\xE1c. Ng\u01B0\u1EDDi h\u1ECDc c\xF3 th\u1EC3 x\xE2y d\u1EF1ng phong c\xE1ch t\u01B0 duy, di\u1EC5n \u0111\u1EA1t, l\xE0m vi\u1EC7c, \u1EE9ng x\u1EED, sinh ho\u1EA1t ph\xF9 h\u1EE3p ho\xE0n c\u1EA3nh, nh\u01B0 ph\u01B0\u01A1ng ch\xE2m c\u1EE7a H\u1ED3 Ch\xED Minh: \"D\u0129 b\u1EA5t bi\u1EBFn, \u1EE9ng v\u1EA1n bi\u1EBFn\". T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh g\xF3p ph\u1EA7n gi\xE1o d\u1EE5c th\u1EBF h\u1EC7 tr\u1EBB h\xECnh th\xE0nh v\xE0 ho\xE0n thi\u1EC7n nh\xE2n c\xE1ch, tr\u1EDF th\xE0nh nh\u1EEFng chi\u1EBFn s\u0129 ti\xEAn phong trong s\u1EF1 nghi\u1EC7p x\xE2y d\u1EF1ng v\xE0 b\u1EA3o v\u1EC7 T\u1ED5 qu\u1ED1c Vi\u1EC7t Nam x\xE3 h\u1ED9i ch\u1EE7 ngh\u0129a. (Gi\xE1o tr\xECnh 2021, tr.28-31)"
+    example: 
+    takeaway: "Ba \xFD ngh\u0129a: t\u01B0 duy l\xFD lu\u1EADn; \u0111\u1EA1o \u0111\u1EE9c c\xE1ch m\u1EA1ng v\xE0 ni\u1EC1m tin; ph\u01B0\u01A1ng ph\xE1p v\xE0 phong c\xE1ch c\xF4ng t\xE1c."
+    illustration: {fileID: 0}
+  questionBank: {fileID: 11400000, guid: 1f19ee88a3db0c24aa9d03cf060cd3e6, type: 2}
+  quizSize: 10
+  passPercent: 80
+  prerequisiteLessonIds:
+  - ch1-b3
+  requiredSurvivalSeconds: 0
+  reward:
+    healthFraction: 0.05
+    movementFraction: 0.02
+    energyFraction: 0
+  isPlaceholder: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0587c40a9f5db44be11d75d6b7b4cc, type: 3}
+  m_Name: ch1
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.CourseData
+  id: tthcm-ch1
+  title: "Kh\xE1i ni\u1EC7m, \u0111\u1ED1i t\u01B0\u1EE3ng, ph\u01B0\u01A1ng ph\xE1p nghi\xEAn c\u1EE9u v\xE0 \xFD ngh\u0129a h\u1ECDc t\u1EADp m\xF4n T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  subject: "T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  titleVN: "Kh\xE1i ni\u1EC7m, \u0111\u1ED1i t\u01B0\u1EE3ng, ph\u01B0\u01A1ng ph\xE1p nghi\xEAn c\u1EE9u v\xE0 \xFD ngh\u0129a h\u1ECDc t\u1EADp m\xF4n T\u01B0 t\u01B0\u1EDFng H\u1ED3 Ch\xED Minh"
+  descriptionVN: 
+  description: 
+  requiredSurvivalSeconds: 0
+  chapterIndex: 1
+  examBank: {fileID: 11400000, guid: a210b5c2c26fe5841a92369709c90fe3, type: 2}
+  examSize: 20
+  examPassPercent: 80
+  examMinutes: 20
+  isPlaceholder: 0
+  lessons:
+  - {fileID: 11400000, guid: 95c1d341025edff4ebf73213d57630d3, type: 2}
+  - {fileID: 11400000, guid: 83e1c6e110090a04bafcb0562140268a, type: 2}
+  - {fileID: 11400000, guid: 0b675a860101c6d469f7f57861664c90, type: 2}
+  - {fileID: 11400000, guid: 49ab745f496e36541bcdacf99a4ca5ed, type: 2}
+  skillTiers: []
