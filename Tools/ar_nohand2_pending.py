@@ -1,0 +1,5 @@
+from ar_nohand2 import *
+v=json.loads((OUT/'build/verification.json').read_text(encoding='utf-8'))
+state=json.loads((OUT/'build/install-pending-state.json').read_text(encoding='utf-8'))
+save('pending-device.json',dict(at=time.strftime('%Y-%m-%d %H:%M:%S'),installSession=83536,command='python Tools/ar_nohand2_device.py',apk=v['apk'],sha256=v['sha256'],serial='WGH6S8I7GIMBGQKR',deviceState=state,done=['D1/motion release fixes','C# state traces PASS','ARGestureUnitTests once 55/0','ARRiftPlayTest once 25/0 11casts','startup deadline focused 10case PASS','final APK build/verification/resource','save/settings/prefs/protected/AndroidEditSampleSceneConsole0 restoration and recheck'],remaining=['user unlock/approve existing InstallGuide','collect install Success and pm list packages campus from existing session, do not reinstall while pending','python Tools/ar_nohand2_close.py verifies installed base.apk hash','write final REPORT-AR-NOHAND2.md from report-draft.md only after complete'],draft='task/ar/nohand2/report-draft.md'))
+print('Pending installation handoff saved')
