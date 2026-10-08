@@ -1,0 +1,25 @@
+# AR Tech2 — tài nguyên và thư viện bên thứ ba
+
+## Mô hình Vosk tiếng Việt
+
+- Tên: `vosk-model-small-vn-0.4`, Alpha Cephei / Vosk.
+- Nguồn chính thức: https://alphacephei.com/vosk/models/vosk-model-small-vn-0.4.zip
+- Danh mục / giấy phép: https://alphacephei.com/vosk/models — Apache License 2.0.
+- ZIP tải ngày 06/10/2026: **33.656.337 byte** (32,10 MiB); dữ liệu giải nén: **53.290.365 byte** (50,82 MiB), không tính Unity .meta.
+- SHA256 ZIP: `efe5c8494212110471a79befc48c79da679e5b1fc52a4ffb500222ff86d622e5`.
+- Bản ZIP/metadata/license gốc lưu tại `Content/AR-Tech2/`; model được đóng gói vào `Assets/StreamingAssets/vosk/`. App chép model vào app-private files để Vosk đọc, không tải model trong trận.
+- Bản giấy phép đầy đủ: `Assets/StreamingAssets/AR-Tech2-Apache-2.0.txt` và `Content/AR-Tech2/Apache-2.0.txt`.
+- Không sửa trọng số; grammar chỉ giới hạn các tên tuyệt kỹ Việt và `[unk]`. Không cần phương án SpeechRecognizer vì model giải nén nhỏ hơn 60 MB; không dùng dịch vụ nhận dạng mạng.
+
+## Thư viện Android
+
+- `com.alphacephei:vosk-android:0.3.75@aar`: https://github.com/alphacep/vosk-api — Apache 2.0. Version theo demo chính thức https://github.com/alphacep/vosk-android-demo/blob/master/app/build.gradle. Vosk native dựa trên Kaldi; giữ các notices phân phối trong artifact upstream.
+- `net.java.dev.jna:jna:5.18.1@aar`: https://github.com/java-native-access/jna — chọn nhánh giấy phép **Apache 2.0** trong giấy phép kép LGPL 2.1 / Apache 2.0; giữ notice upstream trong AAR. https://github.com/java-native-access/jna/blob/master/LICENSE.
+- MediaPipe Tasks Vision/model nhận tay đã có từ Gói A; không tải/thay model gesture trong Job 6.
+- Android MediaProjection, MediaRecorder, MediaStore và AudioRecord là API hệ thống; không thêm SDK quảng cáo, upload hoặc chia sẻ tự động.
+
+## Quyền riêng tư runtime
+
+Voice mặc định tắt, quyền micro riêng chỉ khi người chơi bật. PCM chỉ ở buffer RAM khoảng 100 ms, được ghi đè/xóa; không lưu file, transcript hoặc gửi âm thanh. Mô hình chính thức được lưu, âm thanh người dùng thì không.
+
+Clip là video **không có âm thanh**, chỉ sau cảnh báo phòng thật + đồng ý của người chơi + hộp quyền MediaProjection của Android. App lưu clip vào thư viện máy do người chơi yêu cầu; không tự upload. Sao lưu thư viện do hệ điều hành/người dùng cấu hình nằm ngoài cơ chế app. Landmark, pose phòng và cubemap chỉ RAM; ảnh bàn giao là studio Editor.
