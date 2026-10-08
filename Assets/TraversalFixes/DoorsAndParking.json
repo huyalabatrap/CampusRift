@@ -1,0 +1,728 @@
+{
+  "doors": 506,
+  "opened": 1012,
+  "failures": [
+    {
+      "name": "Block_G_GndExit_Door Automatic",
+      "side": -1,
+      "blockers": [
+        "Curb_LeLoi_CampusSide",
+        "Block_G_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_G_GndExit_Door Automatic",
+      "side": 1,
+      "blockers": [
+        "Curb_LeLoi_CampusSide",
+        "Block_G_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Entrance E",
+      "side": -1,
+      "blockers": [
+        "E_Vestibule_Step_A",
+        "E_Vestibule_Step_B",
+        "E_Entry_Terrace"
+      ]
+    },
+    {
+      "name": "Entrance E",
+      "side": 1,
+      "blockers": [
+        "E_Vestibule_Step_A",
+        "E_Vestibule_Step_B",
+        "E_Entry_Terrace"
+      ]
+    },
+    {
+      "name": "Block_I_GndExit_Door Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_I_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_I_GndExit_Door Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_I_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Entrance I",
+      "side": -1,
+      "blockers": [
+        "I_Entry_Terrace",
+        "I_Vestibule_Step_A",
+        "I_Vestibule_Step_B",
+        "I_Entry_SillPad"
+      ]
+    },
+    {
+      "name": "Entrance I",
+      "side": 1,
+      "blockers": [
+        "I_Entry_Terrace",
+        "I_Vestibule_Step_A",
+        "I_Vestibule_Step_B",
+        "I_Entry_SillPad"
+      ]
+    },
+    {
+      "name": "Block_D_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_D_SecDoor_Side_Frame",
+        "Block_X_Arch_Plinth",
+        "Block_D_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_D_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_D_SecDoor_Side_Frame",
+        "Block_X_Arch_Plinth",
+        "Block_D_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Entrance V",
+      "side": -1,
+      "blockers": [
+        "Walkway_EV_Platform"
+      ]
+    },
+    {
+      "name": "Entrance V",
+      "side": 1,
+      "blockers": [
+        "Walkway_EV_Platform"
+      ]
+    },
+    {
+      "name": "Block_V_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_V_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_V_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_V_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Entrance G",
+      "side": -1,
+      "blockers": [
+        "G_Entry_Terrace",
+        "G_Vestibule_Step_B",
+        "G_Vestibule_Step_A",
+        "G_Entry_SillPad"
+      ]
+    },
+    {
+      "name": "Entrance G",
+      "side": 1,
+      "blockers": [
+        "G_Entry_Terrace",
+        "G_Vestibule_Step_B",
+        "G_Vestibule_Step_A",
+        "G_Entry_SillPad"
+      ]
+    },
+    {
+      "name": "Block_H_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_H_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_H_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_H_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_V_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_V_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_V_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_V_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_I_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_I_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_I_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_I_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_A_Stair_East_GndExit",
+      "side": -1,
+      "blockers": [
+        "Block_A_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_A_Stair_East_GndExit",
+      "side": 1,
+      "blockers": [
+        "Block_A_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "A7N_Door_E_28",
+      "side": -1,
+      "blockers": [
+        "Block_A_Body"
+      ]
+    },
+    {
+      "name": "A7N_Door_E_28",
+      "side": 1,
+      "blockers": [
+        "Block_A_Body"
+      ]
+    },
+    {
+      "name": "Block_B_Stair_East_GndExit",
+      "side": -1,
+      "blockers": [
+        "Block_B_Arch_Plinth",
+        "Block_B_Body"
+      ]
+    },
+    {
+      "name": "Block_B_Stair_East_GndExit",
+      "side": 1,
+      "blockers": [
+        "Block_B_Arch_Plinth",
+        "Block_B_Body"
+      ]
+    },
+    {
+      "name": "Block_X_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_X_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_X_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_X_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_B_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_B_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_B_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_B_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_D_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_D_SecDoor_Back_Frame",
+        "Block_X_Stair_Col_25.82_37.52"
+      ]
+    },
+    {
+      "name": "Block_D_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_D_SecDoor_Back_Frame",
+        "Block_X_Stair_Col_25.82_37.52"
+      ]
+    },
+    {
+      "name": "Block_H_Stair_East_GndExit",
+      "side": -1,
+      "blockers": [
+        "Hinged Leaf",
+        "Block_H_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_H_Stair_East_GndExit",
+      "side": 1,
+      "blockers": [
+        "Hinged Leaf",
+        "Block_H_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "F_F06_M2_Doors 3",
+      "side": -1,
+      "blockers": [
+        "F_F06_M2_Walls"
+      ]
+    },
+    {
+      "name": "F_F06_M2_Doors 3",
+      "side": 1,
+      "blockers": [
+        "F_F06_M2_Walls"
+      ]
+    },
+    {
+      "name": "Block_A_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_A_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_A_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_A_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_C_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_C_SecDoor_Side_Frame",
+        "Block_C_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_C_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_C_SecDoor_Side_Frame",
+        "Block_C_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_B_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_B_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_B_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_B_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "F_F02_M2_Doors 3",
+      "side": -1,
+      "blockers": [
+        "F_F02_M2_Walls"
+      ]
+    },
+    {
+      "name": "F_F02_M2_Doors 3",
+      "side": 1,
+      "blockers": [
+        "F_F02_M2_Walls"
+      ]
+    },
+    {
+      "name": "Entrance B",
+      "side": -1,
+      "blockers": [
+        "Block_B_Entry_Step_1",
+        "Block_B_InStep_1",
+        "Block_B_InStep_2",
+        "Block_B_Entry_Step_2"
+      ]
+    },
+    {
+      "name": "Entrance B",
+      "side": 1,
+      "blockers": [
+        "Block_B_Entry_Step_1",
+        "Block_B_InStep_1",
+        "Block_B_InStep_2",
+        "Block_B_Entry_Step_2"
+      ]
+    },
+    {
+      "name": "F_F03_M2_Doors 3",
+      "side": -1,
+      "blockers": [
+        "F_F03_M2_Walls"
+      ]
+    },
+    {
+      "name": "F_F03_M2_Doors 3",
+      "side": 1,
+      "blockers": [
+        "F_F03_M2_Walls"
+      ]
+    },
+    {
+      "name": "Entrance T",
+      "side": -1,
+      "blockers": [
+        "Block_T_InStep_2",
+        "Block_T_InStep_1"
+      ]
+    },
+    {
+      "name": "Entrance T",
+      "side": 1,
+      "blockers": [
+        "Block_T_InStep_2",
+        "Block_T_InStep_1"
+      ]
+    },
+    {
+      "name": "A7N_Door_E_32",
+      "side": -1,
+      "blockers": [
+        "Block_A_Body"
+      ]
+    },
+    {
+      "name": "A7N_Door_E_32",
+      "side": 1,
+      "blockers": [
+        "Block_A_Body"
+      ]
+    },
+    {
+      "name": "Block_F_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_F_Arch_Plinth",
+        "Block_T_Portal_PostL",
+        "Block_T_Arch_Plinth",
+        "Block_F_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_F_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_F_Arch_Plinth",
+        "Block_T_Portal_PostL",
+        "Block_T_Arch_Plinth",
+        "Block_F_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_E_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_E_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_E_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_E_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_E_SecDoor_Back Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_E_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_E_SecDoor_Back Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_E_SecDoor_Back_Frame"
+      ]
+    },
+    {
+      "name": "Block_H_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_H_SecDoor_Side_Frame",
+        "Hinged Leaf",
+        "Block_H_Stair_East_GndExit_Frame"
+      ]
+    },
+    {
+      "name": "Block_H_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_H_SecDoor_Side_Frame",
+        "Hinged Leaf",
+        "Block_H_Stair_East_GndExit_Frame"
+      ]
+    },
+    {
+      "name": "Block_A_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_A_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_A_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_A_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_X_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_X_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_X_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_X_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "F_F05_M2_Doors 3",
+      "side": -1,
+      "blockers": [
+        "F_F05_M2_Walls"
+      ]
+    },
+    {
+      "name": "F_F05_M2_Doors 3",
+      "side": 1,
+      "blockers": [
+        "F_F05_M2_Walls"
+      ]
+    },
+    {
+      "name": "Entrance A",
+      "side": -1,
+      "blockers": [
+        "A_Entry_Terrace",
+        "A_Vestibule_Step_A",
+        "A_Entry_SillPad",
+        "A_Vestibule_Step_B"
+      ]
+    },
+    {
+      "name": "Entrance A",
+      "side": 1,
+      "blockers": [
+        "A_Entry_Terrace",
+        "A_Vestibule_Step_A",
+        "A_Entry_SillPad",
+        "A_Vestibule_Step_B"
+      ]
+    },
+    {
+      "name": "Block_G_SecDoor_Side Automatic",
+      "side": -1,
+      "blockers": [
+        "Block_G_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Block_G_SecDoor_Side Automatic",
+      "side": 1,
+      "blockers": [
+        "Block_G_SecDoor_Side_Frame"
+      ]
+    },
+    {
+      "name": "Entrance F",
+      "side": -1,
+      "blockers": [
+        "F_Entry_ApronStep_A",
+        "F_Entry_ApronStep_B",
+        "F_Entry_SillPad",
+        "F_Vestibule_Step_B",
+        "F_Vestibule_Step_A"
+      ]
+    },
+    {
+      "name": "Entrance F",
+      "side": 1,
+      "blockers": [
+        "F_Entry_ApronStep_A",
+        "F_Entry_ApronStep_B",
+        "F_Entry_SillPad",
+        "F_Vestibule_Step_B",
+        "F_Vestibule_Step_A"
+      ]
+    },
+    {
+      "name": "Block_D_Stair_East_GndExit",
+      "side": -1,
+      "blockers": [
+        "Block_X_Arch_Plinth",
+        "Block_D_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_D_Stair_East_GndExit",
+      "side": 1,
+      "blockers": [
+        "Block_X_Arch_Plinth",
+        "Block_D_Arch_Plinth"
+      ]
+    },
+    {
+      "name": "Block_X_Stair_East_GndExit",
+      "side": -1,
+      "blockers": [
+        "Curb_LeLoi_CampusSide"
+      ]
+    },
+    {
+      "name": "Block_X_Stair_East_GndExit",
+      "side": 1,
+      "blockers": [
+        "Curb_LeLoi_CampusSide"
+      ]
+    },
+    {
+      "name": "F_F04_M2_Doors 3",
+      "side": -1,
+      "blockers": [
+        "F_F04_M2_Walls"
+      ]
+    },
+    {
+      "name": "F_F04_M2_Doors 3",
+      "side": 1,
+      "blockers": [
+        "F_F04_M2_Walls"
+      ]
+    },
+    {
+      "name": "Entrance D",
+      "side": -1,
+      "blockers": [
+        "D_Entry_StepA",
+        "Walkway_DF_Platform",
+        "D_Entry_StepB",
+        "D_Vest_StepB",
+        "D_Entry_SillPad",
+        "D_Vest_StepA"
+      ]
+    },
+    {
+      "name": "Entrance D",
+      "side": 1,
+      "blockers": [
+        "D_Entry_StepA",
+        "Walkway_DF_Platform",
+        "D_Entry_StepB",
+        "D_Vest_StepB",
+        "D_Entry_SillPad",
+        "D_Vest_StepA"
+      ]
+    }
+  ],
+  "surfaces": [
+    {
+      "x": -15.0,
+      "from": 8.0,
+      "point": "(-15.00, 3.70, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": -5.0,
+      "from": 8.0,
+      "point": "(-5.00, 6.58, 29.00)",
+      "normal": "(0.00, 1.00, -0.04)"
+    },
+    {
+      "x": 5.0,
+      "from": 8.0,
+      "point": "(5.00, 6.58, 29.00)",
+      "normal": "(0.00, 1.00, -0.04)"
+    },
+    {
+      "x": 15.0,
+      "from": 8.0,
+      "point": "(15.00, 3.70, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": -15.0,
+      "from": 5.0,
+      "point": "(-15.00, 3.70, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": -5.0,
+      "from": 5.0,
+      "point": "(-5.00, 3.70, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": 5.0,
+      "from": 5.0,
+      "point": "(5.00, 3.70, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": 15.0,
+      "from": 5.0,
+      "point": "(15.00, 3.70, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": -15.0,
+      "from": 2.0,
+      "point": "(-15.00, 0.08, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": -5.0,
+      "from": 2.0,
+      "point": "(-5.00, 0.08, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": 5.0,
+      "from": 2.0,
+      "point": "(5.00, 0.08, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    },
+    {
+      "x": 15.0,
+      "from": 2.0,
+      "point": "(15.00, 0.08, 29.00)",
+      "normal": "(0.00, 1.00, 0.00)"
+    }
+  ]
+}
