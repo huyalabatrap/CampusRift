@@ -1,0 +1,10 @@
+UnityEngine.Application.runInBackground=true;
+CampusRift.UI.UIStateManager.Instance.EnterScene(true);
+var brain=UnityEngine.Object.FindAnyObjectByType<CampusRift.Monsters.MonsterBrain>();brain.enabled=false;brain.GetComponent<CampusRift.Monsters.MonsterNavigation>().Stop();
+var player=UnityEngine.Object.FindAnyObjectByType<CampusRift.CampusExplorer>();player.enabled=false;
+var cc=player.GetComponent<UnityEngine.CharacterController>();cc.enabled=false;player.transform.position=new UnityEngine.Vector3(8,.13f,-4);cc.enabled=true;
+brain.GetComponent<UnityEngine.AI.NavMeshAgent>().Warp(new UnityEngine.Vector3(20,.1f,-4));
+var camera=UnityEngine.Camera.main;camera.transform.SetPositionAndRotation(new UnityEngine.Vector3(11,2,-8),UnityEngine.Quaternion.Euler(12,0,0));
+var skill=player.GetComponent<CampusRift.Skills.VoidWallSkill>();
+skill.BeginPreview();
+return new{skill.Charges,skill.IsPreviewing,valid=skill.Placement.valid,reason=skill.Placement.reason,feet=skill.Placement.feet.ToString(),width=skill.Placement.width};
