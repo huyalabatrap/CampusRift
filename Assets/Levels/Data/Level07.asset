@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779190f8bf6dae24595e14fcb603572b, type: 3}
+  m_Name: Level07
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelDefinition
+  id: level-07
+  index: 7
+  displayName: The Hunter Awakens
+  displayNameVN: "S\u0103n H\u1ED3n Th\u1EE9c T\u1EC9nh"
+  briefEN: Blood moon over the whole campus. The final fight is in the tall Block X.
+  briefVN: "Tr\u0103ng m\xE1u ph\u1EE7 to\xE0n tr\u01B0\u1EDDng. Tr\u1EADn cu\u1ED1i \u1EDF t\xF2a X cao t\u1EA7ng."
+  requiredRealm: 3
+  requiredTier: 1
+  sky: 3
+  spawnPoint: {x: 0, y: 0.13, z: -10}
+  spawnYaw: 0
+  zones:
+  - id: far-w
+    position: {x: -40.15, y: 0.012474984, z: 5}
+    radius: 3
+  - id: far-e
+    position: {x: 40, y: 0, z: -5}
+    radius: 3
+  - id: far-s
+    position: {x: 0, y: 0.070257366, z: -55}
+    radius: 3
+  - id: far-ne
+    position: {x: 50, y: 0.073649965, z: 35}
+    radius: 3
+  - id: far-sw
+    position: {x: -50, y: 0, z: -35}
+    radius: 3
+  - id: c-top
+    position: {x: 0, y: 0, z: 45}
+    radius: 3
+  - id: e-in-w
+    position: {x: -2, y: 0, z: -26}
+    radius: 2
+  - id: a-in
+    position: {x: 36, y: 0, z: 28}
+    radius: 2
+  - id: v-in
+    position: {x: 6, y: 0, z: -44}
+    radius: 2
+  - id: c-east2
+    position: {x: 20, y: 0.068066284, z: 5}
+    radius: 3
+  waves:
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 6
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 6
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 8
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 787f1d60755219540935f9d40681b4a3, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: eda61ed7e184fa44c8e5f389ba67a46f, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 7f8a8a05ae33f7a45bd67badd7092fa4, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 3600f78066c897d4cad846155498583a, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 92fed2c94b1781d46bf191c334352e77, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: e51fbcebc397edb4fb9c21a03eb04f96, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 97314d2ed401031428fc75c6851a3523, type: 2}
+      count: 1
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  spawnTable: {fileID: 11400000, guid: 496b510c4d3e6004dac945b2bd711266, type: 2}
+  aiTier: 2
+  healthMultiplier: 4.6
+  damageMultiplier: 4.2
+  speedMultiplier: 1.2
+  bosses:
+  - {fileID: 11400000, guid: 5af785261d59ca04aa426d58c2722730, type: 2}
+  stars:
+  - kind: 0
+    value: 0
+    descriptionEN: Complete the level
+    descriptionVN: "Ho\xE0n th\xE0nh m\xE0n"
+  - kind: 6
+    value: 780
+    descriptionEN: Beat the par time without a Life Talisman
+    descriptionVN: "D\u01B0\u1EDBi th\u1EDDi gian m\u1ED1c, kh\xF4ng d\xF9ng H\u1ED9 M\u1EC7nh Ph\xF9"
+  - kind: 6
+    value: 780
+    descriptionEN: Finish in under 13:00
+    descriptionVN: "Ho\xE0n th\xE0nh d\u01B0\u1EDBi 13:00"
+  parTimeSeconds: 780
+  restSeconds: 15

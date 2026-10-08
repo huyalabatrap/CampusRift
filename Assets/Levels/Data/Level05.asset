@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779190f8bf6dae24595e14fcb603572b, type: 3}
+  m_Name: Level05
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelDefinition
+  id: level-05
+  index: 5
+  displayName: The Soul Hunter's Prey
+  displayNameVN: "S\u0103n H\u1ED3n Gi\u1EA3"
+  briefEN: Midnight in the central campus. A hunter is watching.
+  briefVN: "N\u1EEDa \u0111\xEAm \u1EDF khu trung t\xE2m. C\xF3 k\u1EBB s\u0103n \u0111ang d\xF5i theo."
+  requiredRealm: 2
+  requiredTier: 1
+  sky: 2
+  spawnPoint: {x: 0, y: 0.13, z: -10}
+  spawnYaw: 0
+  zones:
+  - id: c-north
+    position: {x: 0, y: 0.062474996, z: 8}
+    radius: 3
+  - id: c-west2
+    position: {x: -20, y: 0.06379752, z: 5}
+    radius: 3
+  - id: c-east2
+    position: {x: 20, y: 0.068066284, z: 5}
+    radius: 3
+  - id: c-ne
+    position: {x: 9.602924, y: 0.08747497, z: 25.014984}
+    radius: 3
+  - id: c-nw
+    position: {x: -9.96, y: 0.08747497, z: 25.02}
+    radius: 3
+  - id: c-top
+    position: {x: 0, y: 0, z: 45}
+    radius: 3
+  waves:
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 5
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 2
+      eliteCount: 0
+    riftZones:
+    - c-north
+    - c-west2
+    - c-east2
+    - c-ne
+    - c-nw
+    - c-top
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 5
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 2
+      eliteCount: 0
+    riftZones:
+    - c-north
+    - c-west2
+    - c-east2
+    - c-ne
+    - c-nw
+    - c-top
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 5
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 3
+      eliteCount: 0
+    riftZones:
+    - c-north
+    - c-west2
+    - c-east2
+    - c-ne
+    - c-nw
+    - c-top
+  spawnTable: {fileID: 11400000, guid: 671dd6ec59c58d94a864379d5756fba3, type: 2}
+  aiTier: 2
+  healthMultiplier: 3
+  damageMultiplier: 2.8
+  speedMultiplier: 1.12
+  bosses:
+  - {fileID: 11400000, guid: a9448da93dfca2a40b98b6ccfb446e38, type: 2}
+  stars:
+  - kind: 0
+    value: 0
+    descriptionEN: Complete the level
+    descriptionVN: "Ho\xE0n th\xE0nh m\xE0n"
+  - kind: 6
+    value: 600
+    descriptionEN: Beat the par time without a Life Talisman
+    descriptionVN: "D\u01B0\u1EDBi th\u1EDDi gian m\u1ED1c, kh\xF4ng d\xF9ng H\u1ED9 M\u1EC7nh Ph\xF9"
+  - kind: 7
+    value: 0
+    descriptionEN: Defeat the boss without a healing pill
+    descriptionVN: "H\u1EA1 boss m\xE0 kh\xF4ng d\xF9ng \u0111an h\u1ED3i m\xE1u"
+  parTimeSeconds: 600
+  restSeconds: 15

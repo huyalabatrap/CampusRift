@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b8f434597398f4db75dadf9988563b, type: 3}
+  m_Name: Spawn01
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelSpawnTable
+  roster:
+  - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+    weight: 3
+    minPerWave: 1
+    maxPerWave: 99
+  - archetype: {fileID: 11400000, guid: 787f1d60755219540935f9d40681b4a3, type: 2}
+    weight: 1.5
+    minPerWave: 1
+    maxPerWave: 99
+  - archetype: {fileID: 11400000, guid: a8834c528af55a847807ecd2f77cba29, type: 2}
+    weight: 1.5
+    minPerWave: 1
+    maxPerWave: 99
+  maxHeavyConcurrent: 2
+  maxBombersConcurrent: 2
+  maxBomberFraction: 0.2
+  minRangedFraction: 0
+  maxRangedFraction: 0.45
+  finalWave:
+  - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+    count: 1
+    eliteCount: 0
+  - archetype: {fileID: 11400000, guid: 787f1d60755219540935f9d40681b4a3, type: 2}
+    count: 1
+    eliteCount: 0
+  - archetype: {fileID: 11400000, guid: a8834c528af55a847807ecd2f77cba29, type: 2}
+    count: 1
+    eliteCount: 0

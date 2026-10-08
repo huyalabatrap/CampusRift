@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779190f8bf6dae24595e14fcb603572b, type: 3}
+  m_Name: Level04
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelDefinition
+  id: level-04
+  index: 4
+  displayName: Blackout Night
+  displayNameVN: "\u0110\xEAm M\u1EA5t \u0110i\u1EC7n"
+  briefEN: Night in Blocks D and E. One building has lost power; bring a flashlight.
+  briefVN: "\u0110\xEAm \u1EDF khu D\u2013E. M\u1ED9t t\xF2a m\u1EA5t \u0111i\u1EC7n, nh\u1EDB mang \u0111\xE8n pin."
+  requiredRealm: 1
+  requiredTier: 3
+  sky: 2
+  spawnPoint: {x: -10, y: 0.1, z: -15}
+  spawnYaw: 180
+  zones:
+  - id: e-in-w
+    position: {x: -2, y: 0, z: -26}
+    radius: 2
+  - id: e-in-e
+    position: {x: 11, y: 0, z: -26}
+    radius: 2
+  - id: e-up
+    position: {x: 2, y: 3.6, z: -22}
+    radius: 2
+  - id: d-up
+    position: {x: -16, y: 3.7, z: -26}
+    radius: 2
+  - id: d-out
+    position: {x: -20, y: 0, z: -35}
+    radius: 3
+  - id: e-out
+    position: {x: -10, y: 0.012474984, z: -35.475002}
+    radius: 3
+  waves:
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 4
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 2
+      eliteCount: 0
+    riftZones:
+    - e-in-w
+    - e-in-e
+    - e-up
+    - d-up
+    - d-out
+    - e-out
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 4
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 2
+      eliteCount: 0
+    riftZones:
+    - e-in-w
+    - e-in-e
+    - e-up
+    - d-up
+    - d-out
+    - e-out
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 5
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 1
+      eliteCount: 0
+    riftZones:
+    - e-in-w
+    - e-in-e
+    - e-up
+    - d-up
+    - d-out
+    - e-out
+  spawnTable: {fileID: 11400000, guid: 6f0b4b970d9845241b7274e675ad2b16, type: 2}
+  aiTier: 1
+  healthMultiplier: 2.2
+  damageMultiplier: 2.1
+  speedMultiplier: 1.09
+  bosses: []
+  stars:
+  - kind: 0
+    value: 0
+    descriptionEN: Complete the level
+    descriptionVN: "Ho\xE0n th\xE0nh m\xE0n"
+  - kind: 6
+    value: 480
+    descriptionEN: Beat the par time without a Life Talisman
+    descriptionVN: "D\u01B0\u1EDBi th\u1EDDi gian m\u1ED1c, kh\xF4ng d\xF9ng H\u1ED9 M\u1EC7nh Ph\xF9"
+  - kind: 4
+    value: 5
+    descriptionEN: Trigger 5 Frost-Lightning reactions
+    descriptionVN: "K\xEDch ho\u1EA1t 5 l\u1EA7n ph\u1EA3n \u1EE9ng B\u0103ng L\xF4i Li\u1EC7t"
+  parTimeSeconds: 480
+  restSeconds: 15

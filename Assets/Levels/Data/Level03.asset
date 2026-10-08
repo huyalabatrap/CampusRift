@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779190f8bf6dae24595e14fcb603572b, type: 3}
+  m_Name: Level03
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelDefinition
+  id: level-03
+  index: 3
+  displayName: The Soul Hunter
+  displayNameVN: "K\u1EBB S\u0103n H\u1ED3n"
+  briefEN: Night over Blocks A and B. Monsters begin to surround you.
+  briefVN: "\u0110\xEAm tr\xEAn khu A\u2013B. Qu\xE1i b\u1EAFt \u0111\u1EA7u bao v\xE2y."
+  requiredRealm: 1
+  requiredTier: 1
+  sky: 2
+  spawnPoint: {x: 10, y: 0.1, z: -5}
+  spawnYaw: 0
+  zones:
+  - id: a-out
+    position: {x: 40, y: 0, z: 25}
+    radius: 3
+  - id: a-in
+    position: {x: 36, y: 0, z: 28}
+    radius: 2
+  - id: a-up
+    position: {x: 33, y: 4, z: 30}
+    radius: 2
+  - id: b-out-e
+    position: {x: 30, y: 0, z: -35}
+    radius: 3
+  - id: b-in-e
+    position: {x: 31, y: 0, z: -30}
+    radius: 2
+  - id: b-up-w
+    position: {x: 25, y: 3.7, z: -30}
+    radius: 2
+  waves:
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 3
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 1
+      eliteCount: 0
+    riftZones:
+    - a-out
+    - a-in
+    - a-up
+    - b-out-e
+    - b-in-e
+    - b-up-w
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 4
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 1
+      eliteCount: 0
+    riftZones:
+    - a-out
+    - a-in
+    - a-up
+    - b-out-e
+    - b-in-e
+    - b-up-w
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 2
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 2
+      eliteCount: 0
+    riftZones:
+    - a-out
+    - a-in
+    - a-up
+    - b-out-e
+    - b-in-e
+    - b-up-w
+  spawnTable: {fileID: 11400000, guid: 68da4c74190bb494a8510470dc457bd7, type: 2}
+  aiTier: 1
+  healthMultiplier: 1.8
+  damageMultiplier: 1.8
+  speedMultiplier: 1.06
+  bosses: []
+  stars:
+  - kind: 0
+    value: 0
+    descriptionEN: Complete the level
+    descriptionVN: "Ho\xE0n th\xE0nh m\xE0n"
+  - kind: 6
+    value: 420
+    descriptionEN: Beat the par time without a Life Talisman
+    descriptionVN: "D\u01B0\u1EDBi th\u1EDDi gian m\u1ED1c, kh\xF4ng d\xF9ng H\u1ED9 M\u1EC7nh Ph\xF9"
+  - kind: 5
+    value: 60
+    descriptionEN: Defeat Shaban within 60 s of meeting him
+    descriptionVN: "H\u1EA1 Shaban trong 60 gi\xE2y k\u1EC3 t\u1EEB l\xFAc ch\u1EA1m tr\xE1n"
+  parTimeSeconds: 420
+  restSeconds: 15

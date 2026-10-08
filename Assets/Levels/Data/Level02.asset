@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779190f8bf6dae24595e14fcb603572b, type: 3}
+  m_Name: Level02
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelDefinition
+  id: level-02
+  index: 2
+  displayName: Poison Corridor
+  displayNameVN: "\u0110\u1ED9c V\u1EE5 H\xE0nh Lang"
+  briefEN: Sunset around Block B and its first two floors. Archers spit poison from afar.
+  briefVN: "Ho\xE0ng h\xF4n quanh khu B v\xE0 h\xE0nh lang t\u1EA7ng 1\u20132. X\u1EA1 th\u1EE7 b\u1EAFn \u0111\u1ED9c t\u1EEB xa."
+  requiredRealm: 0
+  requiredTier: 3
+  sky: 1
+  spawnPoint: {x: 20, y: 0.1, z: -8}
+  spawnYaw: 180
+  zones:
+  - id: b-out-e
+    position: {x: 30, y: 0, z: -35}
+    radius: 3
+  - id: b-out-w
+    position: {x: 10, y: 0.012474984, z: -35.475002}
+    radius: 3
+  - id: b-in-e
+    position: {x: 31, y: 0, z: -30}
+    radius: 2
+  - id: b-in-n
+    position: {x: 19, y: 0, z: -24}
+    radius: 2
+  - id: b-up-w
+    position: {x: 25, y: 3.7, z: -30}
+    radius: 2
+  - id: b-up-e
+    position: {x: 31, y: 3.7, z: -28}
+    radius: 2
+  waves:
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 3
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 2
+      eliteCount: 0
+    riftZones:
+    - b-out-e
+    - b-out-w
+    - b-in-e
+    - b-in-n
+    - b-up-w
+    - b-up-e
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 4
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 1
+      eliteCount: 0
+    riftZones:
+    - b-out-e
+    - b-out-w
+    - b-in-e
+    - b-in-n
+    - b-up-w
+    - b-up-e
+  spawnTable: {fileID: 11400000, guid: 2cd1b669578a1164e9a7d3042b683007, type: 2}
+  aiTier: 1
+  healthMultiplier: 1.3
+  damageMultiplier: 1.25
+  speedMultiplier: 1.03
+  bosses: []
+  stars:
+  - kind: 0
+    value: 0
+    descriptionEN: Complete the level
+    descriptionVN: "Ho\xE0n th\xE0nh m\xE0n"
+  - kind: 6
+    value: 300
+    descriptionEN: Beat the par time without a Life Talisman
+    descriptionVN: "D\u01B0\u1EDBi th\u1EDDi gian m\u1ED1c, kh\xF4ng d\xF9ng H\u1ED9 M\u1EC7nh Ph\xF9"
+  - kind: 2
+    value: 3
+    descriptionEN: Take at most 3 poison hits
+    descriptionVN: "Tr\xFAng \u0111\u1EA1n \u0111\u1ED9c kh\xF4ng qu\xE1 3 l\u1EA7n"
+  parTimeSeconds: 300
+  restSeconds: 15

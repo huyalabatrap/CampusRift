@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779190f8bf6dae24595e14fcb603572b, type: 3}
+  m_Name: Level10
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Levels.LevelDefinition
+  id: level-10
+  index: 10
+  displayName: Three Beasts Above
+  displayNameVN: "Tam Th\xFA L\xE2m Kh\xF4ng"
+  briefEN: A red eclipse. Three colossal beasts hang over the campus.
+  briefVN: "Nh\u1EADt th\u1EF1c \u0111\u1ECF. Ba c\u1EF1 th\xFA treo tr\xEAn b\u1EA7u tr\u1EDDi tr\u01B0\u1EDDng."
+  requiredRealm: 6
+  requiredTier: 1
+  sky: 5
+  spawnPoint: {x: 0, y: 0.13, z: -10}
+  spawnYaw: 0
+  zones:
+  - id: far-w
+    position: {x: -40.15, y: 0.012474984, z: 5}
+    radius: 3
+  - id: far-e
+    position: {x: 40, y: 0, z: -5}
+    radius: 3
+  - id: far-s
+    position: {x: 0, y: 0.070257366, z: -55}
+    radius: 3
+  - id: far-ne
+    position: {x: 50, y: 0.073649965, z: 35}
+    radius: 3
+  - id: far-sw
+    position: {x: -50, y: 0, z: -35}
+    radius: 3
+  - id: c-top
+    position: {x: 0, y: 0, z: 45}
+    radius: 3
+  - id: e-in-w
+    position: {x: -2, y: 0, z: -26}
+    radius: 2
+  - id: a-in
+    position: {x: 36, y: 0, z: 28}
+    radius: 2
+  - id: v-in
+    position: {x: 6, y: 0, z: -44}
+    radius: 2
+  - id: c-east2
+    position: {x: 20, y: 0.068066284, z: 5}
+    radius: 3
+  waves:
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 13
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 15
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  - entries:
+    - archetype: {fileID: 11400000, guid: e66cfbb2f679dfa4e855cf037d304793, type: 2}
+      count: 5
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 0aa6c74d7f3418f4cafe5b06ae625b3f, type: 2}
+      count: 3
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 787f1d60755219540935f9d40681b4a3, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: eda61ed7e184fa44c8e5f389ba67a46f, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 7f8a8a05ae33f7a45bd67badd7092fa4, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 3600f78066c897d4cad846155498583a, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: a8834c528af55a847807ecd2f77cba29, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 92fed2c94b1781d46bf191c334352e77, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: e51fbcebc397edb4fb9c21a03eb04f96, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 97314d2ed401031428fc75c6851a3523, type: 2}
+      count: 1
+      eliteCount: 0
+    - archetype: {fileID: 11400000, guid: 77036a6857f3dbe41aa70c2635a161db, type: 2}
+      count: 1
+      eliteCount: 0
+    riftZones:
+    - far-w
+    - far-e
+    - far-s
+    - far-ne
+    - far-sw
+    - c-top
+    - e-in-w
+    - a-in
+    - v-in
+    - c-east2
+  spawnTable: {fileID: 11400000, guid: c37d183cb45aa14428745fb6d7e60438, type: 2}
+  aiTier: 4
+  healthMultiplier: 10.5
+  damageMultiplier: 9.6
+  speedMultiplier: 1.35
+  bosses: []
+  stars:
+  - kind: 0
+    value: 0
+    descriptionEN: Complete the level
+    descriptionVN: "Ho\xE0n th\xE0nh m\xE0n"
+  - kind: 6
+    value: 1080
+    descriptionEN: Beat the par time without a Life Talisman
+    descriptionVN: "D\u01B0\u1EDBi th\u1EDDi gian m\u1ED1c, kh\xF4ng d\xF9ng H\u1ED9 M\u1EC7nh Ph\xF9"
+  - kind: 4
+    value: 3
+    descriptionEN: Trigger 3 Generating Chain reactions
+    descriptionVN: "K\xEDch ho\u1EA1t \xEDt nh\u1EA5t 3 l\u1EA7n T\u01B0\u01A1ng Sinh Li\xEAn Ho\xE0n"
+  parTimeSeconds: 1080
+  restSeconds: 15
