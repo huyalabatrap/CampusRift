@@ -1,0 +1,5 @@
+LearningContentValidation.Validate();
+var c=UnityEngine.Resources.Load<CampusRift.Learning.LearningCatalog>("LearningCatalog");
+var p=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>("Assets/Characters/SchoolGirl/Prefabs/CampusExplorer.prefab");
+var ui=UnityEngine.Object.FindAnyObjectByType<CampusRift.UI.UIManager>();
+return new {compiling=UnityEditor.EditorApplication.isCompiling,playing=UnityEditor.EditorApplication.isPlaying,courses=c.courses.Count,lessons=c.courses[0].lessons.Count,bridgeCount=p.GetComponents<CampusRift.Learning.LearningPlayerBridge>().Length,gateCount=p.GetComponents<CampusRift.Learning.LearningSkillGate>().Length,gateHasSkill=p.GetComponent<CampusRift.Learning.LearningSkillGate>().bindings[0].ability!=null,baseHP=p.GetComponent<CampusRift.Monsters.PlayerMonsterHealth>().maxHealth,baseEnergy=p.GetComponent<CampusRift.CampusExplorer>().maxEnergy,baseWalk=p.GetComponent<CampusRift.CampusExplorer>().walkSpeed,courseUI=ui.Course.GetComponent<CampusRift.Learning.LearningUI>()!=null,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path};

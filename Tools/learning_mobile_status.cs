@@ -1,0 +1,2 @@
+var h=UnityEngine.Object.FindAnyObjectByType<CampusRift.Controls.MobileControlsHUD>();
+return new {h=h!=null,enabled=h!=null&&h.enabled,root=h!=null&&h.SafeRoot!=null,input=h!=null&&h.Input!=null,hudActive=h!=null&&h.gameObject.activeInHierarchy,test=UnityEngine.Object.FindAnyObjectByType<CampusRift.Controls.MobileControlPlayTest>()!=null,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,state=CampusRift.UI.UIStateManager.Instance.State.ToString()};

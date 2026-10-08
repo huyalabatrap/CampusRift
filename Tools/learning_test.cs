@@ -1,0 +1,1 @@
+CampusRift.Learning.LearningPlayTest.Begin(); return "Learning acceptance started";

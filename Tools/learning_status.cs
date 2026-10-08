@@ -1,0 +1,1 @@
+return new {playing=UnityEditor.EditorApplication.isPlaying,paused=UnityEditor.EditorApplication.isPaused,runner=UnityEngine.Object.FindAnyObjectByType<CampusRift.Learning.LearningPlayTest>()!=null,service=CampusRift.Learning.LearningService.Instance!=null,frame=UnityEngine.Time.frameCount,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name};
