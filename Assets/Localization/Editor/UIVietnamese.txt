@@ -1,0 +1,280 @@
+SETTINGS|CÀI ĐẶT
+LANGUAGE|NGÔN NGỮ
+PLAY|BẮT ĐẦU
+CONTINUE|TIẾP TỤC
+COURSES|KHÓA HỌC
+CREDITS|ĐỘI NGŨ
+QUIT|THOÁT
+QUIT GAME|THOÁT GAME
+BACK|QUAY LẠI
+APPLY|ÁP DỤNG
+CANCEL / BACK|HỦY / QUAY LẠI
+CANCEL|HỦY
+RESUME|TIẾP TỤC
+RESTART|CHƠI LẠI
+MAIN MENU|MENU CHÍNH
+RETRY|THỬ LẠI
+PLAY AGAIN|CHƠI LẠI
+RETURN TO MENU|VỀ MENU
+RETURN TO GAME|VỀ TRÒ CHƠI
+RETURN TO PAUSE|VỀ TẠM DỪNG
+RETURN|QUAY LẠI
+NO SAVE|CHƯA CÓ TIẾN ĐỘ
+VIDEO|HÌNH ẢNH
+AUDIO|ÂM THANH
+CONTROLS|ĐIỀU KHIỂN
+GAMEPLAY|LỐI CHƠI
+FULLSCREEN|TOÀN MÀN HÌNH
+RESOLUTION|ĐỘ PHÂN GIẢI
+QUALITY|CHẤT LƯỢNG
+V-SYNC|ĐỒNG BỘ KHUNG HÌNH
+MASTER|TỔNG
+MUSIC|NHẠC
+SFX|HIỆU ỨNG
+MONSTER|QUÁI VẬT
+UI|GIAO DIỆN
+SKY BRIGHTNESS|ĐỘ SÁNG BẦU TRỜI
+NIGHT|ĐÊM
+DAY|NGÀY
+NIGHT  /  DAY  -  Preview the sky, then Apply to save.|ĐÊM / NGÀY — Xem trước bầu trời, chọn ÁP DỤNG để lưu.
+Choose your display mode and visual quality.|Chọn chế độ hiển thị và chất lượng hình ảnh.
+CONTROL MODE|KIỂU ĐIỀU KHIỂN
+PC / SELECTED|PC / ĐÃ CHỌN
+MOBILE / SELECTED|CẢM ỨNG / ĐÃ CHỌN
+MOBILE|CẢM ỨNG
+TOUCH SENSITIVITY|ĐỘ NHẠY CẢM ỨNG
+BUTTON SCALE|KÍCH THƯỚC NÚT
+BUTTON OPACITY|ĐỘ RÕ CỦA NÚT
+JOYSTICK OUTER EDGE SPRINT|CHẠY NHANH Ở RÌA JOYSTICK
+TOUCH HAPTICS (ANDROID)|RUNG CẢM ỨNG (ANDROID)
+MOUSE SENSITIVITY|ĐỘ NHẠY CHUỘT
+CAMERA ZOOM SENSITIVITY|ĐỘ NHẠY THU PHÓNG
+FIELD OF VIEW|GÓC NHÌN
+INVERT Y|ĐẢO TRỤC Y
+Mouse controls orbit; camera sensitivity controls scroll zoom.|Chuột xoay góc nhìn; độ nhạy camera điều chỉnh thu phóng bằng con lăn.
+SETTINGS SAVED|ĐÃ LƯU CÀI ĐẶT
+Very Low|Rất thấp
+Mobile|Di động
+Low|Thấp
+Medium|Trung bình
+High|Cao
+Very High|Rất cao
+Ultra|Tối đa
+Option|Tùy chọn
+KNOWLEDGE IS POWER|TRI THỨC = SỨC MẠNH
+ANOMALY DIVISION|ĐƠN VỊ DỊ THƯỜNG
+PREFERENCES|TÙY CHỈNH
+THE WORLD BEYOND THE CLASSROOM|THẾ GIỚI BÊN NGOÀI LỚP HỌC
+RIFT ARTS|KỸ NĂNG KHE NỨT
+LEARN|HỌC HỎI
+BREAK THROUGH|ĐỘT PHÁ
+SURVIVE|SINH TỒN
+SCROLL TO VIEW ALL CREDITS|CUỘN ĐỂ XEM TOÀN BỘ ĐỘI NGŨ
+Attribution / license details to be added.|Thông tin tác giả và giấy phép sẽ được bổ sung.
+GAME DEVELOPMENT|PHÁT TRIỂN GAME
+3D ASSETS|TÀI NGUYÊN 3D
+TOOLS|CÔNG CỤ
+SPECIAL THANKS|LỜI CẢM ƠN
+PAUSED|TẠM DỪNG
+Take a breath. The rift can wait.|Hít thở một chút. Khe nứt có thể chờ.
+ESC  /  RESUME|ESC / TIẾP TỤC
+VICTORY|CHIẾN THẮNG
+DEFEATED|THẤT BẠI
+Stand up. Try again.|Đứng dậy. Thử thêm lần nữa.
+THE RIFT CLAIMED ANOTHER|THÊM MỘT NGƯỜI GỤC NGÃ TRƯỚC KHE NỨT
+THE MONSTER HAS FALLEN|QUÁI VẬT ĐÃ BỊ HẠ GỤC
+You defeated Shaban. Campus is safe.|Bạn đã hạ gục Shaban. Khuôn viên đã an toàn.
+OBJECTIVE|MỤC TIÊU
+Defeat Shaban to escape.|Hạ gục Shaban để thoát khỏi đây.
+Escape from the monster.|Thoát khỏi quái vật.
+EXPLORER  /  VITALS|NHÀ THÁM HIỂM / THỂ TRẠNG
+MONSTER NEARBY|QUÁI VẬT Ở GẦN
+ENERGY|NĂNG LƯỢNG
+RECOVERING|ĐANG HỒI PHỤC
+RECOVER|HỒI PHỤC
+BOOST|TĂNG TỐC
+SPRINT|CHẠY NHANH
+JUMP|NHẢY
+LOOK|GÓC NHÌN
+MOVE|DI CHUYỂN
+Move|Di chuyển
+Sprint|Chạy nhanh
+Jump|Nhảy
+Elevator|Thang máy
+Pause|Tạm dừng
+PAUSE|TẠM DỪNG
+READY|SẴN SÀNG
+LOCKED|ĐÃ KHÓA
+EMPTY|ĐÃ HẾT
+UNAVAILABLE|CHƯA THỂ DÙNG
+INTERACT|TƯƠNG TÁC
+OPEN DOOR|MỞ CỬA
+SELECT FLOOR|CHỌN TẦNG
+CALL LIFT|GỌI THANG MÁY
+LIFT|THANG MÁY
+Floor|Tầng
+FLOOR|TẦNG
+MOVING|ĐANG DI CHUYỂN
+WAIT|CHỜ
+CLOSE|ĐÓNG
+BREAKTHROUGH AVAILABLE|ĐÃ ĐẠT ĐỘT PHÁ LỚN
+BREAKTHROUGHS|SỐ LẦN ĐỘT PHÁ
+MAJOR BREAKTHROUGH|ĐẠI ĐỘT PHÁ
+BREAKTHROUGH|ĐỘT PHÁ
+NEW SKILL UNLOCKED|ĐÃ MỞ KỸ NĂNG MỚI
+NEXT SKILL IN|KỸ NĂNG TIẾP SAU
+MAX HP|MÁU TỐI ĐA
+MOVEMENT|TỐC ĐỘ DI CHUYỂN
+ENERGY CAPACITY|NĂNG LƯỢNG TỐI ĐA
+STAT LIMIT REACHED / MASTERY ADVANCED|ĐÃ ĐẠT TRẦN CHỈ SỐ / TRI THỨC VẪN TIẾN BỘ
+A new cycle begins. Your unlocked power stays with you.|Chu kỳ mới bắt đầu. Sức mạnh đã mở vẫn đồng hành cùng bạn.
+more breakthroughs to your next skill.|lần đột phá nữa để mở kỹ năng tiếp theo.
+CONTINUE LEARNING|TIẾP TỤC HỌC
+Learn. Prove your knowledge. Return stronger.|Học hỏi. Chứng minh tri thức. Trở lại mạnh mẽ hơn.
+SURVIVAL FIELDWORK|THỰC ĐỊA SINH TỒN
+Studying pauses the hunt.|Thời gian săn đuổi tạm dừng khi bạn học.
+Each first mastery grants one breakthrough. Retakes improve knowledge without farming power.|Mỗi bài vượt qua lần đầu cho một đột phá. Thi lại giúp củng cố kiến thức, không cấp thêm sức mạnh.
+mastered|đã lĩnh hội
+MASTERED|ĐÃ LĨNH HỘI
+QUIZ READY|SẴN SÀNG KIỂM TRA
+READ|ĐÃ ĐỌC
+pass prerequisites|vượt qua bài trước
+survive|sinh tồn
+PAGE|TRANG
+EXAMPLE|VÍ DỤ
+REMEMBER|GHI NHỚ
+PREVIOUS PAGE|TRANG TRƯỚC
+READ & NEXT PAGE|ĐÃ ĐỌC / TRANG TIẾP
+COMPLETE READING|HOÀN THÀNH BÀI HỌC
+START QUIZ|BẮT ĐẦU KIỂM TRA
+LESSON COMPLETE|ĐÃ HOÀN THÀNH BÀI HỌC
+REVIEW LAST ATTEMPT|XEM LẦN THI GẦN NHẤT
+Draw|Lấy ngẫu nhiên
+random questions. Pass at|câu hỏi. Đạt từ
+Mistakes have explanations. Failing never costs health, items or levels.|Mỗi lỗi sai đều có giải thích. Thi trượt không làm mất máu, vật phẩm hay cấp độ.
+KNOWLEDGE TRIAL|THỬ THÁCH TRI THỨC
+PASS AT|ĐẠT TỪ
+QUIZ PASSED|VƯỢT QUA KIỂM TRA
+KEEP LEARNING|TIẾP TỤC RÈN LUYỆN
+LET'S REVIEW|CÙNG XEM LẠI
+CORRECT ANSWER|ĐÁP ÁN ĐÚNG
+YOUR ANSWER|ĐÁP ÁN CỦA BẠN
+INCORRECT|SAI
+CORRECT|ĐÚNG
+QUESTION|CÂU HỎI
+NEXT QUESTION|CÂU TIẾP THEO
+VIEW RESULT|XEM KẾT QUẢ
+PASS|ĐẠT
+FAIL|CHƯA ĐẠT
+REQUIRED|YÊU CẦU
+Knowledge mastered. Your power has grown.|Bạn đã làm chủ kiến thức. Sức mạnh đã tăng lên.
+Already mastered. Your best score is saved; no duplicate reward.|Bạn đã lĩnh hội bài này. Điểm cao nhất được lưu; không cấp thưởng trùng.
+No power lost. Review, retry, or return to the hunt whenever you wish.|Không mất sức mạnh. Bạn có thể ôn bài, thi lại hoặc trở lại cuộc săn bất cứ lúc nào.
+REVIEW ANSWERS|XEM LẠI ĐÁP ÁN
+RETRY QUIZ|THI LẠI
+REVIEW LESSON|ÔN LẠI BÀI
+TRIAL REVIEW|XEM LẠI BÀI KIỂM TRA
+You:|Bạn chọn:
+Answer:|Đáp án:
+SCROLL / SWIPE TO EXPLORE  /  PROGRESS SAVED|CUỘN / VUỐT ĐỂ XEM THÊM / ĐÃ LƯU TIẾN ĐỘ
+SAVE PENDING:|CHƯA LƯU ĐƯỢC:
+OF|TRÊN
+GIANT HAND SEAL|THIÊN THỦ TRẤN ÁP
+DAI THU AN|ĐẠI THỦ ẤN
+VOID WALL|HƯ KHÔNG BÍCH
+HU KHONG BICH|HƯ KHÔNG BÍCH
+PHANTOM DECOY|HUYỄN ẢNH DẪN DỤ
+HUYEN ANH DAN DU|HUYỄN ẢNH DẪN DỤ
+PHASE THROUGH YOUR WALL|ĐI XUYÊN TƯỜNG CỦA BẠN
+LEARN / 5 BREAKTHROUGHS TO UNLOCK SEAL|HỌC / ĐỘT PHÁ 5 LẦN ĐỂ MỞ THIÊN THỦ
+LEARNING REWARD / LOCKED|PHẦN THƯỞNG TRI THỨC / ĐÃ KHÓA
+TARGET LOCKED|ĐÃ KHÓA MỤC TIÊU
+RELEASE TO SEAL|THẢ ĐỂ TRẤN ÁP
+DESCENDING|GIÁNG XUỐNG
+AUTO LOCK NEAREST MONSTER|TỰ KHÓA QUÁI VẬT GẦN NHẤT
+SEAL RECHARGING|THIÊN THỦ ĐANG HỒI
+NO MONSTER IN RANGE|KHÔNG CÓ QUÁI VẬT TRONG TẦM
+SEAL INVOKED|ĐÃ TRIỆU HỒI THIÊN THỦ
+SEAL DISPERSED|THIÊN THỦ TAN BIẾN
+SEAL IMPACT|THIÊN THỦ GIÁNG ĐÒN
+SEAL BREAK|ẤN PHÁ
+TARGET DEFEATED|ĐÃ HẠ MỤC TIÊU
+DIRECT IMPACT|TRÚNG ĐÍCH
+TARGET SUPPRESSED|MỤC TIÊU BỊ TRẤN ÁP
+RELEASE PHANTOM|THẢ HUYỄN ẢNH
+RELEASE Q|THẢ Q
+DEPLOY|DỰNG TƯỜNG
+WHEEL NEAR/FAR|LĂN CHUỘT XA/GẦN
+RMB CANCEL|CHUỘT PHẢI ĐỂ HỦY
+LOCKED ON THREAT|ĐÃ KHÓA MỐI ĐE DỌA
+CANNOT PLACE:|KHÔNG THỂ ĐẶT:
+TAP: INSTANT WALL|NHẤN: DỰNG NGAY
+HOLD: AIM|GIỮ: NGẮM
+NO CHARGES|HẾT LƯỢT DÙNG
+WALL RECHARGING|TƯỜNG ĐANG HỒI
+WALL DEPLOYED|ĐÃ DỰNG TƯỜNG
+LINE OF SIGHT BLOCKED|TẦM NHÌN BỊ CHE
+OUT OF RANGE|NGOÀI TẦM
+MOVE AWAY FROM WALL|RỜI XA BỨC TƯỜNG
+MOVING LIFT|THANG MÁY ĐANG CHẠY
+NO GROUND|KHÔNG CÓ MẶT ĐẤT
+TOO CLOSE|QUÁ GẦN
+NOT ENOUGH SPACE|KHÔNG ĐỦ CHỖ
+CEILING TOO LOW|TRẦN QUÁ THẤP
+INVALID TARGET|MỤC TIÊU KHÔNG HỢP LỆ
+THROW|NÉM
+HAND|THIÊN THỦ
+WALL|KẾT GIỚI
+PHANTOM|HUYỄN ẢNH
+AIMING|ĐANG NGẮM
+CASTING|ĐANG THI TRIỂN
+COOLDOWN|HỒI CHIÊU
+NO CHARGE|HẾT LƯỢT
+SPRINT ON|BẬT CHẠY NHANH
+SPRINT OFF|TẮT CHẠY NHANH
+RECHARGING|ĐANG HỒI
+BOOST EMPTY|HẾT NĂNG LƯỢNG
+ELEVATOR|THANG MÁY
+Select floor with arrows; Enter to confirm|Chọn tầng bằng phím mũi tên; Enter để xác nhận
+Close panel [Esc]|Đóng bảng [Esc]
+Moving to floor|Đang đến tầng
+Please wait|Vui lòng chờ
+Doors opening|Cửa đang mở
+Doors closing / Stand inside the cabin|Cửa đang đóng / Đứng gọn trong cabin
+Cabin at floor|Cabin ở tầng
+aim / cast|ngắm / thi triển
+aim / deploy|ngắm / dựng tường
+aim, G or LMB: cast, RMB: cancel|ngắm, G hoặc chuột trái: thi triển, chuột phải: hủy
+F: auto lock and cast on nearest monster|F: tự khóa và trấn áp quái vật gần nhất
+Tap Q: instant wall|Nhấn Q: dựng tường ngay
+Hold Q: aim, release to deploy|Giữ Q: ngắm, thả để dựng
+Wheel: near/far|Lăn chuột: xa/gần
+RMB: cancel|Chuột phải: hủy
+Fits doorways, stops at walls, turns to face a monster ahead.|Vừa khung cửa, dừng trước tường, xoay về quái vật phía trước.
+charges|lượt dùng
+Walk through your wall. Monsters must detour or break it.|Bạn đi xuyên được tường của mình. Quái vật phải đi vòng hoặc phá tường.
+Walls and floors block the seal.|Tường và sàn chặn Thiên Thủ.
+A golden palm suppresses enemies. Walls and floors block impact.|Bàn tay vàng trấn áp kẻ địch. Tường và sàn chặn đòn đánh.
+16m range|tầm 16m
+2.8m radius|bán kính 2,8m
+24s cooldown|hồi chiêu 24 giây
+Run for 5.5s|Chạy trong 5,5 giây
+18s cooldown|hồi chiêu 18 giây
+one phantom at a time.|chỉ một huyễn ảnh mỗi lần.
+Keyboard & mouse|Bàn phím và chuột
+Touch controls|Điều khiển cảm ứng
+Hold to aim|Giữ để ngắm
+Release to cast|Thả để thi triển
+AIM AT GROUND|NGẮM VÀO MẶT ĐẤT
+NEEDS A SURFACE|CẦN BỀ MẶT ĐỂ ĐẶT
+NOT ENOUGH HEADROOM|KHÔNG ĐỦ KHOẢNG TRỐNG PHÍA TRÊN
+NO CLEAR ROUTE FOR PHANTOM|HUYỄN ẢNH KHÔNG CÓ ĐƯỜNG ĐI THÔNG THOÁNG
+PHANTOM RECHARGING|HUYỄN ẢNH ĐANG HỒI
+PHANTOM RELEASED|ĐÃ THẢ HUYỄN ẢNH
+HAND SEAL|THIÊN THỦ
+HOLD A SKILL TO AIM|GIỮ NÚT KỸ NĂNG ĐỂ NGẮM
+HAND AUTO LOCKS|THIÊN THỦ TỰ KHÓA MỤC TIÊU
+DRAG TO AIM / RELEASE TO CAST / SLIDE TO CANCEL|KÉO ĐỂ NGẮM / THẢ ĐỂ DÙNG / TRƯỢT ĐỂ HỦY
+NEAREST MONSTER LOCKED / RELEASE TO CAST / SLIDE TO CANCEL|ĐÃ KHÓA QUÁI VẬT GẦN NHẤT / THẢ ĐỂ DÙNG / TRƯỢT ĐỂ HỦY
+DRAG DOWN: NEAR / UP: FAR / SIDE: TURN|KÉO XUỐNG: GẦN / LÊN: XA / NGANG: XOAY
+Close|Đóng

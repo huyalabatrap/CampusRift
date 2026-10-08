@@ -1,0 +1,374 @@
+{
+  "lessons": [
+    {
+      "id": "bfs",
+      "titleVN": "BFS: Tìm kiếm theo chiều rộng",
+      "pages": [
+        {
+          "titleVN": "GHI CHÉP THỰC ĐỊA",
+          "contentVN": "BFS khám phá đồ thị theo từng lớp. Bắt đầu từ một đỉnh nguồn, đánh dấu đã thăm rồi đưa đỉnh đó vào hàng đợi. Mỗi bước, lấy đỉnh được đưa vào sớm nhất ra và thêm các đỉnh kề chưa được thăm. Đánh dấu ngay khi đưa vào hàng đợi để tránh thêm trùng khi đồ thị có chu trình.",
+          "exampleVN": "A nối với B và C; B nối với D. Từ A, một thứ tự duyệt hợp lệ là A, B, C, D. B và C cách nguồn 1 cạnh; D cách nguồn 2 cạnh.",
+          "takeawayVN": "BFS dùng hàng đợi FIFO: vào trước, ra trước. BFS tìm số cạnh ít nhất trên đồ thị không trọng số; không đảm bảo chi phí nhỏ nhất khi trọng số các cạnh khác nhau."
+        }
+      ],
+      "questions": [
+        {
+          "promptVN": "BFS thường sử dụng cấu trúc dữ liệu nào?",
+          "optionsVN": [
+            "Hàng đợi",
+            "Ngăn xếp",
+            "Đống (heap)",
+            "Mảng đã sắp xếp"
+          ],
+          "explanationVN": "Hàng đợi xử lý theo thứ tự vào trước, ra trước, nhờ đó BFS duyệt từng lớp."
+        },
+        {
+          "promptVN": "BFS nên đánh dấu đỉnh kề là đã thăm vào lúc nào?",
+          "optionsVN": [
+            "Ngay khi đưa vào hàng đợi",
+            "Chỉ khi thuật toán kết thúc",
+            "Không bao giờ",
+            "Sau khi duyệt mọi đỉnh kề của nó"
+          ],
+          "explanationVN": "Đánh dấu ngay khi thêm vào hàng đợi giúp tránh thêm trùng và lặp lại công việc trên chu trình."
+        },
+        {
+          "promptVN": "BFS tối thiểu hóa đại lượng nào trên đồ thị không trọng số?",
+          "optionsVN": [
+            "Số cạnh đi từ đỉnh nguồn",
+            "Tổng trọng số cạnh bất kỳ",
+            "Bộ nhớ trên mọi đồ thị",
+            "Số đỉnh của đồ thị"
+          ],
+          "explanationVN": "Mỗi lớp BFS thêm một cạnh, nên lần phát hiện đầu tiên có số cạnh ít nhất."
+        },
+        {
+          "promptVN": "A nối với B và C; B nối với D. D thuộc lớp nào?",
+          "optionsVN": [
+            "Lớp 2",
+            "Lớp 0",
+            "Lớp 1",
+            "Luôn là lớp 3"
+          ],
+          "explanationVN": "A ở lớp 0. B và C ở lớp 1, nên D được tìm thấy qua B ở lớp 2."
+        },
+        {
+          "promptVN": "Vì sao cần tập hợp các đỉnh đã thăm?",
+          "optionsVN": [
+            "Tránh khám phá lại các chu trình",
+            "Sắp xếp tất cả các đỉnh",
+            "Gán trọng số cho mọi cạnh",
+            "Đảo chiều mọi cạnh"
+          ],
+          "explanationVN": "Tập đỉnh đã thăm ngăn việc duyệt lại đỉnh, kể cả trong đồ thị có chu trình."
+        },
+        {
+          "promptVN": "Điều gì xảy ra khi hàng đợi rỗng?",
+          "optionsVN": [
+            "Đã xử lý mọi đỉnh có thể đến từ nguồn",
+            "Mọi đỉnh trong đồ thị đều liên thông",
+            "Thuật toán phải khởi động lại",
+            "Đồ thị không có cạnh"
+          ],
+          "explanationVN": "BFS duyệt thành phần có thể đến từ nguồn; các đỉnh không liên thông vẫn có thể chưa được thăm."
+        }
+      ]
+    },
+    {
+      "id": "dfs",
+      "titleVN": "DFS và quay lui",
+      "pages": [
+        {
+          "titleVN": "GHI CHÉP THỰC ĐỊA",
+          "contentVN": "DFS đi sâu theo một nhánh hết mức có thể, sau đó quay lui để khám phá các nhánh khác. Có thể dùng một ngăn xếp tường minh hoặc ngăn xếp lời gọi hàm để lưu đường đi hiện tại. Với đồ thị có chu trình, cần lưu các đỉnh đã thăm.",
+          "exampleVN": "Với A → B → D và A → C, DFS có thể duyệt A, B, D, C. Thứ tự phụ thuộc cách xét các đỉnh kề; D được thăm trước không có nghĩa là D gần A hơn C.",
+          "takeawayVN": "DFS hữu ích để kiểm tra khả năng đi tới một đỉnh và khám phá cấu trúc đồ thị. DFS cơ bản không đảm bảo đường đi ngắn nhất."
+        }
+      ],
+      "questions": [
+        {
+          "promptVN": "Có thể dùng cấu trúc nào để cài đặt DFS?",
+          "optionsVN": [
+            "Ngăn xếp",
+            "Chỉ hàng đợi FIFO",
+            "Một biến đúng/sai",
+            "Chỉ tập hợp đã sắp xếp"
+          ],
+          "explanationVN": "DFS hoạt động theo nguyên tắc vào sau, ra trước, thường thông qua lời gọi đệ quy."
+        },
+        {
+          "promptVN": "Khi gặp đường cụt, DFS làm gì?",
+          "optionsVN": [
+            "Quay lui về điểm phân nhánh trước đó",
+            "Xóa đồ thị",
+            "Lặp lại mãi mãi",
+            "Nhảy đến đỉnh gần nhất"
+          ],
+          "explanationVN": "Quay lui đưa thuật toán về điểm gần nhất còn nhánh chưa được khám phá."
+        },
+        {
+          "promptVN": "DFS cơ bản có đảm bảo đường đi ngắn nhất không?",
+          "optionsVN": [
+            "Không",
+            "Luôn đảm bảo",
+            "Chỉ khi dùng đệ quy",
+            "Chỉ khi dùng ngăn xếp"
+          ],
+          "explanationVN": "DFS ưu tiên đi sâu nên có thể tìm thấy một đường dài trước đường ngắn hơn."
+        },
+        {
+          "promptVN": "Vì sao DFS đệ quy có thể gây tràn ngăn xếp?",
+          "optionsVN": [
+            "Nhánh đang duyệt có thể quá sâu",
+            "Đồ thị có tên",
+            "Mọi cạnh có trọng số bằng một",
+            "Hàng đợi rỗng"
+          ],
+          "explanationVN": "Đệ quy quá sâu có thể vượt giới hạn ngăn xếp lời gọi; ngăn xếp tường minh tránh được giới hạn này."
+        },
+        {
+          "promptVN": "Với A → B → D và A → C, thứ tự nào có thể là DFS?",
+          "optionsVN": [
+            "A B D C",
+            "D B A C",
+            "C A D B",
+            "B C A D"
+          ],
+          "explanationVN": "Đi theo B trước sẽ khám phá D rồi mới quay về A để khám phá C."
+        },
+        {
+          "promptVN": "Điều gì ngăn DFS lặp vô hạn trên chu trình?",
+          "optionsVN": [
+            "Theo dõi các đỉnh đã thăm",
+            "Đặt tên đỉnh theo bảng chữ cái",
+            "Chỉ dùng đệ quy",
+            "Đếm cạnh một lần"
+          ],
+          "explanationVN": "Theo dõi đỉnh đã thăm giúp mỗi đỉnh đã khám phá không bị mở rộng lặp đi lặp lại."
+        }
+      ]
+    },
+    {
+      "id": "complexity",
+      "titleVN": "Tư duy về độ phức tạp",
+      "pages": [
+        {
+          "titleVN": "GHI CHÉP THỰC ĐỊA",
+          "contentVN": "Độ phức tạp mô tả mức tăng tài nguyên khi kích thước đầu vào tăng. Công việc O(n) tăng tuyến tính; O(n²) tăng bậc hai. Khi xét tốc độ tăng tiệm cận, ta bỏ qua hệ số hằng, nhưng thời gian chạy thực tế còn phụ thuộc cách cài đặt.",
+          "exampleVN": "Duyệt n phần tử một lần là O(n). Hai lượt duyệt độc lập vẫn là O(n). So sánh từng phần tử với mọi phần tử còn lại là O(n²).",
+          "takeawayVN": "Big O là giới hạn về tốc độ tăng, không phải đồng hồ đo thời gian. Hãy đếm công việc và nêu rõ cách biểu diễn dữ liệu cùng các giả định."
+        }
+      ],
+      "questions": [
+        {
+          "promptVN": "Duyệt toàn bộ n phần tử một lần có độ phức tạp nào?",
+          "optionsVN": [
+            "O(n)",
+            "O(1)",
+            "O(log n)",
+            "O(n²)"
+          ],
+          "explanationVN": "Một lượt duyệt thực hiện lượng công việc tỷ lệ với số phần tử."
+        },
+        {
+          "promptVN": "Hai lượt duyệt đầy đủ nối tiếp nhau có độ phức tạp nào?",
+          "optionsVN": [
+            "O(n)",
+            "O(n²)",
+            "O(1)",
+            "O(log n)"
+          ],
+          "explanationVN": "2n vẫn tăng tuyến tính; Big O bỏ qua hệ số hằng 2."
+        },
+        {
+          "promptVN": "Hai vòng lặp lồng nhau, mỗi vòng chạy n lần, thường có độ phức tạp nào?",
+          "optionsVN": [
+            "O(n²)",
+            "O(n)",
+            "O(1)",
+            "O(log n)"
+          ],
+          "explanationVN": "Mỗi lần trong n lượt vòng ngoài thực hiện n lượt vòng trong: tổng cộng n × n."
+        },
+        {
+          "promptVN": "O(n) mô tả điều gì?",
+          "optionsVN": [
+            "Tốc độ tăng theo kích thước đầu vào",
+            "Chính xác n mili giây",
+            "Luôn dùng bộ nhớ cố định",
+            "Ngôn ngữ lập trình"
+          ],
+          "explanationVN": "Độ phức tạp mô tả mức tăng công việc, không phải thời gian chạy cố định."
+        },
+        {
+          "promptVN": "BFS dùng danh sách kề có độ phức tạp nào?",
+          "optionsVN": [
+            "O(V + E)",
+            "O(1)",
+            "O(log V)",
+            "Luôn là O(V) với mọi đồ thị"
+          ],
+          "explanationVN": "Mỗi đỉnh có thể đến được và các cạnh đi ra được xử lý một số lần hữu hạn."
+        },
+        {
+          "promptVN": "Đại lượng nào tăng nhanh hơn về mặt tiệm cận?",
+          "optionsVN": [
+            "n²",
+            "n",
+            "log n",
+            "1"
+          ],
+          "explanationVN": "Khi n đủ lớn, tăng trưởng bậc hai vượt tăng trưởng tuyến tính, logarit và hằng số."
+        }
+      ]
+    },
+    {
+      "id": "binary",
+      "titleVN": "Tìm kiếm nhị phân",
+      "pages": [
+        {
+          "titleVN": "GHI CHÉP THỰC ĐỊA",
+          "contentVN": "Tìm kiếm nhị phân tìm một giá trị trong dữ liệu đã sắp xếp bằng cách liên tục so sánh với phần tử giữa. Nếu giá trị cần tìm nhỏ hơn, giữ nửa trái; nếu lớn hơn, giữ nửa phải. Dừng khi tìm thấy hoặc khi khoảng ứng viên rỗng.",
+          "exampleVN": "Trong [2, 4, 7, 9, 12], tìm 9 bắt đầu bằng cách so sánh với 7 rồi tìm tiếp bên phải. Với hai biên đều được tính trong khoảng, cập nhật high = mid - 1 hoặc low = mid + 1 sau một phép so sánh không bằng.",
+          "takeawayVN": "Dữ liệu phải được sắp xếp theo cùng quy tắc so sánh. Mỗi vòng lặp phải làm khoảng tìm kiếm nhỏ lại."
+        }
+      ],
+      "questions": [
+        {
+          "promptVN": "Tìm kiếm nhị phân chuẩn yêu cầu dữ liệu có tính chất gì?",
+          "optionsVN": [
+            "Đã được sắp xếp",
+            "Có thứ tự ngẫu nhiên",
+            "Mọi phần tử bằng nhau",
+            "Là một đồ thị"
+          ],
+          "explanationVN": "Dữ liệu đã sắp xếp cho phép loại bỏ một nửa dựa trên phép so sánh với phần tử giữa."
+        },
+        {
+          "promptVN": "Giá trị cần tìm lớn hơn phần tử giữa. Ta tìm tiếp ở đâu?",
+          "optionsVN": [
+            "Nửa bên phải",
+            "Nửa bên trái",
+            "Luôn tìm cả hai nửa",
+            "Chỉ phần tử đầu tiên"
+          ],
+          "explanationVN": "Trong dữ liệu sắp xếp tăng dần, mọi phần tử bên trái không lớn hơn phần tử giữa."
+        },
+        {
+          "promptVN": "Khoảng ứng viên thay đổi như thế nào?",
+          "optionsVN": [
+            "Giảm còn khoảng một nửa",
+            "Tăng gấp đôi",
+            "Không đổi",
+            "Mỗi lần luôn giảm đúng một phần tử"
+          ],
+          "explanationVN": "Mỗi phép so sánh loại bỏ khoảng một nửa số ứng viên còn lại."
+        },
+        {
+          "promptVN": "Tìm kiếm nhị phân trên mảng đã sắp xếp, truy cập trực tiếp, có độ phức tạp nào?",
+          "optionsVN": [
+            "O(log n)",
+            "O(n²)",
+            "O(n!)",
+            "Luôn là O(n)"
+          ],
+          "explanationVN": "Việc liên tục chia đôi cần số bước tăng theo logarit của n."
+        },
+        {
+          "promptVN": "Khi nào có thể kết luận tìm kiếm thất bại?",
+          "optionsVN": [
+            "Khi khoảng ứng viên rỗng",
+            "Luôn sau phép so sánh đầu tiên",
+            "Chỉ sau khi sắp xếp lại",
+            "Không bao giờ"
+          ],
+          "explanationVN": "Khoảng rỗng nghĩa là không còn vị trí nào có thể chứa giá trị cần tìm."
+        },
+        {
+          "promptVN": "Với biên bao gồm cả hai đầu và giá trị cần tìm > phần tử giữa, cập nhật nào làm khoảng nhỏ lại?",
+          "optionsVN": [
+            "low = mid + 1",
+            "low = mid",
+            "high = mid + 1",
+            "low = 0"
+          ],
+          "explanationVN": "Loại bỏ phần tử giữa đã kiểm tra đảm bảo thuật toán tiến lên và không bị mắc kẹt."
+        }
+      ]
+    },
+    {
+      "id": "graphs",
+      "titleVN": "Chọn chiến lược trên đồ thị",
+      "pages": [
+        {
+          "titleVN": "GHI CHÉP THỰC ĐỊA",
+          "contentVN": "Đồ thị mô hình hóa các đỉnh và những liên kết giữa chúng. Cạnh có hướng có chiều cụ thể; cạnh vô hướng cho phép đi cả hai chiều. Danh sách kề lưu các đỉnh kề; ma trận kề lưu một ô cho mỗi cặp đỉnh.",
+          "exampleVN": "Dùng BFS để tìm số lần qua cửa ít nhất khi mỗi liên kết có chi phí như nhau. Dùng DFS để khám phá các phòng có thể đến được. Nếu chi phí khác nhau, cần thuật toán đường đi có trọng số phù hợp.",
+          "takeawayVN": "Chọn thuật toán dựa trên giả định của bài toán. Không áp dụng kết luận về đường đi ngắn nhất không trọng số cho các cạnh có chi phí khác nhau."
+        }
+      ],
+      "questions": [
+        {
+          "promptVN": "Cạnh có hướng nghĩa là gì?",
+          "optionsVN": [
+            "Một liên kết có chiều cụ thể",
+            "Liên kết luôn đi được cả hai chiều",
+            "Không có liên kết",
+            "Một đỉnh đã sắp xếp"
+          ],
+          "explanationVN": "Cạnh từ A đến B không tự động tạo ra cạnh từ B về A."
+        },
+        {
+          "promptVN": "Để đi qua ít cửa nhất khi mỗi lần qua cửa có chi phí như nhau, nên chọn gì?",
+          "optionsVN": [
+            "BFS",
+            "DFS cơ bản đảm bảo đường ngắn nhất",
+            "Sắp xếp theo bảng chữ cái",
+            "Đi ngẫu nhiên"
+          ],
+          "explanationVN": "BFS khám phá các đỉnh theo số cạnh ít nhất, phù hợp khi mỗi lần đi qua có chi phí bằng nhau."
+        },
+        {
+          "promptVN": "Danh sách kề lưu thông tin gì?",
+          "optionsVN": [
+            "Các đỉnh kề của mỗi đỉnh",
+            "Chỉ màu của đỉnh",
+            "Mọi đường đi có thể có",
+            "Chỉ đỉnh nguồn"
+          ],
+          "explanationVN": "Mỗi đỉnh có một danh sách các đỉnh kề hoặc các cạnh đi ra."
+        },
+        {
+          "promptVN": "Ma trận kề của đồ thị có V đỉnh gồm bao nhiêu ô?",
+          "optionsVN": [
+            "V²",
+            "V",
+            "log V",
+            "Luôn là 5"
+          ],
+          "explanationVN": "Mỗi cặp đỉnh có thứ tự tương ứng với một ô, tổng cộng V × V ô."
+        },
+        {
+          "promptVN": "BFS có luôn tìm chi phí nhỏ nhất khi trọng số các cạnh khác nhau không?",
+          "optionsVN": [
+            "Không",
+            "Có",
+            "Chỉ khi có tập đỉnh đã thăm",
+            "Chỉ khi dùng hàng đợi"
+          ],
+          "explanationVN": "Đường ít cạnh nhất có thể đắt hơn một đường nhiều cạnh khi trọng số khác nhau."
+        },
+        {
+          "promptVN": "Điều gì nên quyết định việc chọn thuật toán?",
+          "optionsVN": [
+            "Giả định bài toán và kết quả cần tìm",
+            "Tên hàm ngắn nhất",
+            "Luôn dùng đệ quy",
+            "Chỉ tên các đỉnh"
+          ],
+          "explanationVN": "Tính đúng đắn phụ thuộc vào sự phù hợp với giả định như trọng số, hướng cạnh và kết quả cần có."
+        }
+      ]
+    }
+  ]
+}
