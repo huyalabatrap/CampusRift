@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292c216e8370b13418f683f8dd04956d, type: 3}
+  m_Name: MonsterAIConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Monsters.MonsterAIConfig
+  PatrolSpeed: 2.5
+  InvestigateSpeed: 3.8
+  ChaseSpeed: 5.5
+  EscalationSeconds: 180
+  SpeedIncreaseInterval: 5
+  ChaseSpeedPerStep: 0.1
+  MaxChaseSpeed: 20
+  MaxAttackRateMultiplier: 2
+  VisionDistance: 65
+  VisionAngle: 140
+  TrackingDistance: 90
+  TrackingAngle: 220
+  TrackingRetention: 10
+  HearingRange: 75
+  HearingFalloffDistance: 18
+  HearingThreshold: 0.1
+  MemoryDuration: 40
+  ObservationCapacity: 8
+  TrailCapacity: 16
+  VelocitySmoothing: 8
+  TrailContinuityGap: 0.4
+  MaxObservedSpeed: 80
+  PredictionTime: 0.8
+  MaxPredictionDistance: 18
+  MinPredictionTime: 0.25
+  MaxPredictionTime: 1.5
+  ReactionDelay: 0.18
+  ReactionTurnAngle: 45
+  LostSightGraceTime: 1.5
+  SearchDuration: 90
+  SearchRadius: 12
+  SearchSpeed: 3.1
+  VisitedPenalty: 0.15
+  MaxSearchCandidates: 48
+  SearchLookSeconds: 0.8
+  NegativeEvidenceDuration: 24
+  EnableInterception: 1
+  StrategicRefreshRate: 0.75
+  InterceptionRange: 35
+  InterceptionSafetyMargin: 0.45
+  MinimumInterceptConfidence: 0.55
+  DestinationCandidateCount: 6
+  BeliefParticles: 320
+  BeliefRefreshRate: 0.2
+  BeliefRaysPerTick: 40
+  BeliefMissLikelihood: 0.04
+  BeliefFleeSpeed: {x: 5, y: 9.5}
+  BeliefWalkSpeed: {x: 1.2, y: 3.4}
+  BeliefFleeSeconds: {x: 3, y: 14}
+  BeliefHoldChance: 0.06
+  BeliefRoomHoldChance: 0.35
+  BeliefHoldSeconds: {x: 4, y: 25}
+  BeliefLiftChance: 0.3
+  BeliefStairWeight: 0.6
+  RoamDuration: 60
+  HuntFreshSeconds: 35
+  SearchGoalRadius: 7
+  SearchTravelHorizon: 12
+  SearchReplanRate: 1
+  LiftDisplayReadDistance: 20
+  LiftChimeHearingDistance: 16
+  GlassVisionDistance: 22
+  StuckSeconds: 1.6
+  AttackDistance: 1.6
+  AttackCooldown: 1.8
+  Damage: 25
+  AttackWindup: 0.35
+  VisionRefreshRate: 0.1
+  DecisionRefreshRate: 0.15
+  PathRefreshRate: 0.15
+  AudioMinDistance: 2
+  AudioMaxDistance: 45
+  EnvironmentMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
