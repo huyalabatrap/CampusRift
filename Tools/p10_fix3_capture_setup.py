@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('Assets/Combat/Validation/ReactionVisualCapture.cs');s=p.read_text(encoding='utf-8');p.write_text(s.replace('Artifacts/Reactions','Artifacts/Reactions/fix3'),encoding='utf-8')
+p=Path('Assets/Skills/Core/Validation/SkillSet1Performance.cs');s=p.read_text(encoding='utf-8');s=s.replace('"tich-lich-nhat-thiem","phat-no-hoa-lien","han-bang-phong-an","than-kiem-ngu-loi","kim-chung-trao","hac-dong-than-la","van-kiem-quyet"','"van-kiem-quyet","than-kiem-ngu-loi","phat-no-hoa-lien","tich-lich-nhat-thiem"');p.write_text(s.replace('Artifacts/Skills/fix2','Artifacts/Skills/fix3'),encoding='utf-8')

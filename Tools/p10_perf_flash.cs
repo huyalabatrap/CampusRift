@@ -1,0 +1,1 @@
+﻿if(!UnityEditor.EditorApplication.isPlaying) return "Play required";var p=new UnityEngine.GameObject("P10 flash perf").AddComponent<CampusRift.Skills.SkillSet1Performance>();p.onlySkill="tich-lich-nhat-thiem";return "started";

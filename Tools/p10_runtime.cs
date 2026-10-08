@@ -1,0 +1,2 @@
+var player=UnityEngine.Object.FindAnyObjectByType<CampusRift.CampusExplorer>();var flash=player.GetComponent<CampusRift.Skills.LightningFlashRuntime>();var pool=player.GetComponent<CampusRift.Skills.SkillVfxPool>();
+return new {time=UnityEngine.Time.time,position=player.transform.position.ToString(),flash=flash.IsCasting,hits=flash.LastHitCount,distance=player.LastDashDistance,live=pool.ActiveCount,objects=pool.GetComponentsInChildren<UnityEngine.Transform>(true).Length,test=UnityEngine.Object.FindAnyObjectByType<CampusRift.Skills.LightningFlashPlayTest>()!=null};

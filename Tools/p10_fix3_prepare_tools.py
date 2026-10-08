@@ -1,0 +1,8 @@
+from pathlib import Path
+p=Path('Tools/p11_run_tests.py');s=p.read_text(encoding='utf-8');s=s.replace("out=pathlib.Path('Artifacts/Reactions/regressions')","out=pathlib.Path('Artifacts/Skills/fix3/regressions')").replace("summary_path=out.parent/'Regressions.json'","summary_path=out.parent/'Regressions.json'");Path('Tools/p10_fix3_tests.py').write_text(s,encoding='utf-8')
+p=Path('Tools/p11_finish.py');s=p.read_text(encoding='utf-8');s=s.replace("'Artifacts/Reactions/Visual-DONE.txt','Artifacts/Reactions/Visual.json'","'Artifacts/Reactions/fix3/Visual-DONE.txt','Artifacts/Reactions/fix3/Visual.json'").replace("'Tools/p11_sheets.py'","'Tools/p11_fix3_sheets.py'");Path('Tools/p11_fix3_finish.py').write_text(s,encoding='utf-8')
+p=Path('Tools/p11_sheets.py');Path('Tools/p11_fix3_sheets.py').write_text(p.read_text(encoding='utf-8').replace("Path('task/p11/screens')","Path('task/p11/screens/fix3')"),encoding='utf-8')
+p=Path('Tools/p11_native_benchmark.ps1');s=p.read_text(encoding='utf-8').replace('Builds/P11Benchmark','Builds/P11Fix3Benchmark').replace('Artifacts/Reactions','Artifacts/Reactions/fix3');Path('Tools/p11_fix3_native.ps1').write_text(s,encoding='utf-8')
+p=Path('Tools/p11_build.cs');s=p.read_text(encoding='utf-8').replace('Builds/P11Benchmark','Builds/P11Fix3Benchmark').replace('Artifacts/Reactions','Artifacts/Reactions/fix3');Path('Tools/p11_fix3_build.cs').write_text(s,encoding='utf-8')
+p=Path('Tools/p11_build_invoke.cs');s=p.read_text(encoding='utf-8').replace('Artifacts/Reactions','Artifacts/Reactions/fix3');Path('Tools/p11_fix3_build_invoke.cs').write_text(s,encoding='utf-8')
+print('Fresh evidence tools ready')
