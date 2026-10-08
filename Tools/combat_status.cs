@@ -1,0 +1,3 @@
+var brain=UnityEngine.Object.FindAnyObjectByType<CampusRift.Monsters.MonsterBrain>();
+var player=UnityEngine.Object.FindAnyObjectByType<CampusRift.CampusExplorer>();
+return new {playing=UnityEngine.Application.isPlaying, paused=UnityEditor.EditorApplication.isPaused, time=UnityEngine.Time.time, scale=UnityEngine.Time.timeScale, test=UnityEngine.Object.FindAnyObjectByType<ShabanCombatPlayTest>() != null, scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, brain=brain!=null, health=player!=null?player.GetComponent<CampusRift.Monsters.PlayerMonsterHealth>().CurrentHealth:-1, state=CampusRift.UI.UIStateManager.Instance!=null ? CampusRift.UI.UIStateManager.Instance.State.ToString():"none"};
