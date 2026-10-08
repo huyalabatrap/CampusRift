@@ -1,0 +1,56 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using CampusRift.Combat;
+using CampusRift.UI;
+namespace CampusRift.Skills
+{
+    public sealed class SkillSet1Performance:MonoBehaviour
+    {
+        [Serializable] public sealed class Trial {public string skill;public int samples,peakParticles;public float baselineFps,castFps,lossPercent,meanBaselineMs,meanCastMs,p95Ms;public bool withinTenPercent;}
+        [Serializable] public sealed class Report {public string capturedAt,environment,gpu,cpu;public int width,height;public List<Trial> trials=new List<Trial>();}
+        readonly Report report=new Report();SkillSet1TestWorld world;SkillVfxPool pool;SpiritPower spirit;
+        readonly List<float> baseline=new List<float>(512),active=new List<float>(2048);
+        void Update(){if(world!=null&&world.player!=null&&UIStateManager.Instance.State!=UIState.Gameplay)UIStateManager.Instance.EnterScene(true);}
+        IEnumerator Start()
+        {
+            world=new SkillSet1TestWorld{GameplayCamera=true};world.Begin();pool=world.player.GetComponent<SkillVfxPool>();spirit=world.player.GetComponent<SpiritPower>();
+            report.capturedAt=DateTime.UtcNow.ToString("o");report.environment="Unity 6000.6.2f1 Windows Editor / StandaloneWindows64 / PC Quality / VSync off / normal gameplay camera / seven real enemies / comic ink and HUD enabled; frame medians, three casts each; no screenshots or MCP calls during sampling";
+            report.gpu=SystemInfo.graphicsDeviceName;report.cpu=SystemInfo.processorType;report.width=Screen.width;report.height=Screen.height;
+            foreach(var skill in world.player.GetComponents<Set1SkillRuntime>())
+            {
+                world.Arrange(skill is LightningFlashRuntime);if(skill is ChainLightningRuntime)world.ChainLayout();world.player.GetComponent<SkillLoadout>().Equip(2,skill.Id);pool.Clear();
+                for(int i=0;i<90;i++)yield return null;
+                baseline.Clear();active.Clear();pool.ResetMetrics();
+                for(int i=0;i<240;i++){yield return null;baseline.Add(Time.unscaledDeltaTime*1000);}
+                for(int cast=0;cast<3;cast++)
+                {
+                    world.Arrange(skill is LightningFlashRuntime);if(skill is ChainLightningRuntime)world.ChainLayout();skill.ResetCooldownForValidation();spirit.Refill();yield return null;
+                    if(!skill.CastAt(world.origin+Vector3.right*8))throw new InvalidOperationException("Performance cast failed: "+skill.Id);
+                    float end=Time.realtimeSinceStartup+10;while(skill.IsCasting&&Time.realtimeSinceStartup<end){world.Look(skill is LightningFlashRuntime&&world.player.LastDashDistance>8?235:90,14);yield return null;active.Add(Time.unscaledDeltaTime*1000);}
+                    yield return new WaitForSeconds(3.2f);
+                }
+                float meanBase=Mean(baseline),meanCast=Mean(active);baseline.Sort();active.Sort();float baseFps=1000/baseline[baseline.Count/2],castFps=1000/active[active.Count/2];float loss=(1-castFps/baseFps)*100;
+                report.trials.Add(new Trial{skill=skill.Id,samples=active.Count,peakParticles=pool.PeakParticles,baselineFps=baseFps,castFps=castFps,lossPercent=loss,withinTenPercent=loss<=10,meanBaselineMs=meanBase,meanCastMs=meanCast,p95Ms=active[(int)(active.Count*.95f)]});
+                Directory.CreateDirectory("Artifacts/Skills");File.WriteAllText("Artifacts/Skills/SkillSet1-Performance.json",JsonUtility.ToJson(report,true));
+            }
+            world.End();bool pass=true;foreach(var t in report.trials)pass&=t.withinTenPercent;File.WriteAllText("Artifacts/Skills/SkillSet1-Performance-DONE.txt",pass?"PASS":"FAIL");Destroy(gameObject);
+        }
+        static float Mean(List<float> values){float total=0;for(int i=0;i<values.Count;i++)total+=values[i];return total/values.Count;}
+    }
+    public sealed class SkillSet1VisualBatch:MonoBehaviour
+    {
+        IEnumerator Start()
+        {
+            string[] ids={"tich-lich-nhat-thiem","phat-no-hoa-lien","han-bang-phong-an","than-kiem-ngu-loi","kim-chung-trao","hac-dong-than-la","van-kiem-quyet"};
+            foreach(string id in ids)
+            {UIStateManager.Instance.EnterScene(true);Time.timeScale=1;var go=new GameObject("P10 final capture "+id);var capture=go.AddComponent<SkillVisualCapture>();capture.skillId=id;while(capture!=null)yield return null;}
+            File.WriteAllText("Artifacts/Skills/SkillSet1-Visual-DONE.txt","DONE");Destroy(gameObject);
+        }
+        void Update(){if(UIStateManager.Instance.State!=UIState.Gameplay)UIStateManager.Instance.EnterScene(true);}
+    }
+}
+#endif
