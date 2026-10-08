@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c44860054bc4e4181a9d76144a93fe, type: 3}
+  m_Name: bfs-bank
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.QuestionBankData
+  questions:
+  - id: bfs-1
+    type: single-choice
+    lessonId: bfs
+    topic: BFS Basics
+    difficulty: 1
+    tags: []
+    prompt: Which structure normally drives BFS?
+    explanation: A queue processes vertices in first-in, first-out order, preserving layers.
+    promptVN: "BFS th\u01B0\u1EDDng s\u1EED d\u1EE5ng c\u1EA5u tr\xFAc d\u1EEF li\u1EC7u n\xE0o?"
+    explanationVN: "H\xE0ng \u0111\u1EE3i x\u1EED l\xFD theo th\u1EE9 t\u1EF1 v\xE0o tr\u01B0\u1EDBc, ra tr\u01B0\u1EDBc, nh\u1EDD \u0111\xF3 BFS duy\u1EC7t t\u1EEBng l\u1EDBp."
+    options:
+    - id: 0
+      text: Queue
+      textVN: "H\xE0ng \u0111\u1EE3i"
+    - id: 1
+      text: Stack
+      textVN: "Ng\u0103n x\u1EBFp"
+    - id: 2
+      text: Heap
+      textVN: "\u0110\u1ED1ng (heap)"
+    - id: 3
+      text: Sorted array
+      textVN: "M\u1EA3ng \u0111\xE3 s\u1EAFp x\u1EBFp"
+    correctOptionIds:
+    - 0
+  - id: bfs-2
+    type: single-choice
+    lessonId: bfs
+    topic: BFS Basics
+    difficulty: 1
+    tags: []
+    prompt: When should BFS mark a neighbor visited?
+    explanation: Marking on enqueue prevents duplicate entries and repeated work on cycles.
+    promptVN: "BFS n\xEAn \u0111\xE1nh d\u1EA5u \u0111\u1EC9nh k\u1EC1 l\xE0 \u0111\xE3 th\u0103m v\xE0o l\xFAc n\xE0o?"
+    explanationVN: "\u0110\xE1nh d\u1EA5u ngay khi th\xEAm v\xE0o h\xE0ng \u0111\u1EE3i gi\xFAp tr\xE1nh th\xEAm tr\xF9ng v\xE0 l\u1EB7p l\u1EA1i c\xF4ng vi\u1EC7c tr\xEAn chu tr\xECnh."
+    options:
+    - id: 0
+      text: When it is enqueued
+      textVN: "Ngay khi \u0111\u01B0a v\xE0o h\xE0ng \u0111\u1EE3i"
+    - id: 1
+      text: Only at the end
+      textVN: "Ch\u1EC9 khi thu\u1EADt to\xE1n k\u1EBFt th\xFAc"
+    - id: 2
+      text: Never
+      textVN: "Kh\xF4ng bao gi\u1EDD"
+    - id: 3
+      text: After all its neighbors
+      textVN: "Sau khi duy\u1EC7t m\u1ECDi \u0111\u1EC9nh k\u1EC1 c\u1EE7a n\xF3"
+    correctOptionIds:
+    - 0
+  - id: bfs-3
+    type: single-choice
+    lessonId: bfs
+    topic: BFS Basics
+    difficulty: 1
+    tags: []
+    prompt: What does BFS minimize in an unweighted graph?
+    explanation: Each BFS layer adds one edge, so the first discovery has the minimum edge count.
+    promptVN: "BFS t\u1ED1i thi\u1EC3u h\xF3a \u0111\u1EA1i l\u01B0\u1EE3ng n\xE0o tr\xEAn \u0111\u1ED3 th\u1ECB kh\xF4ng tr\u1ECDng s\u1ED1?"
+    explanationVN: "M\u1ED7i l\u1EDBp BFS th\xEAm m\u1ED9t c\u1EA1nh, n\xEAn l\u1EA7n ph\xE1t hi\u1EC7n \u0111\u1EA7u ti\xEAn c\xF3 s\u1ED1 c\u1EA1nh \xEDt nh\u1EA5t."
+    options:
+    - id: 0
+      text: Number of edges from the source
+      textVN: "S\u1ED1 c\u1EA1nh \u0111i t\u1EEB \u0111\u1EC9nh ngu\u1ED3n"
+    - id: 1
+      text: Total arbitrary edge weight
+      textVN: "T\u1ED5ng tr\u1ECDng s\u1ED1 c\u1EA1nh b\u1EA5t k\u1EF3"
+    - id: 2
+      text: Memory in every graph
+      textVN: "B\u1ED9 nh\u1EDB tr\xEAn m\u1ECDi \u0111\u1ED3 th\u1ECB"
+    - id: 3
+      text: Number of vertices in the graph
+      textVN: "S\u1ED1 \u0111\u1EC9nh c\u1EE7a \u0111\u1ED3 th\u1ECB"
+    correctOptionIds:
+    - 0
+  - id: bfs-4
+    type: single-choice
+    lessonId: bfs
+    topic: BFS Basics
+    difficulty: 1
+    tags: []
+    prompt: A connects to B and C; B connects to D. Which layer contains D?
+    explanation: A is layer 0. B and C are layer 1, so D reached through B is layer 2.
+    promptVN: "A n\u1ED1i v\u1EDBi B v\xE0 C; B n\u1ED1i v\u1EDBi D. D thu\u1ED9c l\u1EDBp n\xE0o?"
+    explanationVN: "A \u1EDF l\u1EDBp 0. B v\xE0 C \u1EDF l\u1EDBp 1, n\xEAn D \u0111\u01B0\u1EE3c t\xECm th\u1EA5y qua B \u1EDF l\u1EDBp 2."
+    options:
+    - id: 0
+      text: Layer 2
+      textVN: "L\u1EDBp 2"
+    - id: 1
+      text: Layer 0
+      textVN: "L\u1EDBp 0"
+    - id: 2
+      text: Layer 1
+      textVN: "L\u1EDBp 1"
+    - id: 3
+      text: Always layer 3
+      textVN: "Lu\xF4n l\xE0 l\u1EDBp 3"
+    correctOptionIds:
+    - 0
+  - id: bfs-5
+    type: single-choice
+    lessonId: bfs
+    topic: BFS Basics
+    difficulty: 1
+    tags: []
+    prompt: Why keep a visited set?
+    explanation: The visited set prevents revisiting vertices, including in cyclic graphs.
+    promptVN: "V\xEC sao c\u1EA7n t\u1EADp h\u1EE3p c\xE1c \u0111\u1EC9nh \u0111\xE3 th\u0103m?"
+    explanationVN: "T\u1EADp \u0111\u1EC9nh \u0111\xE3 th\u0103m ng\u0103n vi\u1EC7c duy\u1EC7t l\u1EA1i \u0111\u1EC9nh, k\u1EC3 c\u1EA3 trong \u0111\u1ED3 th\u1ECB c\xF3 chu tr\xECnh."
+    options:
+    - id: 0
+      text: Avoid repeatedly exploring cycles
+      textVN: "Tr\xE1nh kh\xE1m ph\xE1 l\u1EA1i c\xE1c chu tr\xECnh"
+    - id: 1
+      text: Sort all vertices
+      textVN: "S\u1EAFp x\u1EBFp t\u1EA5t c\u1EA3 c\xE1c \u0111\u1EC9nh"
+    - id: 2
+      text: Make every edge weighted
+      textVN: "G\xE1n tr\u1ECDng s\u1ED1 cho m\u1ECDi c\u1EA1nh"
+    - id: 3
+      text: Reverse all edges
+      textVN: "\u0110\u1EA3o chi\u1EC1u m\u1ECDi c\u1EA1nh"
+    correctOptionIds:
+    - 0
+  - id: bfs-6
+    type: single-choice
+    lessonId: bfs
+    topic: BFS Basics
+    difficulty: 1
+    tags: []
+    prompt: What happens if the queue becomes empty?
+    explanation: BFS covers the reachable component; disconnected vertices may remain unvisited.
+    promptVN: "\u0110i\u1EC1u g\xEC x\u1EA3y ra khi h\xE0ng \u0111\u1EE3i r\u1ED7ng?"
+    explanationVN: "BFS duy\u1EC7t th\xE0nh ph\u1EA7n c\xF3 th\u1EC3 \u0111\u1EBFn t\u1EEB ngu\u1ED3n; c\xE1c \u0111\u1EC9nh kh\xF4ng li\xEAn th\xF4ng v\u1EABn c\xF3 th\u1EC3 ch\u01B0a \u0111\u01B0\u1EE3c th\u0103m."
+    options:
+    - id: 0
+      text: All reachable vertices have been processed
+      textVN: "\u0110\xE3 x\u1EED l\xFD m\u1ECDi \u0111\u1EC9nh c\xF3 th\u1EC3 \u0111\u1EBFn t\u1EEB ngu\u1ED3n"
+    - id: 1
+      text: Every vertex everywhere is connected
+      textVN: "M\u1ECDi \u0111\u1EC9nh trong \u0111\u1ED3 th\u1ECB \u0111\u1EC1u li\xEAn th\xF4ng"
+    - id: 2
+      text: The algorithm must restart
+      textVN: "Thu\u1EADt to\xE1n ph\u1EA3i kh\u1EDFi \u0111\u1ED9ng l\u1EA1i"
+    - id: 3
+      text: The graph has no edges
+      textVN: "\u0110\u1ED3 th\u1ECB kh\xF4ng c\xF3 c\u1EA1nh"
+    correctOptionIds:
+    - 0

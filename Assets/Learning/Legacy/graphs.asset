@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426371913cb103240a9f482a56898d15, type: 3}
+  m_Name: graphs
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.LessonData
+  id: graphs
+  title: Choosing a Graph Strategy
+  topic: Choosing a Graph Strategy
+  titleVN: "Ch\u1ECDn chi\u1EBFn l\u01B0\u1EE3c tr\xEAn \u0111\u1ED3 th\u1ECB"
+  pages:
+  - title: FIELD NOTES
+    titleVN: "GHI CH\xC9P TH\u1EF0C \u0110\u1ECAA"
+    contentVN: "\u0110\u1ED3 th\u1ECB m\xF4 h\xECnh h\xF3a c\xE1c \u0111\u1EC9nh v\xE0 nh\u1EEFng li\xEAn k\u1EBFt gi\u1EEFa ch\xFAng. C\u1EA1nh c\xF3 h\u01B0\u1EDBng c\xF3 chi\u1EC1u c\u1EE5 th\u1EC3; c\u1EA1nh v\xF4 h\u01B0\u1EDBng cho ph\xE9p \u0111i c\u1EA3 hai chi\u1EC1u. Danh s\xE1ch k\u1EC1 l\u01B0u c\xE1c \u0111\u1EC9nh k\u1EC1; ma tr\u1EADn k\u1EC1 l\u01B0u m\u1ED9t \xF4 cho m\u1ED7i c\u1EB7p \u0111\u1EC9nh."
+    exampleVN: "D\xF9ng BFS \u0111\u1EC3 t\xECm s\u1ED1 l\u1EA7n qua c\u1EEDa \xEDt nh\u1EA5t khi m\u1ED7i li\xEAn k\u1EBFt c\xF3 chi ph\xED nh\u01B0 nhau. D\xF9ng DFS \u0111\u1EC3 kh\xE1m ph\xE1 c\xE1c ph\xF2ng c\xF3 th\u1EC3 \u0111\u1EBFn \u0111\u01B0\u1EE3c. N\u1EBFu chi ph\xED kh\xE1c nhau, c\u1EA7n thu\u1EADt to\xE1n \u0111\u01B0\u1EDDng \u0111i c\xF3 tr\u1ECDng s\u1ED1 ph\xF9 h\u1EE3p."
+    takeawayVN: "Ch\u1ECDn thu\u1EADt to\xE1n d\u1EF1a tr\xEAn gi\u1EA3 \u0111\u1ECBnh c\u1EE7a b\xE0i to\xE1n. Kh\xF4ng \xE1p d\u1EE5ng k\u1EBFt lu\u1EADn v\u1EC1 \u0111\u01B0\u1EDDng \u0111i ng\u1EAFn nh\u1EA5t kh\xF4ng tr\u1ECDng s\u1ED1 cho c\xE1c c\u1EA1nh c\xF3 chi ph\xED kh\xE1c nhau."
+    content: 'A graph models vertices and connections. A directed edge has an orientation; an undirected edge connects both ways. Representation matters: adjacency lists store neighbors; an adjacency matrix stores a cell for every vertex pair.'
+    example: Use BFS to find the fewest door crossings on a map with equal-cost connections. Use DFS to explore reachable rooms. Arbitrary travel costs require a suitable weighted-path algorithm.
+    takeaway: Choose an algorithm from the problem assumptions. Do not use unweighted shortest-path claims for unequal costs.
+    illustration: {fileID: 0}
+  questionBank: {fileID: 11400000, guid: b1dbb9553e2ee3e43aa6b8bc5cf97b6e, type: 2}
+  quizSize: 5
+  passPercent: 80
+  prerequisiteLessonIds:
+  - binary
+  requiredSurvivalSeconds: 60
+  reward:
+    healthFraction: 0.05
+    movementFraction: 0.02
+    energyFraction: 0.025

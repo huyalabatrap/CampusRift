@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426371913cb103240a9f482a56898d15, type: 3}
+  m_Name: complexity
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.LessonData
+  id: complexity
+  title: Reasoning about Complexity
+  topic: Reasoning about Complexity
+  titleVN: "T\u01B0 duy v\u1EC1 \u0111\u1ED9 ph\u1EE9c t\u1EA1p"
+  pages:
+  - title: FIELD NOTES
+    titleVN: "GHI CH\xC9P TH\u1EF0C \u0110\u1ECAA"
+    contentVN: "\u0110\u1ED9 ph\u1EE9c t\u1EA1p m\xF4 t\u1EA3 m\u1EE9c t\u0103ng t\xE0i nguy\xEAn khi k\xEDch th\u01B0\u1EDBc \u0111\u1EA7u v\xE0o t\u0103ng. C\xF4ng vi\u1EC7c O(n) t\u0103ng tuy\u1EBFn t\xEDnh; O(n\xB2) t\u0103ng b\u1EADc hai. Khi x\xE9t t\u1ED1c \u0111\u1ED9 t\u0103ng ti\u1EC7m c\u1EADn, ta b\u1ECF qua h\u1EC7 s\u1ED1 h\u1EB1ng, nh\u01B0ng th\u1EDDi gian ch\u1EA1y th\u1EF1c t\u1EBF c\xF2n ph\u1EE5 thu\u1ED9c c\xE1ch c\xE0i \u0111\u1EB7t."
+    exampleVN: "Duy\u1EC7t n ph\u1EA7n t\u1EED m\u1ED9t l\u1EA7n l\xE0 O(n). Hai l\u01B0\u1EE3t duy\u1EC7t \u0111\u1ED9c l\u1EADp v\u1EABn l\xE0 O(n). So s\xE1nh t\u1EEBng ph\u1EA7n t\u1EED v\u1EDBi m\u1ECDi ph\u1EA7n t\u1EED c\xF2n l\u1EA1i l\xE0 O(n\xB2)."
+    takeawayVN: "Big O l\xE0 gi\u1EDBi h\u1EA1n v\u1EC1 t\u1ED1c \u0111\u1ED9 t\u0103ng, kh\xF4ng ph\u1EA3i \u0111\u1ED3ng h\u1ED3 \u0111o th\u1EDDi gian. H\xE3y \u0111\u1EBFm c\xF4ng vi\u1EC7c v\xE0 n\xEAu r\xF5 c\xE1ch bi\u1EC3u di\u1EC5n d\u1EEF li\u1EC7u c\xF9ng c\xE1c gi\u1EA3 \u0111\u1ECBnh."
+    content: Complexity describes how resource use grows as input size increases. O(n) work grows linearly; O(n squared) grows quadratically. Ignore constant factors for asymptotic growth, but remember real runtime also depends on implementation.
+    example: Scanning n elements once is O(n). Two independent scans remain O(n). Comparing every element to every other element is O(n squared).
+    takeaway: Big O is a growth bound, not a stopwatch. Count work and state the representation and assumptions.
+    illustration: {fileID: 0}
+  questionBank: {fileID: 11400000, guid: eaa4be77fd483f44cb1feb0550587145, type: 2}
+  quizSize: 5
+  passPercent: 80
+  prerequisiteLessonIds:
+  - dfs
+  requiredSurvivalSeconds: 30
+  reward:
+    healthFraction: 0.05
+    movementFraction: 0.02
+    energyFraction: 0

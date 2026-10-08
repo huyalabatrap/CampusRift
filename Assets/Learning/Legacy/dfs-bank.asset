@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c44860054bc4e4181a9d76144a93fe, type: 3}
+  m_Name: dfs-bank
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.QuestionBankData
+  questions:
+  - id: dfs-1
+    type: single-choice
+    lessonId: dfs
+    topic: DFS and Backtracking
+    difficulty: 1
+    tags: []
+    prompt: Which structure can implement DFS?
+    explanation: DFS uses last-in, first-out behavior, often via recursive calls.
+    promptVN: "C\xF3 th\u1EC3 d\xF9ng c\u1EA5u tr\xFAc n\xE0o \u0111\u1EC3 c\xE0i \u0111\u1EB7t DFS?"
+    explanationVN: "DFS ho\u1EA1t \u0111\u1ED9ng theo nguy\xEAn t\u1EAFc v\xE0o sau, ra tr\u01B0\u1EDBc, th\u01B0\u1EDDng th\xF4ng qua l\u1EDDi g\u1ECDi \u0111\u1EC7 quy."
+    options:
+    - id: 0
+      text: Stack
+      textVN: "Ng\u0103n x\u1EBFp"
+    - id: 1
+      text: FIFO queue only
+      textVN: "Ch\u1EC9 h\xE0ng \u0111\u1EE3i FIFO"
+    - id: 2
+      text: A single boolean
+      textVN: "M\u1ED9t bi\u1EBFn \u0111\xFAng/sai"
+    - id: 3
+      text: Sorted set only
+      textVN: "Ch\u1EC9 t\u1EADp h\u1EE3p \u0111\xE3 s\u1EAFp x\u1EBFp"
+    correctOptionIds:
+    - 0
+  - id: dfs-2
+    type: single-choice
+    lessonId: dfs
+    topic: DFS and Backtracking
+    difficulty: 1
+    tags: []
+    prompt: What happens at a dead end?
+    explanation: Backtracking returns to the last point with an unexplored alternative.
+    promptVN: "Khi g\u1EB7p \u0111\u01B0\u1EDDng c\u1EE5t, DFS l\xE0m g\xEC?"
+    explanationVN: "Quay lui \u0111\u01B0a thu\u1EADt to\xE1n v\u1EC1 \u0111i\u1EC3m g\u1EA7n nh\u1EA5t c\xF2n nh\xE1nh ch\u01B0a \u0111\u01B0\u1EE3c kh\xE1m ph\xE1."
+    options:
+    - id: 0
+      text: Backtrack to an earlier branching point
+      textVN: "Quay lui v\u1EC1 \u0111i\u1EC3m ph\xE2n nh\xE1nh tr\u01B0\u1EDBc \u0111\xF3"
+    - id: 1
+      text: Delete the graph
+      textVN: "X\xF3a \u0111\u1ED3 th\u1ECB"
+    - id: 2
+      text: Repeat forever
+      textVN: "L\u1EB7p l\u1EA1i m\xE3i m\xE3i"
+    - id: 3
+      text: Jump to the closest vertex
+      textVN: "Nh\u1EA3y \u0111\u1EBFn \u0111\u1EC9nh g\u1EA7n nh\u1EA5t"
+    correctOptionIds:
+    - 0
+  - id: dfs-3
+    type: single-choice
+    lessonId: dfs
+    topic: DFS and Backtracking
+    difficulty: 1
+    tags: []
+    prompt: Does basic DFS guarantee shortest paths?
+    explanation: DFS explores depth first, so it can find a longer route before a shorter one.
+    promptVN: "DFS c\u01A1 b\u1EA3n c\xF3 \u0111\u1EA3m b\u1EA3o \u0111\u01B0\u1EDDng \u0111i ng\u1EAFn nh\u1EA5t kh\xF4ng?"
+    explanationVN: "DFS \u01B0u ti\xEAn \u0111i s\xE2u n\xEAn c\xF3 th\u1EC3 t\xECm th\u1EA5y m\u1ED9t \u0111\u01B0\u1EDDng d\xE0i tr\u01B0\u1EDBc \u0111\u01B0\u1EDDng ng\u1EAFn h\u01A1n."
+    options:
+    - id: 0
+      text: No
+      textVN: "Kh\xF4ng"
+    - id: 1
+      text: Always
+      textVN: "Lu\xF4n \u0111\u1EA3m b\u1EA3o"
+    - id: 2
+      text: Only if implemented recursively
+      textVN: "Ch\u1EC9 khi d\xF9ng \u0111\u1EC7 quy"
+    - id: 3
+      text: Only with a stack
+      textVN: "Ch\u1EC9 khi d\xF9ng ng\u0103n x\u1EBFp"
+    correctOptionIds:
+    - 0
+  - id: dfs-4
+    type: single-choice
+    lessonId: dfs
+    topic: DFS and Backtracking
+    difficulty: 1
+    tags: []
+    prompt: Why can recursive DFS overflow?
+    explanation: Deep recursion can exceed the call stack; an explicit stack avoids that call-stack limit.
+    promptVN: "V\xEC sao DFS \u0111\u1EC7 quy c\xF3 th\u1EC3 g\xE2y tr\xE0n ng\u0103n x\u1EBFp?"
+    explanationVN: "\u0110\u1EC7 quy qu\xE1 s\xE2u c\xF3 th\u1EC3 v\u01B0\u1EE3t gi\u1EDBi h\u1EA1n ng\u0103n x\u1EBFp l\u1EDDi g\u1ECDi; ng\u0103n x\u1EBFp t\u01B0\u1EDDng minh tr\xE1nh \u0111\u01B0\u1EE3c gi\u1EDBi h\u1EA1n n\xE0y."
+    options:
+    - id: 0
+      text: The active path may be too deep
+      textVN: "Nh\xE1nh \u0111ang duy\u1EC7t c\xF3 th\u1EC3 qu\xE1 s\xE2u"
+    - id: 1
+      text: The graph has a name
+      textVN: "\u0110\u1ED3 th\u1ECB c\xF3 t\xEAn"
+    - id: 2
+      text: All edges weigh one
+      textVN: "M\u1ECDi c\u1EA1nh c\xF3 tr\u1ECDng s\u1ED1 b\u1EB1ng m\u1ED9t"
+    - id: 3
+      text: The queue is empty
+      textVN: "H\xE0ng \u0111\u1EE3i r\u1ED7ng"
+    correctOptionIds:
+    - 0
+  - id: dfs-5
+    type: single-choice
+    lessonId: dfs
+    topic: DFS and Backtracking
+    difficulty: 1
+    tags: []
+    prompt: 'A->B->D and A->C: which order can be DFS?'
+    explanation: Following B first explores D before backtracking to A and exploring C.
+    promptVN: "V\u1EDBi A \u2192 B \u2192 D v\xE0 A \u2192 C, th\u1EE9 t\u1EF1 n\xE0o c\xF3 th\u1EC3 l\xE0 DFS?"
+    explanationVN: "\u0110i theo B tr\u01B0\u1EDBc s\u1EBD kh\xE1m ph\xE1 D r\u1ED3i m\u1EDBi quay v\u1EC1 A \u0111\u1EC3 kh\xE1m ph\xE1 C."
+    options:
+    - id: 0
+      text: A B D C
+      textVN: A B D C
+    - id: 1
+      text: D B A C
+      textVN: D B A C
+    - id: 2
+      text: C A D B
+      textVN: C A D B
+    - id: 3
+      text: B C A D
+      textVN: B C A D
+    correctOptionIds:
+    - 0
+  - id: dfs-6
+    type: single-choice
+    lessonId: dfs
+    topic: DFS and Backtracking
+    difficulty: 1
+    tags: []
+    prompt: What prevents cycling forever in graph DFS?
+    explanation: Visited tracking ensures already explored vertices are not expanded repeatedly.
+    promptVN: "\u0110i\u1EC1u g\xEC ng\u0103n DFS l\u1EB7p v\xF4 h\u1EA1n tr\xEAn chu tr\xECnh?"
+    explanationVN: "Theo d\xF5i \u0111\u1EC9nh \u0111\xE3 th\u0103m gi\xFAp m\u1ED7i \u0111\u1EC9nh \u0111\xE3 kh\xE1m ph\xE1 kh\xF4ng b\u1ECB m\u1EDF r\u1ED9ng l\u1EB7p \u0111i l\u1EB7p l\u1EA1i."
+    options:
+    - id: 0
+      text: Visited tracking
+      textVN: "Theo d\xF5i c\xE1c \u0111\u1EC9nh \u0111\xE3 th\u0103m"
+    - id: 1
+      text: Alphabetical vertex names
+      textVN: "\u0110\u1EB7t t\xEAn \u0111\u1EC9nh theo b\u1EA3ng ch\u1EEF c\xE1i"
+    - id: 2
+      text: Using only recursion
+      textVN: "Ch\u1EC9 d\xF9ng \u0111\u1EC7 quy"
+    - id: 3
+      text: Counting edges once
+      textVN: "\u0110\u1EBFm c\u1EA1nh m\u1ED9t l\u1EA7n"
+    correctOptionIds:
+    - 0

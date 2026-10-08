@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c44860054bc4e4181a9d76144a93fe, type: 3}
+  m_Name: complexity-bank
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.QuestionBankData
+  questions:
+  - id: complexity-1
+    type: single-choice
+    lessonId: complexity
+    topic: Reasoning about Complexity
+    difficulty: 1
+    tags: []
+    prompt: One full scan of n items costs what?
+    explanation: A full scan performs work proportional to the number of items.
+    promptVN: "Duy\u1EC7t to\xE0n b\u1ED9 n ph\u1EA7n t\u1EED m\u1ED9t l\u1EA7n c\xF3 \u0111\u1ED9 ph\u1EE9c t\u1EA1p n\xE0o?"
+    explanationVN: "M\u1ED9t l\u01B0\u1EE3t duy\u1EC7t th\u1EF1c hi\u1EC7n l\u01B0\u1EE3ng c\xF4ng vi\u1EC7c t\u1EF7 l\u1EC7 v\u1EDBi s\u1ED1 ph\u1EA7n t\u1EED."
+    options:
+    - id: 0
+      text: O(n)
+      textVN: O(n)
+    - id: 1
+      text: O(1)
+      textVN: O(1)
+    - id: 2
+      text: O(log n)
+      textVN: O(log n)
+    - id: 3
+      text: O(n squared)
+      textVN: "O(n\xB2)"
+    correctOptionIds:
+    - 0
+  - id: complexity-2
+    type: single-choice
+    lessonId: complexity
+    topic: Reasoning about Complexity
+    difficulty: 1
+    tags: []
+    prompt: Two sequential full scans cost what?
+    explanation: 2n grows linearly; Big O ignores the constant factor 2.
+    promptVN: "Hai l\u01B0\u1EE3t duy\u1EC7t \u0111\u1EA7y \u0111\u1EE7 n\u1ED1i ti\u1EBFp nhau c\xF3 \u0111\u1ED9 ph\u1EE9c t\u1EA1p n\xE0o?"
+    explanationVN: "2n v\u1EABn t\u0103ng tuy\u1EBFn t\xEDnh; Big O b\u1ECF qua h\u1EC7 s\u1ED1 h\u1EB1ng 2."
+    options:
+    - id: 0
+      text: O(n)
+      textVN: O(n)
+    - id: 1
+      text: O(n squared)
+      textVN: "O(n\xB2)"
+    - id: 2
+      text: O(1)
+      textVN: O(1)
+    - id: 3
+      text: O(log n)
+      textVN: O(log n)
+    correctOptionIds:
+    - 0
+  - id: complexity-3
+    type: single-choice
+    lessonId: complexity
+    topic: Reasoning about Complexity
+    difficulty: 1
+    tags: []
+    prompt: Two nested n-iteration loops usually cost what?
+    explanation: 'Each of n outer iterations performs n inner iterations: n times n.'
+    promptVN: "Hai v\xF2ng l\u1EB7p l\u1ED3ng nhau, m\u1ED7i v\xF2ng ch\u1EA1y n l\u1EA7n, th\u01B0\u1EDDng c\xF3 \u0111\u1ED9 ph\u1EE9c t\u1EA1p n\xE0o?"
+    explanationVN: "M\u1ED7i l\u1EA7n trong n l\u01B0\u1EE3t v\xF2ng ngo\xE0i th\u1EF1c hi\u1EC7n n l\u01B0\u1EE3t v\xF2ng trong: t\u1ED5ng c\u1ED9ng n \xD7 n."
+    options:
+    - id: 0
+      text: O(n squared)
+      textVN: "O(n\xB2)"
+    - id: 1
+      text: O(n)
+      textVN: O(n)
+    - id: 2
+      text: O(1)
+      textVN: O(1)
+    - id: 3
+      text: O(log n)
+      textVN: O(log n)
+    correctOptionIds:
+    - 0
+  - id: complexity-4
+    type: single-choice
+    lessonId: complexity
+    topic: Reasoning about Complexity
+    difficulty: 1
+    tags: []
+    prompt: What does O(n) describe?
+    explanation: Complexity describes how work scales, not a fixed elapsed time.
+    promptVN: "O(n) m\xF4 t\u1EA3 \u0111i\u1EC1u g\xEC?"
+    explanationVN: "\u0110\u1ED9 ph\u1EE9c t\u1EA1p m\xF4 t\u1EA3 m\u1EE9c t\u0103ng c\xF4ng vi\u1EC7c, kh\xF4ng ph\u1EA3i th\u1EDDi gian ch\u1EA1y c\u1ED1 \u0111\u1ECBnh."
+    options:
+    - id: 0
+      text: Growth with input size
+      textVN: "T\u1ED1c \u0111\u1ED9 t\u0103ng theo k\xEDch th\u01B0\u1EDBc \u0111\u1EA7u v\xE0o"
+    - id: 1
+      text: Exactly n milliseconds
+      textVN: "Ch\xEDnh x\xE1c n mili gi\xE2y"
+    - id: 2
+      text: Constant memory always
+      textVN: "Lu\xF4n d\xF9ng b\u1ED9 nh\u1EDB c\u1ED1 \u0111\u1ECBnh"
+    - id: 3
+      text: The programming language
+      textVN: "Ng\xF4n ng\u1EEF l\u1EADp tr\xECnh"
+    correctOptionIds:
+    - 0
+  - id: complexity-5
+    type: single-choice
+    lessonId: complexity
+    topic: Reasoning about Complexity
+    difficulty: 1
+    tags: []
+    prompt: BFS with adjacency lists costs what?
+    explanation: Each reachable vertex and its outgoing edges are processed a bounded number of times.
+    promptVN: "BFS d\xF9ng danh s\xE1ch k\u1EC1 c\xF3 \u0111\u1ED9 ph\u1EE9c t\u1EA1p n\xE0o?"
+    explanationVN: "M\u1ED7i \u0111\u1EC9nh c\xF3 th\u1EC3 \u0111\u1EBFn \u0111\u01B0\u1EE3c v\xE0 c\xE1c c\u1EA1nh \u0111i ra \u0111\u01B0\u1EE3c x\u1EED l\xFD m\u1ED9t s\u1ED1 l\u1EA7n h\u1EEFu h\u1EA1n."
+    options:
+    - id: 0
+      text: O(V + E)
+      textVN: O(V + E)
+    - id: 1
+      text: O(1)
+      textVN: O(1)
+    - id: 2
+      text: O(log V)
+      textVN: O(log V)
+    - id: 3
+      text: O(V) for every graph
+      textVN: "Lu\xF4n l\xE0 O(V) v\u1EDBi m\u1ECDi \u0111\u1ED3 th\u1ECB"
+    correctOptionIds:
+    - 0
+  - id: complexity-6
+    type: single-choice
+    lessonId: complexity
+    topic: Reasoning about Complexity
+    difficulty: 1
+    tags: []
+    prompt: Which grows faster asymptotically?
+    explanation: For sufficiently large n, quadratic growth exceeds linear, logarithmic and constant growth.
+    promptVN: "\u0110\u1EA1i l\u01B0\u1EE3ng n\xE0o t\u0103ng nhanh h\u01A1n v\u1EC1 m\u1EB7t ti\u1EC7m c\u1EADn?"
+    explanationVN: "Khi n \u0111\u1EE7 l\u1EDBn, t\u0103ng tr\u01B0\u1EDFng b\u1EADc hai v\u01B0\u1EE3t t\u0103ng tr\u01B0\u1EDFng tuy\u1EBFn t\xEDnh, logarit v\xE0 h\u1EB1ng s\u1ED1."
+    options:
+    - id: 0
+      text: n squared
+      textVN: "n\xB2"
+    - id: 1
+      text: n
+      textVN: n
+    - id: 2
+      text: log n
+      textVN: log n
+    - id: 3
+      text: 1
+      textVN: 1
+    correctOptionIds:
+    - 0

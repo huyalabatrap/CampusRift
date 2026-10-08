@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426371913cb103240a9f482a56898d15, type: 3}
+  m_Name: binary
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.LessonData
+  id: binary
+  title: Binary Search
+  topic: Binary Search
+  titleVN: "T\xECm ki\u1EBFm nh\u1ECB ph\xE2n"
+  pages:
+  - title: FIELD NOTES
+    titleVN: "GHI CH\xC9P TH\u1EF0C \u0110\u1ECAA"
+    contentVN: "T\xECm ki\u1EBFm nh\u1ECB ph\xE2n t\xECm m\u1ED9t gi\xE1 tr\u1ECB trong d\u1EEF li\u1EC7u \u0111\xE3 s\u1EAFp x\u1EBFp b\u1EB1ng c\xE1ch li\xEAn t\u1EE5c so s\xE1nh v\u1EDBi ph\u1EA7n t\u1EED gi\u1EEFa. N\u1EBFu gi\xE1 tr\u1ECB c\u1EA7n t\xECm nh\u1ECF h\u01A1n, gi\u1EEF n\u1EEDa tr\xE1i; n\u1EBFu l\u1EDBn h\u01A1n, gi\u1EEF n\u1EEDa ph\u1EA3i. D\u1EEBng khi t\xECm th\u1EA5y ho\u1EB7c khi kho\u1EA3ng \u1EE9ng vi\xEAn r\u1ED7ng."
+    exampleVN: "Trong [2, 4, 7, 9, 12], t\xECm 9 b\u1EAFt \u0111\u1EA7u b\u1EB1ng c\xE1ch so s\xE1nh v\u1EDBi 7 r\u1ED3i t\xECm ti\u1EBFp b\xEAn ph\u1EA3i. V\u1EDBi hai bi\xEAn \u0111\u1EC1u \u0111\u01B0\u1EE3c t\xEDnh trong kho\u1EA3ng, c\u1EADp nh\u1EADt high = mid - 1 ho\u1EB7c low = mid + 1 sau m\u1ED9t ph\xE9p so s\xE1nh kh\xF4ng b\u1EB1ng."
+    takeawayVN: "D\u1EEF li\u1EC7u ph\u1EA3i \u0111\u01B0\u1EE3c s\u1EAFp x\u1EBFp theo c\xF9ng quy t\u1EAFc so s\xE1nh. M\u1ED7i v\xF2ng l\u1EB7p ph\u1EA3i l\xE0m kho\u1EA3ng t\xECm ki\u1EBFm nh\u1ECF l\u1EA1i."
+    content: Binary search finds a target in sorted data by repeatedly comparing it with the middle element. If the target is smaller, retain the left half; if larger, retain the right half. Stop when found or when the candidate interval is empty.
+    example: In [2, 4, 7, 9, 12], searching for 9 first compares with 7, then searches to its right. With inclusive bounds, use high = mid - 1 or low = mid + 1 after an unequal comparison.
+    takeaway: The data must be sorted under the same comparison. Ensure every iteration shrinks the search interval.
+    illustration: {fileID: 0}
+  questionBank: {fileID: 11400000, guid: 6bc90813d59e174448a86384c9b8489b, type: 2}
+  quizSize: 5
+  passPercent: 80
+  prerequisiteLessonIds:
+  - complexity
+  requiredSurvivalSeconds: 45
+  reward:
+    healthFraction: 0.05
+    movementFraction: 0.02
+    energyFraction: 0.025

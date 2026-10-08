@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426371913cb103240a9f482a56898d15, type: 3}
+  m_Name: dfs
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.LessonData
+  id: dfs
+  title: DFS and Backtracking
+  topic: DFS and Backtracking
+  titleVN: "DFS v\xE0 quay lui"
+  pages:
+  - title: FIELD NOTES
+    titleVN: "GHI CH\xC9P TH\u1EF0C \u0110\u1ECAA"
+    contentVN: "DFS \u0111i s\xE2u theo m\u1ED9t nh\xE1nh h\u1EBFt m\u1EE9c c\xF3 th\u1EC3, sau \u0111\xF3 quay lui \u0111\u1EC3 kh\xE1m ph\xE1 c\xE1c nh\xE1nh kh\xE1c. C\xF3 th\u1EC3 d\xF9ng m\u1ED9t ng\u0103n x\u1EBFp t\u01B0\u1EDDng minh ho\u1EB7c ng\u0103n x\u1EBFp l\u1EDDi g\u1ECDi h\xE0m \u0111\u1EC3 l\u01B0u \u0111\u01B0\u1EDDng \u0111i hi\u1EC7n t\u1EA1i. V\u1EDBi \u0111\u1ED3 th\u1ECB c\xF3 chu tr\xECnh, c\u1EA7n l\u01B0u c\xE1c \u0111\u1EC9nh \u0111\xE3 th\u0103m."
+    exampleVN: "V\u1EDBi A \u2192 B \u2192 D v\xE0 A \u2192 C, DFS c\xF3 th\u1EC3 duy\u1EC7t A, B, D, C. Th\u1EE9 t\u1EF1 ph\u1EE5 thu\u1ED9c c\xE1ch x\xE9t c\xE1c \u0111\u1EC9nh k\u1EC1; D \u0111\u01B0\u1EE3c th\u0103m tr\u01B0\u1EDBc kh\xF4ng c\xF3 ngh\u0129a l\xE0 D g\u1EA7n A h\u01A1n C."
+    takeawayVN: "DFS h\u1EEFu \xEDch \u0111\u1EC3 ki\u1EC3m tra kh\u1EA3 n\u0103ng \u0111i t\u1EDBi m\u1ED9t \u0111\u1EC9nh v\xE0 kh\xE1m ph\xE1 c\u1EA5u tr\xFAc \u0111\u1ED3 th\u1ECB. DFS c\u01A1 b\u1EA3n kh\xF4ng \u0111\u1EA3m b\u1EA3o \u0111\u01B0\u1EDDng \u0111i ng\u1EAFn nh\u1EA5t."
+    content: Depth-first search follows a branch as far as possible, then backtracks to explore alternatives. An explicit stack or the call stack can track the active path. Keep a visited set in graphs with cycles.
+    example: For A -> B -> D and A -> C, DFS may visit A, B, D, C. The order depends on neighbor ordering; it does not prove D is nearer than C.
+    takeaway: DFS is useful for reachability and structural traversal. Basic DFS does not guarantee shortest paths.
+    illustration: {fileID: 0}
+  questionBank: {fileID: 11400000, guid: ae2c850640b665146b6c94a23c75c6d8, type: 2}
+  quizSize: 5
+  passPercent: 80
+  prerequisiteLessonIds:
+  - bfs
+  requiredSurvivalSeconds: 15
+  reward:
+    healthFraction: 0.05
+    movementFraction: 0.02
+    energyFraction: 0

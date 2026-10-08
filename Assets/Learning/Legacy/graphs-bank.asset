@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c44860054bc4e4181a9d76144a93fe, type: 3}
+  m_Name: graphs-bank
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.QuestionBankData
+  questions:
+  - id: graphs-1
+    type: single-choice
+    lessonId: graphs
+    topic: Choosing a Graph Strategy
+    difficulty: 1
+    tags: []
+    prompt: What does a directed edge mean?
+    explanation: A directed edge from A to B does not automatically provide an edge from B to A.
+    promptVN: "C\u1EA1nh c\xF3 h\u01B0\u1EDBng ngh\u0129a l\xE0 g\xEC?"
+    explanationVN: "C\u1EA1nh t\u1EEB A \u0111\u1EBFn B kh\xF4ng t\u1EF1 \u0111\u1ED9ng t\u1EA1o ra c\u1EA1nh t\u1EEB B v\u1EC1 A."
+    options:
+    - id: 0
+      text: A connection with an orientation
+      textVN: "M\u1ED9t li\xEAn k\u1EBFt c\xF3 chi\u1EC1u c\u1EE5 th\u1EC3"
+    - id: 1
+      text: A connection always usable both ways
+      textVN: "Li\xEAn k\u1EBFt lu\xF4n \u0111i \u0111\u01B0\u1EE3c c\u1EA3 hai chi\u1EC1u"
+    - id: 2
+      text: No connection
+      textVN: "Kh\xF4ng c\xF3 li\xEAn k\u1EBFt"
+    - id: 3
+      text: A sorted vertex
+      textVN: "M\u1ED9t \u0111\u1EC9nh \u0111\xE3 s\u1EAFp x\u1EBFp"
+    correctOptionIds:
+    - 0
+  - id: graphs-2
+    type: single-choice
+    lessonId: graphs
+    topic: Choosing a Graph Strategy
+    difficulty: 1
+    tags: []
+    prompt: For fewest equal-cost door crossings, choose what?
+    explanation: BFS discovers vertices by minimum number of edges, fitting equal-cost crossings.
+    promptVN: "\u0110\u1EC3 \u0111i qua \xEDt c\u1EEDa nh\u1EA5t khi m\u1ED7i l\u1EA7n qua c\u1EEDa c\xF3 chi ph\xED nh\u01B0 nhau, n\xEAn ch\u1ECDn g\xEC?"
+    explanationVN: "BFS kh\xE1m ph\xE1 c\xE1c \u0111\u1EC9nh theo s\u1ED1 c\u1EA1nh \xEDt nh\u1EA5t, ph\xF9 h\u1EE3p khi m\u1ED7i l\u1EA7n \u0111i qua c\xF3 chi ph\xED b\u1EB1ng nhau."
+    options:
+    - id: 0
+      text: BFS
+      textVN: BFS
+    - id: 1
+      text: Basic DFS shortest-path guarantee
+      textVN: "DFS c\u01A1 b\u1EA3n \u0111\u1EA3m b\u1EA3o \u0111\u01B0\u1EDDng ng\u1EAFn nh\u1EA5t"
+    - id: 2
+      text: Alphabetical sorting
+      textVN: "S\u1EAFp x\u1EBFp theo b\u1EA3ng ch\u1EEF c\xE1i"
+    - id: 3
+      text: Random walking
+      textVN: "\u0110i ng\u1EABu nhi\xEAn"
+    correctOptionIds:
+    - 0
+  - id: graphs-3
+    type: single-choice
+    lessonId: graphs
+    topic: Choosing a Graph Strategy
+    difficulty: 1
+    tags: []
+    prompt: An adjacency list stores what?
+    explanation: Each vertex has a list of adjacent vertices or outgoing edges.
+    promptVN: "Danh s\xE1ch k\u1EC1 l\u01B0u th\xF4ng tin g\xEC?"
+    explanationVN: "M\u1ED7i \u0111\u1EC9nh c\xF3 m\u1ED9t danh s\xE1ch c\xE1c \u0111\u1EC9nh k\u1EC1 ho\u1EB7c c\xE1c c\u1EA1nh \u0111i ra."
+    options:
+    - id: 0
+      text: Neighbors of each vertex
+      textVN: "C\xE1c \u0111\u1EC9nh k\u1EC1 c\u1EE7a m\u1ED7i \u0111\u1EC9nh"
+    - id: 1
+      text: Only vertex colors
+      textVN: "Ch\u1EC9 m\xE0u c\u1EE7a \u0111\u1EC9nh"
+    - id: 2
+      text: Every possible path
+      textVN: "M\u1ECDi \u0111\u01B0\u1EDDng \u0111i c\xF3 th\u1EC3 c\xF3"
+    - id: 3
+      text: Only the source
+      textVN: "Ch\u1EC9 \u0111\u1EC9nh ngu\u1ED3n"
+    correctOptionIds:
+    - 0
+  - id: graphs-4
+    type: single-choice
+    lessonId: graphs
+    topic: Choosing a Graph Strategy
+    difficulty: 1
+    tags: []
+    prompt: An adjacency matrix for V vertices has how many cells?
+    explanation: There is a cell for each ordered vertex pair, giving V times V cells.
+    promptVN: "Ma tr\u1EADn k\u1EC1 c\u1EE7a \u0111\u1ED3 th\u1ECB c\xF3 V \u0111\u1EC9nh g\u1ED3m bao nhi\xEAu \xF4?"
+    explanationVN: "M\u1ED7i c\u1EB7p \u0111\u1EC9nh c\xF3 th\u1EE9 t\u1EF1 t\u01B0\u01A1ng \u1EE9ng v\u1EDBi m\u1ED9t \xF4, t\u1ED5ng c\u1ED9ng V \xD7 V \xF4."
+    options:
+    - id: 0
+      text: V squared
+      textVN: "V\xB2"
+    - id: 1
+      text: V
+      textVN: V
+    - id: 2
+      text: log V
+      textVN: log V
+    - id: 3
+      text: Always 5
+      textVN: "Lu\xF4n l\xE0 5"
+    correctOptionIds:
+    - 0
+  - id: graphs-5
+    type: single-choice
+    lessonId: graphs
+    topic: Choosing a Graph Strategy
+    difficulty: 1
+    tags: []
+    prompt: Can BFS always find minimum travel cost with unequal weights?
+    explanation: Fewest edges can be more expensive than a longer route when weights differ.
+    promptVN: "BFS c\xF3 lu\xF4n t\xECm chi ph\xED nh\u1ECF nh\u1EA5t khi tr\u1ECDng s\u1ED1 c\xE1c c\u1EA1nh kh\xE1c nhau kh\xF4ng?"
+    explanationVN: "\u0110\u01B0\u1EDDng \xEDt c\u1EA1nh nh\u1EA5t c\xF3 th\u1EC3 \u0111\u1EAFt h\u01A1n m\u1ED9t \u0111\u01B0\u1EDDng nhi\u1EC1u c\u1EA1nh khi tr\u1ECDng s\u1ED1 kh\xE1c nhau."
+    options:
+    - id: 0
+      text: No
+      textVN: "Kh\xF4ng"
+    - id: 1
+      text: Yes
+      textVN: "C\xF3"
+    - id: 2
+      text: Only with a visited set
+      textVN: "Ch\u1EC9 khi c\xF3 t\u1EADp \u0111\u1EC9nh \u0111\xE3 th\u0103m"
+    - id: 3
+      text: Only using a queue
+      textVN: "Ch\u1EC9 khi d\xF9ng h\xE0ng \u0111\u1EE3i"
+    correctOptionIds:
+    - 0
+  - id: graphs-6
+    type: single-choice
+    lessonId: graphs
+    topic: Choosing a Graph Strategy
+    difficulty: 1
+    tags: []
+    prompt: What should guide algorithm choice?
+    explanation: Correctness depends on matching assumptions such as weights, direction and required output.
+    promptVN: "\u0110i\u1EC1u g\xEC n\xEAn quy\u1EBFt \u0111\u1ECBnh vi\u1EC7c ch\u1ECDn thu\u1EADt to\xE1n?"
+    explanationVN: "T\xEDnh \u0111\xFAng \u0111\u1EAFn ph\u1EE5 thu\u1ED9c v\xE0o s\u1EF1 ph\xF9 h\u1EE3p v\u1EDBi gi\u1EA3 \u0111\u1ECBnh nh\u01B0 tr\u1ECDng s\u1ED1, h\u01B0\u1EDBng c\u1EA1nh v\xE0 k\u1EBFt qu\u1EA3 c\u1EA7n c\xF3."
+    options:
+    - id: 0
+      text: Problem assumptions and required result
+      textVN: "Gi\u1EA3 \u0111\u1ECBnh b\xE0i to\xE1n v\xE0 k\u1EBFt qu\u1EA3 c\u1EA7n t\xECm"
+    - id: 1
+      text: The shortest function name
+      textVN: "T\xEAn h\xE0m ng\u1EAFn nh\u1EA5t"
+    - id: 2
+      text: Always use recursion
+      textVN: "Lu\xF4n d\xF9ng \u0111\u1EC7 quy"
+    - id: 3
+      text: Vertex labels only
+      textVN: "Ch\u1EC9 t\xEAn c\xE1c \u0111\u1EC9nh"
+    correctOptionIds:
+    - 0

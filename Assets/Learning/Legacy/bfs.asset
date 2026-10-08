@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426371913cb103240a9f482a56898d15, type: 3}
+  m_Name: bfs
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Learning.LessonData
+  id: bfs
+  title: BFS Basics
+  topic: BFS Basics
+  titleVN: "BFS: T\xECm ki\u1EBFm theo chi\u1EC1u r\u1ED9ng"
+  pages:
+  - title: FIELD NOTES
+    titleVN: "GHI CH\xC9P TH\u1EF0C \u0110\u1ECAA"
+    contentVN: "BFS kh\xE1m ph\xE1 \u0111\u1ED3 th\u1ECB theo t\u1EEBng l\u1EDBp. B\u1EAFt \u0111\u1EA7u t\u1EEB m\u1ED9t \u0111\u1EC9nh ngu\u1ED3n, \u0111\xE1nh d\u1EA5u \u0111\xE3 th\u0103m r\u1ED3i \u0111\u01B0a \u0111\u1EC9nh \u0111\xF3 v\xE0o h\xE0ng \u0111\u1EE3i. M\u1ED7i b\u01B0\u1EDBc, l\u1EA5y \u0111\u1EC9nh \u0111\u01B0\u1EE3c \u0111\u01B0a v\xE0o s\u1EDBm nh\u1EA5t ra v\xE0 th\xEAm c\xE1c \u0111\u1EC9nh k\u1EC1 ch\u01B0a \u0111\u01B0\u1EE3c th\u0103m. \u0110\xE1nh d\u1EA5u ngay khi \u0111\u01B0a v\xE0o h\xE0ng \u0111\u1EE3i \u0111\u1EC3 tr\xE1nh th\xEAm tr\xF9ng khi \u0111\u1ED3 th\u1ECB c\xF3 chu tr\xECnh."
+    exampleVN: "A n\u1ED1i v\u1EDBi B v\xE0 C; B n\u1ED1i v\u1EDBi D. T\u1EEB A, m\u1ED9t th\u1EE9 t\u1EF1 duy\u1EC7t h\u1EE3p l\u1EC7 l\xE0 A, B, C, D. B v\xE0 C c\xE1ch ngu\u1ED3n 1 c\u1EA1nh; D c\xE1ch ngu\u1ED3n 2 c\u1EA1nh."
+    takeawayVN: "BFS d\xF9ng h\xE0ng \u0111\u1EE3i FIFO: v\xE0o tr\u01B0\u1EDBc, ra tr\u01B0\u1EDBc. BFS t\xECm s\u1ED1 c\u1EA1nh \xEDt nh\u1EA5t tr\xEAn \u0111\u1ED3 th\u1ECB kh\xF4ng tr\u1ECDng s\u1ED1; kh\xF4ng \u0111\u1EA3m b\u1EA3o chi ph\xED nh\u1ECF nh\u1EA5t khi tr\u1ECDng s\u1ED1 c\xE1c c\u1EA1nh kh\xE1c nhau."
+    content: Breadth-first search explores a graph one layer at a time. Start at a source, mark it visited, then put it in a queue. Repeatedly remove the oldest vertex and add each unvisited neighbor. Mark a vertex when enqueuing it so cycles cannot enqueue it repeatedly.
+    example: A connects to B and C; B connects to D. Starting at A, a possible visit order is A, B, C, D. B and C are distance 1; D is distance 2.
+    takeaway: BFS uses a FIFO queue. It finds minimum edge counts in unweighted graphs, not minimum costs for arbitrary weighted edges.
+    illustration: {fileID: 0}
+  questionBank: {fileID: 11400000, guid: 5f75e3262aa28e64885deb36b37cf3c1, type: 2}
+  quizSize: 5
+  passPercent: 80
+  prerequisiteLessonIds: []
+  requiredSurvivalSeconds: 0
+  reward:
+    healthFraction: 0.05
+    movementFraction: 0.02
+    energyFraction: 0
