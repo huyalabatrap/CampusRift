@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: vo-hon-chan-than
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: vo-hon-chan-than
+  displayName: Martial Soul Avatar
+  displayNameVN: "V\xF5 H\u1ED3n Ch\xE2n Th\xE2n"
+  description: 'Giant spirit for 10 s: +50% damage, take 30% less; basic attacks sweep a 4 m radius; camera pulls back. Mastery: immune to control.'
+  descriptionVN: "Ph\xE1p t\u01B0\u1EDBng10gi\xE2y:+50% s\xE1t th\u01B0\u01A1ng, gi\u1EA3m30% s\xE1t th\u01B0\u01A1ng nh\u1EADn; \u0111\xE1nh th\u01B0\u1EDDng qu\xE9t4m, m\xE1y quay l\xF9i xa. Vi\xEAn M\xE3n: mi\u1EC5n kh\u1ED1ng ch\u1EBF."
+  shortName: "V\xD5 H\u1ED2N"
+  element: 5
+  role: 0
+  castType: 0
+  icon: {fileID: 21300000, guid: 6450305d3fb7203438755896445fbf30, type: 3}
+  starter: 0
+  unlockRealm: 6
+  unlockTier: 1
+  cooldown: 75
+  spiritCost: 100
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 6
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 6
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 6
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

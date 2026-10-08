@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: van-kiem-quyet
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: van-kiem-quyet
+  displayName: Sword Rain
+  displayNameVN: "V\u1EA1n Ki\u1EBFm Quy\u1EBFt"
+  description: 'Thirty golden swords over 3 s in an 8 m area; each deals 40% attack. Mastery: Fifty swords.'
+  descriptionVN: "Ba m\u01B0\u01A1i ki\u1EBFm v\xE0ng trong 3 gi\xE2y, v\xF9ng 8 m; m\u1ED7i ki\u1EBFm 40% C\xF4ng. Vi\xEAn M\xE3n: 50 thanh ki\u1EBFm."
+  shortName: SWORD RAIN
+  element: 1
+  role: 0
+  castType: 1
+  icon: {fileID: 21300000, guid: f12ac3af7dcfe324cb9c8c9f89e82457, type: 3}
+  starter: 0
+  unlockRealm: 4
+  unlockTier: 1
+  cooldown: 18
+  spiritCost: 50
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 4
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 5
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 6
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

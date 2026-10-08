@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9edba8bce0e9f41a36b737d162cab5, type: 3}
+  m_Name: P10RainConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Combat.NguKiemConfig
+  element: 2
+  range: 12
+  coneAngle: 60
+  lockRange: 25
+  chainPercent:
+  - 1
+  - 1
+  - 1.6
+  comboWindow: 0.9
+  swingInterval: 0.32
+  swingSpiritCost: 8
+  pierceSpiritCost: 20
+  hitSpiritRefund: 2
+  holdSeconds: 0.8
+  piercePercent: 2.5
+  pierceLength: 15
+  pierceRadius: 0.6
+  pierceSpeed: 45
+  swordCount: 3
+  flightSpeed: 30
+  returnSpeed: 26
+  hitRadius: 0.6
+  missDistance: 7
+  bladeColor: {r: 1, g: 0.65, b: 0.1, a: 1}
+  tipColor: {r: 1, g: 1, b: 1, a: 1}
+  bladeMaterial: {fileID: 2100000, guid: c1937757eecd5564aba7f3147a5fb471, type: 2}
+  trailMaterial: {fileID: 2100000, guid: 915e975762dcc244883b1a96d15cfae2, type: 2}
+  swingClip: {fileID: 0}
+  hitClip: {fileID: 0}

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1acfddd007a640d408754b8916c9d4e6, type: 3}
+  m_Name: SkillSet1Vfx
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillSet1VfxConfig
+  surface: {fileID: 2100000, guid: c1937757eecd5564aba7f3147a5fb471, type: 2}
+  ink: {fileID: 2100000, guid: c8df0b07a96c447428f6d3593025897b, type: 2}
+  additive: {fileID: 2100000, guid: 915e975762dcc244883b1a96d15cfae2, type: 2}
+  fork: {fileID: 2100000, guid: bb48c77f2ae4880489eba6f09deb11c0, type: 2}
+  particles: {fileID: 2100000, guid: c9a3293c03ea4b749ae4149c0a366f27, type: 2}
+  ghost: {fileID: 2100000, guid: c542d240cd7073a46adfc132e7211ba7, type: 2}
+  stroke: {fileID: 2100000, guid: 0519ad48a8845ad42a3f0f5cc9293656, type: 2}
+  groundMark: {fileID: 2100000, guid: 2937e8335bcdb22428c3624f5cf6421e, type: 2}
+  layeredWide: {fileID: 2100000, guid: 0c73b81a5dcaa1e45bfc995c352b2e19, type: 2}
+  layeredSmall: {fileID: 2100000, guid: 3403e519eefa0a6418a0c81b3c206a6b, type: 2}
+  layeredRing: {fileID: 2100000, guid: 93cd30dffdee732469f59c496fe0495e, type: 2}
+  layeredSlash: {fileID: 2100000, guid: f0779f347a40039409f75a8d388fe426, type: 2}
+  accretion: {fileID: 2100000, guid: 67ce2b6494158e64b99dd4a5bb44f042, type: 2}
+  lotusSurface: {fileID: 2100000, guid: 2b81e1b800fd0ac448491c9f7214df44, type: 2}
+  fireBillow: {fileID: 2100000, guid: 93ed2366849269c46b2296b02eaf957c, type: 2}
+  copperMark: {fileID: 2100000, guid: bd07f1fa83ea26a49bf2694ddf23e042, type: 2}
+  impactStar: {fileID: 2100000, guid: 88b8c595d2cf1244287692ff6dd0d82d, type: 2}
+  slashStroke: {fileID: 2100000, guid: c54f674bad5f63f46a7968aa10f3c605, type: 2}
+  reactionSurface: {fileID: 2100000, guid: ed99195ed3ec84846b5cb609119ab519, type: 2}
+  reactionStroke: {fileID: 2100000, guid: f988fca96a750004eb60ab6c628d45d2, type: 2}
+  reactionIce: {fileID: 2100000, guid: a2c1715a7910f32448286094ffd065ea, type: 2}
+  vortexDebris: {fileID: 2100000, guid: ab5bab8308c6eb64fb3cd199ab8bf7a8, type: 2}
+  fireRibbon: {fileID: 2100000, guid: c5808338f5ecf7a419580b080b83bb1b, type: 2}
+  frostMist: {fileID: 2100000, guid: e0904914790ec5a4d8e6f597f042daf6, type: 2}
+  layeredLightning: {fileID: 2100000, guid: 996e417f4db0c9245bbce05d6100a897, type: 2}
+  solidEmission: {fileID: 2100000, guid: dd9e0b66e7798904f94814e22f4505f4, type: 2}
+  fireFlipbook: {fileID: 2100000, guid: 2009f9f0f9fa1f7469801e70f5e20eef, type: 2}
+  smokeFlipbook: {fileID: 2100000, guid: 1c3aaefe112e77e40b2eb5c806437770, type: 2}
+  lightningCast: {fileID: 8300000, guid: 2c232b407422f5e4aac33f60d1890015, type: 3}
+  lightningHit: {fileID: 8300000, guid: 60465b2711c4da346a9e95184ddd15ca, type: 3}
+  fireCast: {fileID: 8300000, guid: adb10ea86469c5b41a8044ac6fa63863, type: 3}
+  fireHit: {fileID: 8300000, guid: e637dda2ed19bc747bacef65a0f2663c, type: 3}
+  iceCast: {fileID: 8300000, guid: 79201545a43a7d146bb89f63f88a3b6e, type: 3}
+  iceHit: {fileID: 8300000, guid: b76d20635cf490b43b9cb8aadb8a5dc6, type: 3}
+  bell: {fileID: 8300000, guid: 2c5e8e26dcd48b64d925767c859003f7, type: 3}
+  voidCast: {fileID: 8300000, guid: 79201545a43a7d146bb89f63f88a3b6e, type: 3}
+  voidHit: {fileID: 8300000, guid: 2562acbb2e558b84b98406de32ae0a43, type: 3}
+  sword: {fileID: 8300000, guid: 9481fff367b39d94ea3a070d45d4c817, type: 3}
+  rainConfig: {fileID: 11400000, guid: e73bf2ae02d1be548b5ed8357b42a7ef, type: 2}
+  audioOutput: {fileID: 3680441330483450487, guid: 629893d50d3aa0443922c1f74980a82e, type: 2}

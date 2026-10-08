@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: thien-loi-dan
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: thien-loi-dan
+  displayName: Heavenly Thunder
+  displayNameVN: "Thi\xEAn L\xF4i D\u1EABn"
+  description: 'Mark a 5 m area; after 1.2 s, five thunderbolts (2.5 m impact), 220% attack each; Lightning vs Yin +50%. Mastery: eight bolts.'
+  descriptionVN: "B\xE1o v\xF9ng 5 m; sau 1,2 gi\xE2y gi\xE1ng 5 tia (n\u1ED5 2,5 m), m\u1ED7i tia220% C\xF4ng; +50% v\u1EDBi \xC2m. Vi\xEAn M\xE3n: 8 tia."
+  shortName: "THI\xCAN L\xD4I"
+  element: 6
+  role: 0
+  castType: 1
+  icon: {fileID: 21300000, guid: 7f6e05b5e16fedf45ab10df9cd16bae3, type: 3}
+  starter: 0
+  unlockRealm: 4
+  unlockTier: 1
+  cooldown: 20
+  spiritCost: 45
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 4
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 5
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 6
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

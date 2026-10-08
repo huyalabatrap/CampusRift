@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: than-thuc-linh-nhan
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: than-thuc-linh-nhan
+  displayName: Spirit Sight
+  displayNameVN: "Th\u1EA7n Th\u1EE9c Linh Nh\xE3n"
+  description: 'Reveal every enemy through walls for 10 s; +25% critical damage against them. Breaks stealth. Mastery: the three weakest take +30% damage.'
+  descriptionVN: "Th\u1EA5y qu\xE1i xuy\xEAn t\u01B0\u1EDDng10gi\xE2y; +25% s\xE1t th\u01B0\u01A1ng ch\xED m\u1EA1ng, ph\xE1 \u1EA9n th\xE2n. Vi\xEAn M\xE3n: \u0111\xE1nh d\u1EA5u3qu\xE1i y\u1EBFu nh\u1EA5t, ch\xFAng nh\u1EADn+30% s\xE1t th\u01B0\u01A1ng."
+  shortName: "LINH NH\xC3N"
+  element: 0
+  role: 6
+  castType: 0
+  icon: {fileID: 21300000, guid: 01bc41c4f6239bf428d64f01cbc19c23, type: 3}
+  starter: 0
+  unlockRealm: 4
+  unlockTier: 1
+  cooldown: 30
+  spiritCost: 20
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 4
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 5
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 6
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: hu-khong-ket-gioi
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: hu-khong-ket-gioi
+  displayName: Void Wall
+  displayNameVN: "H\u01B0 Kh\xF4ng K\u1EBFt Gi\u1EDBi"
+  description: 'Raise an energy wall that blocks monsters and projectiles. 3 charges, one returns every 12 s. Mastery: Wall reflects projectiles.'
+  descriptionVN: "D\u1EF1ng b\u1EE9c t\u01B0\u1EDDng n\u0103ng l\u01B0\u1EE3ng ch\u1EB7n qu\xE1i v\xE0 \u0111\u1EA1n. 3 l\u01B0\u1EE3t, h\u1ED3i 1 l\u01B0\u1EE3t m\u1ED7i 12 gi\xE2y. Vi\xEAn M\xE3n: T\u01B0\u1EDDng ph\u1EA3n l\u1EA1i \u0111\u1EA1n."
+  shortName: VOID WALL
+  element: 8
+  role: 2
+  castType: 1
+  icon: {fileID: 21300000, guid: 6bfe60671c28ef7438506235fcf5ec14, type: 3}
+  starter: 1
+  unlockRealm: 0
+  unlockTier: 1
+  cooldown: 0.35
+  spiritCost: 15
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 0
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 1
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 2
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 3
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 4

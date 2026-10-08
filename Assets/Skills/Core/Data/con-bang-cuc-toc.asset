@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: con-bang-cuc-toc
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: con-bang-cuc-toc
+  displayName: Kunpeng Swiftness
+  displayNameVN: "C\xF4n B\u1EB1ng C\u1EF1c T\u1ED1c"
+  description: 'For 6 s: +40% speed (movement cap applies), free stamina dodges, afterimages. Mastery: ghosts deal 60% attack on contact.'
+  descriptionVN: "Trong 6 gi\xE2y: +40% t\u1ED1c \u0111\u1ED9 (gi\u1EEF tr\u1EA7n), n\xE9 kh\xF4ng t\u1ED1n Th\u1EC3 L\u1EF1c, b\xF3ng \u1EA3o. Vi\xEAn M\xE3n: b\xF3ng ch\u1EA1m qu\xE1i g\xE2y 60% C\xF4ng."
+  shortName: "C\xD4N B\u1EB0NG"
+  element: 2
+  role: 3
+  castType: 0
+  icon: {fileID: 21300000, guid: a93fbb1d3b5f98c46a1ead973f798b10, type: 3}
+  starter: 0
+  unlockRealm: 3
+  unlockTier: 1
+  cooldown: 25
+  spiritCost: 25
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 3
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 4
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 5
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

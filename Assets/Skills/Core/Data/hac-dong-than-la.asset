@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: hac-dong-than-la
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: hac-dong-than-la
+  displayName: Black Hole Repulsion
+  displayNameVN: "H\u1EAFc \u0110\u1ED9ng Th\u1EA7n La"
+  description: 'Place within 15 m; pull 9 m radius for 3 s; repel 4 m and deal 250% attack. Bosses resist pull. Mastery: Also consumes projectiles.'
+  descriptionVN: "\u0110\u1EB7t trong 15 m; h\xFAt v\xF9ng 9 m trong 3 gi\xE2y; h\u1EA5t 4 m, 250% C\xF4ng. Boss kh\xE1ng h\xFAt. Vi\xEAn M\xE3n: H\xFAt c\u1EA3 \u0111\u1EA1n."
+  shortName: BLACK HOLE REPULSION
+  element: 8
+  role: 1
+  castType: 1
+  icon: {fileID: 21300000, guid: 99f436e8231490c4ebe225863a743d0a, type: 3}
+  starter: 0
+  unlockRealm: 3
+  unlockTier: 1
+  cooldown: 22
+  spiritCost: 50
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 3
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 4
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 5
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

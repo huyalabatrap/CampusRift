@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: banh-truong-lanh-dia
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: banh-truong-lanh-dia
+  displayName: Domain Expansion
+  displayNameVN: "B\xE0nh Tr\u01B0\u1EDBng L\xE3nh \u0110\u1ECBa"
+  description: '12 m domain for 8 s: enemies inside move 40% slower; caster''s cooldowns advance twice as fast while inside. Mastery: enemy abilities are suppressed.'
+  descriptionVN: "L\xE3nh \u0111\u1ECBa12m/8gi\xE2y: qu\xE1i b\xEAn trong ch\u1EADm40%; ng\u01B0\u1EDDi ch\u01A1i trong v\xF9ng h\u1ED3i k\u1EF9 n\u0103ng nhanh g\u1EA5p \u0111\xF4i. Vi\xEAn M\xE3n: kh\xF3a k\u1EF9 n\u0103ng qu\xE1i."
+  shortName: "L\xC3NH \u0110\u1ECAA"
+  element: 8
+  role: 1
+  castType: 0
+  icon: {fileID: 21300000, guid: 4c0f72b695808a14098cea7507d9e600, type: 3}
+  starter: 0
+  unlockRealm: 6
+  unlockTier: 1
+  cooldown: 60
+  spiritCost: 80
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 6
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 6
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 6
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

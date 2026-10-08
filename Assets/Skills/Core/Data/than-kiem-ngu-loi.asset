@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: than-kiem-ngu-loi
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: than-kiem-ngu-loi
+  displayName: Lightning Sword
+  displayNameVN: "Th\u1EA7n Ki\u1EBFm Ng\u1EF1 L\xF4i Ch\xE2n Quy\u1EBFt"
+  description: 'Six targets, 8 m per bounce; 200% attack, 10% less each bounce, clear line of sight. Mastery: Three extra bounces (up to nine).'
+  descriptionVN: "S\xE1u m\u1EE5c ti\xEAu, m\u1ED7i l\u1EA7n n\u1EA3y t\u1ED1i \u0111a 8 m; 200% C\xF4ng, gi\u1EA3m 10% m\u1ED7i l\u1EA7n, c\u1EA7n \u0111\u01B0\u1EDDng nh\xECn th\xF4ng su\u1ED1t. Vi\xEAn M\xE3n: N\u1EA3y th\xEAm 3 l\u1EA7n (t\u1ED1i \u0111a 9)."
+  shortName: LIGHTNING SWORD
+  element: 6
+  role: 0
+  castType: 0
+  icon: {fileID: 21300000, guid: aea822af68d08914b8de546bfe6ff80d, type: 3}
+  starter: 0
+  unlockRealm: 1
+  unlockTier: 1
+  cooldown: 12
+  spiritCost: 35
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 1
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 2
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 3
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 4
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 5

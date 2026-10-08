@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: bac-minh-than-cong
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: bac-minh-than-cong
+  displayName: Northern Sea Absorption
+  displayNameVN: "B\u1EAFc Minh Th\u1EA7n C\xF4ng"
+  description: Channel 3 s; three closest visible targets within 12 m, 70% attack every 0.5 s + Wet. Heal 50% of actual damage. Dodge/stun interrupts. Mastery drains spirit.
+  descriptionVN: "V\u1EADn c\xF4ng 3 gi\xE2y: h\xFAt 3 m\u1EE5c ti\xEAu g\u1EA7n nh\u1EA5t trong 12 m, 70% C\xF4ng m\u1ED7i 0,5 gi\xE2y + \u01AF\u1EDBt; h\u1ED3i 50% s\xE1t th\u01B0\u01A1ng th\u1EF1c t\u1EBF. N\xE9/cho\xE1ng ng\u1EAFt chi\xEAu. Vi\xEAn M\xE3n: h\xFAt Linh L\u1EF1c."
+  shortName: "B\u1EAEC MINH"
+  element: 3
+  role: 5
+  castType: 2
+  icon: {fileID: 21300000, guid: ebc25bca0dda4f4448529644be4d0833, type: 3}
+  starter: 0
+  unlockRealm: 3
+  unlockTier: 1
+  cooldown: 16
+  spiritCost: 30
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 3
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 4
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 5
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

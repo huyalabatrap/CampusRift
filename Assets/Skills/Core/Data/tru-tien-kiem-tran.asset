@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: tru-tien-kiem-tran
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: tru-tien-kiem-tran
+  displayName: Immortal Slaying Sword Array
+  displayNameVN: "Tru Ti\xEAn Ki\u1EBFm Tr\u1EADn"
+  description: '8 m sword formation for 10 s; slash every 0.5 s, 60% attack. Stand inside for +20 percentage points critical chance. Mastery: 15 s.'
+  descriptionVN: "Ki\u1EBFm tr\u1EADn8m/10gi\xE2y; m\u1ED7i0,5gi\xE2y ch\xE9m60% C\xF4ng. \u0110\u1EE9ng trong tr\u1EADn:+20 \u0111i\u1EC3m% ch\xED m\u1EA1ng. Vi\xEAn M\xE3n:15gi\xE2y."
+  shortName: "TRU TI\xCAN"
+  element: 1
+  role: 1
+  castType: 1
+  icon: {fileID: 21300000, guid: d038732e74de4a8469208a9ec65daa43, type: 3}
+  starter: 0
+  unlockRealm: 5
+  unlockTier: 1
+  cooldown: 28
+  spiritCost: 60
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 5
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 6
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 6
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 6
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6

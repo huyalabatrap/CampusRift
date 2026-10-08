@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: tich-lich-nhat-thiem
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: tich-lich-nhat-thiem
+  displayName: Thunderclap Flash
+  displayNameVN: "T\xEDch L\u1ECBch Nh\u1EA5t Thi\u1EC3m"
+  description: 'Dash 10 m; 180% attack, Shock 0.5 s, invulnerable 0.2 s. Mastery: A second free dash within 2 s; keeps the first cooldown.'
+  descriptionVN: "L\u01B0\u1EDBt 10 m; 180% C\xF4ng, S\u1ED1c 0,5 gi\xE2y, mi\u1EC5n th\u01B0\u01A1ng 0,2 gi\xE2y. Vi\xEAn M\xE3n: L\u01B0\u1EDBt l\u1EA7n th\u1EE9 hai trong 2 gi\xE2y, mi\u1EC5n Linh L\u1EF1c; gi\u1EEF h\u1ED3i chi\xEAu l\u1EA7n \u0111\u1EA7u."
+  shortName: THUNDERCLAP FLASH
+  element: 6
+  role: 3
+  castType: 0
+  icon: {fileID: 21300000, guid: b45a819a46781e349be650e9fa2e2b67, type: 3}
+  starter: 0
+  unlockRealm: 0
+  unlockTier: 3
+  cooldown: 8
+  spiritCost: 20
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 0
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 1
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 2
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 3
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 4

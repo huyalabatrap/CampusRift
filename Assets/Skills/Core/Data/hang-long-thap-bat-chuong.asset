@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e141d6e4681344408d2f17b245a4066, type: 3}
+  m_Name: hang-long-thap-bat-chuong
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.Skills.SkillDefinition
+  id: hang-long-thap-bat-chuong
+  displayName: Eighteen Dragon Palms
+  displayNameVN: "H\xE0ng Long Th\u1EADp B\xE1t Ch\u01B0\u1EDFng"
+  description: 'Golden dragon pierces 15 m, 350% attack; knockback 3 m. Mastery: two dragons in a V.'
+  descriptionVN: "R\u1ED3ng v\xE0ng xuy\xEAn 15 m, 350% C\xF4ng; \u0111\u1EA9y l\xF9i 3 m. Vi\xEAn M\xE3n: hai lu\u1ED3ng r\u1ED3ng ch\u1EEF V."
+  shortName: "H\xC0NG LONG"
+  element: 1
+  role: 0
+  castType: 1
+  icon: {fileID: 21300000, guid: 3f6a60feee80b6446a9302b56c76fa1c, type: 3}
+  starter: 0
+  unlockRealm: 2
+  unlockTier: 1
+  cooldown: 10
+  spiritCost: 35
+  ranks:
+  - effectMultiplier: 1
+    cooldownMultiplier: 1
+    upgradeCost: 0
+    requiredRealm: 2
+  - effectMultiplier: 1.12
+    cooldownMultiplier: 0.95
+    upgradeCost: 150
+    requiredRealm: 3
+  - effectMultiplier: 1.24
+    cooldownMultiplier: 0.9
+    upgradeCost: 400
+    requiredRealm: 4
+  - effectMultiplier: 1.36
+    cooldownMultiplier: 0.85
+    upgradeCost: 900
+    requiredRealm: 5
+  - effectMultiplier: 1.48
+    cooldownMultiplier: 0.8
+    upgradeCost: 1600
+    requiredRealm: 6
