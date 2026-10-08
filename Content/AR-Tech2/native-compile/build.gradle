@@ -1,0 +1,10 @@
+plugins { id 'com.android.library' version '9.0.0' }
+android { namespace 'com.campusrift.tech'; compileSdk 36
+    defaultConfig { minSdk 28; targetSdk 36 }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+    implementation 'com.google.mediapipe:tasks-vision:1.0.0'
+    implementation 'com.alphacephei:vosk-android:0.3.75@aar'
+    implementation 'net.java.dev.jna:jna:5.18.1@aar'
+}
