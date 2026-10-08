@@ -1,0 +1,38 @@
+#if UNITY_EDITOR || P12_BENCH
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using Unity.Profiling;
+using CampusRift.Enemies;
+using CampusRift.Levels;
+using CampusRift.SkyBeast;
+using CampusRift.Combat;
+using CampusRift.UI;
+using CampusRift.Progression;
+namespace CampusRift.Validation
+{
+    public sealed class P12StandaloneBench : MonoBehaviour
+    {
+        [Serializable] public sealed class Report {public string capturedAt,environment,gpu,cpu,error="";public int enemies=25,dragons=1,samples,renderedFrames;public float medianFPS,meanMs,p95Ms;public long triangles,drawCalls,batches,setPass;public bool passed;}
+        readonly Report report=new Report();readonly List<float> times=new List<float>();
+        IEnumerator Start(){if(Application.isEditor)yield break;Application.runInBackground=true;Application.targetFrameRate=-1;QualitySettings.vSyncCount=0;
+            for(int i=0;i<30;i++)yield return null;UIStateManager.Instance.EnterScene(true);var settings=SettingsManager.Instance.Current.Copy();settings.ControlMode=Controls.ControlMode.PC;settings.VSync=false;settings.Quality=1;settings.ResolutionWidth=1920;settings.ResolutionHeight=1080;settings.Fullscreen=false;SettingsManager.Instance.Apply(settings,false);
+            ProfileService.Instance.UseTransient(new ProfileData{cultivation=new CultivationData{realm=6,tier=5}});
+            var player=FindAnyObjectByType<CampusExplorer>();player.spawnPosition=new Vector3(-5,.13f,2);player.ReturnToSpawn();player.SetValidationCameraOrbit(90,-10);var old=FindAnyObjectByType<Monsters.MonsterBrain>();if(old!=null)old.gameObject.SetActive(false);
+            player.GetComponent<PlayerStats>().SetModifier(StatSource.Buff,"p12-bench-hp",StatType.MaxHealth,900000,0);player.GetComponent<Monsters.PlayerMonsterHealth>().Heal(1e6f);
+            var roster=LevelCatalog.Instance.Get(10).spawnTable.roster;var scale=LevelCatalog.Instance.Get(10).Scaling;
+            for(int i=0;i<25;i++){float angle=(-45+i*90f/24)*Mathf.Deg2Rad;EnemyPool.Ensure().Spawn(roster[i%7].archetype,player.transform.position+new Vector3(Mathf.Cos(angle)*(8+i%3*2),0,Mathf.Sin(angle)*(8+i%3*2)),scale);}
+            var dragon=SkyBeastPresence.Spawn("023");dragon.definition=Instantiate(dragon.definition);dragon.definition.center=new Vector3(160,0,2);dragon.definition.orbitRadius=45;dragon.definition.altitude=90;
+            var render=gameObject.AddComponent<ReactionGpuBenchRender>();render.Initialize(player.followCamera);
+            for(int i=0;i<180;i++){player.SetValidationCameraOrbit(90,-10);yield return null;}
+            var tri=ProfilerRecorder.StartNew(ProfilerCategory.Render,"Triangles Count",1);var draws=ProfilerRecorder.StartNew(ProfilerCategory.Render,"Draw Calls Count",1);var batches=ProfilerRecorder.StartNew(ProfilerCategory.Render,"Batches Count",1);var passes=ProfilerRecorder.StartNew(ProfilerCategory.Render,"SetPass Calls Count",1);
+            float until=Time.realtimeSinceStartup+18;while(Time.realtimeSinceStartup<until){player.SetValidationCameraOrbit(90,-10);yield return null;times.Add(Time.unscaledDeltaTime*1000);report.triangles=Math.Max(report.triangles,tri.LastValue);report.drawCalls=Math.Max(report.drawCalls,draws.LastValue);report.batches=Math.Max(report.batches,batches.LastValue);report.setPass=Math.Max(report.setPass,passes.LastValue);}
+            tri.Dispose();draws.Dispose();batches.Dispose();passes.Dispose();times.Sort();report.samples=times.Count;report.medianFPS=1000/times[times.Count/2];float sum=0;foreach(float t in times)sum+=t;report.meanMs=sum/times.Count;report.p95Ms=times[(int)(times.Count*.95f)];report.renderedFrames=render.RenderedFrames;report.error=render.Error;report.gpu=SystemInfo.graphicsDeviceName;report.cpu=SystemInfo.processorType;report.capturedAt=DateTime.UtcNow.ToString("o");
+            report.environment="Windows standalone Mono release / D3D12 / full URP HDR1920x1080 camera stack and comic HUD / GPU fence per frame / PC quality1, VSync off / 25 live mixed-model enemies level10 AI, 1 real dragon visible in forward sky / camera distance3.4 FOV60 pitch-10 / no screenshot or MCP during sampling / display Present excluded / HP buff only for fixture survival";
+            report.passed=report.samples>120&&report.renderedFrames>report.samples&&report.error.Length==0&&report.medianFPS>=60;Directory.CreateDirectory("Artifacts/P12/performance");File.WriteAllText("Artifacts/P12/performance/PC.json",JsonUtility.ToJson(report,true));render.Snapshot(Path.GetFullPath("Artifacts/P12/performance/PC-render.png"));File.WriteAllText("Artifacts/P12/performance/DONE.txt",report.passed?"PASS":"FAIL");yield return new WaitForSecondsRealtime(.5f);Application.Quit();
+        }
+    }
+}
+#endif
