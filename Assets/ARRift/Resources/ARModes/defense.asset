@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fba480747333e47b839e23d4206a1f, type: 3}
+  m_Name: defense
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.AR.ARGameMode
+  id: defense
+  nameVN: "Th\u1EE7 Tr\u1EADn"
+  nameEN: Shrine Defense
+  descriptionVN: "Gi\u1EEF Linh Tr\u1EADn qua 5 \u0111\u1EE3t; Rift ph\u1EE5, qu\xE1i t\u1EA7m xa v\xE0 r\u1ED3ng."
+  descriptionEN: Five waves; secondary Rifts, ranged foes and a dragon.
+  durationVN: "4\u20136 ph\xFAt"
+  durationEN: "4\u20136 minutes"
+  order: 1
+  playable: 1
+  winRule: 0
+  loseOnShrine: 1
+  features: 255
+  waves:
+  - count: 6
+    spawnInterval: 3
+    breakSeconds: 10
+    minimumSeconds: 45
+    eliteEvery: 0
+    events: []
+  - count: 8
+    spawnInterval: 3
+    breakSeconds: 10
+    minimumSeconds: 45
+    eliteEvery: 4
+    events: 00000000
+  - count: 10
+    spawnInterval: 3
+    breakSeconds: 10
+    minimumSeconds: 45
+    eliteEvery: 4
+    events: 01000000
+  - count: 10
+    spawnInterval: 3
+    breakSeconds: 10
+    minimumSeconds: 45
+    eliteEvery: 3
+    events: []
+  - count: 6
+    spawnInterval: 3
+    breakSeconds: 3
+    minimumSeconds: 0
+    eliteEvery: 0
+    events: []
+  timeLimit: 360
+  shrineHealth: 300
+  maximumHealthLoss: 0.3
+  thirdStar: 1
+  thirdStarTarget: 2
+  pointsPerKill: 100
+  pointsPerReaction: 150
+  pointsPerUltimate: 300
+  victoryPoints: 1000
+  healthPoints: 500
+  rewardPerStar: 5

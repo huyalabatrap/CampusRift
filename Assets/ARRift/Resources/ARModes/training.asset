@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fba480747333e47b839e23d4206a1f, type: 3}
+  m_Name: training
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.AR.ARGameMode
+  id: training
+  nameVN: "L\xE0m quen"
+  nameEN: Training Grounds
+  descriptionVN: "B\u1EA3o v\u1EC7 Linh Tr\u1EADn qua 3 \u0111\u1EE3t.\n5 chi\xEAu m\u1EDF s\u1EB5n, ng\u1EAFm b\u1EB1ng t\xE2m m\xE0n h\xECnh."
+  descriptionEN: 'Protect the shrine through 3 waves.
+
+    5 skills unlocked; aim with screen center.'
+  durationVN: "2\u20133 ph\xFAt"
+  durationEN: "2\u20133 minutes"
+  order: 0
+  playable: 1
+  winRule: 0
+  loseOnShrine: 1
+  features: 204
+  waves:
+  - count: 3
+    spawnInterval: 0.85
+    breakSeconds: 3
+    eliteEvery: 0
+    events: 
+  - count: 4
+    spawnInterval: 0.85
+    breakSeconds: 3
+    eliteEvery: 0
+    events: 
+  - count: 6
+    spawnInterval: 0.85
+    breakSeconds: 3
+    eliteEvery: 0
+    events: 
+  timeLimit: 0
+  shrineHealth: 300
+  maximumHealthLoss: 0.3
+  thirdStar: 0
+  thirdStarTarget: 2
+  pointsPerKill: 100
+  pointsPerReaction: 150
+  pointsPerUltimate: 300
+  victoryPoints: 1000
+  healthPoints: 500
+  rewardPerStar: 5

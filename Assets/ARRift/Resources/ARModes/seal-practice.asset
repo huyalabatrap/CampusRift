@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fba480747333e47b839e23d4206a1f, type: 3}
+  m_Name: seal-practice
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.AR.ARGameMode
+  id: seal-practice
+  nameVN: "Luy\u1EC7n \u1EA4n"
+  nameEN: Seal Practice
+  descriptionVN: "K\u1EBFt c\u1EED ch\u1EC9 theo nh\u1ECBp; luy\u1EC7n \u0111\u1ED9 ch\xEDnh x\xE1c v\xE0 t\u1ED1c \u0111\u1ED9."
+  descriptionEN: Match gestures to the beat; practice accuracy and speed.
+  durationVN: "1\u20132 ph\xFAt"
+  durationEN: "1\u20132 minutes"
+  order: 4
+  playable: 1
+  winRule: 3
+  loseOnShrine: 0
+  features: 256
+  waves: []
+  timeLimit: 90
+  shrineHealth: 300
+  maximumHealthLoss: 0.3
+  thirdStar: 2
+  thirdStarTarget: 15000
+  pointsPerKill: 100
+  pointsPerReaction: 150
+  pointsPerUltimate: 300
+  victoryPoints: 1000
+  healthPoints: 500
+  rewardPerStar: 5
