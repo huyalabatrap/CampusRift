@@ -1,0 +1,1 @@
+return UnityEngine.Application.dataPath + " | " + System.IO.File.Exists(UnityEngine.Application.dataPath+"/Combat/Runtime/ReactionResolver.cs") + " | " + UnityEditor.EditorApplication.isCompiling + " | " + UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEditor.MonoScript>("Assets/Combat/Editor/ReactionSetup.cs");
