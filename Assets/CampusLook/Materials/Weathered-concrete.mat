@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Weathered-concrete
+  m_Shader: {fileID: 4800000, guid: b39196a9a881bc8459c7f607d48f471a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 79c6bf0711cc59f4d8c72338b64c75d3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 8e0ef0843f8f5c749b054c2bbe50530d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: 5b63aecb4275ed1408e9141b28b600e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Age: 0.26
+    - _Cull: 2
+    - _Decals: 0
+    - _Metallic: 0
+    - _NormalScale: 0.42
+    - _Smoothness: 0.55
+    - _Wall: 0
+    - _WorldScale: 0.5
+    m_Colors:
+    - _BaseColor: {r: 0.92, g: 0.9, b: 0.83, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
