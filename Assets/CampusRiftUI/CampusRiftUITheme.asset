@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfa3f4508399f743835e39882211908, type: 3}
+  m_Name: CampusRiftUITheme
+  m_EditorClassIdentifier: Assembly-CSharp::CampusRift.UI.CampusRiftUITheme
+  Font: {fileID: 11400000, guid: 3ccd8cf17f595104fbc7cca057e34adb, type: 2}
+  PrimaryBackground: {r: 0.050980393, g: 0.105882354, b: 0.16470589, a: 1}
+  SecondaryBackground: {r: 0.105882354, g: 0.1764706, b: 0.27058825, a: 1}
+  PanelBackground: {r: 0.105882354, g: 0.1764706, b: 0.27058825, a: 1}
+  PrimaryAccent: {r: 0.9607843, g: 0.7019608, b: 0.003921569, a: 1}
+  BlueAccent: {r: 0.69411767, g: 0.7882353, b: 0.8352941, a: 1}
+  SecondaryAccent: {r: 1, g: 0.5411765, b: 0, a: 1}
+  DangerColor: {r: 0.78039217, g: 0.2627451, b: 0.19607843, a: 1}
+  SuccessColor: {r: 0.48235294, g: 0.8784314, b: 0.22745098, a: 1}
+  TextPrimary: {r: 1, g: 0.9529412, b: 0.83137256, a: 1}
+  TextSecondary: {r: 0.69411767, g: 0.7882353, b: 0.8352941, a: 1}
+  DisabledColor: {r: 0.42, g: 0.4, b: 0.5, a: 0.6}
+  BodySize: 24
+  LabelSize: 18
+  HeadingSize: 48
+  Spacing: 16
+  TransitionDuration: 0.22
